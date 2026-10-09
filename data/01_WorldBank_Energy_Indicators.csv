@@ -1,0 +1,815 @@
+Country,Country_Code,Indicator,Year,Value
+Russia,RUS,Energy_Use_Per_Capita,2023,5498.30525622561
+Russia,RUS,Energy_Use_Per_Capita,2022,5707.1572675389
+Russia,RUS,Energy_Use_Per_Capita,2021,5710.55279279027
+Russia,RUS,Energy_Use_Per_Capita,2020,5068.38550364971
+Russia,RUS,Energy_Use_Per_Capita,2019,5082.7299560342
+Russia,RUS,Energy_Use_Per_Capita,2018,5279.09416060338
+Russia,RUS,Energy_Use_Per_Capita,2017,5018.77352571388
+Russia,RUS,Energy_Use_Per_Capita,2016,4936.04266971322
+Russia,RUS,Energy_Use_Per_Capita,2015,4804.23014928516
+Russia,RUS,Energy_Use_Per_Capita,2014,4915.75746633152
+Russia,RUS,Energy_Use_Per_Capita,2013,4919.89870162422
+Russia,RUS,Energy_Use_Per_Capita,2012,5056.08323400834
+Russia,RUS,Energy_Use_Per_Capita,2011,5004.23439250465
+Russia,RUS,Energy_Use_Per_Capita,2010,4853.36753031766
+Russia,RUS,Energy_Use_Per_Capita,2009,4529.20319928613
+Russia,RUS,Energy_Use_Per_Capita,2008,4822.38136319959
+Russia,RUS,Energy_Use_Per_Capita,2007,4710.47452096269
+Russia,RUS,Energy_Use_Per_Capita,2006,4689.15108443259
+Russia,RUS,Energy_Use_Per_Capita,2005,4541.20863501769
+Russia,RUS,Energy_Use_Per_Capita,2004,4494.50152836851
+Russia,RUS,Energy_Use_Per_Capita,2003,4461.83176005763
+Russia,RUS,Energy_Use_Per_Capita,2002,4289.43957286052
+Russia,RUS,Energy_Use_Per_Capita,2001,4287.90829493258
+Russia,RUS,Energy_Use_Per_Capita,2000,4224.98951887146
+Russia,RUS,Energy_Use_Per_Capita,1999,4137.74703962256
+Russia,RUS,Energy_Use_Per_Capita,1998,3982.26585700237
+Russia,RUS,Energy_Use_Per_Capita,1997,4070.65837100817
+Russia,RUS,Energy_Use_Per_Capita,1996,4254.59294421479
+Russia,RUS,Energy_Use_Per_Capita,1995,4291.53342502059
+Russia,RUS,Energy_Use_Per_Capita,1994,4427.26643919973
+Russia,RUS,Energy_Use_Per_Capita,1993,5060.11636686839
+Russia,RUS,Energy_Use_Per_Capita,1992,5357.07699443819
+Russia,RUS,Energy_Use_Per_Capita,1991,5871.9943382327
+Russia,RUS,Energy_Use_Per_Capita,1990,5942.67811987717
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2023,7148.58725115291
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2022,7525.25321185534
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2021,7467.02479068822
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2020,7172.00803547452
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2019,7669.39905417665
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2018,7650.76338796016
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2017,7707.05632967392
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2016,7521.58911581712
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2015,7786.91651664863
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2014,7959.81351652344
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2013,7401.17130265584
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2012,7862.42354103658
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2011,7979.3799657336
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2010,7965.26121862505
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2009,7125.05300494705
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2008,6980.05897029755
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2007,6696.94747279399
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2006,6605.44101687621
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2005,6447.07190249029
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2004,6375.54473048108
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2003,6631.81585672969
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2002,6826.99573187577
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2001,6348.58935367071
+Saudi Arabia,SAU,Energy_Use_Per_Capita,2000,6516.00755562211
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1999,6054.28343091785
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1998,6169.38088980637
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1997,6019.93240274695
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1996,6494.45936719249
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1995,6316.7131696411
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1994,6591.02644141393
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1993,6537.84679475271
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1992,6582.97119687211
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1991,6050.38289786175
+Saudi Arabia,SAU,Energy_Use_Per_Capita,1990,5451.71882279534
+United States,USA,Energy_Use_Per_Capita,2024,6361.4447017904
+United States,USA,Energy_Use_Per_Capita,2023,6364.46726343838
+United States,USA,Energy_Use_Per_Capita,2022,6512.09816744798
+United States,USA,Energy_Use_Per_Capita,2021,6445.82621225492
+United States,USA,Energy_Use_Per_Capita,2020,6141.5241450627
+United States,USA,Energy_Use_Per_Capita,2019,6700.93033990565
+United States,USA,Energy_Use_Per_Capita,2018,6738.27272433986
+United States,USA,Energy_Use_Per_Capita,2017,6590.83509745633
+United States,USA,Energy_Use_Per_Capita,2016,6663.4963294418
+United States,USA,Energy_Use_Per_Capita,2015,6789.64733291075
+United States,USA,Energy_Use_Per_Capita,2014,6915.64165280321
+United States,USA,Energy_Use_Per_Capita,2013,6888.38143742637
+United States,USA,Energy_Use_Per_Capita,2012,6820.46062064875
+United States,USA,Energy_Use_Per_Capita,2011,7009.64607964907
+United States,USA,Energy_Use_Per_Capita,2010,7162.55933024159
+United States,USA,Energy_Use_Per_Capita,2009,7053.35846690965
+United States,USA,Energy_Use_Per_Capita,2008,7484.83268900712
+United States,USA,Energy_Use_Per_Capita,2007,7756.0141894981
+United States,USA,Energy_Use_Per_Capita,2006,7694.40657948116
+United States,USA,Energy_Use_Per_Capita,2005,7843.3910574627
+United States,USA,Energy_Use_Per_Capita,2004,7878.53717143427
+United States,USA,Energy_Use_Per_Capita,2003,7791.30391526846
+United States,USA,Energy_Use_Per_Capita,2002,7840.46095949898
+United States,USA,Energy_Use_Per_Capita,2001,7824.24393877407
+United States,USA,Energy_Use_Per_Capita,2000,8055.14548852416
+United States,USA,Energy_Use_Per_Capita,1999,7920.05392329598
+United States,USA,Energy_Use_Per_Capita,1998,7800.439490719
+United States,USA,Energy_Use_Per_Capita,1997,7825.23663798017
+United States,USA,Energy_Use_Per_Capita,1996,7841.59288605808
+United States,USA,Energy_Use_Per_Capita,1995,7760.89035266192
+United States,USA,Energy_Use_Per_Capita,1994,7755.08252133275
+United States,USA,Energy_Use_Per_Capita,1993,7708.10161116809
+United States,USA,Energy_Use_Per_Capita,1992,7675.63655553518
+United States,USA,Energy_Use_Per_Capita,1991,7629.84715395512
+United States,USA,Energy_Use_Per_Capita,1990,7669.4512686363
+China,CHN,Energy_Use_Per_Capita,2023,2850.94152906511
+China,CHN,Energy_Use_Per_Capita,2022,2676.48200976111
+China,CHN,Energy_Use_Per_Capita,2021,2623.79959356116
+China,CHN,Energy_Use_Per_Capita,2020,2465.96954605987
+China,CHN,Energy_Use_Per_Capita,2019,2397.96868908473
+China,CHN,Energy_Use_Per_Capita,2018,2310.87757050979
+China,CHN,Energy_Use_Per_Capita,2017,2215.91139022057
+China,CHN,Energy_Use_Per_Capita,2016,2149.2047500244
+China,CHN,Energy_Use_Per_Capita,2015,2175.1544486832
+China,CHN,Energy_Use_Per_Capita,2014,2177.55011435267
+China,CHN,Energy_Use_Per_Capita,2013,2137.32572690907
+China,CHN,Energy_Use_Per_Capita,2012,2085.21872095825
+China,CHN,Energy_Use_Per_Capita,2011,2027.46525356855
+China,CHN,Energy_Use_Per_Capita,2010,1899.79996108685
+China,CHN,Energy_Use_Per_Capita,2009,1728.61645229501
+China,CHN,Energy_Use_Per_Capita,2008,1629.97754209383
+China,CHN,Energy_Use_Per_Capita,2007,1595.46606847798
+China,CHN,Energy_Use_Per_Capita,2006,1490.18647938836
+China,CHN,Energy_Use_Per_Capita,2005,1369.79197119649
+China,CHN,Energy_Use_Per_Capita,2004,1249.04415339994
+China,CHN,Energy_Use_Per_Capita,2003,1105.13742396493
+China,CHN,Energy_Use_Per_Capita,2002,976.159336791292
+China,CHN,Energy_Use_Per_Capita,2001,921.506436459842
+China,CHN,Energy_Use_Per_Capita,2000,898.07500446721
+China,CHN,Energy_Use_Per_Capita,1999,880.738578841902
+China,CHN,Energy_Use_Per_Capita,1998,872.405987083978
+China,CHN,Energy_Use_Per_Capita,1997,876.489344673065
+China,CHN,Energy_Use_Per_Capita,1996,884.894160616361
+China,CHN,Energy_Use_Per_Capita,1995,872.82633002387
+China,CHN,Energy_Use_Per_Capita,1994,821.273750333988
+China,CHN,Energy_Use_Per_Capita,1993,792.633509359554
+China,CHN,Energy_Use_Per_Capita,1992,756.63514647117
+China,CHN,Energy_Use_Per_Capita,1991,740.586120549437
+China,CHN,Energy_Use_Per_Capita,1990,773.250116673841
+India,IND,Energy_Use_Per_Capita,2023,763.197899394641
+India,IND,Energy_Use_Per_Capita,2022,727.902200094024
+India,IND,Energy_Use_Per_Capita,2021,676.814293488143
+India,IND,Energy_Use_Per_Capita,2020,632.239828540427
+India,IND,Energy_Use_Per_Capita,2019,666.977347524506
+India,IND,Energy_Use_Per_Capita,2018,668.303370218852
+India,IND,Energy_Use_Per_Capita,2017,648.014718317903
+India,IND,Energy_Use_Per_Capita,2016,627.273531026365
+India,IND,Energy_Use_Per_Capita,2015,622.339883988149
+India,IND,Energy_Use_Per_Capita,2014,610.165371779455
+India,IND,Energy_Use_Per_Capita,2013,577.254621645988
+India,IND,Energy_Use_Per_Capita,2012,572.133085479526
+India,IND,Energy_Use_Per_Capita,2011,546.675890208969
+India,IND,Energy_Use_Per_Capita,2010,531.86706609011
+India,IND,Energy_Use_Per_Capita,2009,509.446000134302
+India,IND,Energy_Use_Per_Capita,2008,481.553027437162
+India,IND,Energy_Use_Per_Capita,2007,461.201738250187
+India,IND,Energy_Use_Per_Capita,2006,441.785886693878
+India,IND,Energy_Use_Per_Capita,2005,425.369642526643
+India,IND,Energy_Use_Per_Capita,2004,415.47995649887
+India,IND,Energy_Use_Per_Capita,2003,399.699897139001
+India,IND,Energy_Use_Per_Capita,2002,397.344252941148
+India,IND,Energy_Use_Per_Capita,2001,393.38088619861
+India,IND,Energy_Use_Per_Capita,2000,394.916803104241
+India,IND,Energy_Use_Per_Capita,1999,392.976731815711
+India,IND,Energy_Use_Per_Capita,1998,378.300390670302
+India,IND,Energy_Use_Per_Capita,1997,376.185592059812
+India,IND,Energy_Use_Per_Capita,1996,367.704650910734
+India,IND,Energy_Use_Per_Capita,1995,361.640673294246
+India,IND,Energy_Use_Per_Capita,1994,347.806182247067
+India,IND,Energy_Use_Per_Capita,1993,339.038033254784
+India,IND,Energy_Use_Per_Capita,1992,336.206818642044
+India,IND,Energy_Use_Per_Capita,1991,331.222087309417
+India,IND,Energy_Use_Per_Capita,1990,323.595830731166
+Brazil,BRA,Energy_Use_Per_Capita,2024,1511.62383133688
+Brazil,BRA,Energy_Use_Per_Capita,2023,1481.22439922518
+Brazil,BRA,Energy_Use_Per_Capita,2022,1432.72741132919
+Brazil,BRA,Energy_Use_Per_Capita,2021,1430.3934661032
+Brazil,BRA,Energy_Use_Per_Capita,2020,1379.24649914162
+Brazil,BRA,Energy_Use_Per_Capita,2019,1415.83477031974
+Brazil,BRA,Energy_Use_Per_Capita,2018,1403.40232453429
+Brazil,BRA,Energy_Use_Per_Capita,2017,1431.95949698072
+Brazil,BRA,Energy_Use_Per_Capita,2016,1414.8979311951
+Brazil,BRA,Energy_Use_Per_Capita,2015,1482.02057858653
+Brazil,BRA,Energy_Use_Per_Capita,2014,1522.42189026812
+Brazil,BRA,Energy_Use_Per_Capita,2013,1487.45745839708
+Brazil,BRA,Energy_Use_Per_Capita,2012,1433.15306444735
+Brazil,BRA,Energy_Use_Per_Capita,2011,1390.00783643031
+Brazil,BRA,Energy_Use_Per_Capita,2010,1384.36896688389
+Brazil,BRA,Energy_Use_Per_Capita,2009,1262.10043812649
+Brazil,BRA,Energy_Use_Per_Capita,2008,1317.23578420454
+Brazil,BRA,Energy_Use_Per_Capita,2007,1259.91135986965
+Brazil,BRA,Energy_Use_Per_Capita,2006,1202.05933940304
+Brazil,BRA,Energy_Use_Per_Capita,2005,1173.71585743449
+Brazil,BRA,Energy_Use_Per_Capita,2004,1157.16905577095
+Brazil,BRA,Energy_Use_Per_Capita,2003,1107.9739157885
+Brazil,BRA,Energy_Use_Per_Capita,2002,1103.40127916211
+Brazil,BRA,Energy_Use_Per_Capita,2001,1086.99299318566
+Brazil,BRA,Energy_Use_Per_Capita,2000,1081.36193393467
+Brazil,BRA,Energy_Use_Per_Capita,1999,1091.29495874763
+Brazil,BRA,Energy_Use_Per_Capita,1998,1082.21810429873
+Brazil,BRA,Energy_Use_Per_Capita,1997,1072.29461426603
+Brazil,BRA,Energy_Use_Per_Capita,1996,1035.82555427523
+Brazil,BRA,Energy_Use_Per_Capita,1995,998.777374735819
+Brazil,BRA,Energy_Use_Per_Capita,1994,980.074664998028
+Brazil,BRA,Energy_Use_Per_Capita,1993,945.489101780969
+Brazil,BRA,Energy_Use_Per_Capita,1992,937.431462820155
+Brazil,BRA,Energy_Use_Per_Capita,1991,943.263545697103
+Brazil,BRA,Energy_Use_Per_Capita,1990,942.317182249676
+Indonesia,IDN,Energy_Use_Per_Capita,2023,982.414925134717
+Indonesia,IDN,Energy_Use_Per_Capita,2022,958.649355730549
+Indonesia,IDN,Energy_Use_Per_Capita,2021,902.233603991512
+Indonesia,IDN,Energy_Use_Per_Capita,2020,856.09619536168
+Indonesia,IDN,Energy_Use_Per_Capita,2019,850.737725717128
+Indonesia,IDN,Energy_Use_Per_Capita,2018,832.361861659109
+Indonesia,IDN,Energy_Use_Per_Capita,2017,761.410391560642
+Indonesia,IDN,Energy_Use_Per_Capita,2016,724.416482652765
+Indonesia,IDN,Energy_Use_Per_Capita,2015,704.248178401597
+Indonesia,IDN,Energy_Use_Per_Capita,2014,710.040590892745
+Indonesia,IDN,Energy_Use_Per_Capita,2013,701.22584018312
+Indonesia,IDN,Energy_Use_Per_Capita,2012,685.571308766816
+Indonesia,IDN,Energy_Use_Per_Capita,2011,670.381187274325
+Indonesia,IDN,Energy_Use_Per_Capita,2010,674.428442918075
+Indonesia,IDN,Energy_Use_Per_Capita,2009,674.894542379565
+Indonesia,IDN,Energy_Use_Per_Capita,2008,632.507070175417
+Indonesia,IDN,Energy_Use_Per_Capita,2007,628.600516176574
+Indonesia,IDN,Energy_Use_Per_Capita,2006,643.624656628862
+Indonesia,IDN,Energy_Use_Per_Capita,2005,637.329758271386
+Indonesia,IDN,Energy_Use_Per_Capita,2004,634.752388297531
+Indonesia,IDN,Energy_Use_Per_Capita,2003,597.275615070065
+Indonesia,IDN,Energy_Use_Per_Capita,2002,606.322305750967
+Indonesia,IDN,Energy_Use_Per_Capita,2001,591.12494475388
+Indonesia,IDN,Energy_Use_Per_Capita,2000,585.786495774263
+Indonesia,IDN,Energy_Use_Per_Capita,1999,587.052743287001
+Indonesia,IDN,Energy_Use_Per_Capita,1998,567.577817932084
+Indonesia,IDN,Energy_Use_Per_Capita,1997,595.387791448216
+Indonesia,IDN,Energy_Use_Per_Capita,1996,587.218752078902
+Indonesia,IDN,Energy_Use_Per_Capita,1995,574.757187942779
+Indonesia,IDN,Energy_Use_Per_Capita,1994,524.021858215958
+Indonesia,IDN,Energy_Use_Per_Capita,1993,534.334769070592
+Indonesia,IDN,Energy_Use_Per_Capita,1992,489.759547327284
+Indonesia,IDN,Energy_Use_Per_Capita,1991,477.034665447769
+Indonesia,IDN,Energy_Use_Per_Capita,1990,461.47874965682
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2023,9139.5423044996
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2022,8303.27667116047
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2021,8500.46410586578
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2020,8105.43812949633
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2019,8736.63609388178
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2018,8363.00928463633
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2017,8378.97733971587
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2016,10191.6184664294
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2015,9973.9828745403
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2014,9398.40039523838
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2013,8654.48549263775
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2012,8466.34602792332
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2011,8498.19879197847
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2010,8849.86287819387
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2009,9445.23902000287
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2008,9425.05532774732
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2007,8929.1273242532
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2006,9239.04144595382
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2005,9535.07550578601
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2004,9441.12715739602
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2003,10102.2168560285
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2002,10866.2518811768
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2001,11703.2751045514
+United Arab Emirates,ARE,Energy_Use_Per_Capita,2000,8956.94929901911
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1999,9839.14403490257
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1998,10375.285992572
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1997,10941.7465226956
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1996,11250.1691193254
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1995,11360.9014709113
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1994,11178.3984813089
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1993,10572.6698308454
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1992,10562.8994380617
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1991,11690.0970198374
+United Arab Emirates,ARE,Energy_Use_Per_Capita,1990,10740.8429217188
+Russia,RUS,Electricity_Access,2024,100.0
+Russia,RUS,Electricity_Access,2023,100.0
+Russia,RUS,Electricity_Access,2022,100.0
+Russia,RUS,Electricity_Access,2021,100.0
+Russia,RUS,Electricity_Access,2020,99.9
+Russia,RUS,Electricity_Access,2019,99.8
+Russia,RUS,Electricity_Access,2018,100.0
+Russia,RUS,Electricity_Access,2017,100.0
+Russia,RUS,Electricity_Access,2016,99.4
+Russia,RUS,Electricity_Access,2015,95.5
+Russia,RUS,Electricity_Access,2014,100.0
+Russia,RUS,Electricity_Access,2013,100.0
+Russia,RUS,Electricity_Access,2012,100.0
+Russia,RUS,Electricity_Access,2011,99.2
+Russia,RUS,Electricity_Access,2010,99.3
+Russia,RUS,Electricity_Access,2009,98.4
+Russia,RUS,Electricity_Access,2008,98.3
+Russia,RUS,Electricity_Access,2007,98.2
+Russia,RUS,Electricity_Access,2006,98.1
+Russia,RUS,Electricity_Access,2005,98.0
+Russia,RUS,Electricity_Access,2004,98.0
+Russia,RUS,Electricity_Access,2003,97.9
+Russia,RUS,Electricity_Access,2002,97.9
+Russia,RUS,Electricity_Access,2001,97.9
+Russia,RUS,Electricity_Access,2000,97.8
+Russia,RUS,Electricity_Access,1999,100.0
+Russia,RUS,Electricity_Access,1998,100.0
+Russia,RUS,Electricity_Access,1997,100.0
+Russia,RUS,Electricity_Access,1996,100.0
+Russia,RUS,Electricity_Access,1995,100.0
+Russia,RUS,Electricity_Access,1994,100.0
+Russia,RUS,Electricity_Access,1993,100.0
+Russia,RUS,Electricity_Access,1992,100.0
+Russia,RUS,Electricity_Access,1991,100.0
+Russia,RUS,Electricity_Access,1990,100.0
+Saudi Arabia,SAU,Electricity_Access,2024,100.0
+Saudi Arabia,SAU,Electricity_Access,2023,100.0
+Saudi Arabia,SAU,Electricity_Access,2022,100.0
+Saudi Arabia,SAU,Electricity_Access,2021,100.0
+Saudi Arabia,SAU,Electricity_Access,2020,100.0
+Saudi Arabia,SAU,Electricity_Access,2019,100.0
+Saudi Arabia,SAU,Electricity_Access,2018,99.9
+Saudi Arabia,SAU,Electricity_Access,2017,100.0
+Saudi Arabia,SAU,Electricity_Access,2016,99.9
+Saudi Arabia,SAU,Electricity_Access,2015,100.0
+Saudi Arabia,SAU,Electricity_Access,2014,100.0
+Saudi Arabia,SAU,Electricity_Access,2013,100.0
+Saudi Arabia,SAU,Electricity_Access,2012,100.0
+Saudi Arabia,SAU,Electricity_Access,2011,100.0
+Saudi Arabia,SAU,Electricity_Access,2010,100.0
+Saudi Arabia,SAU,Electricity_Access,2009,100.0
+Saudi Arabia,SAU,Electricity_Access,2008,100.0
+Saudi Arabia,SAU,Electricity_Access,2007,100.0
+Saudi Arabia,SAU,Electricity_Access,2006,100.0
+Saudi Arabia,SAU,Electricity_Access,2005,100.0
+Saudi Arabia,SAU,Electricity_Access,2004,100.0
+Saudi Arabia,SAU,Electricity_Access,2003,100.0
+Saudi Arabia,SAU,Electricity_Access,2002,100.0
+Saudi Arabia,SAU,Electricity_Access,2001,100.0
+Saudi Arabia,SAU,Electricity_Access,2000,100.0
+Saudi Arabia,SAU,Electricity_Access,1999,100.0
+Saudi Arabia,SAU,Electricity_Access,1998,100.0
+Saudi Arabia,SAU,Electricity_Access,1997,100.0
+Saudi Arabia,SAU,Electricity_Access,1996,100.0
+Saudi Arabia,SAU,Electricity_Access,1995,100.0
+Saudi Arabia,SAU,Electricity_Access,1994,100.0
+Saudi Arabia,SAU,Electricity_Access,1993,100.0
+Saudi Arabia,SAU,Electricity_Access,1992,100.0
+Saudi Arabia,SAU,Electricity_Access,1991,100.0
+Saudi Arabia,SAU,Electricity_Access,1990,100.0
+United States,USA,Electricity_Access,2024,100.0
+United States,USA,Electricity_Access,2023,100.0
+United States,USA,Electricity_Access,2022,100.0
+United States,USA,Electricity_Access,2021,100.0
+United States,USA,Electricity_Access,2020,100.0
+United States,USA,Electricity_Access,2019,100.0
+United States,USA,Electricity_Access,2018,100.0
+United States,USA,Electricity_Access,2017,100.0
+United States,USA,Electricity_Access,2016,100.0
+United States,USA,Electricity_Access,2015,100.0
+United States,USA,Electricity_Access,2014,100.0
+United States,USA,Electricity_Access,2013,100.0
+United States,USA,Electricity_Access,2012,100.0
+United States,USA,Electricity_Access,2011,100.0
+United States,USA,Electricity_Access,2010,100.0
+United States,USA,Electricity_Access,2009,100.0
+United States,USA,Electricity_Access,2008,100.0
+United States,USA,Electricity_Access,2007,100.0
+United States,USA,Electricity_Access,2006,100.0
+United States,USA,Electricity_Access,2005,100.0
+United States,USA,Electricity_Access,2004,100.0
+United States,USA,Electricity_Access,2003,100.0
+United States,USA,Electricity_Access,2002,100.0
+United States,USA,Electricity_Access,2001,100.0
+United States,USA,Electricity_Access,2000,100.0
+United States,USA,Electricity_Access,1999,100.0
+United States,USA,Electricity_Access,1998,100.0
+United States,USA,Electricity_Access,1997,100.0
+United States,USA,Electricity_Access,1996,100.0
+United States,USA,Electricity_Access,1995,100.0
+United States,USA,Electricity_Access,1994,100.0
+United States,USA,Electricity_Access,1993,100.0
+United States,USA,Electricity_Access,1992,100.0
+United States,USA,Electricity_Access,1991,100.0
+United States,USA,Electricity_Access,1990,100.0
+China,CHN,Electricity_Access,2024,100.0
+China,CHN,Electricity_Access,2023,100.0
+China,CHN,Electricity_Access,2022,100.0
+China,CHN,Electricity_Access,2021,100.0
+China,CHN,Electricity_Access,2020,100.0
+China,CHN,Electricity_Access,2019,100.0
+China,CHN,Electricity_Access,2018,100.0
+China,CHN,Electricity_Access,2017,100.0
+China,CHN,Electricity_Access,2016,100.0
+China,CHN,Electricity_Access,2015,100.0
+China,CHN,Electricity_Access,2014,100.0
+China,CHN,Electricity_Access,2013,100.0
+China,CHN,Electricity_Access,2012,99.9
+China,CHN,Electricity_Access,2011,99.9
+China,CHN,Electricity_Access,2010,99.7
+China,CHN,Electricity_Access,2009,99.1
+China,CHN,Electricity_Access,2008,98.8
+China,CHN,Electricity_Access,2007,98.5
+China,CHN,Electricity_Access,2006,98.2
+China,CHN,Electricity_Access,2005,97.9
+China,CHN,Electricity_Access,2004,97.7
+China,CHN,Electricity_Access,2003,97.4
+China,CHN,Electricity_Access,2002,97.2
+China,CHN,Electricity_Access,2001,97.0
+China,CHN,Electricity_Access,2000,96.7
+India,IND,Electricity_Access,2024,99.9
+India,IND,Electricity_Access,2023,99.5
+India,IND,Electricity_Access,2022,99.2
+India,IND,Electricity_Access,2021,99.6
+India,IND,Electricity_Access,2020,96.5
+India,IND,Electricity_Access,2019,95.9
+India,IND,Electricity_Access,2018,95.7
+India,IND,Electricity_Access,2017,91.8
+India,IND,Electricity_Access,2016,89.6
+India,IND,Electricity_Access,2015,88.0
+India,IND,Electricity_Access,2014,85.1
+India,IND,Electricity_Access,2013,83.1
+India,IND,Electricity_Access,2012,79.9
+India,IND,Electricity_Access,2011,79.5
+India,IND,Electricity_Access,2010,76.3
+India,IND,Electricity_Access,2009,75.0
+India,IND,Electricity_Access,2008,74.1
+India,IND,Electricity_Access,2007,72.3
+India,IND,Electricity_Access,2006,67.9
+India,IND,Electricity_Access,2005,68.8
+India,IND,Electricity_Access,2004,64.4
+India,IND,Electricity_Access,2003,65.4
+India,IND,Electricity_Access,2002,62.3
+India,IND,Electricity_Access,2001,62.0
+India,IND,Electricity_Access,2000,60.3
+India,IND,Electricity_Access,1999,60.1
+India,IND,Electricity_Access,1998,56.1821327209473
+India,IND,Electricity_Access,1997,54.5948638916016
+India,IND,Electricity_Access,1996,53.0035209655762
+India,IND,Electricity_Access,1995,51.4087753295898
+India,IND,Electricity_Access,1994,49.8113098144531
+India,IND,Electricity_Access,1993,50.9
+Brazil,BRA,Electricity_Access,2024,99.8
+Brazil,BRA,Electricity_Access,2023,99.8
+Brazil,BRA,Electricity_Access,2022,100.0
+Brazil,BRA,Electricity_Access,2021,99.5
+Brazil,BRA,Electricity_Access,2020,99.7
+Brazil,BRA,Electricity_Access,2019,99.8
+Brazil,BRA,Electricity_Access,2018,99.7
+Brazil,BRA,Electricity_Access,2017,99.8
+Brazil,BRA,Electricity_Access,2016,99.7
+Brazil,BRA,Electricity_Access,2015,99.7
+Brazil,BRA,Electricity_Access,2014,99.7
+Brazil,BRA,Electricity_Access,2013,99.6
+Brazil,BRA,Electricity_Access,2012,99.5
+Brazil,BRA,Electricity_Access,2011,99.3
+Brazil,BRA,Electricity_Access,2010,98.6
+Brazil,BRA,Electricity_Access,2009,98.9
+Brazil,BRA,Electricity_Access,2008,98.5
+Brazil,BRA,Electricity_Access,2007,98.1
+Brazil,BRA,Electricity_Access,2006,97.6
+Brazil,BRA,Electricity_Access,2005,97.1
+Brazil,BRA,Electricity_Access,2004,96.8
+Brazil,BRA,Electricity_Access,2003,97.0
+Brazil,BRA,Electricity_Access,2002,96.7
+Brazil,BRA,Electricity_Access,2001,96.0
+Brazil,BRA,Electricity_Access,2000,94.4
+Brazil,BRA,Electricity_Access,1999,94.76296
+Brazil,BRA,Electricity_Access,1998,94.193812
+Brazil,BRA,Electricity_Access,1997,93.354139
+Brazil,BRA,Electricity_Access,1996,92.867095
+Brazil,BRA,Electricity_Access,1995,91.728598
+Brazil,BRA,Electricity_Access,1994,91.8837280273438
+Brazil,BRA,Electricity_Access,1993,89.999927
+Brazil,BRA,Electricity_Access,1992,88.803833
+Brazil,BRA,Electricity_Access,1991,90.6065444946289
+Brazil,BRA,Electricity_Access,1990,87.475116
+Indonesia,IDN,Electricity_Access,2024,99.9
+Indonesia,IDN,Electricity_Access,2023,99.4
+Indonesia,IDN,Electricity_Access,2022,100.0
+Indonesia,IDN,Electricity_Access,2021,99.2
+Indonesia,IDN,Electricity_Access,2020,97.0
+Indonesia,IDN,Electricity_Access,2019,98.8
+Indonesia,IDN,Electricity_Access,2018,98.5
+Indonesia,IDN,Electricity_Access,2017,98.1
+Indonesia,IDN,Electricity_Access,2016,97.6
+Indonesia,IDN,Electricity_Access,2015,97.5
+Indonesia,IDN,Electricity_Access,2014,97.0
+Indonesia,IDN,Electricity_Access,2013,96.5
+Indonesia,IDN,Electricity_Access,2012,96.0
+Indonesia,IDN,Electricity_Access,2011,94.8
+Indonesia,IDN,Electricity_Access,2010,94.2
+Indonesia,IDN,Electricity_Access,2009,93.6
+Indonesia,IDN,Electricity_Access,2008,92.7
+Indonesia,IDN,Electricity_Access,2007,91.1
+Indonesia,IDN,Electricity_Access,2006,90.6
+Indonesia,IDN,Electricity_Access,2005,84.8
+Indonesia,IDN,Electricity_Access,2004,89.0
+Indonesia,IDN,Electricity_Access,2003,87.9
+Indonesia,IDN,Electricity_Access,2002,87.6
+Indonesia,IDN,Electricity_Access,2001,86.3
+Indonesia,IDN,Electricity_Access,2000,86.3
+Indonesia,IDN,Electricity_Access,1999,83.73
+Indonesia,IDN,Electricity_Access,1998,80.94
+Indonesia,IDN,Electricity_Access,1997,80.3
+Indonesia,IDN,Electricity_Access,1996,72.39
+Indonesia,IDN,Electricity_Access,1995,66.86
+Indonesia,IDN,Electricity_Access,1994,62.8
+Indonesia,IDN,Electricity_Access,1993,55.43
+Indonesia,IDN,Electricity_Access,1992,66.6965637207031
+Indonesia,IDN,Electricity_Access,1991,48.9
+United Arab Emirates,ARE,Electricity_Access,2024,100.0
+United Arab Emirates,ARE,Electricity_Access,2023,100.0
+United Arab Emirates,ARE,Electricity_Access,2022,100.0
+United Arab Emirates,ARE,Electricity_Access,2021,100.0
+United Arab Emirates,ARE,Electricity_Access,2020,100.0
+United Arab Emirates,ARE,Electricity_Access,2019,100.0
+United Arab Emirates,ARE,Electricity_Access,2018,100.0
+United Arab Emirates,ARE,Electricity_Access,2017,100.0
+United Arab Emirates,ARE,Electricity_Access,2016,100.0
+United Arab Emirates,ARE,Electricity_Access,2015,100.0
+United Arab Emirates,ARE,Electricity_Access,2014,100.0
+United Arab Emirates,ARE,Electricity_Access,2013,100.0
+United Arab Emirates,ARE,Electricity_Access,2012,100.0
+United Arab Emirates,ARE,Electricity_Access,2011,100.0
+United Arab Emirates,ARE,Electricity_Access,2010,100.0
+United Arab Emirates,ARE,Electricity_Access,2009,100.0
+United Arab Emirates,ARE,Electricity_Access,2008,100.0
+United Arab Emirates,ARE,Electricity_Access,2007,100.0
+United Arab Emirates,ARE,Electricity_Access,2006,100.0
+United Arab Emirates,ARE,Electricity_Access,2005,100.0
+United Arab Emirates,ARE,Electricity_Access,2004,100.0
+United Arab Emirates,ARE,Electricity_Access,2003,100.0
+United Arab Emirates,ARE,Electricity_Access,2002,100.0
+United Arab Emirates,ARE,Electricity_Access,2001,100.0
+United Arab Emirates,ARE,Electricity_Access,2000,100.0
+United Arab Emirates,ARE,Electricity_Access,1999,100.0
+United Arab Emirates,ARE,Electricity_Access,1998,100.0
+United Arab Emirates,ARE,Electricity_Access,1997,100.0
+United Arab Emirates,ARE,Electricity_Access,1996,100.0
+United Arab Emirates,ARE,Electricity_Access,1995,100.0
+United Arab Emirates,ARE,Electricity_Access,1994,100.0
+United Arab Emirates,ARE,Electricity_Access,1993,100.0
+United Arab Emirates,ARE,Electricity_Access,1992,100.0
+United Arab Emirates,ARE,Electricity_Access,1991,100.0
+United Arab Emirates,ARE,Electricity_Access,1990,100.0
+Russia,RUS,Coal_Consumption_Pct,2023,9.46
+Russia,RUS,Coal_Consumption_Pct,2022,9.27
+Russia,RUS,Coal_Consumption_Pct,2021,9.38
+Russia,RUS,Coal_Consumption_Pct,2020,10.22
+Russia,RUS,Coal_Consumption_Pct,2019,9.71
+Russia,RUS,Coal_Consumption_Pct,2018,9.15
+Russia,RUS,Coal_Consumption_Pct,2017,9.51
+Russia,RUS,Coal_Consumption_Pct,2016,9.45
+Russia,RUS,Coal_Consumption_Pct,2015,9.48
+Russia,RUS,Coal_Consumption_Pct,2014,8.84
+Russia,RUS,Coal_Consumption_Pct,2013,8.62
+Russia,RUS,Coal_Consumption_Pct,2012,8.46
+Russia,RUS,Coal_Consumption_Pct,2011,8.4
+Russia,RUS,Coal_Consumption_Pct,2010,8.58
+Russia,RUS,Coal_Consumption_Pct,2009,9.02
+Russia,RUS,Coal_Consumption_Pct,2008,8.34
+Russia,RUS,Coal_Consumption_Pct,2007,8.58
+Russia,RUS,Coal_Consumption_Pct,2006,8.41
+Russia,RUS,Coal_Consumption_Pct,2005,8.35
+Russia,RUS,Coal_Consumption_Pct,2004,8.27
+Russia,RUS,Coal_Consumption_Pct,2003,8.24
+Russia,RUS,Coal_Consumption_Pct,2002,8.24
+Russia,RUS,Coal_Consumption_Pct,2001,8.16
+Russia,RUS,Coal_Consumption_Pct,2000,7.84
+Russia,RUS,Coal_Consumption_Pct,1999,7.54
+Russia,RUS,Coal_Consumption_Pct,1998,7.05
+Russia,RUS,Coal_Consumption_Pct,1997,6.99
+Russia,RUS,Coal_Consumption_Pct,1996,6.66
+Russia,RUS,Coal_Consumption_Pct,1995,6.49
+Russia,RUS,Coal_Consumption_Pct,1994,6.23
+Russia,RUS,Coal_Consumption_Pct,1993,6.17
+Russia,RUS,Coal_Consumption_Pct,1992,5.83
+Russia,RUS,Coal_Consumption_Pct,1991,5.29
+Russia,RUS,Coal_Consumption_Pct,1990,5.18
+Saudi Arabia,SAU,Coal_Consumption_Pct,2023,0.11
+Saudi Arabia,SAU,Coal_Consumption_Pct,2022,0.11
+Saudi Arabia,SAU,Coal_Consumption_Pct,2021,0.05
+Saudi Arabia,SAU,Coal_Consumption_Pct,2020,0.05
+Saudi Arabia,SAU,Coal_Consumption_Pct,2019,0.03
+Saudi Arabia,SAU,Coal_Consumption_Pct,2018,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2017,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2016,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2015,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2014,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2013,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2012,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2011,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2010,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2009,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2008,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2007,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2006,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2005,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2004,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2003,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2002,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2001,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,2000,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1999,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1998,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1997,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1996,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1995,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1994,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1993,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1992,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1991,0.0
+Saudi Arabia,SAU,Coal_Consumption_Pct,1990,0.0
+United States,USA,Coal_Consumption_Pct,2024,14.27
+United States,USA,Coal_Consumption_Pct,2023,14.02
+United States,USA,Coal_Consumption_Pct,2022,13.72
+United States,USA,Coal_Consumption_Pct,2021,13.64
+United States,USA,Coal_Consumption_Pct,2020,14.3
+United States,USA,Coal_Consumption_Pct,2019,13.14
+United States,USA,Coal_Consumption_Pct,2018,13.04
+United States,USA,Coal_Consumption_Pct,2017,13.21
+United States,USA,Coal_Consumption_Pct,2016,12.85
+United States,USA,Coal_Consumption_Pct,2015,12.32
+United States,USA,Coal_Consumption_Pct,2014,12.16
+United States,USA,Coal_Consumption_Pct,2013,12.12
+United States,USA,Coal_Consumption_Pct,2012,11.97
+United States,USA,Coal_Consumption_Pct,2011,12.04
+United States,USA,Coal_Consumption_Pct,2010,11.74
+United States,USA,Coal_Consumption_Pct,2009,11.84
+United States,USA,Coal_Consumption_Pct,2008,11.2
+United States,USA,Coal_Consumption_Pct,2007,10.82
+United States,USA,Coal_Consumption_Pct,2006,10.9
+United States,USA,Coal_Consumption_Pct,2005,10.62
+United States,USA,Coal_Consumption_Pct,2004,10.69
+United States,USA,Coal_Consumption_Pct,2003,10.62
+United States,USA,Coal_Consumption_Pct,2002,10.79
+United States,USA,Coal_Consumption_Pct,2001,10.66
+United States,USA,Coal_Consumption_Pct,2000,10.77
+United States,USA,Coal_Consumption_Pct,1999,10.9
+United States,USA,Coal_Consumption_Pct,1998,10.48
+United States,USA,Coal_Consumption_Pct,1997,10.12
+United States,USA,Coal_Consumption_Pct,1996,10.93
+United States,USA,Coal_Consumption_Pct,1995,10.96
+United States,USA,Coal_Consumption_Pct,1994,10.55
+United States,USA,Coal_Consumption_Pct,1993,10.43
+United States,USA,Coal_Consumption_Pct,1992,10.58
+United States,USA,Coal_Consumption_Pct,1991,10.81
+United States,USA,Coal_Consumption_Pct,1990,10.3
+China,CHN,Coal_Consumption_Pct,2023,9.76
+China,CHN,Coal_Consumption_Pct,2022,9.73
+China,CHN,Coal_Consumption_Pct,2021,9.3
+China,CHN,Coal_Consumption_Pct,2020,8.94
+China,CHN,Coal_Consumption_Pct,2019,8.62
+China,CHN,Coal_Consumption_Pct,2018,8.05
+China,CHN,Coal_Consumption_Pct,2017,7.54
+China,CHN,Coal_Consumption_Pct,2016,7.09
+China,CHN,Coal_Consumption_Pct,2015,6.25
+China,CHN,Coal_Consumption_Pct,2014,5.57
+China,CHN,Coal_Consumption_Pct,2013,4.94
+China,CHN,Coal_Consumption_Pct,2012,4.42
+China,CHN,Coal_Consumption_Pct,2011,3.73
+China,CHN,Coal_Consumption_Pct,2010,3.74
+China,CHN,Coal_Consumption_Pct,2009,3.6
+China,CHN,Coal_Consumption_Pct,2008,3.56
+China,CHN,Coal_Consumption_Pct,2007,3.07
+China,CHN,Coal_Consumption_Pct,2006,2.93
+China,CHN,Coal_Consumption_Pct,2005,2.94
+China,CHN,Coal_Consumption_Pct,2004,2.92
+China,CHN,Coal_Consumption_Pct,2003,2.74
+China,CHN,Coal_Consumption_Pct,2002,2.73
+China,CHN,Coal_Consumption_Pct,2001,2.63
+China,CHN,Coal_Consumption_Pct,2000,2.26
+China,CHN,Coal_Consumption_Pct,1999,2.1
+China,CHN,Coal_Consumption_Pct,1998,2.13
+China,CHN,Coal_Consumption_Pct,1997,2.03
+China,CHN,Coal_Consumption_Pct,1996,1.95
+China,CHN,Coal_Consumption_Pct,1995,1.97
+China,CHN,Coal_Consumption_Pct,1994,1.89
+China,CHN,Coal_Consumption_Pct,1993,1.46
+China,CHN,Coal_Consumption_Pct,1992,1.3
+China,CHN,Coal_Consumption_Pct,1991,1.27
+China,CHN,Coal_Consumption_Pct,1990,1.25
+India,IND,Coal_Consumption_Pct,2023,4.07
+India,IND,Coal_Consumption_Pct,2022,4.25
+India,IND,Coal_Consumption_Pct,2021,4.24
+India,IND,Coal_Consumption_Pct,2020,4.22
+India,IND,Coal_Consumption_Pct,2019,4.16
+India,IND,Coal_Consumption_Pct,2018,3.59
+India,IND,Coal_Consumption_Pct,2017,3.41
+India,IND,Coal_Consumption_Pct,2016,3.35
+India,IND,Coal_Consumption_Pct,2015,3.15
+India,IND,Coal_Consumption_Pct,2014,3.24
+India,IND,Coal_Consumption_Pct,2013,3.39
+India,IND,Coal_Consumption_Pct,2012,3.1
+India,IND,Coal_Consumption_Pct,2011,3.37
+India,IND,Coal_Consumption_Pct,2010,2.96
+India,IND,Coal_Consumption_Pct,2009,2.63
+India,IND,Coal_Consumption_Pct,2008,2.66
+India,IND,Coal_Consumption_Pct,2007,3.03
+India,IND,Coal_Consumption_Pct,2006,3.13
+India,IND,Coal_Consumption_Pct,2005,2.94
+India,IND,Coal_Consumption_Pct,2004,2.69
+India,IND,Coal_Consumption_Pct,2003,2.68
+India,IND,Coal_Consumption_Pct,2002,2.59
+India,IND,Coal_Consumption_Pct,2001,2.75
+India,IND,Coal_Consumption_Pct,2000,2.63
+India,IND,Coal_Consumption_Pct,1999,2.59
+India,IND,Coal_Consumption_Pct,1998,2.69
+India,IND,Coal_Consumption_Pct,1997,2.44
+India,IND,Coal_Consumption_Pct,1996,2.33
+India,IND,Coal_Consumption_Pct,1995,2.42
+India,IND,Coal_Consumption_Pct,1994,2.63
+India,IND,Coal_Consumption_Pct,1993,2.4
+India,IND,Coal_Consumption_Pct,1992,2.56
+India,IND,Coal_Consumption_Pct,1991,2.63
+India,IND,Coal_Consumption_Pct,1990,2.78
+Brazil,BRA,Coal_Consumption_Pct,2024,17.74
+Brazil,BRA,Coal_Consumption_Pct,2023,17.29
+Brazil,BRA,Coal_Consumption_Pct,2022,16.97
+Brazil,BRA,Coal_Consumption_Pct,2021,14.55
+Brazil,BRA,Coal_Consumption_Pct,2020,15.44
+Brazil,BRA,Coal_Consumption_Pct,2019,15.19
+Brazil,BRA,Coal_Consumption_Pct,2018,14.78
+Brazil,BRA,Coal_Consumption_Pct,2017,13.79
+Brazil,BRA,Coal_Consumption_Pct,2016,14.06
+Brazil,BRA,Coal_Consumption_Pct,2015,12.46
+Brazil,BRA,Coal_Consumption_Pct,2014,12.38
+Brazil,BRA,Coal_Consumption_Pct,2013,13.1
+Brazil,BRA,Coal_Consumption_Pct,2012,14.44
+Brazil,BRA,Coal_Consumption_Pct,2011,15.29
+Brazil,BRA,Coal_Consumption_Pct,2010,14.54
+Brazil,BRA,Coal_Consumption_Pct,2009,15.43
+Brazil,BRA,Coal_Consumption_Pct,2008,14.26
+Brazil,BRA,Coal_Consumption_Pct,2007,15.01
+Brazil,BRA,Coal_Consumption_Pct,2006,15.06
+Brazil,BRA,Coal_Consumption_Pct,2005,14.65
+Brazil,BRA,Coal_Consumption_Pct,2004,14.55
+Brazil,BRA,Coal_Consumption_Pct,2003,14.93
+Brazil,BRA,Coal_Consumption_Pct,2002,14.37
+Brazil,BRA,Coal_Consumption_Pct,2001,14.0
+Brazil,BRA,Coal_Consumption_Pct,2000,14.78
+Brazil,BRA,Coal_Consumption_Pct,1999,14.03
+Brazil,BRA,Coal_Consumption_Pct,1998,14.18
+Brazil,BRA,Coal_Consumption_Pct,1997,13.91
+Brazil,BRA,Coal_Consumption_Pct,1996,13.83
+Brazil,BRA,Coal_Consumption_Pct,1995,13.94
+Brazil,BRA,Coal_Consumption_Pct,1994,13.4
+Brazil,BRA,Coal_Consumption_Pct,1993,13.73
+Brazil,BRA,Coal_Consumption_Pct,1992,13.61
+Brazil,BRA,Coal_Consumption_Pct,1991,13.36
+Brazil,BRA,Coal_Consumption_Pct,1990,13.07
+Indonesia,IDN,Coal_Consumption_Pct,2023,11.45
+Indonesia,IDN,Coal_Consumption_Pct,2022,11.68
+Indonesia,IDN,Coal_Consumption_Pct,2021,11.82
+Indonesia,IDN,Coal_Consumption_Pct,2020,12.29
+Indonesia,IDN,Coal_Consumption_Pct,2019,11.27
+Indonesia,IDN,Coal_Consumption_Pct,2018,11.57
+Indonesia,IDN,Coal_Consumption_Pct,2017,11.57
+Indonesia,IDN,Coal_Consumption_Pct,2016,10.4
+Indonesia,IDN,Coal_Consumption_Pct,2015,10.01
+Indonesia,IDN,Coal_Consumption_Pct,2014,10.1
+Indonesia,IDN,Coal_Consumption_Pct,2013,9.83
+Indonesia,IDN,Coal_Consumption_Pct,2012,9.98
+Indonesia,IDN,Coal_Consumption_Pct,2011,10.27
+Indonesia,IDN,Coal_Consumption_Pct,2010,10.59
+Indonesia,IDN,Coal_Consumption_Pct,2009,10.33
+Indonesia,IDN,Coal_Consumption_Pct,2008,10.06
+Indonesia,IDN,Coal_Consumption_Pct,2007,8.75
+Indonesia,IDN,Coal_Consumption_Pct,2006,8.15
+Indonesia,IDN,Coal_Consumption_Pct,2005,8.35
+Indonesia,IDN,Coal_Consumption_Pct,2004,8.49
+Indonesia,IDN,Coal_Consumption_Pct,2003,8.63
+Indonesia,IDN,Coal_Consumption_Pct,2002,8.6
+Indonesia,IDN,Coal_Consumption_Pct,2001,8.78
+Indonesia,IDN,Coal_Consumption_Pct,2000,7.3
+Indonesia,IDN,Coal_Consumption_Pct,1999,4.4
+Indonesia,IDN,Coal_Consumption_Pct,1998,4.48
+Indonesia,IDN,Coal_Consumption_Pct,1997,4.0
+Indonesia,IDN,Coal_Consumption_Pct,1996,3.98
+Indonesia,IDN,Coal_Consumption_Pct,1995,3.87
+Indonesia,IDN,Coal_Consumption_Pct,1994,3.74
+Indonesia,IDN,Coal_Consumption_Pct,1993,2.47
+Indonesia,IDN,Coal_Consumption_Pct,1992,2.82
+Indonesia,IDN,Coal_Consumption_Pct,1991,2.66
+Indonesia,IDN,Coal_Consumption_Pct,1990,2.86
+United Arab Emirates,ARE,Coal_Consumption_Pct,2023,10.49
+United Arab Emirates,ARE,Coal_Consumption_Pct,2022,7.27
+United Arab Emirates,ARE,Coal_Consumption_Pct,2021,3.94
+United Arab Emirates,ARE,Coal_Consumption_Pct,2020,1.26
+United Arab Emirates,ARE,Coal_Consumption_Pct,2019,0.43
+United Arab Emirates,ARE,Coal_Consumption_Pct,2018,0.18
+United Arab Emirates,ARE,Coal_Consumption_Pct,2017,0.14
+United Arab Emirates,ARE,Coal_Consumption_Pct,2016,0.08
+United Arab Emirates,ARE,Coal_Consumption_Pct,2015,0.08
+United Arab Emirates,ARE,Coal_Consumption_Pct,2014,0.09
+United Arab Emirates,ARE,Coal_Consumption_Pct,2013,0.03
+United Arab Emirates,ARE,Coal_Consumption_Pct,2012,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2011,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2010,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2009,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2008,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2007,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2006,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2005,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2004,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2003,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2002,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2001,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,2000,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1999,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1998,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1997,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1996,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1995,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1994,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1993,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1992,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1991,0.0
+United Arab Emirates,ARE,Coal_Consumption_Pct,1990,0.0

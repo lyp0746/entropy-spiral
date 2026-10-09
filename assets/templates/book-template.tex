@@ -1,0 +1,112 @@
+% =============================================================
+%  《社会系统熵增螺旋与脆弱性诊断》——出版级 LaTeX 模板
+%  引擎：XeLaTeX（推荐）或 LuaLaTeX
+%  依赖：ctex, geometry, fontspec, titlesec, booktabs, tcolorbox,
+%        fancyhdr, hyperref, natbib
+%  用法：把各章内容写成 \chapter / \section，\input 进来；
+%        或在章节文件中使用本模板定义的 \definebox / \warnbox 等环境。
+% =============================================================
+\documentclass[UTF8,11pt,a4paper,openany]{ctexbook}
+
+% ------------------------------------------------------------- 页面
+\usepackage{geometry}
+\geometry{top=30mm, bottom=32mm, left=35mm, right=35mm, headsep=6mm, footskip=10mm}
+
+% ------------------------------------------------------------- 字体
+\usepackage{fontspec}
+\usepackage{xeCJK}
+% 英文正文：Times New Roman；中文正文：思源宋体（缺失时回退宋体）
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+\setCJKmainfont{Source Han Serif SC}[
+  Path = , BoldFont = Source Han Serif SC Bold,
+  ItalicFont = Source Han Serif SC ]
+\setCJKsansfont{Source Han Sans SC}[BoldFont = Source Han Sans SC Bold]
+% 若未安装思源字体，改用：\setCJKmainfont{SimSun}\setCJKsansfont{SimHei}
+
+% ------------------------------------------------------------- 行距与段距
+\usepackage{setspace}
+\onehalfspacing                 % 1.5 倍行距
+\setlength{\parskip}{4pt}       % 段间距（约 8pt 视觉节奏）
+\setlength{\parindent}{2em}     % 中文首行缩进
+
+% ------------------------------------------------------------- 标题层级
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\sffamily\bfseries\Large}
+  {}{0pt}{\hspace{-2em}\rule[-0.6em]{4pt}{1.6em}\hspace{0.6em}}
+  [\vspace{-0.4em}\rule{\textwidth}{1pt}]
+\titlespacing*{\chapter}{0pt}{10pt}{24pt}
+\titleformat{\section}{\sffamily\bfseries\large}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+\titleformat{\subsection}{\sffamily\bfseries\normalsize}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% ------------------------------------------------------------- 三线表
+\usepackage{booktabs}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.25}
+% 用法：\begin{tabular}{...}\toprule ... \midrule ... \bottomrule\end{tabular}
+
+% ------------------------------------------------------------- 定义框 / 警告框 / 情景框
+\usepackage[most]{tcolorbox}
+\newtcolorbox{definebox}[1]{
+  colback=blue!4, colframe=blue!55!black, boxrule=0pt, leftrule=3pt,
+  arc=1pt, breakable, fonttitle=\sffamily\bfseries,
+  title={定义 #1}, coltitle=blue!45!black}
+\newtcolorbox{warnbox}[1]{
+  colback=orange!5, colframe=orange!70!black, boxrule=0pt, leftrule=3pt,
+  arc=1pt, breakable, fonttitle=\sffamily\bfseries,
+  title={警告 #1}, coltitle=orange!60!black}
+\newtcolorbox{scenbox}[1]{
+  colback=green!4, colframe=green!45!black, boxrule=0pt, leftrule=3pt,
+  arc=1pt, breakable, fonttitle=\sffamily\bfseries,
+  title={情景 #1}, coltitle=green!35!black}
+
+% ------------------------------------------------------------- 图与公式
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\numberwithin{equation}{chapter}      % 公式按章编号：(4.1)
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf, labelsep=quad}
+\captionsetup[table]{position=top}
+\captionsetup[figure]{position=bottom}
+
+% ------------------------------------------------------------- 页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily 社会系统熵增螺旋与脆弱性诊断}
+\fancyhead[R]{\small\sffamily\leftmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ------------------------------------------------------------- 超链接与引用
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{natbib}
+\bibliographystyle{apalike}     % 作者-年份（Harvard）制
+
+% =============================================================
+\begin{document}
+
+\frontmatter
+\title{\sffamily\bfseries 社会系统熵增螺旋与脆弱性诊断\\[6pt]
+       \large\normalfont 从周期论破产到局部可描述性框架}
+\author{李毅芃}
+\maketitle
+
+\begin{abstract}
+（内容提要：约 300 字，概括问题、方法、主要结果与边界。）
+\end{abstract}
+
+\tableofcontents
+
+\mainmatter
+% 各章：\input{chapters/ch01} ... ch10
+% \input{chapters/ch01}
+
+\backmatter
+\bibliography{references}
+
+\end{document}

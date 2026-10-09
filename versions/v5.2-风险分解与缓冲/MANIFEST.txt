@@ -1,0 +1,75 @@
+v5.2 —— 风险分解与缓冲实测（方案 C：结论入正文、数据入附录）
+===================================================================
+冻结时间：2026-10-08
+
+v5.2：补测缓冲（原计划 v6 项）
+- 表 D.7（USDA PS&D，2022）：小麦——俄 4.2 月 / 乌 4.5 月 / 美 6.1 月；
+  大米——越南 **2.0 月**（最薄）/ 泰 4.2 / 印度 3.7，且印度出口可支撑 **20.7 月**。
+- 推翻两个直觉：越南储备并不好；俄罗斯缓冲并不为零。并入第 8.1.5 节与附录 D.7.1。
+- 新增脚本 analysis/fetch_psd_reserves.py。
+
+方案 C 落地（v5.1）：
+- 核心结论上移正文：
+  · 第 2.7 节新增“框架的实证基础与独立性限制”（相关矩阵摘要）
+  · 第 7 .5 节检验二改写 + 新增警告 7.5.1（β 不可估计）
+  · 第 8.1.5 节新增“情景案例：俄罗斯小麦 vs 管道天然气”
+- 完整数据与推导保留附录：D.6 测量审计、D.7 实测演示。
+- 版本号统一为 v5.1；版权页日期 2026-10-08。
+
+内容：source/（正文）、analysis/*.py（全部脚本）、
+      results/（粮食/能源/跨域结果 + audit.json）、docs、README、校对清单、
+      legacy_v5_work/（V5 早期工作脚本与中间结果，已被 analysis/ 取代）。
+
+本快照**不含**：data/（原始数据，可复现）、faostat_data/（约 4.4 GB，用
+analysis/fetch_faostat.py 重新下载）、.env.build / .env.comtrade（密钥）。
+
+相对 v4 的关键变化
+------------------
+1. 新增「附录 D　跨域探索性检验：粮食与能源」：Θ–I–κ 域的域特异操作化；
+   粮食 8 国（FAOSTAT）、能源 4 国的 V 构造；表 D.1—D.4；图 D.1、D.2。
+   结论诚实：三轴可迁移、对 2021—22 冲击有反应；但复合排序对操作化敏感、
+   跨域相关不可估计（仅 3 个共同国家）。术语表由附录 D 顺延为附录 E。
+2. 更正早期工作稿的两处名称匹配错误：
+   - 美国 = "United States of America"、越南 = "Viet Nam"（FAOSTAT 名称）；
+   - 作物 = "Maize (corn)"、"Soya beans"。
+   更正后美国与越南不再因缺数据被默认值填充。
+3. 发布元数据：版本号统一为 v5；版权页 CC BY 4.0；PDF/EPUB 写入关键词与主题。
+
+新增/修改脚本
+-------------
+analysis/food_energy_validation.py   粮食（FAOSTAT）+ 能源（WB+快速验证集）跨域检验
+analysis/fetch_faostat.py            按需重新下载并解压 FAOSTAT 四个数据集
+analysis/make_figures_v5.py          附录 D 的矢量插图（图 D.1、D.2）
+analysis/audit.py                    A7/A8/A9 检查（插图/公式/内部字串）
+
+复现
+----
+1) python analysis/fetch_faostat.py               # 下载 FAOSTAT（约 4.4 GB）
+2) python analysis/food_energy_validation.py      # 生成 results/food_v_*.csv 等
+3) python analysis/make_figures_v5.py             # 生成图 D.1、D.2
+4) python analysis/audit.py
+5) bash scripts/release.sh                        # 或 scripts/build.sh
+
+说明
+----
+旧工作稿（legacy_v5_work/）中的 integrated_data/ 与 vulnerability_results/ 基于
+上述名称错误，结果不可用；正文一律采用 analysis/results/ 下的更正结果。
+
+v5.1 理论修正（测量审计驱动）
+----------------------------
+1. 框架改为风险研究的标准分解 Risk(S) = Hazard(S) × Exposure × [1 − AdaptiveCapacity]
+   （IPCC / UNDRR）；V 降格为域内监测合成量，不再跳域可比。见第 2.7 节、第 7 章。
+2. 勘误：β(I)≈0 → “未测”。政治经济域 I 零方差，β 无法估计。
+   P7.2 由“支持”改为“未检验”，新增 P7.5；第 5.3、7.2、7.5 节相应修正。
+3. 三轴相关结构（附录 D.6）：Θ–κ 粮食 +0.51、能源 +0.57；政治经济域符号反转；
+   I 在政治经济域未测。非正交只在“加权求和”时致命。
+4. 替代性的商品特异性（附录 D.7）：FAOSTAT 详细贸易矩阵实测——俄罗斯小麦买家分散
+   （有效买家约 9 个），管道天然气买家集中于欧洲。替代性是（国家 × 商品 × 冲击）的函数。
+
+新增脚本与结果
+--------------
+analysis/axis_independence.py           三轴相关结构与测量审计 → results/axis_independence.json
+analysis/food_trade_diversification.py  买家集中度/替代性 → results/food_buyer_concentration.csv
+analysis/fetch_faostat.py               按需下载 FAOSTAT（含 TM，约 9 GB）
+
+本快照不含原始 FAOSTAT（约 13 GB）；复现时先运行 analysis/fetch_faostat.py。

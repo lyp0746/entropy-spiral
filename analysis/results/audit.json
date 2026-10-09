@@ -1,0 +1,3019 @@
+{
+  "A1_terms": {
+    "租佃份额": {
+      "total": 24,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch05.html",
+          6
+        ],
+        [
+          "ch06.html",
+          7
+        ],
+        [
+          "ch07.html",
+          2
+        ],
+        [
+          "ch08.html",
+          5
+        ],
+        [
+          "ch09.html",
+          2
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "垄断份额": {
+      "total": 1,
+      "by_chapter": [
+        [
+          "ch05.html",
+          1
+        ]
+      ],
+      "first": "ch05.html"
+    },
+    "不可逆轴": {
+      "total": 19,
+      "by_chapter": [
+        [
+          "ch01.html",
+          1
+        ],
+        [
+          "ch02.html",
+          9
+        ],
+        [
+          "ch03.html",
+          3
+        ],
+        [
+          "ch05.html",
+          1
+        ],
+        [
+          "ch06.html",
+          1
+        ],
+        [
+          "ch07.html",
+          2
+        ],
+        [
+          "ch08.html",
+          1
+        ],
+        [
+          "ch11.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "脆弱性": {
+      "total": 126,
+      "by_chapter": [
+        [
+          "ch01.html",
+          1
+        ],
+        [
+          "ch02.html",
+          12
+        ],
+        [
+          "ch03.html",
+          7
+        ],
+        [
+          "ch04.html",
+          4
+        ],
+        [
+          "ch05.html",
+          4
+        ],
+        [
+          "ch06.html",
+          7
+        ],
+        [
+          "ch07.html",
+          15
+        ],
+        [
+          "ch08.html",
+          25
+        ],
+        [
+          "ch09.html",
+          24
+        ],
+        [
+          "ch10.html",
+          4
+        ],
+        [
+          "ch11.html",
+          3
+        ],
+        [
+          "ch12.html",
+          4
+        ],
+        [
+          "ch13.html",
+          9
+        ],
+        [
+          "ch14.html",
+          4
+        ],
+        [
+          "ch15.html",
+          3
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "组织复杂度": {
+      "total": 15,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch06.html",
+          6
+        ],
+        [
+          "ch07.html",
+          1
+        ],
+        [
+          "ch08.html",
+          4
+        ],
+        [
+          "ch14.html",
+          3
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "地缘耦合": {
+      "total": 13,
+      "by_chapter": [
+        [
+          "ch01.html",
+          2
+        ],
+        [
+          "ch02.html",
+          2
+        ],
+        [
+          "ch03.html",
+          2
+        ],
+        [
+          "ch07.html",
+          4
+        ],
+        [
+          "ch08.html",
+          3
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "代理": {
+      "total": 149,
+      "by_chapter": [
+        [
+          "ch01.html",
+          16
+        ],
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch05.html",
+          75
+        ],
+        [
+          "ch06.html",
+          14
+        ],
+        [
+          "ch08.html",
+          6
+        ],
+        [
+          "ch09.html",
+          5
+        ],
+        [
+          "ch11.html",
+          22
+        ],
+        [
+          "ch12.html",
+          7
+        ],
+        [
+          "ch14.html",
+          2
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "螺旋": {
+      "total": 46,
+      "by_chapter": [
+        [
+          "ch01.html",
+          3
+        ],
+        [
+          "ch02.html",
+          25
+        ],
+        [
+          "ch03.html",
+          17
+        ],
+        [
+          "ch04.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "相空间": {
+      "total": 16,
+      "by_chapter": [
+        [
+          "ch01.html",
+          6
+        ],
+        [
+          "ch02.html",
+          9
+        ],
+        [
+          "ch12.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "熵": {
+      "total": 20,
+      "by_chapter": [
+        [
+          "ch02.html",
+          5
+        ],
+        [
+          "ch03.html",
+          15
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "局部可描述性": {
+      "total": 11,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch03.html",
+          2
+        ],
+        [
+          "ch09.html",
+          1
+        ],
+        [
+          "ch11.html",
+          7
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "反垄断": {
+      "total": 13,
+      "by_chapter": [
+        [
+          "ch05.html",
+          2
+        ],
+        [
+          "ch06.html",
+          1
+        ],
+        [
+          "ch09.html",
+          4
+        ],
+        [
+          "ch12.html",
+          6
+        ]
+      ],
+      "first": "ch05.html"
+    },
+    "半衰期": {
+      "total": 6,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch08.html",
+          1
+        ],
+        [
+          "ch11.html",
+          4
+        ]
+      ],
+      "first": "ch02.html"
+    }
+  },
+  "A1_definitions": {
+    "1.1": "ch01.html",
+    "1.2": "ch01.html",
+    "2.1": "ch02.html",
+    "2.2": "ch02.html",
+    "3.1": "ch03.html",
+    "3.2": "ch03.html",
+    "3.4": "ch03.html",
+    "3.5": "ch03.html",
+    "3.3": "ch03.html",
+    "4.1": "ch04.html",
+    "4.2": "ch04.html",
+    "4.3": "ch04.html",
+    "5.1": "ch05.html",
+    "5.2": "ch05.html",
+    "5.3": "ch05.html",
+    "5.4": "ch05.html",
+    "5.5": "ch05.html",
+    "6.1": "ch06.html",
+    "7.1": "ch07.html",
+    "7.3": "ch07.html",
+    "8.1": "ch08.html",
+    "8.2": "ch08.html",
+    "8.6": "ch08.html",
+    "8.7": "ch08.html",
+    "8.8": "ch08.html",
+    "10.1": "ch10.html",
+    "11.1": "ch10.html",
+    "10.2": "ch10.html",
+    "10.3": "ch10.html",
+    "11.2": "ch11.html",
+    "11.3": "ch11.html",
+    "12.1": "ch12.html",
+    "12.2": "ch12.html",
+    "12.3": "ch12.html",
+    "13.1": "ch13.html",
+    "13.2": "ch13.html",
+    "13.3": "ch13.html",
+    "14.1": "ch14.html",
+    "14.2": "ch14.html",
+    "14.3": "ch14.html"
+  },
+  "A2_formulas_defined": [
+    "1.1",
+    "10.1",
+    "10.2",
+    "10.3",
+    "11.1",
+    "12.1",
+    "13.1",
+    "13.2",
+    "13.3",
+    "14.1",
+    "14.2",
+    "15.1",
+    "15.2",
+    "15.3",
+    "15.4",
+    "15.5",
+    "15.6",
+    "2.1",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "6.1",
+    "6.2",
+    "7.1",
+    "8.1",
+    "8.2",
+    "8.3",
+    "8.4",
+    "9.1"
+  ],
+  "A2_formula_refs": {
+    "1.1": [
+      "ch01.html"
+    ],
+    "10.1": [
+      "ch10.html",
+      "ch10.html"
+    ],
+    "10.2": [
+      "ch10.html"
+    ],
+    "10.3": [
+      "ch10.html",
+      "ch10.html"
+    ],
+    "13.2": [
+      "ch13.html"
+    ],
+    "13.3": [
+      "ch13.html"
+    ],
+    "15.6": [
+      "ch15.html"
+    ],
+    "2.1": [
+      "ch02.html",
+      "ch02.html"
+    ],
+    "3.4": [
+      "ch03.html",
+      "ch03.html",
+      "ch03.html"
+    ],
+    "6.2": [
+      "ch06.html",
+      "ch06.html",
+      "ch06.html"
+    ],
+    "7.1": [
+      "ch07.html",
+      "ch07.html"
+    ],
+    "8.1": [
+      "ch08.html",
+      "ch09.html",
+      "ch09.html",
+      "ch09.html"
+    ],
+    "8.2": [
+      "ch09.html"
+    ],
+    "9.1": [
+      "ch11.html"
+    ]
+  },
+  "A2_refs_missing_def": [],
+  "A2_continuity": {
+    "ch01.html": {
+      "numbers": [
+        1
+      ],
+      "continuous": true
+    },
+    "ch02.html": {
+      "numbers": [
+        1
+      ],
+      "continuous": true
+    },
+    "ch03.html": {
+      "numbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "continuous": true
+    },
+    "ch05.html": {
+      "numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "continuous": true
+    },
+    "ch06.html": {
+      "numbers": [
+        1,
+        2
+      ],
+      "continuous": true
+    },
+    "ch07.html": {
+      "numbers": [
+        1
+      ],
+      "continuous": true
+    },
+    "ch08.html": {
+      "numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "continuous": true
+    },
+    "ch09.html": {
+      "numbers": [
+        1
+      ],
+      "continuous": true
+    },
+    "ch10.html": {
+      "numbers": [
+        1,
+        2,
+        3
+      ],
+      "continuous": true
+    },
+    "ch11.html": {
+      "numbers": [
+        1
+      ],
+      "continuous": true
+    },
+    "ch12.html": {
+      "numbers": [
+        1
+      ],
+      "continuous": true
+    },
+    "ch13.html": {
+      "numbers": [
+        1,
+        2,
+        3
+      ],
+      "continuous": true
+    },
+    "ch14.html": {
+      "numbers": [
+        1,
+        2
+      ],
+      "continuous": true
+    },
+    "ch15.html": {
+      "numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "continuous": true
+    }
+  },
+  "A3_tables_defined": [
+    "1.1",
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.4",
+    "10.5",
+    "11.1",
+    "11.2",
+    "11.3",
+    "11.4",
+    "11.5",
+    "12.1",
+    "12.2",
+    "12.3",
+    "12.4",
+    "12.5",
+    "13.1",
+    "13.2",
+    "13.3",
+    "13.4",
+    "13.5",
+    "14.1",
+    "14.2",
+    "14.3",
+    "15.1",
+    "15.2",
+    "15.3",
+    "2.1",
+    "2.2",
+    "2.3",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.6",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "5.1",
+    "5.10",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.7",
+    "5.8",
+    "5.9",
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4",
+    "7.1",
+    "7.2",
+    "7.4",
+    "8.1",
+    "8.12",
+    "8.2",
+    "8.3",
+    "8.4",
+    "8.5",
+    "8.6",
+    "9.1",
+    "9.10",
+    "9.11",
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5",
+    "9.6",
+    "9.7",
+    "9.8",
+    "9.9"
+  ],
+  "A3_figures_defined": [
+    "10.1",
+    "10.2",
+    "13.1",
+    "13.2",
+    "14.1",
+    "14.2",
+    "15.1",
+    "15.2",
+    "2.1",
+    "2.2",
+    "3.1",
+    "3.2",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "5.1",
+    "5.2",
+    "5.3",
+    "6.1",
+    "7.1",
+    "7.2",
+    "8.1",
+    "8.2",
+    "8.3",
+    "9.1",
+    "9.2",
+    "9.3"
+  ],
+  "A3_table_refs_missing_def": [],
+  "A3_figure_refs_missing_def": [],
+  "A3_tables_unreferenced": [],
+  "A3_figures_unreferenced": [],
+  "A4_c_grade": [
+    {
+      "chapter": "ch01.html",
+      "snippet": "上式是一个示意性的分解：系统的\"状态变化\"由各维度单独变化之和，加上一个耦合项 Ξ"
+    },
+    {
+      "chapter": "ch01.html",
+      "snippet": "表 1.1　相空间维度与周期模型有效性的示意关系"
+    },
+    {
+      "chapter": "ch01.html",
+      "snippet": "时期示意维度 D周期叙事的地位失效表现"
+    },
+    {
+      "chapter": "ch01.html",
+      "snippet": "性质：示意性对照，非实证估计"
+    },
+    {
+      "chapter": "ch02.html",
+      "snippet": "证据等级A/B（混合）B→CC（示意）"
+    },
+    {
+      "chapter": "ch02.html",
+      "snippet": "性质：定性组合，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "性质：说明性举例，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "性质：说明性，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "性质：说明性，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "注释：速度为量级示意"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "对三根轴，可写出一个示意性的\"总敏感度\"："
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "性质：说明性，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "表 3.5　五类反馈通道的延迟与纠错能力（说明性，质量 C）"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "性质：说明性，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "注释：各列为量级示意与定性判断，不是实测延迟"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "示意性，质量 C"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "表 3.6　制度反馈拓扑的同构类（假说，质量 C）"
+    },
+    {
+      "chapter": "ch03.html",
+      "snippet": "性质：理论分类，质量 C"
+    },
+    {
+      "chapter": "ch04.html",
+      "snippet": "性质：量级示意（质量 C）"
+    },
+    {
+      "chapter": "ch04.html",
+      "snippet": "表 4.2　三情景的时间错配度（示意）"
+    },
+    {
+      "chapter": "ch04.html",
+      "snippet": "性质：量级示意（质量 C）"
+    },
+    {
+      "chapter": "ch04.html",
+      "snippet": "性质：定性归纳（质量 C）"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "P1 盐铁专卖占比盐（含铁）专卖收入／国家财政收入文献描述示意构造（非逐条提取）"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "其余为公开来源或文献描述的指示性构造序列（P1、P4 尤其稀疏，P3、P5、P6 为近似）"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "（历史上曾出现过一条无可靠来源的示意序列，已被本序列取代"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "分行业看（示意，质量 C），集中度的变化高度不均：平台与云计算行业的前四家份额可达 60%—80%，且仍"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "表 5.6 给出一个示意性的行业集中度分类"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "表 5.6　行业集中度异质性（示意，2020 年代）"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "数据来源：公开行业统计的示意整理"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "质量等级：C（仅示意，不作精确引用）"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "注释：表中份额为数量级示意，用于说明\"平均集中度\"掩盖的异质性"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "表 5.7　前现代垄断／地租估计（示意，质量 C）"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "数据来源：经济史文献的示意整理，非逐条提取"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "质量等级：C"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "注释：表中数值为数量级示意，不同研究的估计差异可达数倍"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "质量等级：C（判断性诊断"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "比较中，除了报告 Θ 的水平，还应尽可能报告 γ——即使它只能用方向性证据估计（质量 C）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "表 6.3　I 的作用方向取决于反馈拓扑（框架，质量 C）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "性质：机制框架，质量 C"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "表 6.3b　反馈拓扑诊断清单（操作性工具，质量 C）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "性质：诊断工具（理论，质量 C），不含数值"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "）与第 9 章（案例面板）铺垫，表 6.2 给出三个系统在 I 与 Θ 维度上的示意性定位"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "所有数值为量级示意，用于说明\"高 I 与高 Θ 同时出现\"这一组合，不用于精确比较"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "表 6.2　三个系统的 I 与 Θ 示意定位（2020 年代，量级示意）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "质量等级：C（示意）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "表 6.4　形式复杂度与实际协调时间的背离（示意）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "性质：定性对比（质量 C）"
+    },
+    {
+      "chapter": "ch06.html",
+      "snippet": "注释：Ieffective 的数值为量级示意，用于说明“形式简洁”与“协调迅速”不是一回事"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "历史轨迹为三级（指示性构造，见 7.3 的警告）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "表 7.1 与图 7.1 给出三个维度的示意轨迹"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "必须首先声明：本节尚未接入 WTO／BIS／ITU 原始序列，以下数值为指示性构造，质量等级 C，仅用于说明方向与量级，不可作为实测数据引用"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "表 7.1　全球耦合的三个维度（指示性构造，1980—2026，质量 C）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "数据来源：指示性构造（质量 C）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "质量等级：C"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "按该示意序列，κ 单调上升（ρ=1.00），但增量在 2010 年代后递减而非加速——这"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "图 7.1　地缘耦合的三个维度与合成指数（示意）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "数据为指示性构造，质量 C"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "数值为示意，仅供方向判断（质量 C）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "三点谨慎的观察（均以“按本示意序列”为前提）：（一）κ 单调上升，但商品维度的增速在 2010 年后明显放缓，"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "上述示意序列写入正文后，我们已通过 World Bank API 获取了可引用的真实序列"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "表 7.1c 与本章此前的指示性叙述有一个重要出入：在芯片上，中国的进口来源 HHI（0.213）反而低于日本（"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "表 7.2 给出一个 2×2 的示意矩阵：低 Θ 与高 Θ 分别对应两种稳定性形态，而 κ 决定外部冲击能否被隔离"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "表 7.2　Θ–I–κ 组合与脆弱性（示意）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "性质：理论示意矩阵，非实证结果"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "表 7.4　三个案例的传导速度与放大机制（示意）"
+    },
+    {
+      "chapter": "ch07.html",
+      "snippet": "κ 在三个维度上持续上升（按示意序列），其中信息耦合水平最高、最难替代"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "本节用指示性赋值（质量 C，见 8.6 的说明）对七个系统计算 V，并做三组敏感性检验"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "图 8.2　V 框架与权重敏感性（指示性输入，质量 C）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "f，V 与 FSI 的示意对标"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "警告 8.5.1　输入的指示性必须与结论的强度匹配"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "本节所有 V 值都建立在指示性输入（质量 C）之上，因此不能引用其数值"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "8.6　三大系统的 V 值（指示性）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "表 8.3　七系统脆弱性 V（指示性输入，2026 年量级，质量 C）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "数据来源：指示性赋值（质量 C）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "上述七系统 V 值均为指示性输入"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "象，我们把 V 与世界银行／Fragile States Index（FSI）做示意对标"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "表 8.4 为示意"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "表 8.4　V 与 FSI 的示意对比（质量 C）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "系统V（示意）FSI（0—120）差异解释"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "V 为示意"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "数据来源：AI 算力与成本为公开估计（质量 B/C，量级示意）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "民国与帝制为文献判断（质量 C）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "表 8.12　三个时间指标与 V 的并列报告（示意）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "性质：方法示例（质量 C）"
+    },
+    {
+      "chapter": "ch08.html",
+      "snippet": "在指示性输入下美国 top1 概率 99.4%，但改用 World Bank 真实数据后"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "本章所有数值均为指示性（质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "情景概率是示意性先验，不是估计"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.1 给出四个相关系统的指示性基准"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.1　地缘重组案例的脆弱性基准（指示性，2026Q3，质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "数据来源：指示性赋值（质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.3　地缘重组的监测指标与预警阈值（指示性）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "按式(8.1)(8.2) 的指示性赋值（表 9.2b），霍尔木兹的 Vι ≈ 1.02，在八个节点中居前二"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.2b　全球 κ 脆弱节点索引（指示性，2026Q3，质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "数据来源：指示性赋值（质量 C），由 analysis/kappa_nodes.py 计算"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.4 给出三个系统的指示性基准"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.4　AI 垄断案例的脆弱性基准（指示性，2026Q3，质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "数据来源：指示性赋值（质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.5　AI 垄断的四条演化路径（示意先验，非估计）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "性质：路径为条件情景，概率为先验示意"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "性质：框架应用（质量 C），不含新数值"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "指示性数据（质量 C），数值不可引用"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "质量等级：C（指示性对照，非精确估计）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "注释：中国采用“中央 + 地方广义”口径的示意，不同口径差异大"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "性质：框架应用（质量 C）＋可观测输入（表 9.7c，质量 A）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "表 9.8　全球债务的五种条件情景（示意）"
+    },
+    {
+      "chapter": "ch10.html",
+      "snippet": "性质：方法演示的横向比较（质量 C）"
+    },
+    {
+      "chapter": "ch10.html",
+      "snippet": "数值为量级示意（质量 C）"
+    },
+    {
+      "chapter": "ch10.html",
+      "snippet": "表 10.5　五个补充情景的时间诊断（示意）"
+    },
+    {
+      "chapter": "ch10.html",
+      "snippet": "性质：方向性诊断（质量 C）"
+    },
+    {
+      "chapter": "ch11.html",
+      "snippet": "度量（规则数不等于协调难度）、κ 的实时序列（因尚未接入实时序列，故第 7 章为示意）"
+    },
+    {
+      "chapter": "ch11.html",
+      "snippet": "P7.4美国在脆弱性排序中居首指示性输入下 top1 概率 99.4%，但真实数据下降至第五已检验否证"
+    },
+    {
+      "chapter": "ch12.html",
+      "snippet": "任务：完成 P6.1 的\"C→B\"升级——把第 7 章的示意序列替换为可引用序列"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "图 13.2 给出一个示意：威胁周期随时间缩短，应对时间却随协调阶数增加而延长，二者约在二十世纪末交叉"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "表 13.1　三个时代的可控性结构（示意）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：定性历史归纳（质量 C）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：政策框架（方向性建议，质量 C）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：操作定义（质量 C）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "表 13.5　三个系统的降级优先级示例（示意）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：框架示例（质量 C）"
+    },
+    {
+      "chapter": "ch14.html",
+      "snippet": "把 I 视为时间量，可以给出一个（示意性的）协调概率模型：达成协调的概率随可用时间上升、随参与者数量下降"
+    },
+    {
+      "chapter": "ch14.html",
+      "snippet": "曲线为示意模型（质量 C）"
+    },
+    {
+      "chapter": "ch15.html",
+      "snippet": "性质：定性历史归纳（质量 C）"
+    },
+    {
+      "chapter": "ch15.html",
+      "snippet": "判断为方向性（质量 C）"
+    },
+    {
+      "chapter": "ch15.html",
+      "snippet": "表 15.2　同一经济冲击、不同时间结构下的社会结局（示意）"
+    },
+    {
+      "chapter": "ch15.html",
+      "snippet": "性质：综合归纳（质量 C）"
+    }
+  ],
+  "A5_chapter_refs": {
+    "1": [
+      "ch01.html",
+      "ch02.html",
+      "ch03.html"
+    ],
+    "10": [
+      "ch04.html",
+      "ch08.html",
+      "ch10.html",
+      "ch13.html"
+    ],
+    "11": [
+      "ch02.html",
+      "ch03.html",
+      "ch04.html",
+      "ch05.html",
+      "ch06.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html",
+      "ch14.html",
+      "ch15.html"
+    ],
+    "12": [
+      "ch02.html",
+      "ch04.html",
+      "ch05.html",
+      "ch07.html",
+      "ch08.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "13": [
+      "ch04.html",
+      "ch08.html",
+      "ch10.html",
+      "ch13.html"
+    ],
+    "14": [
+      "ch10.html",
+      "ch11.html",
+      "ch13.html",
+      "ch14.html"
+    ],
+    "15": [
+      "ch06.html",
+      "ch10.html",
+      "ch15.html"
+    ],
+    "2": [
+      "ch01.html",
+      "ch02.html",
+      "ch03.html"
+    ],
+    "3": [
+      "ch02.html",
+      "ch03.html",
+      "ch04.html"
+    ],
+    "4": [
+      "ch04.html",
+      "ch08.html",
+      "ch10.html",
+      "ch13.html",
+      "ch15.html"
+    ],
+    "5": [
+      "ch01.html",
+      "ch02.html",
+      "ch03.html",
+      "ch05.html",
+      "ch06.html",
+      "ch07.html",
+      "ch08.html",
+      "ch09.html",
+      "ch10.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "6": [
+      "ch01.html",
+      "ch02.html",
+      "ch03.html",
+      "ch05.html",
+      "ch06.html",
+      "ch07.html",
+      "ch08.html",
+      "ch11.html",
+      "ch12.html",
+      "ch13.html",
+      "ch14.html"
+    ],
+    "7": [
+      "ch01.html",
+      "ch02.html",
+      "ch03.html",
+      "ch05.html",
+      "ch06.html",
+      "ch07.html",
+      "ch08.html",
+      "ch09.html",
+      "ch10.html",
+      "ch11.html",
+      "ch12.html",
+      "ch13.html"
+    ],
+    "8": [
+      "ch01.html",
+      "ch02.html",
+      "ch03.html",
+      "ch05.html",
+      "ch06.html",
+      "ch07.html",
+      "ch08.html",
+      "ch09.html",
+      "ch10.html",
+      "ch11.html",
+      "ch12.html",
+      "ch13.html"
+    ],
+    "9": [
+      "ch02.html",
+      "ch03.html",
+      "ch05.html",
+      "ch06.html",
+      "ch07.html",
+      "ch08.html",
+      "ch09.html",
+      "ch11.html",
+      "ch15.html"
+    ]
+  },
+  "A5_chapter_refs_invalid": [],
+  "A5_section_refs": {
+    "0.00": [
+      "ch06.html",
+      "ch09.html"
+    ],
+    "0.000": [
+      "ch07.html"
+    ],
+    "0.001": [
+      "ch05.html"
+    ],
+    "0.006": [
+      "ch06.html",
+      "ch15.html"
+    ],
+    "0.0060": [
+      "ch06.html"
+    ],
+    "0.008": [
+      "ch05.html"
+    ],
+    "0.01": [
+      "ch05.html",
+      "ch07.html"
+    ],
+    "0.013": [
+      "ch05.html"
+    ],
+    "0.014": [
+      "ch05.html"
+    ],
+    "0.02": [
+      "ch07.html",
+      "ch09.html"
+    ],
+    "0.031": [
+      "ch06.html"
+    ],
+    "0.037": [
+      "ch05.html"
+    ],
+    "0.046": [
+      "ch05.html"
+    ],
+    "0.05": [
+      "ch10.html"
+    ],
+    "0.06": [
+      "ch09.html"
+    ],
+    "0.070": [
+      "ch07.html"
+    ],
+    "0.08": [
+      "ch10.html"
+    ],
+    "0.080": [
+      "ch07.html"
+    ],
+    "0.087": [
+      "ch06.html"
+    ],
+    "0.09": [
+      "ch06.html"
+    ],
+    "0.090": [
+      "ch08.html"
+    ],
+    "0.098": [
+      "ch01.html",
+      "ch06.html"
+    ],
+    "0.099": [
+      "ch07.html"
+    ],
+    "0.10": [
+      "ch08.html",
+      "ch10.html",
+      "ch13.html",
+      "ch15.html"
+    ],
+    "0.100": [
+      "ch08.html"
+    ],
+    "0.11": [
+      "ch05.html",
+      "ch06.html"
+    ],
+    "0.114": [
+      "ch09.html"
+    ],
+    "0.124": [
+      "ch05.html"
+    ],
+    "0.13": [
+      "ch06.html"
+    ],
+    "0.1370": [
+      "ch07.html"
+    ],
+    "0.14": [
+      "ch02.html",
+      "ch08.html"
+    ],
+    "0.145": [
+      "ch10.html"
+    ],
+    "0.15": [
+      "ch10.html"
+    ],
+    "0.150": [
+      "ch08.html"
+    ],
+    "0.180": [
+      "ch08.html"
+    ],
+    "0.2": [
+      "ch09.html"
+    ],
+    "0.20": [
+      "ch08.html",
+      "ch10.html"
+    ],
+    "0.200": [
+      "ch06.html"
+    ],
+    "0.2000": [
+      "ch06.html"
+    ],
+    "0.203": [
+      "ch01.html"
+    ],
+    "0.208": [
+      "ch06.html"
+    ],
+    "0.210": [
+      "ch07.html"
+    ],
+    "0.213": [
+      "ch07.html",
+      "ch11.html"
+    ],
+    "0.2130": [
+      "ch07.html"
+    ],
+    "0.230": [
+      "ch07.html"
+    ],
+    "0.25": [
+      "ch08.html",
+      "ch10.html"
+    ],
+    "0.252008": [
+      "ch08.html"
+    ],
+    "0.27": [
+      "ch05.html",
+      "ch10.html"
+    ],
+    "0.28": [
+      "ch09.html",
+      "ch10.html"
+    ],
+    "0.3": [
+      "ch10.html"
+    ],
+    "0.30": [
+      "ch10.html"
+    ],
+    "0.300": [
+      "ch08.html",
+      "ch10.html"
+    ],
+    "0.333": [
+      "ch07.html",
+      "ch11.html"
+    ],
+    "0.3330": [
+      "ch07.html"
+    ],
+    "0.334": [
+      "ch07.html"
+    ],
+    "0.341": [
+      "ch07.html"
+    ],
+    "0.35": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.350": [
+      "ch08.html"
+    ],
+    "0.36": [
+      "ch05.html"
+    ],
+    "0.39": [
+      "ch09.html"
+    ],
+    "0.4": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.40": [
+      "ch05.html",
+      "ch09.html",
+      "ch10.html"
+    ],
+    "0.4022": [
+      "ch08.html"
+    ],
+    "0.404": [
+      "ch07.html",
+      "ch11.html"
+    ],
+    "0.4040": [
+      "ch07.html"
+    ],
+    "0.411": [
+      "ch08.html"
+    ],
+    "0.42": [
+      "ch02.html"
+    ],
+    "0.420": [
+      "ch07.html"
+    ],
+    "0.45": [
+      "ch02.html",
+      "ch05.html",
+      "ch08.html"
+    ],
+    "0.46": [
+      "ch10.html"
+    ],
+    "0.460": [
+      "ch09.html",
+      "ch10.html"
+    ],
+    "0.5": [
+      "ch02.html",
+      "ch04.html",
+      "ch06.html",
+      "ch08.html"
+    ],
+    "0.50": [
+      "ch10.html"
+    ],
+    "0.500": [
+      "ch08.html"
+    ],
+    "0.51": [
+      "ch02.html"
+    ],
+    "0.55": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.550": [
+      "ch08.html"
+    ],
+    "0.57": [
+      "ch01.html",
+      "ch02.html",
+      "ch05.html",
+      "ch11.html"
+    ],
+    "0.570": [
+      "ch05.html"
+    ],
+    "0.58": [
+      "ch09.html"
+    ],
+    "0.6": [
+      "ch08.html"
+    ],
+    "0.60": [
+      "ch10.html",
+      "ch13.html",
+      "ch15.html"
+    ],
+    "0.600": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.620": [
+      "ch08.html"
+    ],
+    "0.63": [
+      "ch09.html"
+    ],
+    "0.630": [
+      "ch08.html"
+    ],
+    "0.633": [
+      "ch01.html",
+      "ch06.html"
+    ],
+    "0.640": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.650": [
+      "ch09.html"
+    ],
+    "0.68": [
+      "ch08.html"
+    ],
+    "0.680": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.6842": [
+      "ch08.html"
+    ],
+    "0.7": [
+      "ch10.html",
+      "ch11.html"
+    ],
+    "0.700": [
+      "ch09.html"
+    ],
+    "0.701": [
+      "ch09.html"
+    ],
+    "0.7078": [
+      "ch08.html"
+    ],
+    "0.710": [
+      "ch09.html"
+    ],
+    "0.720": [
+      "ch09.html"
+    ],
+    "0.73": [
+      "ch08.html"
+    ],
+    "0.730": [
+      "ch08.html"
+    ],
+    "0.7380": [
+      "ch06.html"
+    ],
+    "0.740": [
+      "ch09.html"
+    ],
+    "0.75": [
+      "ch08.html"
+    ],
+    "0.750": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "0.78": [
+      "ch09.html"
+    ],
+    "0.780": [
+      "ch08.html"
+    ],
+    "0.79": [
+      "ch01.html",
+      "ch05.html",
+      "ch11.html"
+    ],
+    "0.790": [
+      "ch05.html"
+    ],
+    "0.7992": [
+      "ch08.html"
+    ],
+    "0.8": [
+      "ch11.html"
+    ],
+    "0.80": [
+      "ch10.html"
+    ],
+    "0.800": [
+      "ch05.html",
+      "ch09.html"
+    ],
+    "0.820": [
+      "ch09.html"
+    ],
+    "0.83": [
+      "ch09.html"
+    ],
+    "0.86": [
+      "ch05.html"
+    ],
+    "0.860": [
+      "ch05.html"
+    ],
+    "0.871": [
+      "ch09.html"
+    ],
+    "0.880": [
+      "ch09.html"
+    ],
+    "0.8896": [
+      "ch08.html"
+    ],
+    "0.89": [
+      "ch05.html"
+    ],
+    "0.890": [
+      "ch09.html"
+    ],
+    "0.9": [
+      "ch01.html"
+    ],
+    "0.90": [
+      "ch05.html",
+      "ch10.html"
+    ],
+    "0.900": [
+      "ch05.html"
+    ],
+    "0.92": [
+      "ch09.html",
+      "ch10.html"
+    ],
+    "0.921": [
+      "ch09.html"
+    ],
+    "0.930": [
+      "ch05.html"
+    ],
+    "0.94": [
+      "ch09.html"
+    ],
+    "0.95": [
+      "ch07.html"
+    ],
+    "0.951": [
+      "ch05.html"
+    ],
+    "0.96": [
+      "ch05.html"
+    ],
+    "0.960": [
+      "ch08.html"
+    ],
+    "0.97": [
+      "ch01.html",
+      "ch05.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "0.971": [
+      "ch05.html"
+    ],
+    "0.975": [
+      "ch07.html"
+    ],
+    "0.978": [
+      "ch07.html"
+    ],
+    "0.98": [
+      "ch01.html",
+      "ch05.html"
+    ],
+    "0.99": [
+      "ch05.html"
+    ],
+    "0.996": [
+      "ch05.html"
+    ],
+    "0.99692": [
+      "ch05.html"
+    ],
+    "0.999": [
+      "ch06.html"
+    ],
+    "0.9990": [
+      "ch05.html"
+    ],
+    "000.060": [
+      "ch09.html"
+    ],
+    "000.091": [
+      "ch09.html"
+    ],
+    "000.220": [
+      "ch09.html"
+    ],
+    "000.600": [
+      "ch08.html"
+    ],
+    "000.650": [
+      "ch08.html"
+    ],
+    "000.841": [
+      "ch09.html"
+    ],
+    "001.00": [
+      "ch05.html"
+    ],
+    "020.390": [
+      "ch09.html"
+    ],
+    "030.630": [
+      "ch09.html"
+    ],
+    "050.300": [
+      "ch07.html"
+    ],
+    "050.450": [
+      "ch08.html"
+    ],
+    "0990.742": [
+      "ch07.html"
+    ],
+    "1.00": [
+      "ch01.html",
+      "ch05.html",
+      "ch07.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "1.0090": [
+      "ch05.html"
+    ],
+    "1.02": [
+      "ch09.html"
+    ],
+    "1.030": [
+      "ch06.html"
+    ],
+    "1.1": [
+      "ch01.html",
+      "ch10.html"
+    ],
+    "1.14": [
+      "ch09.html"
+    ],
+    "1.2": [
+      "ch01.html"
+    ],
+    "1.25": [
+      "ch08.html"
+    ],
+    "1.26": [
+      "ch09.html"
+    ],
+    "1.3": [
+      "ch01.html"
+    ],
+    "1.4": [
+      "ch01.html"
+    ],
+    "1.45": [
+      "ch06.html"
+    ],
+    "1.5": [
+      "ch01.html",
+      "ch08.html"
+    ],
+    "1.50": [
+      "ch05.html"
+    ],
+    "1.78": [
+      "ch06.html",
+      "ch09.html"
+    ],
+    "10.1": [
+      "ch10.html"
+    ],
+    "10.10": [
+      "ch10.html"
+    ],
+    "10.2": [
+      "ch10.html"
+    ],
+    "10.3": [
+      "ch10.html"
+    ],
+    "10.4": [
+      "ch10.html",
+      "ch13.html"
+    ],
+    "10.5": [
+      "ch10.html"
+    ],
+    "10.6": [
+      "ch10.html"
+    ],
+    "10.7": [
+      "ch10.html"
+    ],
+    "10.8": [
+      "ch10.html"
+    ],
+    "10.9": [
+      "ch05.html",
+      "ch10.html"
+    ],
+    "10.91": [
+      "ch05.html"
+    ],
+    "101.2": [
+      "ch09.html"
+    ],
+    "11.1": [
+      "ch10.html",
+      "ch11.html"
+    ],
+    "11.2": [
+      "ch11.html",
+      "ch12.html"
+    ],
+    "11.3": [
+      "ch11.html"
+    ],
+    "11.4": [
+      "ch07.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "11.5": [
+      "ch09.html",
+      "ch11.html"
+    ],
+    "11.6": [
+      "ch11.html"
+    ],
+    "11.7": [
+      "ch06.html",
+      "ch08.html",
+      "ch11.html"
+    ],
+    "11.8": [
+      "ch11.html"
+    ],
+    "11.9": [
+      "ch11.html"
+    ],
+    "12.1": [
+      "ch12.html"
+    ],
+    "12.2": [
+      "ch12.html"
+    ],
+    "12.3": [
+      "ch12.html"
+    ],
+    "12.4": [
+      "ch12.html"
+    ],
+    "12.5": [
+      "ch12.html",
+      "ch15.html"
+    ],
+    "12.6": [
+      "ch12.html"
+    ],
+    "12.7": [
+      "ch12.html"
+    ],
+    "12.8": [
+      "ch12.html"
+    ],
+    "120.8": [
+      "ch09.html"
+    ],
+    "122.3": [
+      "ch05.html"
+    ],
+    "13.1": [
+      "ch13.html"
+    ],
+    "13.10": [
+      "ch13.html"
+    ],
+    "13.11": [
+      "ch13.html"
+    ],
+    "13.2": [
+      "ch13.html"
+    ],
+    "13.3": [
+      "ch11.html",
+      "ch13.html"
+    ],
+    "13.4": [
+      "ch13.html"
+    ],
+    "13.5": [
+      "ch13.html"
+    ],
+    "13.6": [
+      "ch13.html"
+    ],
+    "13.7": [
+      "ch13.html"
+    ],
+    "13.8": [
+      "ch13.html"
+    ],
+    "13.9": [
+      "ch13.html"
+    ],
+    "13939.4": [
+      "ch09.html"
+    ],
+    "14.1": [
+      "ch14.html"
+    ],
+    "14.2": [
+      "ch14.html"
+    ],
+    "14.3": [
+      "ch14.html"
+    ],
+    "14.4": [
+      "ch14.html"
+    ],
+    "14.5": [
+      "ch14.html"
+    ],
+    "14.6": [
+      "ch14.html"
+    ],
+    "14.7": [
+      "ch14.html"
+    ],
+    "14.8": [
+      "ch14.html"
+    ],
+    "14.9": [
+      "ch14.html"
+    ],
+    "15.1": [
+      "ch15.html"
+    ],
+    "15.2": [
+      "ch15.html"
+    ],
+    "15.3": [
+      "ch15.html"
+    ],
+    "15.4": [
+      "ch15.html"
+    ],
+    "15.5": [
+      "ch15.html"
+    ],
+    "15.6": [
+      "ch15.html"
+    ],
+    "1600.2037": [
+      "ch08.html"
+    ],
+    "170.250": [
+      "ch07.html"
+    ],
+    "1720.2116": [
+      "ch08.html"
+    ],
+    "18.0": [
+      "ch07.html"
+    ],
+    "190.700": [
+      "ch08.html"
+    ],
+    "1970.978": [
+      "ch07.html"
+    ],
+    "2.0": [
+      "ch09.html"
+    ],
+    "2.03": [
+      "ch09.html"
+    ],
+    "2.1": [
+      "ch02.html"
+    ],
+    "2.10": [
+      "ch09.html"
+    ],
+    "2.13": [
+      "ch09.html"
+    ],
+    "2.2": [
+      "ch02.html"
+    ],
+    "2.3": [
+      "ch02.html",
+      "ch03.html",
+      "ch08.html"
+    ],
+    "2.36": [
+      "ch09.html"
+    ],
+    "2.4": [
+      "ch02.html"
+    ],
+    "2.5": [
+      "ch02.html",
+      "ch06.html",
+      "ch09.html"
+    ],
+    "2.6": [
+      "ch02.html"
+    ],
+    "2.69": [
+      "ch09.html"
+    ],
+    "2.7": [
+      "ch02.html",
+      "ch03.html",
+      "ch09.html"
+    ],
+    "2.8": [
+      "ch02.html"
+    ],
+    "2.93": [
+      "ch09.html"
+    ],
+    "20.7": [
+      "ch09.html"
+    ],
+    "20000.060": [
+      "ch09.html"
+    ],
+    "20150.630": [
+      "ch09.html"
+    ],
+    "20240.820": [
+      "ch09.html"
+    ],
+    "220.450": [
+      "ch08.html"
+    ],
+    "24.6": [
+      "ch09.html"
+    ],
+    "240.0": [
+      "ch09.html"
+    ],
+    "26.8": [
+      "ch07.html"
+    ],
+    "280.30": [
+      "ch07.html"
+    ],
+    "280.300": [
+      "ch07.html"
+    ],
+    "2870.3445": [
+      "ch08.html"
+    ],
+    "3.1": [
+      "ch03.html",
+      "ch11.html"
+    ],
+    "3.10": [
+      "ch03.html",
+      "ch05.html"
+    ],
+    "3.11": [
+      "ch03.html"
+    ],
+    "3.19": [
+      "ch09.html"
+    ],
+    "3.2": [
+      "ch03.html",
+      "ch10.html",
+      "ch11.html"
+    ],
+    "3.3": [
+      "ch01.html",
+      "ch03.html"
+    ],
+    "3.4": [
+      "ch03.html",
+      "ch06.html"
+    ],
+    "3.5": [
+      "ch03.html",
+      "ch04.html",
+      "ch06.html",
+      "ch08.html",
+      "ch10.html",
+      "ch11.html"
+    ],
+    "3.6": [
+      "ch03.html"
+    ],
+    "3.7": [
+      "ch03.html",
+      "ch04.html"
+    ],
+    "3.74": [
+      "ch09.html"
+    ],
+    "3.8": [
+      "ch03.html",
+      "ch04.html",
+      "ch06.html",
+      "ch09.html"
+    ],
+    "3.9": [
+      "ch03.html"
+    ],
+    "300.800": [
+      "ch08.html"
+    ],
+    "310.32": [
+      "ch07.html"
+    ],
+    "310.550": [
+      "ch08.html"
+    ],
+    "315.0": [
+      "ch06.html"
+    ],
+    "315.4": [
+      "ch06.html"
+    ],
+    "316.0": [
+      "ch06.html"
+    ],
+    "320.500": [
+      "ch09.html"
+    ],
+    "326.6": [
+      "ch06.html"
+    ],
+    "328.2": [
+      "ch06.html"
+    ],
+    "3340.444": [
+      "ch07.html"
+    ],
+    "3350.3864": [
+      "ch08.html"
+    ],
+    "34.6": [
+      "ch07.html"
+    ],
+    "3410.975": [
+      "ch07.html"
+    ],
+    "35.5": [
+      "ch11.html"
+    ],
+    "350.720": [
+      "ch07.html"
+    ],
+    "350.860": [
+      "ch09.html"
+    ],
+    "3640.4013": [
+      "ch08.html"
+    ],
+    "37.5": [
+      "ch05.html"
+    ],
+    "37040.9": [
+      "ch09.html"
+    ],
+    "38.5": [
+      "ch07.html"
+    ],
+    "4.1": [
+      "ch04.html",
+      "ch11.html",
+      "ch12.html",
+      "ch15.html"
+    ],
+    "4.19": [
+      "ch09.html"
+    ],
+    "4.2": [
+      "ch04.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "4.25": [
+      "ch05.html"
+    ],
+    "4.3": [
+      "ch04.html",
+      "ch11.html",
+      "ch12.html",
+      "ch13.html"
+    ],
+    "4.4": [
+      "ch04.html",
+      "ch12.html"
+    ],
+    "4.42015": [
+      "ch11.html",
+      "ch12.html"
+    ],
+    "4.5": [
+      "ch04.html"
+    ],
+    "4.59": [
+      "ch09.html"
+    ],
+    "4.6": [
+      "ch04.html"
+    ],
+    "4.7": [
+      "ch04.html"
+    ],
+    "4.8": [
+      "ch04.html",
+      "ch11.html"
+    ],
+    "4.9": [
+      "ch04.html"
+    ],
+    "41.0": [
+      "ch07.html",
+      "ch09.html"
+    ],
+    "410.770": [
+      "ch07.html"
+    ],
+    "450.5970": [
+      "ch08.html"
+    ],
+    "45720.7": [
+      "ch09.html"
+    ],
+    "470.590": [
+      "ch09.html"
+    ],
+    "481.000": [
+      "ch09.html"
+    ],
+    "5.1": [
+      "ch05.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "5.10": [
+      "ch03.html",
+      "ch05.html",
+      "ch09.html"
+    ],
+    "5.11": [
+      "ch05.html"
+    ],
+    "5.12": [
+      "ch05.html"
+    ],
+    "5.2": [
+      "ch05.html",
+      "ch06.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "5.29": [
+      "ch09.html"
+    ],
+    "5.3": [
+      "ch05.html",
+      "ch06.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "5.4": [
+      "ch05.html",
+      "ch06.html",
+      "ch11.html"
+    ],
+    "5.5": [
+      "ch05.html",
+      "ch06.html"
+    ],
+    "5.6": [
+      "ch05.html"
+    ],
+    "5.7": [
+      "ch02.html",
+      "ch05.html"
+    ],
+    "5.8": [
+      "ch05.html"
+    ],
+    "5.9": [
+      "ch05.html"
+    ],
+    "51.7": [
+      "ch05.html"
+    ],
+    "5150.5972": [
+      "ch08.html"
+    ],
+    "52.4": [
+      "ch07.html"
+    ],
+    "540.780": [
+      "ch07.html"
+    ],
+    "550.4930": [
+      "ch08.html"
+    ],
+    "550.500": [
+      "ch08.html"
+    ],
+    "56.4": [
+      "ch07.html"
+    ],
+    "570.680": [
+      "ch08.html"
+    ],
+    "58.4": [
+      "ch09.html"
+    ],
+    "58.6": [
+      "ch07.html"
+    ],
+    "6.08": [
+      "ch09.html"
+    ],
+    "6.1": [
+      "ch06.html",
+      "ch07.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "6.2": [
+      "ch06.html",
+      "ch11.html"
+    ],
+    "6.3": [
+      "ch03.html",
+      "ch06.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "6.4": [
+      "ch04.html",
+      "ch06.html",
+      "ch07.html",
+      "ch11.html"
+    ],
+    "6.43": [
+      "ch09.html"
+    ],
+    "6.5": [
+      "ch06.html"
+    ],
+    "6.6": [
+      "ch06.html"
+    ],
+    "6.7": [
+      "ch06.html"
+    ],
+    "6.8": [
+      "ch06.html"
+    ],
+    "600.550": [
+      "ch08.html"
+    ],
+    "600.66": [
+      "ch07.html"
+    ],
+    "600.7580": [
+      "ch08.html"
+    ],
+    "62.2": [
+      "ch07.html"
+    ],
+    "63.9": [
+      "ch09.html"
+    ],
+    "63911.5": [
+      "ch09.html"
+    ],
+    "650.60": [
+      "ch09.html"
+    ],
+    "650.620": [
+      "ch09.html"
+    ],
+    "650.700": [
+      "ch08.html"
+    ],
+    "650.7180": [
+      "ch08.html"
+    ],
+    "6540.7681": [
+      "ch08.html"
+    ],
+    "680.6740": [
+      "ch08.html"
+    ],
+    "680.850": [
+      "ch07.html"
+    ],
+    "69.4": [
+      "ch05.html"
+    ],
+    "690.490": [
+      "ch09.html"
+    ],
+    "7.1": [
+      "ch07.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "7.2": [
+      "ch06.html",
+      "ch07.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "7.3": [
+      "ch07.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "7.4": [
+      "ch07.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "7.5": [
+      "ch07.html",
+      "ch08.html",
+      "ch11.html"
+    ],
+    "7.6": [
+      "ch07.html"
+    ],
+    "7.7": [
+      "ch07.html"
+    ],
+    "7.8": [
+      "ch07.html"
+    ],
+    "700.6560": [
+      "ch08.html"
+    ],
+    "710.710": [
+      "ch08.html"
+    ],
+    "720.70": [
+      "ch09.html"
+    ],
+    "720.780": [
+      "ch08.html"
+    ],
+    "73.8": [
+      "ch05.html"
+    ],
+    "74341.0": [
+      "ch09.html"
+    ],
+    "750.400": [
+      "ch09.html"
+    ],
+    "780.750": [
+      "ch09.html"
+    ],
+    "8.1": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "8.10": [
+      "ch08.html"
+    ],
+    "8.11": [
+      "ch08.html"
+    ],
+    "8.12": [
+      "ch08.html"
+    ],
+    "8.18": [
+      "ch09.html"
+    ],
+    "8.2": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "8.3": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "8.4": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html",
+      "ch12.html"
+    ],
+    "8.5": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "8.6": [
+      "ch05.html",
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "8.7": [
+      "ch08.html"
+    ],
+    "8.8": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "8.9": [
+      "ch08.html",
+      "ch09.html"
+    ],
+    "800.5900": [
+      "ch08.html"
+    ],
+    "800.65": [
+      "ch09.html"
+    ],
+    "820.700": [
+      "ch09.html"
+    ],
+    "820.820": [
+      "ch08.html"
+    ],
+    "820.84": [
+      "ch07.html"
+    ],
+    "8429.3": [
+      "ch09.html"
+    ],
+    "85.2": [
+      "ch07.html"
+    ],
+    "850.40": [
+      "ch09.html"
+    ],
+    "870.89": [
+      "ch07.html"
+    ],
+    "880.850": [
+      "ch08.html"
+    ],
+    "890.871": [
+      "ch05.html"
+    ],
+    "9.1": [
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.10": [
+      "ch09.html"
+    ],
+    "9.11": [
+      "ch09.html"
+    ],
+    "9.2": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.3": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.4": [
+      "ch08.html",
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.5": [
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.55": [
+      "ch09.html"
+    ],
+    "9.6": [
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.7": [
+      "ch09.html"
+    ],
+    "9.8": [
+      "ch09.html",
+      "ch11.html"
+    ],
+    "9.9": [
+      "ch09.html"
+    ],
+    "900.891": [
+      "ch05.html"
+    ],
+    "91.6": [
+      "ch08.html"
+    ],
+    "92.5": [
+      "ch05.html"
+    ],
+    "92.9": [
+      "ch05.html"
+    ],
+    "920.95": [
+      "ch07.html"
+    ],
+    "941.00": [
+      "ch07.html"
+    ],
+    "95.9": [
+      "ch05.html"
+    ],
+    "98.7": [
+      "ch07.html"
+    ],
+    "98.9": [
+      "ch07.html"
+    ],
+    "981.00": [
+      "ch05.html"
+    ],
+    "99.4": [
+      "ch08.html",
+      "ch11.html"
+    ]
+  },
+  "A6_cited": {
+    "Acemoglu": [
+      "2012"
+    ],
+    "Ashby": [
+      "1956"
+    ],
+    "Brzezinski": [
+      "1997"
+    ],
+    "Cohen": [
+      "2015"
+    ],
+    "Kaplan": [
+      "2012"
+    ],
+    "Mackinder": [
+      "1904"
+    ],
+    "Piketty": [
+      "2014"
+    ],
+    "Stiglitz": [
+      "2012"
+    ],
+    "Zingales": [
+      "2012"
+    ]
+  },
+  "A6_defined": {
+    "Abbott": [
+      "2001"
+    ],
+    "Acemoglu": [
+      "2012"
+    ],
+    "Anderson": [
+      "1972"
+    ],
+    "Arrighi": [
+      "1994"
+    ],
+    "Ashby": [
+      "1956"
+    ],
+    "Bak": [
+      "1996"
+    ],
+    "Baldwin": [
+      "2016"
+    ],
+    "Bar-Yam": [
+      "1997"
+    ],
+    "Beck": [
+      "1992"
+    ],
+    "Brzezinski": [
+      "1997"
+    ],
+    "Cartwright": [
+      "1983"
+    ],
+    "Cohen": [
+      "2015"
+    ],
+    "Dahrendorf": [
+      "1959"
+    ],
+    "De": [
+      "2020"
+    ],
+    "Farrell": [
+      "2019"
+    ],
+    "Fukuyama": [
+      "2011"
+    ],
+    "Giddens": [
+      "1984",
+      "1990"
+    ],
+    "Goldstone": [
+      "1991",
+      "2024"
+    ],
+    "Gopinath": [
+      "2025"
+    ],
+    "Hassan": [
+      "2009"
+    ],
+    "Helbing": [
+      "2013"
+    ],
+    "Holland": [
+      "1995"
+    ],
+    "Holling": [
+      "1973"
+    ],
+    "Kaplan": [
+      "2012"
+    ],
+    "Koselleck": [
+      "2004"
+    ],
+    "Kuznets": [
+      "1930"
+    ],
+    "Landauer": [
+      "1961"
+    ],
+    "Luhmann": [
+      "1995"
+    ],
+    "Mackinder": [
+      "1904"
+    ],
+    "Mayo": [
+      "2018"
+    ],
+    "Metz": [
+      "1998"
+    ],
+    "Minsky": [
+      "1986"
+    ],
+    "North": [
+      "1990",
+      "2009"
+    ],
+    "Olson": [
+      "1965",
+      "1982"
+    ],
+    "Ostrom": [
+      "1990"
+    ],
+    "Parsons": [
+      "1951"
+    ],
+    "Perrow": [
+      "1984"
+    ],
+    "Pierson": [
+      "2004"
+    ],
+    "Piketty": [
+      "2014"
+    ],
+    "Popper": [
+      "1959"
+    ],
+    "Prigogine": [
+      "1967",
+      "1984"
+    ],
+    "Reinhart": [
+      "2009"
+    ],
+    "Ridley": [
+      "1993"
+    ],
+    "Rodrik": [
+      "2011"
+    ],
+    "Rosa": [
+      "2013"
+    ],
+    "Saez": [
+      "2016"
+    ],
+    "Scheffer": [
+      "2009"
+    ],
+    "Schumpeter": [
+      "1939"
+    ],
+    "Sewell": [
+      "2005"
+    ],
+    "Shannon": [
+      "1948"
+    ],
+    "Shmueli": [
+      "2010"
+    ],
+    "Simon": [
+      "1962",
+      "1971"
+    ],
+    "Solomou": [
+      "1987"
+    ],
+    "Stiglitz": [
+      "2012"
+    ],
+    "Strogatz": [
+      "1994"
+    ],
+    "Tainter": [
+      "1988"
+    ],
+    "Taleb": [
+      "2007"
+    ],
+    "Turchin": [
+      "2003",
+      "2009",
+      "2015"
+    ],
+    "Van": [
+      "1973"
+    ],
+    "Varoufakis": [
+      "2023"
+    ],
+    "Virilio": [
+      "1986"
+    ],
+    "Zingales": [
+      "2012"
+    ]
+  },
+  "A6_cited_not_defined": [],
+  "A7_images_missing": [],
+  "A8_eq_malformed": [],
+  "A9_debug_strings": []
+}

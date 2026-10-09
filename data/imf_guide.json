@@ -1,0 +1,12 @@
+{
+  "source": "IMF World Economic Outlook / Global Debt Monitor",
+  "url": "https://data.imf.org/",
+  "indicators": [
+    "General government gross debt (% GDP)",
+    "GDP constant prices"
+  ],
+  "target_keys": [
+    "global_debt_gdp_2026",
+    "us_debt_gdp_2026"
+  ]
+}

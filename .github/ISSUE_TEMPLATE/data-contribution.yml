@@ -1,0 +1,56 @@
+name: 数据补充 / Data contribution
+description: 提交一个数据缺口项（见 docs/DATA-GAPS.md）
+title: "[数据] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢补充数据。请尽量让每个数值都可追溯。质量等级：A＝官方可复现；B＝稳定公开估算；C＝稀疏/构造，仅方向。
+  - type: input
+    id: indicator
+    attributes:
+      label: 指标名称
+      placeholder: 例：某国制度反应时间 / 信息失真代理 / 论文验证时长
+    validations:
+      required: true
+  - type: dropdown
+    id: axis
+    attributes:
+      label: 所属层次
+      options:
+        - Θ（租佃/集中）
+        - I（组织复杂度 / 反应时间）
+        - κ（地缘耦合）
+        - 时间层（τ / C）
+        - 跨域（医疗/气候/心理/教育/能源/知识）
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: values
+    attributes:
+      label: 数据（year,value 或表格）
+      description: 可直接粘贴 CSV 或 Markdown 表格
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 来源链接或文献
+    validations:
+      required: true
+  - type: dropdown
+    id: quality
+    attributes:
+      label: 质量等级
+      options: ["A", "B", "C"]
+    validations:
+      required: true
+  - type: textarea
+    id: caveats
+    attributes:
+      label: 口径与限制
+      description: 说明口径、时间跨度、已知偏差、以及它对结论的影响
+    validations:
+      required: true

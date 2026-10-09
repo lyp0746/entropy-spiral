@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+# 组装"可发布"交付包：仅含读者可见内容。
+# 明确排除：xlsx / csv / json / py / ipynb / requirements.txt。
+#
+# 可用环境变量：
+#   BASE=my-book   发布文件的基础名（默认 book）
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+[ -f .env.build ] && . ./.env.build
+PY="${PYTHON:-python}"
+BASE="${BASE:-entropy-spiral}"
+
+echo "== 先构建最新产物 =="
+if [ -f scripts/build.sh ]; then bash scripts/build.sh >/dev/null; else
+  "$PY" build_book.py --pdf >/dev/null
+  "$PY" build_book.py --ereader --pdf >/dev/null
+  "$PY" build_epub.py >/dev/null
+fi
+
+REL="$ROOT/release"
+rm -rf "$REL"
+mkdir -p "$REL"
+
+copy() { if [ -f "$1" ]; then cp "$1" "$2"; echo "  + $(basename "$2")"; fi; }
+
+copy output/book.pdf          "$REL/$BASE-print.pdf"
+copy output/book-ereader.pdf  "$REL/$BASE-ereader.pdf"
+copy output/book.epub         "$REL/$BASE.epub"
+copy output/book.html         "$REL/$BASE.html"
+copy output/book-ereader.html "$REL/$BASE-ereader.html"
+copy assets/svg/cover.svg     "$REL/cover.svg"
+copy docs/READERS.md          "$REL/README.md"
+copy docs/RELEASE-NOTES.md    "$REL/修订说明.md"
+copy docs/DATA-GAPS.md        "$REL/数据缺口清单.md"
+copy docs/OPEN-CONTRIBUTION.md "$REL/欢迎补充数据.md"
+
+cat > "$REL/MANIFEST.txt" <<EOF
+$BASE — 发布包清单
+==================
+$BASE-print.pdf    印刷/正式版 PDF（A4，宋体+Times，四级书签）
+$BASE-ereader.pdf  电子阅读版 PDF
+$BASE.epub         EPUB 3（nav + NCX 四级目录）
+$BASE.html         网页版（自包含）
+cover.svg          封面矢量图
+README.md          读者说明
+修订说明.md        版次与主要变化
+数据缺口清单.md    数据可得性登记与获取路径
+欢迎补充数据.md    开放贡献指南
+
+明确不包含（非发布内容）：
+  *.xlsx / *.csv / *.json    原始数据与中间结果
+  *.py / analysis/           分析脚本与工程
+  requirements.txt           依赖清单
+  source/ assets/ scripts/   源文件与构建工具
+EOF
+
+# 守门：发布包中不得出现非发布内容
+BAD=$(find "$REL" -type f \( -name '*.xlsx' -o -name '*.csv' -o -name '*.json' \
+      -o -name '*.py' -o -name '*.ipynb' -o -name 'requirements.txt' \) || true)
+if [ -n "$BAD" ]; then
+  echo "ERROR: 发布包中检测到非发布内容，已中止："; echo "$BAD"; exit 1
+fi
+
+echo "== 发布包已生成：release/ =="
+ls -lh "$REL"

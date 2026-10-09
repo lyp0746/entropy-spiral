@@ -1,0 +1,37 @@
+name: 勘误 / Bug report
+description: 报告数据、公式、编号、交叉引用、文献或代码错误
+title: "[勘误] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型
+      options:
+        - 数据错误
+        - 公式/编号
+        - 交叉引用/图表
+        - 文献
+        - 构建脚本/代码
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: 位置
+      placeholder: 例：ch05.html §5.11 / 表 H.1 / analysis/audit.py
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 问题描述与依据
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: 建议的修正（可选）
+    validations:
+      required: false

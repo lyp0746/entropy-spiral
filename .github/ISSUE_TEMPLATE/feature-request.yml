@@ -1,0 +1,18 @@
+name: 建议 / Feature request
+description: 提出竞争模型、替代操作化或扩展方向
+title: "[建议] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议内容
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: 理由与可证伪形式
+      description: 若可能，请说明如何检验它、以及在什么情况下它会被否证
+    validations:
+      required: true

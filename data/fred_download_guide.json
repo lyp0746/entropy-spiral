@@ -1,0 +1,15 @@
+{
+  "source": "FRED (Federal Reserve Economic Data)",
+  "series": {
+    "SIPOVGINIUSA": "Gini (USA)",
+    "DDOI06USA156NWDB": "5-bank concentration ratio",
+    "BOGZ1FL102090100Q": "Net worth (households & NPOs)"
+  },
+  "target_keys": [
+    "us_finance_profit_1980",
+    "us_finance_profit_2000",
+    "us_finance_profit_peak",
+    "us_finance_profit_2020"
+  ],
+  "note": "每页右上 Download -> CSV"
+}

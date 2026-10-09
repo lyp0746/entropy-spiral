@@ -1,0 +1,110 @@
+<h2 class="chapter">附录 H　可得数据补充与数据缺口</h2>
+
+<p class="lead">本附录做两件诚实的事：<b>第一，把已在开放数据库中可直接获取的指标集中成一张总表</b>，供读者核对正文的方向性结论；<b>第二，把无法获取的指标明确列为“数据缺口”</b>，说明原因与可能的获取路径，而不是把它们悄悄略过或用构造序列填充。这一做法本身就是本书方法的示范：<b>承认边界，并把边界写进文档。</b></p>
+
+<h3>H.1　可得数据总表（全球与美国，1970—2025）</h3>
+
+<p>下表只收录“官方统计或稳定公开估算、口径可复现”的指标（质量 A/B）。它不提供新的因果结论，只把正文分散引用的数值集中呈现，方便横向比对。所有数值均为百分比（除注明者外）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.1　关键指标的长期轨迹（部分年份）</b></caption>
+<tr><th class="l">指标</th><th class="l">来源与口径</th><th>1980</th><th>2000</th><th>2015</th><th>2024/25</th><th class="l">方向</th></tr>
+<tr><td class="l">世界贸易/GDP</td><td class="l">World Bank WDI（NE.TRD.GNFS.ZS）</td><td>{{D:world_trade_gdp_1980}}</td><td>{{D:world_trade_gdp_2000}}</td><td>{{D:world_trade_gdp_2015}}</td><td>{{D:world_trade_gdp_2025}}<sup>a</sup></td><td class="l">上升（商品耦合）</td></tr>
+<tr><td class="l">世界 FDI/GDP</td><td class="l">World Bank WDI（BX.KLT.DINV.WD.GD.ZS）</td><td>{{D:world_fdi_gdp_1980}}</td><td>{{D:world_fdi_gdp_2000}}</td><td>{{D:world_fdi_gdp_2015}}</td><td>{{D:world_fdi_gdp_2024}}</td><td class="l">见顶后回落（金融耦合可逆）</td></tr>
+<tr><td class="l">美国收入 Gini</td><td class="l">World Bank WDI（SI.POV.GINI）</td><td>{{D:us_gini_1980}}</td><td>{{D:us_gini_2000}}</td><td>{{D:us_gini_2015}}</td><td>{{D:us_gini_2024}}</td><td class="l">2015 后趋平</td></tr>
+<tr><td class="l">美国政府债务/GDP</td><td class="l">World Bank / IMF（近似）</td><td>—</td><td>约 55</td><td>{{D:us_gov_debt_gdp_2015}}</td><td>{{D:us_gov_debt_gdp_2024}}</td><td class="l">持续上升</td></tr>
+<tr><td class="l">美国贸易/GDP</td><td class="l">World Bank WDI（NE.TRD.GNFS.ZS）</td><td>{{D:usa_trade_gdp_1980}}</td><td>{{D:usa_trade_gdp_2000}}</td><td>{{D:usa_trade_gdp_2015}}</td><td>{{D:usa_trade_gdp_2024}}</td><td class="l">平台期</td></tr>
+<tr><td class="l">美国前 1% 财富份额</td><td class="l">WID / Saez–Zucman（近似）</td><td>{{D:us_top1_wealth_1980}}</td><td>—</td><td>约 35.8（峰值）</td><td>约 34.8</td><td class="l">2015 后走平</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI、IMF、WID.world；脚本见 <code>analysis/fetch_*.py</code>，注入值见 <code>data/injected.json</code>。<b>质量等级：</b>A（官方，除注明者）；美国债务/GDP 为 A/B（口径近似）。<b>注释：</b><sup>a</sup> 世界贸易/GDP 的 2025 值为最新可得年度；不同年份标注见各序列。表中“方向”仅指样本内趋势，不作外推。</div>
+
+<p>下表把第 8 章合成的时间序列 V(t) 的关键节点集中呈现。它说明“结构脆弱性”不是单一指标，而是多个已得序列按机制权重的合成；其数值会随权重与操作化改变，因此只用于同口径内部比较。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.2　脆弱性合成指标 V 与 V<sub>ι</sub> 的关键年份（真实序列，2000—2024）</b></caption>
+<tr><th class="l">年份</th><th>V</th><th>V<sub>ι</sub></th><th>Θ</th><th>κ</th><th class="l">ι（政治一致性）</th><th class="l">读数</th></tr>
+<tr><td class="l">2000</td><td>0.058</td><td>0.058</td><td>0.062</td><td>0.085</td><td>1.000</td><td class="l">低耦合、高一致性</td></tr>
+<tr><td class="l">2008</td><td>0.621</td><td>0.729</td><td>0.458</td><td>0.861</td><td>0.653</td><td class="l">高耦合冲击年</td></tr>
+<tr><td class="l">2015</td><td>0.494</td><td>0.571</td><td>0.627</td><td>0.503</td><td>0.686</td><td class="l">结构高位</td></tr>
+<tr><td class="l">2020</td><td>0.389</td><td>0.580</td><td>0.701</td><td>0.218</td><td>0.017</td><td class="l">κ 低但 ι 触底：低谷不等于安全</td></tr>
+<tr><td class="l">2022</td><td>0.843</td><td>1.265</td><td>0.738</td><td>1.000</td><td>0.000</td><td class="l">样本内峰值：高耦合 × 最低一致性</td></tr>
+<tr><td class="l">2024</td><td>0.629</td><td>0.932</td><td>0.816</td><td>0.587</td><td>0.034</td><td class="l">高位震荡</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>真实序列合成（<code>analysis/v_timeseries.py</code>，结果 <code>analysis/results/v_timeseries.json</code>）。<b>质量等级：</b>输入为 A/B，合成为 C（权重含先验）。<b>注释：</b>各分量已按 [0,1] 归一化；V 与 V<sub>ι</sub> 只在同一操作化内部可比，不可跨操作化或跨领域比较。2022 年 V<sub>ι</sub> 峰值约 1.27，是样本内最大值。</div>
+
+<h3>H.2　四个案例的公开事件时间线</h3>
+
+<p>时间错配的论证依赖“事件间隔”，而事件日期大多属于公开信息。下表把它们整理为可核对的时间线；它们的作用是展示“冲击展开时间 vs 协调时间”的量级差，而非精确的因果归因。所有日期为公开报道的近似值（质量 B/C）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.3　能源案例时间线（2021—2023）</b></caption>
+<tr><th class="l">日期（近似）</th><th class="l">事件</th><th class="l">间隔</th></tr>
+<tr><td class="l">2021 下半年</td><td class="l">欧洲天然气库存偏低、价格开始上行</td><td class="l">—</td></tr>
+<tr><td class="l">2022-02</td><td class="l">俄乌冲突爆发，供应不确定性骤升</td><td class="l">数周内价格跳升</td></tr>
+<tr><td class="l">2022 年中</td><td class="l">俄气对欧供气量大幅削减</td><td class="l">从信号到断供约 1—3 个月</td></tr>
+<tr><td class="l">2022-08</td><td class="l">欧洲气价达到峰值</td><td class="l">冲击展开以周—月计</td></tr>
+<tr><td class="l">2022 冬—2023</td><td class="l">需求侧响应、LNG 重配、储气填满</td><td class="l">替代到位以年计</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>本表不用于精确纪年；它要说明的是：<b>价格在数周内完成重定价，而实物替代需要一到数年</b>。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 H.4　芯片案例时间线（2020—2023）</b></caption>
+<tr><th class="l">日期（近似）</th><th class="l">事件</th><th class="l">间隔</th></tr>
+<tr><td class="l">2020—2021</td><td class="l">居家需求推高电子订单，晶圆产能紧张</td><td class="l">需求波动以季计</td></tr>
+<tr><td class="l">2021</td><td class="l">汽车芯片交货周期由十余周延长至一年以上</td><td class="l">—</td></tr>
+<tr><td class="l">2021—2022</td><td class="l">多家车企因缺芯减产、停产</td><td class="l">传导以月计</td></tr>
+<tr><td class="l">2022—2023</td><td class="l">新增产能陆续投产，紧张缓解</td><td class="l">产能扩张以年计（18—24 个月）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>关键错配是“需求以季计、产能以年计、定价以小时计”。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 H.5　债务案例时间线（2008—2024）</b></caption>
+<tr><th class="l">日期（近似）</th><th class="l">事件</th><th class="l">间隔</th></tr>
+<tr><td class="l">2008</td><td class="l">全球金融危机，私人债务问题显性化</td><td class="l">—</td></tr>
+<tr><td class="l">2008—2015</td><td class="l">私人风险公共化，政府债务/GDP 急升</td><td class="l">数年</td></tr>
+<tr><td class="l">2020</td><td class="l">疫情应对，债务再度跳升</td><td class="l">数月</td></tr>
+<tr><td class="l">2022—2023</td><td class="l">快速加息，部分银行出现流动性危机</td><td class="l">利率重定价以日计，财政规则调整以月—年计</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>债务案例的时间错配不在“债务积累”（以年计），而在“信用重定价”（以日计）与“规则调整”（以月—年计）之间。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 H.6　知识案例时间线（2024—）</b></caption>
+<tr><th class="l">阶段</th><th class="l">时间尺度</th><th class="l">状态</th></tr>
+<tr><td class="l">大规模生成（AI 产出论文初稿）</td><td class="l">天—数周</td><td class="l">已发生</td></tr>
+<tr><td class="l">公众传播与讨论</td><td class="l">小时—数日</td><td class="l">已发生</td></tr>
+<tr><td class="l">逐篇验证与复现</td><td class="l">周—月</td><td class="l">进行中</td></tr>
+<tr><td class="l">同行评审与制度认可</td><td class="l">月—年</td><td class="l">未完成</td></tr>
+<tr><td class="l">评价制度修订</td><td class="l">年</td><td class="l">尚在讨论</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>这是四个案例中“纯粹时间”最强的一个：没有资源短缺，只有验证速度跟不上生成速度。其最终结果尚未确定，因此本表只登记结构，不登记结论。</div>
+
+<h3>H.3　数据可得性评级与缺口清单</h3>
+
+<p>下表明确区分“已获取”“可获取但尚未整理”“结构性不可得”三类。它的作用不是诉诸困难，而是把研究议程公开：<b>让后来者知道从哪里接手。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.7　数据可得性评级与数据缺口</b></caption>
+<tr><th class="l">指标</th><th class="l">层次</th><th class="l">可得性</th><th class="l">原因</th><th class="l">获取路径</th></tr>
+<tr><td class="l">贸易/GDP、FDI/GDP、Gini、政府债务</td><td class="l">Θ、κ</td><td class="l">已获取（A/B）</td><td class="l">开放数据库</td><td class="l">World Bank / IMF API（见附录 C）</td></tr>
+<tr><td class="l">商品进口 HHI、能源依赖</td><td class="l">κ</td><td class="l">已获取（A）</td><td class="l">UN Comtrade / Eurostat</td><td class="l">已可复现（<code>fetch_hhi_comtrade.py</code> 等）</td></tr>
+<tr><td class="l">制度反应时间（各国对标）</td><td class="l">I₂</td><td class="l">可获取但需逐案例整理</td><td class="l">分散于新闻档案与政府公报</td><td class="l">建立“信息出现→决议→执行”案例库（1—2 周/国）</td></tr>
+<tr><td class="l">信息失真程度</td><td class="l">I₃</td><td class="l">结构性不可得（多数国家）</td><td class="l">涉及政府内部数据与保密</td><td class="l">历史档案解密、匿名访谈、间接代理（报告偏差）</td></tr>
+<tr><td class="l">共同理解程度 / 认知分裂</td><td class="l">I₄</td><td class="l">不可直接测量</td><td class="l">主观状态，无通用量纲</td><td class="l">调查实验、媒体消费分层、极化指数（代理）</td></tr>
+<tr><td class="l">个人注意力与理解时间</td><td class="l">认知</td><td class="l">无现成数据集</td><td class="l">需专项心理学实验</td><td class="l">时间日志 / 实验研究（本书未做）</td></tr>
+<tr><td class="l">论文“声称→验证通过”时间</td><td class="l">知识</td><td class="l">尚不可得（进行中）</td><td class="l">事件未完结，无历史序列</td><td class="l">数年后回溯追踪</td></tr>
+<tr><td class="l">政策隐性时间成本</td><td class="l">I₂</td><td class="l">多数不可得</td><td class="l">决策过程不公开</td><td class="l">FOIA 请求、前官员访谈</td></tr>
+<tr><td class="l">精神卫生供给与需求速度</td><td class="l">跨域</td><td class="l">部分可得（质量参差）</td><td class="l">跨国统计口径不一</td><td class="l">WHO / OECD 精神卫生统计 + 社交媒体指标</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>可得性评估（方法论，质量 C）。<b>注释：</b>本表是“数据缺口登记”，不是“免责声明”。<b>凡 C 级与缺口项，正文均已标注方向性，不作精确引用。</b></div>
+
+<h3>H.4　贡献入口</h3>
+
+<p>上表的“可获取但尚未整理”与“结构性不可得”两类，是后续研究最有价值的方向。本书建议以“协作数据库”的方式推进，而不是等待单一作者补齐：</p>
+
+<ul>
+<li><b>制度反应时间案例库</b>：每一条记录包含“信息首次出现—决策公布—开始执行”三个时间戳与来源链接。可由不同国家的作者分工贡献。</li>
+<li><b>信息失真代理</b>：在无法获得内部数据时，用可公开观测的代理（统计修订幅度、上报与抽查的偏差）替代，并公开代理的局限。</li>
+<li><b>知识验证追踪</b>：对 AI 生成论文的“声称—验证”过程做长期追踪，数年后即可形成第一批时间序列。</li>
+</ul>
+
+<p>这些工作的共同要求只有一条：<b>把“没测到”和“测到了”一样认真地记录。</b>这正是本书反复主张的方法论——承认边界，并把边界写进文档。</p>

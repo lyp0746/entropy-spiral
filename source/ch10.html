@@ -1,0 +1,175 @@
+<h2 class="chapter">第 10 章　框架的实装检验：三个情景与时间维度的发现</h2>
+
+<p class="lead">第 1—9 章建立的是一套<b>诊断</b>框架：它不预测崩溃的时点，只在冲击发生时测量系统有多脆弱。但一个诊断框架若从未被放到真实情景中操演，它的边界就只是作者的自述。本章把这一框架用于三个性质截然不同的冲击——<b>台湾芯片中断、东南亚美元融资断裂、全球债务可持续性崩溃</b>——并刻意考察：在哪些情景里它仍然精确，在哪些情景里它开始失准，在哪个情景里它彻底失效。<b>这不是对框架的自我批判，而是一次实装检验：目的是标定框架的可用范围，并找出限制这一范围的变量。检验的结果是：那个变量是时间。</b></p>
+
+<h3 id="sec10-1">10.1　导论：为什么先做“应用测试”</h3>
+
+<p>本书此前一直强调“可证伪”。但可证伪不仅是“写下否定条件、等未来核对”，还包括一种更即时的检验：<b>把框架拿来用一次，看它能否给出自洽、可比较、可被行业知识校验的判断。</b>本节的三个情景不是预测（“我们认为它会发生”），而是诊断练习（“假定它发生，框架能告诉我们什么”）。三者的选择遵循一个单一原则：<b>沿“冲击范围”从点到面排列</b>。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 10.1　三个应用情景的选择逻辑</b></caption>
+<tr><th class="l">情景</th><th class="l">冲击范围</th><th class="l">主导时间尺度</th><th class="l">框架用途</th><th class="l">数据可得性</th></tr>
+<tr><td class="l">S1 台湾芯片中断</td><td class="l">单点（一家企业、一个产业）</td><td class="l">30—60 天</td><td class="l">诊断缓冲与替代性</td><td class="l">高（行业与财务数据）</td></tr>
+<tr><td class="l">S2 东南亚债务危机</td><td class="l">单国（泰国）兼区域传染</td><td class="l">50—120 小时</td><td class="l">诊断响应速度</td><td class="l">中（央行数据 + 定性）</td></tr>
+<tr><td class="l">S3 全球债务崩溃</td><td class="l">系统（G5 同步）</td><td class="l">&lt; 24 小时</td><td class="l">检验框架本身的边界</td><td class="l">低（政治决策不可测）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>情景构造（方法演示），非预测。<b>注释：</b>三者共享同一公式 Risk(S) = Hazard × Exposure × [1 − AdaptiveCapacity]（式 2.x，第 8 章），但参数来源与可信度逐级下降——这一下降本身就是本章要报告的结果。</div>
+
+<div class="define"><span class="bt">定义 10.1　应用测试（application test）</span>
+把诊断框架施加于一个<b>明确定义的冲击情景 S</b>，输出可比较的 Risk(S) 数值、各因素贡献与不确定性区间；若某因素无法测量，必须显式标注为“未测”而非赋零。<b>应用测试不是验证框架为真，而是标定它“在什么范围内可用”。</b></div>
+
+<h3 id="sec10-2">10.2　情景一　台湾芯片中断（60 天）</h3>
+
+<p><b>冲击定义。</b>假定台湾海峡发生地缘事件，导致先进制程晶圆厂停产约 60 天；工人、电力与原材料供应未全面崩溃，冲击限于<b>产能</b>而非<b>社会</b>。这不是对事件的预测，而是对脆弱性的测量。</p>
+
+<p><b>暴露范围。</b>受影响的直接下游是汽车电子、数据中心与消费电子；杠杆放大者是 AI 加速器与高端服务器。全球先进制程（5nm 及以下）的有效供给方接近单一来源。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 10.2　S1 的适应能力五因素（逐项标定）</b></caption>
+<tr><th class="l">因素</th><th class="l">观测</th><th>估计值</th><th class="l">质量</th><th class="l">说明</th></tr>
+<tr><td class="l">替代性</td><td class="l">高端无替代；成熟制程可部分转产（+5%—15% 成本，60—90 天）</td><td>0.15</td><td class="l">B</td><td class="l">高端 = 0，成熟 ≈ 0.3，加权后偏低</td></tr>
+<tr><td class="l">缓冲</td><td class="l">汽车与数据中心库存低于安全线（约 −30 至 −45 天）</td><td>0.10</td><td class="l">A</td><td class="l">SIA／Gartner 口径，±10 天</td></tr>
+<tr><td class="l">多元化</td><td class="l">先进制程有效卖家 ≈ 1.1（HHI ≈ 0.92）；买家前五占 45%</td><td>0.30</td><td class="l">A</td><td class="l">HHI = Σsᵢ²（定义见第 7 章）</td></tr>
+<tr><td class="l">Θ 韧性</td><td class="l">垄断定价权强（毛利约 55% vs 行业 30%）</td><td>0.90</td><td class="l">A</td><td class="l">注意：<b>高 Θ 在此既是脆弱源，也是“能提价”的韧性</b></td></tr>
+<tr><td class="l">κ 耦合</td><td class="l">产业耦合高，但可通过库存与转产部分隔离</td><td>3.5/5</td><td class="l">B</td><td class="l">传导幅度估计 ±20%</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>SIA／Gartner 库存口径、企业财报与市场份额（质量 A）；替代与耦合为行业判断（质量 B）。<b>注释：</b>“多元化”一栏的 0.30 是<b>买家</b>侧多元化（TSMC 前五客户），与<b>卖家</b>侧集中度（HHI 0.92）方向相反，二者不可混用。</div>
+
+<p>代入式(7.x)：AdaptiveCapacity = ¼(0.10 + 0.15 + 0.30 + 0.90) × (1 − 3.5/5) = 0.145。取 Hazard = 0.7、Exposure = 0.08，则 Risk(S1) = 0.7 × 0.08 × (1 − 0.145) ≈ <b>0.46</b>。</p>
+
+<div class="case"><div class="ct">案例 10.2.1　一个反直觉的结果</div>
+<p>S1 中 <b>Θ 极高（0.90），却不是风险的主导来源</b>。真正的硬约束是<b>缓冲（0.10）</b>与<b>替代性（0.15）</b>：库存耗尽后十五到三十天内，没有任何产能可以补上。这与“垄断＝脆弱”的直觉相反——若缓冲充足、替代存在，即使 Θ 接近 1，风险仍可承受。框架在这一情景中“精确”，是因为它把所有因素都拆开，而不是把风险归给单一原因。</p></div>
+
+<h3 id="sec10-3">10.3　情景二　东南亚美元融资断裂（72 小时）</h3>
+
+<p><b>冲击定义。</b>假定美联储维持高利率、全球风险溢价跳升，叠加泰国国内政治不确定，触发外资基金在约 72 小时内集中撤出美元资产，泰铢贬值 20%—30%。冲击不是“产能”而是“流动性”，时间尺度从“月”压缩到“日”。</p>
+
+<p><b>暴露范围。</b>直接暴露是泰国的美元债与出口制造；间接暴露是新加坡金融中心、马来西亚电子与区域资产价格。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 10.3　S2 的适应能力五因素（逐项标定）</b></caption>
+<tr><th class="l">因素</th><th class="l">观测</th><th>估计值</th><th class="l">质量</th><th class="l">说明</th></tr>
+<tr><td class="l">缓冲</td><td class="l">外汇储备约 3.2 个月进口，数字上够，但 72 小时内可能被清空</td><td>0.20</td><td class="l">A</td><td class="l"><b>量纲失配：月数无法描述小时级危机</b></td></tr>
+<tr><td class="l">响应速度</td><td class="l">黄金窗口 24—48 小时；IMF 审批历史中位 5—7 天</td><td>0.10—0.50</td><td class="l">D</td><td class="l"><b>完全定性，无基准数据</b></td></tr>
+<tr><td class="l">替代性</td><td class="l">产能转移 6—18 个月可行，但危机窗口内无用</td><td>0.60</td><td class="l">B</td><td class="l">时间维度必须显式</td></tr>
+<tr><td class="l">多元化</td><td class="l">出口品多元（橡胶、电子、农产品），低 HHI</td><td>0.80</td><td class="l">A</td><td class="l">低 Θ 在此是优势而非弱点</td></tr>
+<tr><td class="l">Θ 韧性</td><td class="l">出口无垄断力（均值 Θ ≈ 0.40）</td><td>0.40</td><td class="l">A</td><td class="l">贬值驱动出口自动修复</td></tr>
+<tr><td class="l">κ 耦合</td><td class="l">金融耦合强（5—10 天全球传导）</td><td>3.5/5</td><td class="l">B</td><td class="l">幅度估计 ±25%</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>央行储备与贸易数据（质量 A）；响应速度与耦合幅度为情景判断（B/C/D）。<b>注释：</b>本表首次出现“<b>未测</b>”——响应速度用区间而非点值，且质量标为 D（见定义 11.1）。</div>
+
+<p>由于响应速度不可测，Risk(S2) 只能给出分支：乐观分支（响应快）约 <b>0.27</b>，中位分支约 <b>0.28</b>，悲观分支约 <b>0.30</b>。三者的<b>点值差异很小</b>，但含义完全不同——这正是本章第一次感到“框架在动摇”：当关键变量不可测时，Risk 的数值稳定性其实是一种假象。</p>
+
+<h3 id="sec10-4">10.4　情景三　全球债务可持续性崩溃（同步失效）</h3>
+
+<p><b>冲击定义。</b>假定 G5（美、欧、日、英、加）政府债务同时触及市场信任边界，债券收益率同步跳升 300—500 个基点。触发信号出现到定价完成约 5—10 天，但真正的“救援”需要多国央行与议会同步行动。<b>这里没有“替代经济体”——这是系统级冲击。</b></p>
+
+<p>本情景中，框架的四个因素同时遭遇结构性困难：</p>
+
+<ul>
+<li><b>缓冲的概念崩溃。</b>农业的缓冲是“库存吨数”，金融的缓冲是“融资能力”，而财政的缓冲是“信用”。在全球同时怀疑信用时，“储备”无法用月数或天数表示。</li>
+<li><b>替代性趋于零。</b>任何单一央行的量化宽松都会贬值本币、推高他国债务成本，从而摧毁其他央行的宽松效果——宽松彼此抵消。</li>
+<li><b>多元化失效。</b>评级机构高度集中且遵循同一套标准，形成“从众下降”；主权债持有者虽分散，却同向行动。</li>
+<li><b>Θ 成为约束而非工具。</b>储备货币发行权极端集中（美联储），但被国内政治约束，垄断者无力单独救市。</li>
+</ul>
+
+<p>于是 Risk(S3) 无法给出点值，只能给出一个极宽的区间：<b>0.20—0.90</b>，且主导不确定性不在任何可测因素，而在“G5 能否在 72 小时内达成联合行动”。这不是数据问题，而是<b>概念问题</b>。</p>
+
+<div class="warning"><span class="bt">警告 10.4.1　框架失效的信号不是“算不出来”，而是“答案对参数不敏感”</span>
+在 S3 中，无论把缓冲取 0 还是取 1，Risk 的结论都指向“取决于政治协调”。当一个模型的关键结论不再由它的变量决定，而是由模型之外的制度行为决定时，模型已经到达了它自己的边界。<b>诚实的做法不是再加变量，而是承认边界。</b></div>
+
+<h3 id="sec10-5">10.5　三情景的风险分解对比</h3>
+
+<p>图 10.1 把三个情景的适应能力分解并排呈现。它的目的不是比较 Risk 的高低（三者的 Hazard 与 Exposure 口径不同，数值不可直接比较），而是观察<b>“哪一根柱子决定了结果”</b>。</p>
+
+<img class="fig" src="assets/svg/fig-scenario-panel.svg" alt="三情景适应能力分解与风险结果">
+<div class="cap"><b>图 10.1　三情景的适应能力分解与风险结果</b>。S1 中决定结果的是缓冲与替代性；S2 中响应速度取代了缓冲；S3 中所有柱子都失去意义，结论落回政治协调。随情景范围扩大，框架的置信区间从 ±0.10 扩大到 ±0.60。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 10.4　三情景的诊断效力对比</b></caption>
+<tr><th class="l">维度</th><th class="l">S1 台湾芯片</th><th class="l">S2 东南亚债务</th><th class="l">S3 全球债务</th></tr>
+<tr><td class="l">冲击类型</td><td class="l">单点</td><td class="l">单国／区域</td><td class="l">系统同步</td></tr>
+<tr><td class="l">主导脆弱因素</td><td class="l">缓冲（库存）</td><td class="l"><b>响应速度</b></td><td class="l"><b>I（政治协调）</b></td></tr>
+<tr><td class="l">点估计</td><td class="l">0.46</td><td class="l">0.27—0.30</td><td class="l">0.20—0.90</td></tr>
+<tr><td class="l">置信区间</td><td class="l">±0.10</td><td class="l">±0.25</td><td class="l">±0.60</td></tr>
+<tr><td class="l">可测因素比例</td><td class="l">约 80%</td><td class="l">约 50%</td><td class="l">约 5%</td></tr>
+<tr><td class="l">框架是否可用</td><td class="l">精确，可指导政策</td><td class="l">有用，可排序选项</td><td class="l">只能指向决策点</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>方法演示的横向比较（质量 C）。<b>注释：</b>“可测因素比例”为定性估计，用于说明<b>不确定性随冲击范围扩大而系统性上升</b>这一趋势，不作为精确指标。</div>
+
+<h3 id="sec10-6">10.6　框架失效的三重证据</h3>
+
+<p>把三个情景并置，失效并非均匀分布，而呈现三个清晰信号。</p>
+
+<p><b>第一重：变量缺失，但只在系统级情景中致命。</b>S2 中响应速度同样未测，框架却仍给出可用的量级；S3 中 I 未测，框架直接失效。区别在于：<b>S2 尚有可测因素（多元化、替代性）承担主要解释力，S3 则把全部解释力交给了未测因素。</b>换言之，失效的条件不是“存在未测变量”，而是“未测变量成为唯一决定因素”。</p>
+
+<p><b>第二重：Reserves 的量纲随情景迁移而失效。</b>同一个词在三个情景里指三种东西：物质库存（月）、外汇融资能力（天）、财政信用（不可定义）。第 8 章给出的“缓冲 = 可支撑月数”操作化，在 S3 中已经不成立。这说明<b>缓冲不是跨情景可通约的量，而是（国家 × 冲击类型）的函数。</b></p>
+
+<p><b>第三重：Θ 的作用方向随情景反转。</b>S1 中高 Θ 同时是脆弱源与韧性来源；S2 中低 Θ 是优势；S3 中高 Θ（储备货币垄断）反而成为被国内政治锁死的“约束”。这与第 5 章“Θ 不是一个量”的结论一致，并把它推进了一步：<b>Θ 的作用方向取决于它嵌入的反馈结构，而非它的数值。</b></p>
+
+<div class="define"><span class="bt">定义 10.2　脆弱性的情景依赖性</span>
+一个因素对风险的作用方向与权重，依赖于冲击的类型与时间尺度，因而不存在一个跨情景通用的“脆弱性排序”。Risk(S) 必须<b>下标于 S</b>；任何省略 S 的全局排序（“第几脆弱国家”）都是范畴错误。</div>
+
+<h3 id="sec10-7">10.7　风险公式的隐式时间假设</h3>
+
+<p>三重证据指向同一个被忽略的量。回到风险分解：</p>
+
+<div class="eq"><span class="body">Risk(S) = Hazard(S) × Exposure(S) × [1 − AdaptiveCapacity(S)]</span><span class="num">(10.1)</span></div>
+<div class="eq"><span class="body">AdaptiveCapacity = ¼(替代性 + 缓冲 + 多元化 + Θ<sub>韧性</sub>) × (1 − κ/5)</span><span class="num">(10.2)</span></div>
+
+<p>式(10.1)—(10.2)隐含了一个从未写出的前提：<b>系统有足够的时间去动员 AdaptiveCapacity。</b>替代产能需要 60—90 天才能上线，库存需要时间被调用，多元化协议需要时间签署，就连央行干预也需要时间协调。如果冲击进展得比动员更快，那么 AdaptiveCapacity 无论名义值多高，都等于零——因为<b>它来不及被使用。</b></p>
+
+<p>三情景恰好构成时间压力的连续谱：S1 的时间（60 天）宽裕于动员时间，框架精确；S2 的时间（50—120 小时）与协调时间同量级，框架开始发散；S3 的时间（&lt; 24 小时）短于任何制度程序，框架失效。<b>置信区间的扩大不是随机的，而是随“动员时间 − 冲击时间”这个差值转负而系统性发生的。</b></p>
+
+<div class="define"><span class="bt">定义 10.3　可控性窗口 W</span>
+对冲击情景 S，定义其可控性窗口为<b>可动员时间与冲击进展时间之比</b>：W(S) = T<sub>mobilize</sub>(S) / T<sub>threat</sub>(S)。当 W ≥ 1，AdaptiveCapacity 可被完整动员，诊断框架有效；W &lt; 1 时，有效适应能力被时间打折；W → 0 时，名义适应能力与风险无关。</div>
+
+<div class="eq"><span class="body">AC<sub>有效</sub> = AC<sub>名义</sub> × 𝟙[W ≥ 1] + AC<sub>名义</sub> · W · 𝟙[W &lt; 1]</span><span class="num">(10.3)</span></div>
+<p>式(10.3)是对式(10.2)的最小修正：它没有增加任何新参数，只是把“时间够不够”显式写出。S1 中 W ≈ 2，修正项不启用；S3 中 W ≈ 0.05，有效适应能力趋近于零。<b>第 4、13 章将把 W 展开为可分析、可比较的时间结构，并说明它为什么在当代系统中难以大于 1。</b></p>
+
+<h3 id="sec10-8">10.8　“可控性窗口”的发现</h3>
+
+<p>W 的引入让三个情景获得了统一的解释，也暴露了一个更深的事实：<b>不同系统的 T<sub>mobilize</sub> 与 T<sub>threat</sub> 由完全不同的机制决定，而且它们的变化方向相反。</b>T<sub>mobilize</sub> 取决于制度程序、参与人数与共识成本，倾向于随系统复杂化而<b>变长</b>；T<sub>threat</sub> 取决于金融、信息与物流的技术速度，倾向于随技术加速而<b>变短</b>。二者的比值因而有一个内生的下行趋势。</p>
+
+<img class="fig" src="assets/svg/fig-controllability.svg" alt="可控性 C = T_policy / T_threat">
+<div class="cap"><b>图 10.2　可控性 C = T<sub>policy</sub> / T<sub>threat</sub></b>。三个情景依次落在临界线左侧（C &lt; 1）之外、之上与之后。数值为量级示意（质量 C）；其意义不在精确，而在提示“哪一类系统天然不可控”。</div>
+
+<div class="scenario"><span class="bt">情景 10.8.1　如果 W 是不可逆地下行</span>
+若 T<sub>mobilize</sub> 因制度复杂化而单调上升、T<sub>threat</sub> 因技术加速而单调下降，那么即使系统“名义上”越来越有能力（更多工具、更多机构、更多数据），其<b>有效</b>可控性仍可能持续下降。这是一个可证伪的判断：它预测，在同等冲击强度下，二十一世纪二十年代的系统响应成功率应低于二十世纪八九十年代——可用央行危机数据库与主权债务重组案例检验（登记为 P11.1）。</div>
+
+<h3 id="sec10-9">10.9　扩展情景：从三到八</h3>
+
+<p>三个主情景覆盖了“单点—单国—系统”的连续谱。为了检验“时间错配”是否在更广泛领域成立，本节把同一诊断方法简要扩展到五个补充情景。它们不是完整的 V 计算（那需要各自的台面数据），而是一组方向性诊断，用于说明时间维度不是某一类危机的特例。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 10.5　五个补充情景的时间诊断（示意）</b></caption>
+<tr><th class="l">情景</th><th class="l">威胁时间</th><th class="l">响应时间</th><th>ξ</th><th class="l">主要瓶颈</th></tr>
+<tr><td class="l">气候应急（极端天气级联）</td><td class="l">数天—数周</td><td class="l">数月至数年（基础设施）</td><td>&gt;10</td><td class="l">物理改造周期</td></tr>
+<tr><td class="l">能源转型中断</td><td class="l">数周</td><td class="l">15—20 年（电网与产能）</td><td>极高</td><td class="l">能源基础设施周期</td></tr>
+<tr><td class="l">教育系统失效</td><td class="l">2—3 年（技能需求）</td><td class="l">5—10 年（课程与教师）</td><td>2—4</td><td class="l">人才培养周期</td></tr>
+<tr><td class="l">精神健康危机</td><td class="l">天级（再创伤）</td><td class="l">数月至数年（治疗供给）</td><td>&gt;30</td><td class="l">心理与医疗供给</td></tr>
+<tr><td class="l">知识生成冲击</td><td class="l">天级（生成）</td><td class="l">数月到数年（验证与认可）</td><td>&gt;30</td><td class="l">认知与制度验证</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>方向性诊断（质量 C）。<b>注释：</b>五个情景的 ξ 均大于 2，即均处于“基本无法及时控制”的区域。这一结果本身即是本章的结论：<b>时间错配不是某一类危机的特例，而是跨领域的普遍结构。</b>详细的跨域展开见第 15 章。</div>
+
+<h3 id="sec10-10">10.10　本章小结</h3>
+
+<ol>
+<li><b>三情景的共同结构</b>：Risk(S) 必须下标于 S；缓冲、替代性、Θ 的作用方向都随冲击类型变化，不存在跨情景通用的脆弱性排序（定义 10.2）。</li>
+<li><b>失效的三重证据</b>：未测变量只有在成为唯一决定因素时才致命；Reserves 的量纲随情景迁移而失效；Θ 的作用方向随反馈结构反转（§10.6）。</li>
+<li><b>被隐藏的变量是时间</b>：式(10.1)—(10.2)默认“有时间动员适应能力”。定义 10.3 的可控性窗口 W 把这一前提显式化，并用式(10.3)做最小修正。</li>
+<li><b>框架的诚实边界</b>：置信区间随冲击范围扩大而系统性上升（图 10.1，表 10.4）。这不是数据不足，而是“时间错配”这一结构性事实的投影。</li>
+<li><b>下一步</b>：第 4 章展开时间结构，第 13 章形式化可控性边界，第 14 章重新理解那个“无法测量的 I”——它其实是时间错配在社会制度层面的人格化。</li>
+</ol>
+
+<p>本章没有推翻第 1—9 章。相反，它证明了那套诊断框架在单点与单国冲击上是坚固的；但它同时发现，框架的边界并不由变量的多少决定，而由<b>时间</b>决定。这是一个从框架内部生长出来的问题，而不是外部强加的批评。</p>
+
+<h3>本章参考文献</h3>
+<div class="refs">
+<p>Intergovernmental Panel on Climate Change. <i>Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation</i>. Cambridge: Cambridge University Press, 2012.</p>
+<p>United Nations Office for Disaster Risk Reduction. <i>Global Assessment Report on Disaster Risk Reduction</i>. Geneva: UNDRR, 2022.</p>
+<p>Semiconductor Industry Association. <i>State of the Industry Report</i>. Washington, DC: SIA, 2024.</p>
+<p>International Monetary Fund. <i>Global Financial Stability Report</i>. Washington, DC: IMF, 2025.</p>
+<p>Bank for International Settlements. <i>Annual Economic Report</i>. Basel: BIS, 2024.</p>
+<p>Perrow, C. (1984). <i>Normal Accidents: Living with High-Risk Technologies</i>. New York: Basic Books.</p>
+</div>

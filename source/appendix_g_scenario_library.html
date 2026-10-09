@@ -1,0 +1,112 @@
+<h2 class="chapter">附录 G　情景库与可复现框架</h2>
+
+<p class="lead">本附录把第 10 章的三个情景固化为一个可复现、可扩展的数据结构，使第三方能够独立重算、修改参数、增补情景。<b>它不是一套“预测模型”，而是一台“假设审计机”：任何风险判断若要被复用，必须先把它的因数、数据质量与时间窗口显式写下来。</b>这正与全书“登记—监测—核对”的方法论一致。</p>
+
+<h3 id="secG-1">G.1　三情景参数表</h3>
+
+<p>表 G.1 是情景库的核心数据。每一行是一个情景，每一列是一个可显式赋值的字段。它是本书正文所有风险计算的“事实来源”。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 G.1　三情景参数（情景库）</b></caption>
+<tr><th class="l">字段</th><th class="l">S1 台湾芯片</th><th class="l">S2 东南亚债务</th><th class="l">S3 全球债务</th></tr>
+<tr><td class="l">Hazard</td><td>0.70</td><td>0.60</td><td>0.60</td></tr>
+<tr><td class="l">Exposure</td><td>0.08</td><td>0.035</td><td>1.00</td></tr>
+<tr><td class="l">Reserves（缓冲）</td><td>0.10</td><td>0.20</td><td>0.05</td></tr>
+<tr><td class="l">Substitutability（替代）</td><td>0.15</td><td>0.60</td><td>0.00</td></tr>
+<tr><td class="l">Diversification（多元）</td><td>0.30</td><td>0.80</td><td>0.00</td></tr>
+<tr><td class="l">Θ（韧性视角）</td><td>0.90</td><td>0.40</td><td>0.50</td></tr>
+<tr><td class="l">κ（耦合，0—5）</td><td>3.5</td><td>3.5</td><td>5.0</td></tr>
+<tr><td class="l">T<sub>min</sub>（协调，天）</td><td>30</td><td>7</td><td>30</td></tr>
+<tr><td class="l">T<sub>available</sub>（可容许，天）</td><td>60</td><td>2</td><td>1</td></tr>
+<tr><td class="l">τ（错配）</td><td>0.5</td><td>3.5</td><td>30</td></tr>
+<tr><td class="l">C = 1/τ</td><td>2.0</td><td>0.29</td><td>0.03</td></tr>
+<tr><td class="l">Risk(S)</td><td>0.46</td><td>0.27—0.30</td><td>0.20—0.90</td></tr>
+<tr><td class="l">数据质量（均值）</td><td>A—B</td><td>A—C</td><td>C—E</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>情景参数（S1 多为质量 A，S2 混合，S3 多为判定值）。<b>注释：</b>S3 的 Reserves 取 0.05 仅表示“财政信用在同步危机中近乎不可动员”，不代表精确测量；其 Risk 区间极宽正是“框架失效”的体现。</div>
+
+<h3 id="secG-2">G.2　计算流程</h3>
+
+<p>参数到结论的计算流程如下（与正文式 10.1—11.3 一致）：</p>
+
+<div class="eq"><span class="body">AC<sub>名义</sub> = ¼(Reserves + Substitutability + Diversification + Θ) × (1 − κ/5)</span><span class="num">(G.1)</span></div>
+<div class="eq"><span class="body">AC<sub>有效</sub> = AC<sub>名义</sub> × min(1, C)</span><span class="num">(G.2)</span></div>
+<div class="eq"><span class="body">Risk(S) = Hazard × Exposure × (1 − AC<sub>有效</sub>)</span><span class="num">(G.3)</span></div>
+
+<p>式(G.2)是本书对风险分解的实质增补：<b>用 C = 1/τ 对名义适应能力作时间折扣。</b>当 C ≥ 1 时无折扣（S1）；当 C ≪ 1 时，即使名义适应能力很高，有效值也趋近于零（S3）。</p>
+
+<h3 id="secG-3">G.3　可复现的数据结构</h3>
+
+<p>为了让第三方能够审计，情景库以一个简单的数据结构定义。下面给出其字段（Python 数据类的形式；实际代码随发布包的分析目录提供）：</p>
+
+<pre class="code">
+@dataclass
+class RiskScenario:
+    name: str                    # 情景名称
+    hazard: float                # Hazard 概率 (0-1)
+    exposure: float              # Exposure 比例 (0-1)
+    reserves: float              # 缓冲评分 (0-1)
+    substitutability: float      # 替代评分 (0-1)
+    diversification: float       # 多元评分 (0-1)
+    theta: float                 # Θ 评分 (0-1)
+    kappa: float                 # κ 耦合 (0-5)
+    t_min: float                 # 协调最小时间（天）
+    t_available: float           # 可容许时间（天）
+    quality: dict                # 各字段数据质量 A-E
+
+    def tau(self): return self.t_min / self.t_available
+    def controllability(self): return 1 / self.tau()
+    def adaptive_capacity(self):
+        nom = (self.reserves + self.substitutability +
+               self.diversification + self.theta) / 4 * (1 - self.kappa / 5)
+        return nom * min(1.0, self.controllability())
+    def risk(self):
+        return self.hazard * self.exposure * (1 - self.adaptive_capacity())
+</pre>
+<div class="datasrc"><b>性质：</b>代码结构说明（可复现）。<b>注释：</b>完整脚本见发布包之外的 <code>analysis/</code> 目录（发布包按惯例不含代码，见 README）。字段设计的目标是让“未测”可以被显式标注，而不是被默认赋零。</div>
+
+<h3 id="secG-4">G.4　如何扩展新情景</h3>
+
+<p>情景库被设计为开放结构。添加一个新情景只需四步：</p>
+
+<ol>
+<li><b>定义 S：</b>写出 Hazard 与 Exposure，并说明范围（单点／单国／系统）。</li>
+<li><b>标定六因素：</b>Reserves、Substitutability、Diversification、Θ、κ、τ；每个字段标注数据质量 A—E，无法测量者记为“未测”。</li>
+<li><b>估时间窗：</b>给出 T<sub>min</sub> 与 T<sub>available</sub> 的量级，并说明依据（历史先例或程序记录）。</li>
+<li><b>交付并登记：</b>输出 Risk 与不确定性区间，并预登记“什么结果会推翻本情景的判断”。</li>
+</ol>
+
+<table class="nat">
+<caption class="cap"><b>表 G.2　建议增补的情景（空缺待填）</b></caption>
+<tr><th class="l">候选情景</th><th class="l">预期主导因素</th><th class="l">预期 τ</th><th class="l">主要数据困难</th></tr>
+<tr><td class="l">AI 芯片设计禁运</td><td class="l">替代性 + κ</td><td>中</td><td class="l">算力供给链黑箱化</td></tr>
+<tr><td class="l">关键海底光缆中断</td><td class="l">κ + 缓冲</td><td>低</td><td class="l">军用／民用路由不透明</td></tr>
+<tr><td class="l">全球粮食出口禁令级联</td><td class="l">多元 + Θ</td><td>中</td><td class="l">政策反应函数不可观测</td></tr>
+<tr><td class="l">抗生素耐药性系统风险</td><td class="l">替代性（极低）</td><td>高</td><td class="l">时间尺度以年计，难与危机同框</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>研究议程（空缺）。<b>注释：</b>本表故意保留空白，供后续研究填入；它是附录 G“开放结构”的示范，而非既有结论。</div>
+
+<h3 id="secG-5">G.5　局限与诚实声明</h3>
+
+<div class="warning"><span class="bt">警告 G.5.1　情景库不是预测机</span>
+情景库的所有数值都是<b>假定的</b>，不是对未来的预测。它的价值在于：当现实冲击发生时，可以立即用同一套参数化重算，并把“实际发生了什么”与“当初假定什么”逐条对照。<b>它服务于事后校准，而非事前预言。</b>任何把它当作预警系统直接驱动决策的用法，都超出了它的设计意图，也超出了本书的责任范围。</div>
+
+<ol>
+<li><b>参数的主观性：</b>Reserves 与 Θ 有客观数据支撑，但 τ 与 κ 的部分赋值依赖判断，质量标注必须随数值一起报告。</li>
+<li><b>量纲的不可通约：</b>τ 只能作序数使用（警告 4.7.1），情景间的 Risk 数值不可直接比较。</li>
+<li><b>框架的失效区：</b>当冲击为系统同步型（C ≪ 1）时，公式仍能计算，但其输出不应被解释为可操作的风险值（表 13.3）。</li>
+<li><b>政治变量的外生性：</b>协调是否发生是一个政治决策，情景库把它作为参数输入，而不试图预测它——这正是“I 不可测”的诚实延续。</li>
+</ol>
+
+<h3 id="secG-6">G.6　结语：从框架到工具，再回到问题</h3>
+
+<p>附录 F 与 G 把关于时间错配与可控性的诸章的理论转译成了工具。但工具的意义恰恰在于<b>暴露理论解决不了的部分</b>：当诊断表填不完、当 τ 无法给出数值、当政治协调无法被参数化时，使用者会一次次撞上同一个边界——时间与制度的错配。这不是工具的失败，而是它忠实反映的问题本身。</p>
+
+<p>因此，本附录的最终建议与全书一致：<b>用工具把能说清的写清楚，把说不清的显式留给判断。</b>一个肯在空白处写“未测”的分析，比一个处处填满数字的分析，更接近科学。</p>
+
+<h3>本章参考文献</h3>
+<div class="refs">
+<p>Intergovernmental Panel on Climate Change. <i>Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation</i>. Cambridge: Cambridge University Press, 2012.</p>
+<p>Shmueli, G. (2010). To explain or to predict? <i>Statistical Science</i>, 25(3), 289–310.</p>
+<p>Saltelli, A., et al. (2020). Five ways to ensure that models serve society. <i>Nature</i>, 582, 482–484.</p>
+</div>

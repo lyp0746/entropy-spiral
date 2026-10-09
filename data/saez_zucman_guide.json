@@ -1,0 +1,24 @@
+{
+  "source": "Saez–Zucman Wealth Database",
+  "url": "https://gabriel-zucman.eu/uswealth/",
+  "files": [
+    "SaezZucman2016QJE_MainData.xlsx",
+    "AppendixTables(Distributions).xlsx"
+  ],
+  "variables": [
+    "top 1% wealth share",
+    "top 10% wealth share",
+    "wealth composition: real estate vs financial"
+  ],
+  "target_keys": [
+    "us_top1_wealth_1980",
+    "us_top1_wealth_2000",
+    "us_top1_wealth_2015",
+    "us_top1_wealth_2022",
+    "us_wealth_property_1980",
+    "us_wealth_property_2026",
+    "us_wealth_financial_1980",
+    "us_wealth_financial_2026"
+  ],
+  "note": "导出 CSV 至 data/ 后运行 analysis/build_injected.py"
+}

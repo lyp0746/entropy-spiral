@@ -1,0 +1,87 @@
+<h2 class="chapter">附录 C　数据源与再现性</h2>
+
+<p class="lead">本书的可信度建立在"每个数字都可追溯到来源与脚本"之上。本附录列出全部数据源、复现步骤与更新工作流。<b>所有真实数据均为公开来源；所有分析脚本均可离线重跑。</b></p>
+
+<h3>C.1　数据源索引</h3>
+<table class="nat">
+<caption class="cap"><b>表 C.1　本书使用的主要数据源</b></caption>
+<tr><th class="l">数据</th><th class="l">来源</th><th class="l">获取方式</th><th class="l">质量</th></tr>
+<tr><td class="l">美国收入 Gini</td><td class="l">World Bank WDI（SI.POV.GINI）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">净财富前 1% ／ 收入前 1% ／ 后 50% 份额</td><td class="l">WID.world</td><td class="l">用户导出 CSV</td><td>A</td></tr>
+<tr><td class="l">贸易／GDP、FDI／GDP</td><td class="l">World Bank WDI</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">私人部门信贷／GDP</td><td class="l">World Bank WDI（FS.AST.PRVT.GD.ZS）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">政府债务／GDP（中央）</td><td class="l">World Bank WDI（GC.DOD.TOTL.GD.ZS）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">家庭／企业／广义政府债务／GDP</td><td class="l">IMF DataMapper（HH_LS、NFC_LS、GGXWDG_NGDP）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">通胀、实际利率、贷款利率</td><td class="l">World Bank WDI</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">Brent 油价（日度→年度）</td><td class="l">用户导出（EIA／公开来源）</td><td class="l">用户导出 CSV</td><td>A</td></tr>
+<tr><td class="l">政治稳定、政府效能、监管质量</td><td class="l">Worldwide Governance Indicators（WGI）</td><td class="l">用户导出 xlsx</td><td>A</td></tr>
+<tr><td class="l">前五大科技公司市值占比</td><td class="l">公开市值整理</td><td class="l">用户整理</td><td>B</td></tr>
+<tr><td class="l">政体存续时长与制度编码</td><td class="l">Seshat 全球历史数据库（Equinox 2020）</td><td class="l">公开数据 + 脚本抽取（analysis/fetch_seshat.py）</td><td>B</td></tr>
+<tr><td class="l">按来源国分解的商品进口额（芯片 8542、原油 2709、稀土 280530）</td><td class="l">UN Comtrade（comtradeapi.un.org）</td><td class="l">API 自动抓取（analysis/fetch_hhi_comtrade.py，需订阅密钥）</td><td>A</td></tr>
+<tr><td class="l">欧盟天然气进口（自俄罗斯与合计）</td><td class="l">Eurostat nrg_ti_gas</td><td class="l">API 自动抓取（analysis/fetch_eu_gas_dependence.py）</td><td>A</td></tr>
+<tr><td class="l">长期国债收益率（US/JP/DE/GB/MX）</td><td class="l">FRED（OECD long-term government bond yields）</td><td class="l">CSV 直取（analysis/fetch_debt_rg.py）</td><td>A</td></tr>
+<tr><td class="l">广义政府总债务/GDP（US/JP/DE/GB/MX）</td><td class="l">IMF WEO（经 FRED 镜像，因 IMF DataMapper 有访问限制）</td><td class="l">CSV 直取（analysis/fetch_debt_gdp.py）</td><td>A</td></tr>
+<tr><td class="l">粮食生产／贸易／价格／平衡表</td><td class="l">FAOSTAT 批量数据（QCL/TCL/PP/FBS）</td><td class="l">bulk ZIP 下载 + 脚本（analysis/food_energy_validation.py）</td><td>A</td></tr>
+<tr><td class="l">按伙伴国分解的粮食贸易（买家集中度）</td><td class="l">FAOSTAT Detailed Trade Matrix</td><td class="l">bulk ZIP 下载 + 脚本（analysis/food_trade_diversification.py）</td><td>A/B</td></tr>
+<tr><td class="l">粮食期末库存（缓冲）</td><td class="l">USDA FAS PS&D</td><td class="l">bulk CSV 下载 + 脚本（analysis/fetch_psd_reserves.py）</td><td>A/B</td></tr>
+</table>
+<div class="datasrc"><b>说明：</b>质量等级 A＝官方统计可直接复现；B＝公开估算、口径稳定；C＝稀疏或构造性序列，仅可用于方向判断。<b>使用须遵守各来源许可；出版前应核校最新版本。</b></div>
+
+<h3>C.1b　质量 C（指示性／构造性）数据与图表的完整清单</h3>
+<p>为避克"虚拟数据混入真实数据"，本节把全书所有<b>指示性、示意性或构造性</b>（质量 C）的内容集中登记。凡在此表之外出现的数值，均来自表 C.1 所列的公开真实序列（质量 A 或 B），或由这些序列直接计算得出。<b>本书不存在将构造序列标注为实测数据的情形：每—质量 C 处均在标题与脚注两处标注。</b></p>
+<table class="nat">
+<caption class="cap"><b>表 C.2　质量 C（指示性／构造性）数据与图表清单</b></caption>
+<tr><th class="l">位置</th><th class="l">内容</th><th class="l">性质</th><th class="l">使用规则</th></tr>
+<tr><td class="l">表 1.1</td><td class="l">相空间维度与周期模型有效性的示意关系</td><td class="l">定性对照</td><td class="l">仅示意，不作证据</td></tr>
+<tr><td class="l">表 3.1、3.2、3.4；图 3.2</td><td class="l">信息失效、复杂度两端失效、失稳时刻；反馈通道与失配区</td><td class="l">说明性</td><td class="l">仅方向，数值不可引用</td></tr>
+<tr><td class="l">表 3.3、3.5、3.6</td><td class="l">三通道特征、五类反馈通道、反馈拓扑同构类</td><td class="l">说明性／理论分类</td><td class="l">仅方向，不可引用数值</td></tr>
+<tr><td class="l">表 5.6、5.7</td><td class="l">行业集中度、前现代垄断／地租估计</td><td class="l">量级示意</td><td class="l">不可引用数值</td></tr>
+<tr><td class="l">表 6.2</td><td class="l">三系统 I 与 Θ 的示意定位</td><td class="l">量级示意</td><td class="l">不可精确比较</td></tr>
+<tr><td class="l">表 7.1；图 7.1、7.2</td><td class="l">κ 三维度示意轨迹与通道</td><td class="l">构造序列</td><td class="l">正式出版须以官方序列替换</td></tr>
+<tr><td class="l">表 8.2、8.3</td><td class="l">V 的权重方案与先验区间</td><td class="l">先验范围</td><td class="l">待敏感性检验</td></tr>
+<tr><td class="l">表 9.1—9.8；图 9.1—9.3</td><td class="l">三案例基准、节点索引、债务情景</td><td class="l">指示性赋值</td><td class="l">结构指标，非风险概率</td></tr>
+<tr><td class="l">表 B.1</td><td class="l">五步模板填写范例</td><td class="l">指示性</td><td class="l">仅示例</td></tr>
+</table>
+<div class="datasrc"><b>使用规则（三条）：</b><b>（一）</b>凡质量 C 处，标题与脚注双重标注，正文提及时明确"示意／指示"；<b>（二）</b>质量 C 的数值只用于方向与量级讨论，不得用于水平比较或精确引用；<b>（三）</b>需要水平结论的地方，仅使用质量 A/B 的真实序列（表 C.1），并在图表标题注明来源与年份。<b>备注：</b>图表中同时含真实序列与示意的位置已在图注中分开说明。</div>
+
+<h3>C.2　复现步骤</h3>
+<p>全部脚本位于 <code>analysis/</code>，结果写入 <code>data/</code> 与 <code>analysis/results/</code>。重跑顺序：</p>
+<ol>
+<li><code>fetch_and_inject.py</code> —— World Bank 抓取（Gini、贸易、信贷、债务）。</li>
+<li><code>fetch_imf.py</code> —— IMF 三类债务。</li>
+<li><code>fetch_chapter8.py</code> —— 通胀与利率。</li>
+<li><code>fetch_chapter5.py</code> —— 政府支出 + WGI 制度质量。</li>
+<li><code>parse_wid.py</code> —— 解析 WID 财富／收入 CSV。</li>
+<li><code>parse_chapter8_inputs.py</code> —— 解析 Brent 日度与 WGI xlsx。</li>
+<li><code>fetch_seshat.py</code> —— 抽取中国政体序列（表 2.3、图 2.2）。</li>
+<li><code>kappa_nodes.py</code> —— κ 脆弱节点的 V 应用与 γ 敏感性（表 9.2b、图 9.1）。</li>
+<li><code>fetch_kappa_wdi.py</code> —— World Bank WDI 贸易／能源／燃料真实序列（κ 分量，质量 A）。</li>
+<li><code>fetch_hhi_comtrade.py</code> —— UN Comtrade 按来源国分解的进口 HHI（表 7.1c，质量 A；需先复制 <code>.env.comtrade.example</code> 为 <code>.env.comtrade</code> 并填入订阅密钥）。</li>
+<li><code>fetch_eu_gas_dependence.py</code> —— Eurostat 欧盟自俄天然气进口份额（表 9.3c，质量 A）。</li>
+<li><code>fetch_debt_rg.py</code> —— FRED + World Bank 的 r−g 真实输入（表 9.7c，r/g 为质量 A）。</li>
+<li><code>fetch_debt_gdp.py</code> —— IMF WEO（经 FRED）广义政府债务/GDP（表 9.7c，质量 A）。</li>
+<li><code>food_energy_validation.py</code> —— 粮食（FAOSTAT）与能源（WB+快速验证集）跨域检验（附录 D，质量 C）。</li>
+<li><code>axis_independence.py</code> —— 三轴相关结构与测量审计（附录 D.6）。</li>
+<li><code>food_trade_diversification.py</code> —— 买家集中度与替代性的商品特异性（附录 D.7，需 TM 数据）。</li>
+<li><code>fetch_psd_reserves.py</code> —— 粮食期末库存与缓冲月数（附录 D.7.1，USDA PS&D）。</li>
+<li><code>make_figures_domains.py</code> —— 附录 D 的矢量插图（图 D.1、D.2）。</li>
+<li><code>v_timeseries.py</code> —— 2000—2024 年 V(t) 真实序列（表 9.11、图 9.3）。</li>
+<li><code>make_figures.py</code> —— 生成矢量插图（图 2.2、5.2、5.3、9.2、B.1）。</li>
+<li><code>export_figures.py</code> —— 导出高分辨率 PNG 备份。</li>
+<li><code>glossary.py</code> —— 术语统一（幂等）。</li>
+<li><code>audit.py</code> —— 全书校对（术语、编号、交叉引用、来源）。</li>
+<li><code>build_book.py --pdf</code> —— 生成 <code>book.pdf</code>；<code>--ereader</code> 生成电子书版。</li>
+</ol>
+
+<h3>C.3　数据刷新工作流</h3>
+<p>监测体系的价值在于<b>可更新</b>。推荐流程：</p>
+<ol>
+<li>每季度重跑 <code>fetch_and_inject.py</code> 与 <code>fetch_imf.py</code>（API 数据），自动刷新。</li>
+<li>每年重新导出 WID／WGI（用户导出），运行 <code>parse_wid.py</code>。</li>
+<li>运行 <code>audit.py</code>，核对是否有数值缺失或口径变化。</li>
+<li>在"可证伪登记簿"（第 11 章表 11.4）记录本期信号与判定。</li>
+</ol>
+<div class="datasrc"><b>设计原则：</b>数据与正文分离（占位符 <code>&#123;&#123;D:...&#125;&#125;</code> → <code>injected.json</code>）；因此更新数据无需改动正文，只需重跑脚本与构建。</div>
+
+<h3>C.4　代码与许可</h3>
+<p>本书分析代码为作者独立编写，使用 Python 标准库与 pandas/matplotlib。第三方数据的使用须遵守其许可（World Bank CC BY 4.0；IMF、WID、WGI 各有其条款）。复现所需的全部脚本与数据文件随书提供。</p>

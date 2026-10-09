@@ -1,0 +1,31 @@
+Commodity,Country,Year,EndingStocks,DomCons,Exports,BufferMonths,ExportCoverMonths
+"Rice, Milled",India,2018,29500.0,99164.0,10420.0,3.6,34.0
+"Rice, Milled",India,2019,33900.0,101950.0,12520.0,4.0,32.5
+"Rice, Milled",India,2020,37000.0,101052.0,20216.0,4.4,22.0
+"Rice, Milled",India,2021,34000.0,110444.0,22027.0,3.7,18.5
+"Rice, Milled",India,2022,35000.0,114513.0,20242.0,3.7,20.7
+"Rice, Milled",Thailand,2018,4010.0,11800.0,7565.0,4.1,6.4
+"Rice, Milled",Thailand,2019,4000.0,12200.0,5715.0,3.9,8.4
+"Rice, Milled",Thailand,2020,4480.0,12300.0,6283.0,4.4,8.6
+"Rice, Milled",Thailand,2021,4426.0,12300.0,7682.0,4.3,6.9
+"Rice, Milled",Thailand,2022,4349.0,12300.0,8736.0,4.2,6.0
+"Rice, Milled",Vietnam,2018,1197.0,21200.0,6581.0,0.7,2.2
+"Rice, Milled",Vietnam,2019,1280.0,21350.0,6167.0,0.7,2.5
+"Rice, Milled",Vietnam,2020,3289.0,21850.0,6272.0,1.8,6.3
+"Rice, Milled",Vietnam,2021,3605.0,22050.0,7054.0,2.0,6.1
+"Rice, Milled",Vietnam,2022,3770.0,22250.0,8225.0,2.0,5.5
+Wheat,Russia,2018,7778.0,40500.0,35863.0,2.3,2.6
+Wheat,Russia,2019,7228.0,40000.0,34485.0,2.2,2.5
+Wheat,Russia,2020,11380.0,42500.0,39100.0,3.2,3.5
+Wheat,Russia,2021,12088.0,40750.0,34000.0,3.6,4.3
+Wheat,Russia,2022,14388.0,41000.0,49000.0,4.2,3.5
+Wheat,Ukraine,2018,1555.0,8800.0,16019.0,2.1,1.2
+Wheat,Ukraine,2019,1504.0,8300.0,21016.0,2.2,0.9
+Wheat,Ukraine,2020,1505.0,8700.0,16851.0,2.1,1.1
+Wheat,Ukraine,2021,6265.0,9500.0,18844.0,7.9,4.0
+Wheat,Ukraine,2022,2926.0,7800.0,17122.0,4.5,2.1
+Wheat,United States,2018,29386.0,29991.0,25503.0,11.8,13.8
+Wheat,United States,2019,27985.0,30437.0,26373.0,11.0,12.7
+Wheat,United States,2020,23001.0,30185.0,27048.0,9.1,10.2
+Wheat,United States,2021,18355.0,30411.0,21656.0,7.2,10.2
+Wheat,United States,2022,15501.0,30361.0,20700.0,6.1,9.0

@@ -1,0 +1,77 @@
+{
+  "n": 13,
+  "mean_duration": 143.3,
+  "sd_duration": 64.5,
+  "cv": 0.45,
+  "min": 36,
+  "max": 275,
+  "median": 144,
+  "series": [
+    {
+      "label": "秦／西汉",
+      "start": -202,
+      "duration": 211
+    },
+    {
+      "label": "东汉",
+      "start": 25,
+      "duration": 194
+    },
+    {
+      "label": "西晋",
+      "start": 265,
+      "duration": 52
+    },
+    {
+      "label": "北魏",
+      "start": 386,
+      "duration": 171
+    },
+    {
+      "label": "隋",
+      "start": 581,
+      "duration": 36
+    },
+    {
+      "label": "唐（前期）",
+      "start": 618,
+      "duration": 144
+    },
+    {
+      "label": "唐（后期）",
+      "start": 763,
+      "duration": 144
+    },
+    {
+      "label": "北宋",
+      "start": 960,
+      "duration": 166
+    },
+    {
+      "label": "金（后期）",
+      "start": 1127,
+      "duration": 107
+    },
+    {
+      "label": "元",
+      "start": 1271,
+      "duration": 96
+    },
+    {
+      "label": "明",
+      "start": 1368,
+      "duration": 275
+    },
+    {
+      "label": "清（前期）",
+      "start": 1644,
+      "duration": 151
+    },
+    {
+      "label": "清（后期）",
+      "start": 1796,
+      "duration": 116
+    }
+  ],
+  "note": "Seshat 以‘政体’（polity）为单元，唐、清被拆为前后两段；因此时长不含统一王朝的完整跨度。变异系数用于说明‘周期’不稳定。"
+}

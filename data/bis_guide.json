@@ -1,0 +1,12 @@
+{
+  "source": "BIS Statistics",
+  "url": "https://data.bis.org/",
+  "datasets": [
+    "Consolidated banking statistics",
+    "Locational banking statistics"
+  ],
+  "target_keys": [
+    "kappa_financial_1980",
+    "kappa_financial_2026"
+  ]
+}

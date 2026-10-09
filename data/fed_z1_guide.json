@@ -1,0 +1,8 @@
+{
+  "source": "Federal Reserve Financial Accounts (Z.1)",
+  "url": "https://www.federalreserve.gov/releases/z1/",
+  "tables": [
+    "L.223 Household wealth composition",
+    "L.225 Nonfinancial corporate assets"
+  ]
+}

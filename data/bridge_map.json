@@ -1,0 +1,14 @@
+{
+  "brent_oil.csv": {
+    "prefix": "brent_oil",
+    "scale": 1
+  },
+  "ai_top5_share.csv": {
+    "prefix": "ai_top5_share",
+    "scale": 100
+  },
+  "us_polstab.csv": {
+    "prefix": "us_polstab",
+    "scale": 1
+  }
+}

@@ -1,0 +1,13 @@
+reporter,commodity,year,total_value_usd,hhi,top_partner_code,top_share,n_partners,source
+CHN,chips,2023,350138570686.0,0.2126,490,0.3852,123,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+USA,chips,2023,36062821301.0,0.137,458,0.2684,121,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+JPN,chips,2023,28685975906.0,0.4039,490,0.6216,70,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+IND,chips,2023,19215450431.0,0.3334,156,0.5237,86,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+CHN,crude_oil,2023,337644667180.0,0.0992,643,0.1797,49,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+USA,crude_oil,2023,172426221223.0,0.3414,124,0.5636,45,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+JPN,crude_oil,2023,80928327591.0,0.334,682,0.4103,16,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+IND,crude_oil,2023,140386299645.0,0.1973,643,0.3465,34,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+CHN,rare_earth,2023,20381012.0,0.7424,704,0.8524,10,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+USA,rare_earth,2023,22096375.0,0.9749,156,0.9873,12,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+JPN,rare_earth,2023,333323081.0,0.4442,156,0.5864,9,"UN Comtrade (comtradeapi.un.org), HS-6, imports"
+IND,rare_earth,2023,4902683.0,0.9776,156,0.9887,4,"UN Comtrade (comtradeapi.un.org), HS-6, imports"

@@ -1,0 +1,20 @@
+{
+  "common": [
+    "China",
+    "Russian Federation",
+    "United States of America"
+  ],
+  "Food": {
+    "China": 0.3309,
+    "Russian Federation": 0.3895,
+    "United States of America": 0.2231
+  },
+  "Energy": {
+    "China": 0.8897,
+    "Russian Federation": 0.1042,
+    "United States of America": 0.4259
+  },
+  "pearson": -0.248,
+  "spearman": -0.5,
+  "n": 3
+}

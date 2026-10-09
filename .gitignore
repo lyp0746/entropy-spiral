@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.env.build
+.env.comtrade
+
+# 构建产物（可由 scripts/build.sh 重新生成）
+/output/
+/release/
+
+# 归档用的大体量二进制（保留 versions/CHANGELOG.md 与 source 快照即可）
+versions/**/*.pdf
+
+# 临时文件
+.tmp/
+*.tmp
+*.aux
+*.log
+*.out
+analysis.zip
+*.zip
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini

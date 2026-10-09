@@ -1,0 +1,78 @@
+v4 —— Ω（反馈环指数）与真实数据快照
+====================================
+冻结时间：2026（本轮）
+内容：source/（正文）、analysis/*.py（脚本）、校对清单.md、METHODOLOGY.md、
+      DATA-SOURCES.md、README.md、CHANGELOG.md
+
+本快照**不含**：.env.comtrade / .env.build（密钥）、data/（原始数据）、
+output/ 与 release/（构建产物，可由 scripts/build.sh 重建）。
+
+相对 v3 的关键变化
+------------------
+1. §3.8 新增：反馈速度、纠错能力与制度同构性
+   - 定义 3.4 反馈环指数 Ω；定义 3.5 同构脆弱（假说）
+   - 式(3.5) 失配判据 v_shock > 1/Ω_eff；表 3.5 五类反馈通道；表 3.6 同构类
+   - 图 3.2 fig-feedback.svg
+   - 新参考文献：Ashby(1956)、Simon(1962)、Perrow(1984)
+2. §5.3 新增「反馈拓扑作为中介变量」：用 Ω 重新解释 I 的零结果（表 5.3，框架、无数值）
+3. §6.3 新增真实数据：UN Comtrade 按来源国分解的进口 HHI（表 6.1c，质量 A）
+   - 否证「中国 κ 最高」：中国芯片 HHI 0.213 < 日本 0.404、印度 0.333
+   - 极端集中：稀土（美国 0.975、印度 0.978，几乎全部来自中国）
+4. §8.2/8.3/8.4 三案例反馈拓扑诊断：
+   - 能源＝两层（mesh 价格 + sequence 物理），δ≠0；表 8.3c（Eurostat，质量 A，
+     欧盟自俄气份额 41.0%→20.7%→9.3%→11.5%）
+   - AI＝序列链 + 单点集中（非环形自稳）
+   - 债务＝制度相关 δ（市场层能否约束财政层）；新增表 8.7c（FRED + WB 的 r−g，
+     墨西哥 +2.10pp；美/英/日/德为负但 2024 收窄：美 −1.14pp、英 −0.92pp），
+     并补 IMF WEO 债务/GDP（日本 240% 但 δ 最低、墨西哥 58% 但 δ 最高：
+     触发纠错的是 r−g 与央行吸收，而非债务水平）
+5. 表 9.4 登记簿新增 P3.1、P3.2、P5.4、P6.4、P8.5、P8.6
+6. 附录 C：表 C.2（质量 C 内容集中登记与使用规则）；C.1/C.2 补充 Comtrade、Eurostat 源与脚本
+7. 去除正文内部痕迹「本机无网络」（ch06/ch08/ch09）
+8. 防御性校对：audit.py 新增 A7 插图存在性、A8 公式块结构、A9 内部字串扫描
+9. 表 5.3b 反馈拓扑诊断清单（操作性工具，质量 C，无数值）
+10. 表 9.5 纠错失效（与成功）案例库（质量 B/C；能源替代行为真实数据 A 的成功反例）
+
+密钥处理
+--------
+本轮结束时已删除明文密钥文件 .env.comtrade，仅保留模板 .env.comtrade.example。
+使用 Comtrade 脚本前请复制模板并填入自己的密钥；已用密钥请在 https://comtradeplus.un.org/ 轮换。
+
+新增/修改脚本
+-------------
+analysis/fetch_kappa_wdi.py        World Bank WDI：贸易/能源/燃料真实分量（质量 A）
+analysis/fetch_hhi_comtrade.py     UN Comtrade：进口来源 HHI（质量 A，需订阅密钥）
+analysis/fetch_eu_gas_dependence.py Eurostat：欧盟自俄天然气进口份额（质量 A）
+analysis/fetch_debt_rg.py          FRED + WB：利率—增长差 r−g（表 8.7c，r/g 质量 A）
+analysis/fetch_debt_gdp.py         IMF WEO（经 FRED）：广义政府债务/GDP（表 8.7c，质量 A）
+analysis/make_figures.py           新增 fig_feedback() → fig-feedback.svg
+analysis/audit.py                  A7/A8/A9 检查
+
+复现
+----
+1) 创建 .env.comtrade（含 COMTRADE_KEY=...，勿提交）
+2) python analysis/fetch_kappa_wdi.py
+3) python analysis/fetch_hhi_comtrade.py
+4) python analysis/fetch_eu_gas_dependence.py
+5) python analysis/fetch_debt_rg.py
+6) python analysis/make_figures.py && python analysis/audit.py
+7) bash scripts/build.sh   # 或 scripts/release.sh
+
+安全提示
+--------
+本快照生成时所用的 Comtrade 订阅密钥已出现在对话记录中，使用后请到
+https://comtradeplus.un.org/ 轮换。
+
+发布元数据（v4，可独立于发行渠道使用）
+------------------------------------
+Title     : 社会系统熵增螺旋与脆弱性诊断
+Subtitle  : 从周期论破产到局部可描述性框架
+Author    : 李毅芃
+Version   : v4
+Date      : 2026-10-07
+License   : CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）
+Subjects  : 经济学；系统科学；复杂性科学；风险管理；国际政治经济
+Keywords  : 熵增螺旋；租佃份额；脆弱性诊断；局部可描述性；条件情景；Seshat；政治经济学
+  已写入：PDF 元数据（/Title /Author /Subject /Keywords）与 EPUB OPF
+  （dc:date / dc:subject / dc:rights / dcterms:license）。
+第三方数据许可不适用本书 CC BY（见书内版权页与附录 C）。
