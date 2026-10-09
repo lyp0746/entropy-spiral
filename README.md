@@ -4,7 +4,7 @@
 
 [![内容许可: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![代码许可: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
-[![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/tag/edition-2026-10-09)
+[![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23217100.svg)](https://doi.org/10.5281/zenodo.23217100)
 
 一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
@@ -17,7 +17,7 @@
 全书不预测崩溃时点，只做诚实的局部诊断。
 
 - 🚀 **快速开始**　[快速开始](#快速开始)（一条命令构建 PDF/EPUB）
-- 📥 **下载**　[`Releases`](../../releases/tag/edition-2026-10-09)（印刷版 PDF · 电子阅读版 PDF · EPUB 3 · 封面），或本地 `bash scripts/release.sh` → `release/`
+- 📥 **下载**　[`Releases`](../../releases/latest)（印刷版 PDF · 电子阅读版 PDF · EPUB 3 · 封面），或本地 `bash scripts/release.sh` → `release/`
 - 🤝 **参与**　[CONTRIBUTING.md](CONTRIBUTING.md) · 数据缺口见 [`docs/DATA-GAPS.md`](docs/DATA-GAPS.md)
 - 📚 **引用**　见 [引用](#引用) 与 [`CITATION.cff`](CITATION.cff)
 
