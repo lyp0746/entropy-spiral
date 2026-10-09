@@ -24,3 +24,6 @@ analysis.zip
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 发布用临时凭据（绝不提交）
+.release_token
