@@ -40,6 +40,21 @@ def api(url, token, data=None, method=None, raw=False, content_type=None):
         return json.loads(r.read().decode("utf-8"))
 
 
+def create_release_with_retry(token, body):
+    payload = {"tag_name": TAG, "target_commitish": os.environ.get("RELEASE_TARGET", "main"),
+               "name": RELEASE_NAME, "body": body, "draft": False, "prerelease": False}
+    last = None
+    for attempt in range(4):
+        try:
+            return api(f"https://api.github.com/repos/{REPO}/releases", token,
+                       data=payload, method="POST")
+        except Exception as e:  # 422 when the freshly pushed tag is not yet indexed
+            last = e
+            import time
+            time.sleep(3 * (attempt + 1))
+    raise last
+
+
 def main():
     token = read_token()
     body = os.environ.get("RELEASE_BODY") or (
@@ -53,10 +68,7 @@ def main():
         "本修订新增：§11.9 操作检验流程、§13.11 学习滞后（二阶时间错配）、"
         "后记《方法论的自限性与伦理立场》。"
     )
-    rel = api(f"https://api.github.com/repos/{REPO}/releases", token,
-              data={"tag_name": TAG, "name": RELEASE_NAME,
-                    "body": body, "draft": False, "prerelease": False},
-              method="POST")
+    rel = create_release_with_retry(token, body)
     upload_url = rel["upload_url"].split("{")[0]
     print("release:", rel["html_url"])
 
