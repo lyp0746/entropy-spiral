@@ -5,7 +5,7 @@
 [![内容许可: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![代码许可: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
 [![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/tag/edition-2026-10-09)
-[![DOI](https://img.shields.io/badge/DOI-pending-orange.svg)](#引用)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23264927.svg)](https://doi.org/10.5281/zenodo.23264927)
 
 一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
 同时输出**印刷版 PDF、电子阅读版 PDF 与 EPUB 3**。
@@ -222,10 +222,15 @@ v5 风险分解与缓冲、v6 错位的时间）的定位与变化，见 `versio
 若你在研究或写作中使用本书，请引用：
 
 > 李毅芃. 《错位的时间：社会系统的熵增螺旋、制度错配与可控性边界》. 初版, 2026-10-09. CC BY 4.0.
+> DOI: [10.5281/zenodo.23264927](https://doi.org/10.5281/zenodo.23264927)
 
 机器可读引用见 [`CITATION.cff`](CITATION.cff)。
-本书的**长期存档与 DOI** 建议使用 Zenodo（将本仓库打 Tag 发布即可获得 DOI）；
-DOI 生成后会在此处补充。
+
+- **本版 DOI（版本）**：<https://doi.org/10.5281/zenodo.23264927>
+- **概念 DOI（所有版本）**：<https://doi.org/10.5281/zenodo.23217100>
+- **Zenodo 记录**：<https://zenodo.org/records/23264927>
+
+引用某一版时用**版本 DOI**；泛指全部版本时用**概念 DOI**。
 
 ## 许可
 

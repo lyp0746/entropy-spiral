@@ -1,0 +1,40 @@
+{
+  "title": "错位的时间：社会系统的熵增螺旋、制度错配与可控性边界",
+  "description": "<p>本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它在三根不可逆轴（Θ 租佃份额、I 组织复杂度、κ 地缘耦合）之外，提出一个独立的时间来源：<b>时间错配 τ = T_min / T_available</b> 与 <b>可控性 C = T_policy / T_threat = 1/τ</b>。现代社会不是一个钟，而是许多转速不同的钟；错位是结构性的，而非暂时失调。全书不预测崩溃时点，只做诚实的局部诊断，并提供可证伪的命题登记簿与开放的数据缺口清单。</p><p>源码、数据与构建流程：<a href=\"https://github.com/lyp0746/entropy-spiral\">GitHub</a>。内容许可 CC BY 4.0；代码许可 MIT。</p>",
+  "creators": [
+    {
+      "name": "李毅芃",
+      "affiliation": "独立研究者"
+    }
+  ],
+  "keywords": [
+    "错位的时间",
+    "熵增螺旋",
+    "时间错配",
+    "可控性边界",
+    "脆弱性诊断",
+    "局部可描述性",
+    "时间社会学",
+    "entropy spiral",
+    "temporal mismatch",
+    "controllability boundary",
+    "vulnerability diagnosis"
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "language": "zho",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/lyp0746/entropy-spiral",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23217100",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    }
+  ]
+}
