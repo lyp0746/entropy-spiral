@@ -35,6 +35,7 @@ FRONT = [("开篇　一个关于“来不及”的故事", "front_opening.html",
          ("前言　为什么放弃周期论，为什么以时间为线索", "front_preface.html", "preface"),
          ("执行摘要（Executive Summary）", "front_executive_summary.html", "execsummary")]
 BACK = [("结语　承认与启蒙", "back_epilogue.html", "epilogue"),
+        ("后记　方法论的自限性与伦理立场", "back_postscript.html", "postscript"),
         ("附录 A　数学补充", "appendix_a_math.html", "apxA"),
         ("附录 B　方法论的跨领域应用", "appendix_b_domains.html", "apxB"),
         ("附录 C　数据源与再现性", "appendix_c_data.html", "apxC"),

@@ -83,7 +83,7 @@
       "first": "ch01.html"
     },
     "脆弱性": {
-      "total": 126,
+      "total": 127,
       "by_chapter": [
         [
           "ch01.html",
@@ -127,7 +127,7 @@
         ],
         [
           "ch11.html",
-          3
+          4
         ],
         [
           "ch12.html",
@@ -201,7 +201,7 @@
       "first": "ch01.html"
     },
     "代理": {
-      "total": 149,
+      "total": 150,
       "by_chapter": [
         [
           "ch01.html",
@@ -233,7 +233,7 @@
         ],
         [
           "ch11.html",
-          22
+          23
         ],
         [
           "ch12.html",
@@ -301,7 +301,7 @@
       "first": "ch02.html"
     },
     "局部可描述性": {
-      "total": 11,
+      "total": 13,
       "by_chapter": [
         [
           "ch02.html",
@@ -317,7 +317,7 @@
         ],
         [
           "ch11.html",
-          7
+          9
         ]
       ],
       "first": "ch02.html"
@@ -345,7 +345,7 @@
       "first": "ch05.html"
     },
     "半衰期": {
-      "total": 6,
+      "total": 9,
       "by_chapter": [
         [
           "ch02.html",
@@ -357,7 +357,7 @@
         ],
         [
           "ch11.html",
-          4
+          7
         ]
       ],
       "first": "ch02.html"
@@ -395,12 +395,14 @@
     "10.3": "ch10.html",
     "11.2": "ch11.html",
     "11.3": "ch11.html",
+    "11.4": "ch11.html",
     "12.1": "ch12.html",
     "12.2": "ch12.html",
     "12.3": "ch12.html",
     "13.1": "ch13.html",
     "13.2": "ch13.html",
     "13.3": "ch13.html",
+    "13.4": "ch13.html",
     "14.1": "ch14.html",
     "14.2": "ch14.html",
     "14.3": "ch14.html"
@@ -617,6 +619,7 @@
     "11.3",
     "11.4",
     "11.5",
+    "11.6",
     "12.1",
     "12.2",
     "12.3",
@@ -627,6 +630,7 @@
     "13.3",
     "13.4",
     "13.5",
+    "13.6",
     "14.1",
     "14.2",
     "14.3",
@@ -1162,6 +1166,10 @@
       "snippet": "P7.4美国在脆弱性排序中居首指示性输入下 top1 概率 99.4%，但真实数据下降至第五已检验否证"
     },
     {
+      "chapter": "ch11.html",
+      "snippet": "性质：操作规范（质量 C，方向性）"
+    },
+    {
       "chapter": "ch12.html",
       "snippet": "任务：完成 P6.1 的\"C→B\"升级——把第 7 章的示意序列替换为可引用序列"
     },
@@ -1192,6 +1200,14 @@
     {
       "chapter": "ch13.html",
       "snippet": "性质：框架示例（质量 C）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "表 13.6　二阶时间错配的例子（量级示意，质量 C）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：量级示意（质量 C）"
     },
     {
       "chapter": "ch14.html",
@@ -1256,6 +1272,7 @@
       "ch04.html",
       "ch08.html",
       "ch10.html",
+      "ch11.html",
       "ch13.html"
     ],
     "14": [
@@ -1596,7 +1613,8 @@
       "ch02.html",
       "ch04.html",
       "ch06.html",
-      "ch08.html"
+      "ch08.html",
+      "ch13.html"
     ],
     "0.50": [
       "ch10.html"
@@ -1901,7 +1919,8 @@
       "ch01.html"
     ],
     "1.4": [
-      "ch01.html"
+      "ch01.html",
+      "ch13.html"
     ],
     "1.45": [
       "ch06.html"
@@ -1957,6 +1976,9 @@
     ],
     "11.1": [
       "ch10.html",
+      "ch11.html"
+    ],
+    "11.10": [
       "ch11.html"
     ],
     "11.2": [
@@ -2022,15 +2044,21 @@
       "ch05.html"
     ],
     "13.1": [
+      "ch11.html",
       "ch13.html"
     ],
     "13.10": [
+      "ch11.html",
       "ch13.html"
     ],
     "13.11": [
       "ch13.html"
     ],
+    "13.12": [
+      "ch13.html"
+    ],
     "13.2": [
+      "ch11.html",
       "ch13.html"
     ],
     "13.3": [
@@ -2718,8 +2746,7 @@
     ],
     "9.2": [
       "ch08.html",
-      "ch09.html",
-      "ch11.html"
+      "ch09.html"
     ],
     "9.3": [
       "ch08.html",
@@ -2728,26 +2755,22 @@
     ],
     "9.4": [
       "ch08.html",
-      "ch09.html",
-      "ch11.html"
+      "ch09.html"
     ],
     "9.5": [
-      "ch09.html",
-      "ch11.html"
+      "ch09.html"
     ],
     "9.55": [
       "ch09.html"
     ],
     "9.6": [
-      "ch09.html",
-      "ch11.html"
+      "ch09.html"
     ],
     "9.7": [
       "ch09.html"
     ],
     "9.8": [
-      "ch09.html",
-      "ch11.html"
+      "ch09.html"
     ],
     "9.9": [
       "ch09.html"

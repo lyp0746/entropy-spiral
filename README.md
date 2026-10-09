@@ -5,7 +5,7 @@
 [![内容许可: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![代码许可: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
 [![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/tag/edition-2026-10-09)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23264927.svg)](https://doi.org/10.5281/zenodo.23264927)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23217100.svg)](https://doi.org/10.5281/zenodo.23217100)
 
 一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
 同时输出**印刷版 PDF、电子阅读版 PDF 与 EPUB 3**。
@@ -151,7 +151,8 @@ python build_epub.py                # output/book.epub
 | 二 三个核心变量的时间重读 | 5—7 | Θ 与租佃攫取的**加速度**；I 与制度反应时间的**延长**；κ 与传导的**加速** |
 | 三 综合诊断框架 | 8—9 | 脆弱性指标 V；从芯片到知识的**四个案例**；时间维度指标 |
 | 四 应用、测试与边界 | 10—12 | 三情景实装检验；发现的逻辑；局部可描述性；行动议程 |
-| 五 时间、可控性与现代性诊断 | 13—15 | 可控性边界与控制论；**优雅降级**；重新定义 I；六大领域的扩散 |
+| 五 时间、可控性与现代性诊断 | 13—15 | 可控性边界与控制论；**优雅降级**；**学习滞后（二阶时间错配）**；重新定义 I；六大领域的扩散 |
+| 结语与后记 | — | 结语《承认与启蒙》；**后记《方法论的自限性与伦理立场》** |
 
 **核心变量。**
 
@@ -222,15 +223,17 @@ v5 风险分解与缓冲、v6 错位的时间）的定位与变化，见 `versio
 若你在研究或写作中使用本书，请引用：
 
 > 李毅芃. 《错位的时间：社会系统的熵增螺旋、制度错配与可控性边界》. 初版, 2026-10-09. CC BY 4.0.
-> DOI: [10.5281/zenodo.23264927](https://doi.org/10.5281/zenodo.23264927)
+> DOI: [10.5281/zenodo.23217100](https://doi.org/10.5281/zenodo.23217100)
 
 机器可读引用见 [`CITATION.cff`](CITATION.cff)。
 
-- **本版 DOI（版本）**：<https://doi.org/10.5281/zenodo.23264927>
-- **概念 DOI（所有版本）**：<https://doi.org/10.5281/zenodo.23217100>
+- **概念 DOI（所有版本，推荐）**：<https://doi.org/10.5281/zenodo.23217100>
+- **已归档版本 DOI**：<https://doi.org/10.5281/zenodo.23264927>
 - **Zenodo 记录**：<https://zenodo.org/records/23264927>
 
 引用某一版时用**版本 DOI**；泛指全部版本时用**概念 DOI**。
+本仓库持续修订：每次发布新版本时，应在 Zenodo 生成对应的**新版本 DOI**
+（若启用 Zenodo 的 GitHub 集成并新建 Release，会自动化完成）。
 
 ## 许可
 

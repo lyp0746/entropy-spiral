@@ -9,8 +9,9 @@ import re
 import urllib.parse
 import urllib.request
 
-REPO = "lyp0746/entropy-spiral"
-TAG = "edition-2026-10-09"
+REPO = os.environ.get("RELEASE_REPO", "lyp0746/entropy-spiral")
+TAG = os.environ.get("RELEASE_TAG", "edition-2026-10-09")
+RELEASE_NAME = os.environ.get("RELEASE_NAME", "初版（2026-10-09）")
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 TOKEN_FILE = os.path.join(ROOT, ".release_token")
@@ -41,18 +42,19 @@ def api(url, token, data=None, method=None, raw=False, content_type=None):
 
 def main():
     token = read_token()
-    body = (
-        "《错位的时间》初版可发布产物。\n\n"
+    body = os.environ.get("RELEASE_BODY") or (
+        "《错位的时间》可发布产物。\n\n"
         "- `entropy-spiral-print.pdf`　印刷版（A4，宋体+Times，四级书签）\n"
         "- `entropy-spiral-ereader.pdf`　电子阅读版（B5）\n"
         "- `entropy-spiral.epub`　EPUB 3（nav + NCX 四级目录）\n"
         "- `cover.svg`　封面矢量图\n\n"
-        "五部分、十五章 + 开篇 + 结语 + 附录 A–H；正文与元数据不含版本号，"
+        "五部分、十五章 + 开篇 + 结语 + **后记** + 附录 A–H；正文与元数据不含版本号，"
         "日期为真实完成日期。内容许可 CC BY 4.0，代码许可 MIT。\n\n"
-        "由 `release/` 目录生成；构建方式见 README。"
+        "本修订新增：§11.9 操作检验流程、§13.11 学习滞后（二阶时间错配）、"
+        "后记《方法论的自限性与伦理立场》。"
     )
     rel = api(f"https://api.github.com/repos/{REPO}/releases", token,
-              data={"tag_name": TAG, "name": "初版（2026-10-09）",
+              data={"tag_name": TAG, "name": RELEASE_NAME,
                     "body": body, "draft": False, "prerelease": False},
               method="POST")
     upload_url = rel["upload_url"].split("{")[0]
