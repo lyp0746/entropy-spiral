@@ -228,8 +228,8 @@
     {
       "file": "ch08.html",
       "fast_chars": 1479,
-      "full_chars": 13559,
-      "fast_ratio": 0.109,
+      "full_chars": 10967,
+      "fast_ratio": 0.135,
       "key_output_items": [
         {
           "item": "强（可直接使用）：权重来自机制而非拟合，γ>α>λ>β 的“耦合优先”高层结论成立。",
@@ -266,8 +266,8 @@
     {
       "file": "ch09.html",
       "fast_chars": 3387,
-      "full_chars": 23893,
-      "fast_ratio": 0.142,
+      "full_chars": 21252,
+      "fast_ratio": 0.159,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Risk(S) 必须冲击特异：不存在跨情景通用的脆弱性排序；前三个案例已接入真实序列。",
@@ -365,8 +365,8 @@
     {
       "file": "ch12.html",
       "fast_chars": 2642,
-      "full_chars": 7009,
-      "fast_ratio": 0.377,
+      "full_chars": 7443,
+      "fast_ratio": 0.355,
       "key_output_items": [
         {
           "item": "强（可直接使用）：否证命题用来校正工具，支持命题用来搭建常设监测，待检命题按紧迫性与可行性排序。",
@@ -397,8 +397,8 @@
     {
       "file": "ch13.html",
       "fast_chars": 1765,
-      "full_chars": 12967,
-      "fast_ratio": 0.136,
+      "full_chars": 13256,
+      "fast_ratio": 0.133,
       "key_output_items": [
         {
           "item": "强（可直接使用）：C = T_policy / T_threat；C<1 即结构性不可控，总可控性取最弱环节。",
@@ -427,8 +427,8 @@
     {
       "file": "ch14.html",
       "fast_chars": 1404,
-      "full_chars": 7703,
-      "fast_ratio": 0.182,
+      "full_chars": 7910,
+      "fast_ratio": 0.177,
       "key_output_items": [
         {
           "item": "强（可直接使用）：I 的失败不是测量失败，而是概念错置：它是时间量，不是状态量。",
@@ -487,6 +487,104 @@
       "forward_refs_into_gear": [
         "15.3"
       ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch16.html",
+      "fast_chars": 1246,
+      "full_chars": 3820,
+      "fast_ratio": 0.326,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：在 C<1 的结构约束下，提高可控性的现实路径是缩短 Tpolicy；其可操作形式是预授权、触发条件与预设降级。",
+          "concepts": [
+            "C"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：三层的相对杠杆大小依赖于制度环境；在弱制度环境中，个人与组织层的作用更受限。",
+          "concepts": [
+            "I",
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：预授权的具体触发阈值与日落期限，需按领域 calibrate；本书只给形式，不给数值。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch17.html",
+      "fast_chars": 1040,
+      "full_chars": 3330,
+      "fast_ratio": 0.312,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：时间预算的四项工具在三个领域均可找到对应形式；实装难度由触发清晰度与可撤回性决定。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：具体阈值与授权范围需按领域与制度环境重新校准；本书只给形式与方向。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：当 τ 持续大于 1（尤其是气候），事前制度设计能否“来得及”本身不可保证，只能转向暴露管理。",
+          "concepts": [
+            "I",
+            "τ",
+            "C"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [
+        "17.1"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch18.html",
+      "fast_chars": 1061,
+      "full_chars": 2847,
+      "fast_ratio": 0.373,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：认知时间错配是带宽约束；个人层的有效工具是关注清单、预承诺与校准。",
+          "concepts": [
+            "τ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：三种工具的收益依赖个人的可支配时间与信息环境；在信息受限或制度压制的环境中，其作用显著下降。",
+          "concepts": [
+            "I",
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：个人校准能在多大程度上改善长期判断，尚无系统证据；本书只给方向，不给效果量级。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "C"
+      ],
+      "forward_refs_into_gear": [],
       "has_declaration": true
     }
   ]
