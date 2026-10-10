@@ -87,7 +87,7 @@
       "first": "ch01.html"
     },
     "脆弱性": {
-      "total": 137,
+      "total": 139,
       "by_chapter": [
         [
           "ch01.html",
@@ -115,7 +115,7 @@
         ],
         [
           "ch07.html",
-          16
+          17
         ],
         [
           "ch08.html",
@@ -123,7 +123,7 @@
         ],
         [
           "ch09.html",
-          25
+          26
         ],
         [
           "ch10.html",
@@ -205,11 +205,11 @@
       "first": "ch01.html"
     },
     "代理": {
-      "total": 173,
+      "total": 174,
       "by_chapter": [
         [
           "ch01.html",
-          19
+          20
         ],
         [
           "ch02.html",
@@ -497,6 +497,7 @@
       "ch07.html"
     ],
     "8.1": [
+      "ch08.html",
       "ch08.html",
       "ch09.html",
       "ch09.html",
@@ -832,6 +833,10 @@
       "snippet": "性质：定性归纳（质量 C）"
     },
     {
+      "chapter": "ch04.html",
+      "snippet": "弱（有条件使用）：时间量级多为示意而非实测分布"
+    },
+    {
       "chapter": "ch05.html",
       "snippet": "P1 盐铁专卖占比盐（含铁）专卖收入／国家财政收入文献描述示意构造（非逐条提取）"
     },
@@ -1009,7 +1014,7 @@
     },
     {
       "chapter": "ch07.html",
-      "snippet": "本书也无法排除（不确定）：κ 的示意序列须由 WTO／BIS／ITU 真实序列替换后核验"
+      "snippet": "弱（有条件使用）：κ 的示意序列须由 WTO／BIS／ITU 真实序列替换后核验"
     },
     {
       "chapter": "ch07.html",
@@ -1086,10 +1091,6 @@
     {
       "chapter": "ch08.html",
       "snippet": "性质：方法示例（质量 C）"
-    },
-    {
-      "chapter": "ch08.html",
-      "snippet": "性质：机制推导（概念式，质量 C）"
     },
     {
       "chapter": "ch08.html",
@@ -1185,7 +1186,7 @@
     },
     {
       "chapter": "ch09.html",
-      "snippet": "本书也无法排除（不确定）：情景概率是示意性先验，不是估计"
+      "snippet": "弱（有条件使用）：情景概率是示意性先验，不是估计"
     },
     {
       "chapter": "ch10.html",
@@ -1230,10 +1231,6 @@
     {
       "chapter": "ch12.html",
       "snippet": "性质：操作模板（质量 C，演示用）"
-    },
-    {
-      "chapter": "ch13.html",
-      "snippet": "性质：概念分层（方法论，质量 C）"
     },
     {
       "chapter": "ch13.html",
@@ -2445,6 +2442,7 @@
       "ch04.html",
       "ch11.html",
       "ch12.html",
+      "ch13.html",
       "ch15.html"
     ],
     "4.19": [
