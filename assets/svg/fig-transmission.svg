@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="820" height="430" fill="#ffffff"/>
+  <text x="410" y="34" text-anchor="middle" font-size="19" font-weight="bold" fill="#1a1a1a">脆弱性 V 如何驱动时间错配 τ：三条传导通道</text>
+
+  <!-- 左：V 上升 -->
+  <rect x="40" y="150" width="180" height="150" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="130" y="185" text-anchor="middle" font-size="15" font-weight="bold" fill="#e65100">脆弱性 V 上升</text>
+  <text x="130" y="215" text-anchor="middle" font-size="13" fill="#555">Θ 集中度 ↑</text>
+  <text x="130" y="238" text-anchor="middle" font-size="13" fill="#555">I 复杂度 ↑</text>
+  <text x="130" y="261" text-anchor="middle" font-size="13" fill="#555">κ 耦合度 ↑</text>
+  <text x="130" y="286" text-anchor="middle" font-size="11" fill="#999">（结构状态）</text>
+
+  <!-- 右：τ 上升 -->
+  <rect x="600" y="150" width="180" height="150" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="690" y="182" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">时间错配 τ ↑</text>
+  <text x="690" y="212" text-anchor="middle" font-size="12" fill="#555">τ = T_min / T_available</text>
+  <text x="690" y="240" text-anchor="middle" font-size="13" fill="#b71c1c">“来不来得及？”</text>
+  <text x="690" y="266" text-anchor="middle" font-size="12" fill="#999">τ ≥ 1 → 结构性来不及</text>
+  <text x="690" y="288" text-anchor="middle" font-size="11" fill="#999">（时间关系）</text>
+
+  <!-- 通道1 -->
+  <rect x="270" y="80" width="280" height="70" rx="6" fill="#e3f2fd" stroke="#1e88e5" stroke-width="1.5"/>
+  <text x="410" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">① 响应变慢（分子变大）</text>
+  <text x="410" y="130" text-anchor="middle" font-size="12" fill="#555">协调成本随 I、κ 上升 → T_min ↑</text>
+
+  <!-- 通道2 -->
+  <rect x="270" y="185" width="280" height="70" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="410" y="211" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">② 传导变快（分母变小）</text>
+  <text x="410" y="235" text-anchor="middle" font-size="12" fill="#555">冲击沿耦合网络加速 → T_available ↓</text>
+
+  <!-- 通道3 -->
+  <rect x="270" y="290" width="280" height="70" rx="6" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="1.5"/>
+  <text x="410" y="316" text-anchor="middle" font-size="14" font-weight="bold" fill="#6a1b9a">③ 阈值前移（分母变小）</text>
+  <text x="410" y="340" text-anchor="middle" font-size="12" fill="#555">不可逆轴推进 → 越界提前到达</text>
+
+  <!-- 箭头：V -> 通道 -->
+  <line x1="220" y1="150" x2="270" y2="115" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="220" y1="225" x2="270" y2="220" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="220" y1="300" x2="270" y2="325" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+  <!-- 箭头：通道 -> τ -->
+  <line x1="550" y1="115" x2="600" y2="180" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="550" y1="220" x2="600" y2="220" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="550" y1="325" x2="600" y2="270" stroke="#999" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <text x="410" y="400" text-anchor="middle" font-size="12" fill="#777">V 是“结构状态”，τ 是“时间关系”；V 通过三条通道推高 τ，但二者不是同一个量（缓冲大的高 V 系统仍可能 τ&lt;1）。</text>
+</svg>
