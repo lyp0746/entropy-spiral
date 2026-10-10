@@ -13,18 +13,20 @@ authors:
     alias: "Li Yipeng"
     email: "1610369302@qq.com"
 date-released: "2026-10-09"
-version: "初版"
-doi: "10.5281/zenodo.23264927"
+doi: "10.5281/zenodo.23276888"
 license: CC-BY-4.0
 repository-code: "https://github.com/lyp0746/entropy-spiral"
-url: "https://doi.org/10.5281/zenodo.23264927"
+url: "https://doi.org/10.5281/zenodo.23276888"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.23264927"
-    description: "本记录 DOI（保持同一 DOI，文件随修订更新）"
+    value: "10.5281/zenodo.23276888"
+    description: "当前归档 DOI（最新）"
   - type: doi
     value: "10.5281/zenodo.23217100"
-    description: "概念 DOI（concept DOI，指向本记录）"
+    description: "概念 DOI（concept DOI，无版本，始终指向最新）"
+  - type: doi
+    value: "10.5281/zenodo.23264927"
+    description: "上一版归档 DOI（已被取代）"
 keywords:
   - 错位的时间
   - 熵增螺旋
