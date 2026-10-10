@@ -47,7 +47,8 @@ BACK = [("结语　承认与启蒙", "back_epilogue.html", "epilogue"),
         ("附录 F　应用工具包：诊断指南与政策矩阵", "appendix_f_toolkit.html", "apxF"),
         ("附录 G　情景库与可复现框架", "appendix_g_scenario_library.html", "apxG"),
         ("附录 H　可得数据补充与数据缺口", "appendix_h_data_supplement.html", "apxH"),
-        ("附录 I　事前登记清单", "appendix_i_preregistration.html", "apxI")]
+        ("附录 I　事前登记清单", "appendix_i_preregistration.html", "apxI"),
+        ("附录 J　案例数据详表", "appendix_j_cases.html", "apxJ")]
 
 
 def load_json(p, default=None):

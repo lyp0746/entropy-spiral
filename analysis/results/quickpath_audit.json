@@ -126,8 +126,8 @@
     {
       "file": "ch05.html",
       "fast_chars": 2677,
-      "full_chars": 20936,
-      "fast_ratio": 0.128,
+      "full_chars": 16082,
+      "fast_ratio": 0.166,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Θ 的现代代理长期同向上升、重心不回落；前现代盐铁代理反向（ρ=−0.57），强版本被否证。",
@@ -266,8 +266,8 @@
     {
       "file": "ch09.html",
       "fast_chars": 3387,
-      "full_chars": 21252,
-      "fast_ratio": 0.159,
+      "full_chars": 13389,
+      "fast_ratio": 0.253,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Risk(S) 必须冲击特异：不存在跨情景通用的脆弱性排序；前三个案例已接入真实序列。",
@@ -462,8 +462,8 @@
     {
       "file": "ch15.html",
       "fast_chars": 5282,
-      "full_chars": 8752,
-      "fast_ratio": 0.604,
+      "full_chars": 8973,
+      "fast_ratio": 0.589,
       "key_output_items": [
         {
           "item": "强（可直接使用）：医疗、气候、心理、教育、能源、知识共享同一“适应尺度 ≫ 变化尺度”的结构。",
@@ -491,9 +491,9 @@
     },
     {
       "file": "ch16.html",
-      "fast_chars": 1246,
-      "full_chars": 3820,
-      "fast_ratio": 0.326,
+      "fast_chars": 1415,
+      "full_chars": 4547,
+      "fast_ratio": 0.311,
       "key_output_items": [
         {
           "item": "强（可直接使用）：在 C<1 的结构约束下，提高可控性的现实路径是缩短 Tpolicy；其可操作形式是预授权、触发条件与预设降级。",
@@ -523,8 +523,8 @@
     {
       "file": "ch17.html",
       "fast_chars": 1040,
-      "full_chars": 3330,
-      "fast_ratio": 0.312,
+      "full_chars": 3747,
+      "fast_ratio": 0.278,
       "key_output_items": [
         {
           "item": "强（可直接使用）：时间预算的四项工具在三个领域均可找到对应形式；实装难度由触发清晰度与可撤回性决定。",
@@ -557,8 +557,8 @@
     {
       "file": "ch18.html",
       "fast_chars": 1061,
-      "full_chars": 2847,
-      "fast_ratio": 0.373,
+      "full_chars": 3156,
+      "fast_ratio": 0.336,
       "key_output_items": [
         {
           "item": "强（可直接使用）：认知时间错配是带宽约束；个人层的有效工具是关注清单、预承诺与校准。",
@@ -583,6 +583,37 @@
       ],
       "undefined_concepts": [
         "C"
+      ],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch19.html",
+      "fast_chars": 987,
+      "full_chars": 3564,
+      "fast_ratio": 0.277,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：“诊断—分级—时间预算—登记—审查”五步可作为一个系统的完整行动闭环；触发与日落可自动化，授权与降级可预定。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：具体的阈值、额度与降级顺序须按国家与系统重新校准；本演练的数值为演示。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：时间预算能否在真实政治过程中被完整建立，取决于制度环境；本书只给流程，不保证落地。",
+          "concepts": [
+            "I",
+            "ι"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "τ"
       ],
       "forward_refs_into_gear": [],
       "has_declaration": true
