@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""make_figures_v5.py — 附录 D 的矢量插图（粮食/能源跨域检验）。
+"""make_figures_domains.py — 附录 D 的矢量插图（粮食/能源跨域检验）。
 
 产物：
   assets/svg/fig-food-trend.svg       粮食系统 V 的年度轨迹（2012—2024）

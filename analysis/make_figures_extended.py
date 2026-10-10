@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""make_figures_v6.py — v6 新增章节（第 11—14 章、附录 F/G）的矢量插图。
+"""make_figures_extended.py — 扩展章节（第 11—14 章、附录 F/G）的矢量插图。
 
 产物（assets/svg/）：
   fig-scenario-panel.svg        三情景的风险分解与时间窗口对照
@@ -13,7 +13,7 @@
   fig-era-controllability.svg   十九至二十一世纪可控性的历史转变
   fig-policy-matrix.svg         六类冲击 × 政策选项的有效性矩阵
 
-用法：python analysis/make_figures_v6.py
+用法：python analysis/make_figures_extended.py
 （本脚本为纯确定性绘图，不依赖外部数据文件。）
 """
 import math
