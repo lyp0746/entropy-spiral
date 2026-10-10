@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="470" viewBox="0 0 780 470" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <text x="390" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">时间错配的四种情形</text>
+
+  <!-- 象限区域 -->
+  <rect x="150" y="70" width="270" height="160" fill="#e8f5e9" stroke="#9e9e9e" stroke-width="1"/>
+  <rect x="420" y="70" width="270" height="160" fill="#fff8e1" stroke="#9e9e9e" stroke-width="1"/>
+  <rect x="150" y="230" width="270" height="160" fill="#fff8e1" stroke="#9e9e9e" stroke-width="1"/>
+  <rect x="420" y="230" width="270" height="160" fill="#ffebee" stroke="#9e9e9e" stroke-width="1"/>
+
+  <!-- 象限文字 -->
+  <text x="285" y="140" text-anchor="middle" font-size="24" font-weight="bold" fill="#2e7d32">很好</text>
+  <text x="285" y="168" text-anchor="middle" font-size="14" fill="#33691e">时间充裕、应对简单</text>
+  <text x="285" y="190" text-anchor="middle" font-size="13" fill="#555">从容处理，几乎无风险</text>
+
+  <text x="555" y="140" text-anchor="middle" font-size="24" font-weight="bold" fill="#ef6c00">有点麻烦</text>
+  <text x="555" y="168" text-anchor="middle" font-size="14" fill="#e65100">时间充裕、应对困难</text>
+  <text x="555" y="190" text-anchor="middle" font-size="13" fill="#555">要提前规划、慢慢来</text>
+
+  <text x="285" y="300" text-anchor="middle" font-size="24" font-weight="bold" fill="#ef6c00">有点急</text>
+  <text x="285" y="328" text-anchor="middle" font-size="14" fill="#e65100">时间紧、应对简单</text>
+  <text x="285" y="350" text-anchor="middle" font-size="13" fill="#555">手忙脚乱，但大多能扛过</text>
+
+  <text x="555" y="300" text-anchor="middle" font-size="24" font-weight="bold" fill="#c62828">来不及</text>
+  <text x="555" y="328" text-anchor="middle" font-size="14" fill="#b71c1c">时间紧、应对困难</text>
+  <text x="555" y="350" text-anchor="middle" font-size="13" fill="#555">结构性失控，只能降级</text>
+
+  <!-- 轴 -->
+  <line x1="150" y1="390" x2="690" y2="390" stroke="#333" stroke-width="2"/>
+  <line x1="150" y1="70" x2="150" y2="390" stroke="#333" stroke-width="2"/>
+  <text x="420" y="425" text-anchor="middle" font-size="15" fill="#333">应对所需的时间 →（越右越长、越难）</text>
+  <text x="30" y="230" text-anchor="middle" font-size="15" fill="#333" transform="rotate(-90 30 230)">你拥有的时间 →（越上越多）</text>
+  <text x="150" y="410" text-anchor="middle" font-size="12" fill="#777">短</text>
+  <text x="690" y="410" text-anchor="middle" font-size="12" fill="#777">长</text>
+  <text x="135" y="385" text-anchor="end" font-size="12" fill="#777">少</text>
+  <text x="135" y="80" text-anchor="end" font-size="12" fill="#777">多</text>
+</svg>

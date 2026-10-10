@@ -201,7 +201,7 @@
       "first": "ch01.html"
     },
     "代理": {
-      "total": 150,
+      "total": 162,
       "by_chapter": [
         [
           "ch01.html",
@@ -209,7 +209,7 @@
         ],
         [
           "ch02.html",
-          1
+          6
         ],
         [
           "ch03.html",
@@ -217,7 +217,7 @@
         ],
         [
           "ch05.html",
-          75
+          80
         ],
         [
           "ch06.html",
@@ -241,13 +241,13 @@
         ],
         [
           "ch14.html",
-          2
+          4
         ]
       ],
       "first": "ch01.html"
     },
     "螺旋": {
-      "total": 46,
+      "total": 53,
       "by_chapter": [
         [
           "ch01.html",
@@ -255,7 +255,7 @@
         ],
         [
           "ch02.html",
-          25
+          32
         ],
         [
           "ch03.html",
@@ -458,6 +458,10 @@
     "10.3": [
       "ch10.html",
       "ch10.html"
+    ],
+    "13.1": [
+      "ch13.html",
+      "ch13.html"
     ],
     "13.2": [
       "ch13.html"
@@ -674,6 +678,7 @@
     "8.4",
     "8.5",
     "8.6",
+    "9.0",
     "9.1",
     "9.10",
     "9.11",
@@ -740,6 +745,10 @@
     {
       "chapter": "ch02.html",
       "snippet": "证据等级A/B（混合）B→CC（示意）"
+    },
+    {
+      "chapter": "ch02.html",
+      "snippet": "性质：模型比较（消元论证），质量 C"
     },
     {
       "chapter": "ch02.html",
@@ -860,6 +869,10 @@
     {
       "chapter": "ch05.html",
       "snippet": "注释：表中数值为数量级示意，不同研究的估计差异可达数倍"
+    },
+    {
+      "chapter": "ch05.html",
+      "snippet": "性质：方法审计（质量 C）"
     },
     {
       "chapter": "ch05.html",
@@ -1071,6 +1084,14 @@
     },
     {
       "chapter": "ch09.html",
+      "snippet": "至少有部分可复现的公开序列（质量 A/B），使诊断不全部依赖指示性赋值"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "性质：选择审计（方法论，质量 C）"
+    },
+    {
+      "chapter": "ch09.html",
       "snippet": "表 9.1 给出四个相关系统的指示性基准"
     },
     {
@@ -1158,6 +1179,10 @@
       "snippet": "性质：方向性诊断（质量 C）"
     },
     {
+      "chapter": "ch10.html",
+      "snippet": "性质：结构诊断（质量 C"
+    },
+    {
       "chapter": "ch11.html",
       "snippet": "度量（规则数不等于协调难度）、κ 的实时序列（因尚未接入实时序列，故第 7 章为示意）"
     },
@@ -1167,11 +1192,19 @@
     },
     {
       "chapter": "ch11.html",
+      "snippet": "性质：事前登记（盲测），质量 C（登记时结果未知）"
+    },
+    {
+      "chapter": "ch11.html",
       "snippet": "性质：操作规范（质量 C，方向性）"
     },
     {
       "chapter": "ch12.html",
       "snippet": "任务：完成 P6.1 的\"C→B\"升级——把第 7 章的示意序列替换为可引用序列"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：概念分层（方法论，质量 C）"
     },
     {
       "chapter": "ch13.html",
@@ -1200,6 +1233,10 @@
     {
       "chapter": "ch13.html",
       "snippet": "性质：框架示例（质量 C）"
+    },
+    {
+      "chapter": "ch13.html",
+      "snippet": "性质：示例（方法论演示，质量 C）"
     },
     {
       "chapter": "ch13.html",
@@ -1243,7 +1280,9 @@
     "10": [
       "ch04.html",
       "ch08.html",
+      "ch09.html",
       "ch10.html",
+      "ch11.html",
       "ch13.html"
     ],
     "11": [
@@ -1266,7 +1305,8 @@
       "ch08.html",
       "ch09.html",
       "ch11.html",
-      "ch12.html"
+      "ch12.html",
+      "ch13.html"
     ],
     "13": [
       "ch04.html",
@@ -1355,7 +1395,8 @@
       "ch10.html",
       "ch11.html",
       "ch12.html",
-      "ch13.html"
+      "ch13.html",
+      "ch14.html"
     ],
     "9": [
       "ch02.html",
@@ -1366,6 +1407,7 @@
       "ch08.html",
       "ch09.html",
       "ch11.html",
+      "ch13.html",
       "ch15.html"
     ]
   },
@@ -1614,6 +1656,8 @@
       "ch04.html",
       "ch06.html",
       "ch08.html",
+      "ch09.html",
+      "ch11.html",
       "ch13.html"
     ],
     "0.50": [
@@ -1966,6 +2010,7 @@
     ],
     "10.9": [
       "ch05.html",
+      "ch09.html",
       "ch10.html"
     ],
     "10.91": [
@@ -1989,6 +2034,7 @@
       "ch11.html"
     ],
     "11.4": [
+      "ch05.html",
       "ch07.html",
       "ch09.html",
       "ch11.html",
@@ -2002,8 +2048,10 @@
       "ch11.html"
     ],
     "11.7": [
+      "ch04.html",
       "ch06.html",
       "ch08.html",
+      "ch09.html",
       "ch11.html"
     ],
     "11.8": [
@@ -2058,6 +2106,7 @@
       "ch13.html"
     ],
     "13.2": [
+      "ch10.html",
       "ch11.html",
       "ch13.html"
     ],
@@ -2273,7 +2322,8 @@
     ],
     "3.7": [
       "ch03.html",
-      "ch04.html"
+      "ch04.html",
+      "ch11.html"
     ],
     "3.74": [
       "ch09.html"
@@ -2358,6 +2408,7 @@
     ],
     "4.2": [
       "ch04.html",
+      "ch05.html",
       "ch09.html",
       "ch11.html",
       "ch12.html"
@@ -2367,6 +2418,7 @@
     ],
     "4.3": [
       "ch04.html",
+      "ch09.html",
       "ch11.html",
       "ch12.html",
       "ch13.html"
@@ -2389,7 +2441,8 @@
       "ch04.html"
     ],
     "4.7": [
-      "ch04.html"
+      "ch04.html",
+      "ch11.html"
     ],
     "4.8": [
       "ch04.html",
@@ -2733,6 +2786,9 @@
     ],
     "890.871": [
       "ch05.html"
+    ],
+    "9.0": [
+      "ch09.html"
     ],
     "9.1": [
       "ch09.html",

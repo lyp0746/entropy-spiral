@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="460" viewBox="0 0 780 460" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="780" height="460" fill="#ffffff"/>
+  <text x="390" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">六个领域的“时钟”有多快</text>
+  <text x="390" y="58" text-anchor="middle" font-size="13" fill="#666">越靠右 = 做成一件事需要的时间越长 = 越“来不及”</text>
+
+  <!-- 轴 -->
+  <line x1="200" y1="400" x2="720" y2="400" stroke="#333" stroke-width="2"/>
+  <text x="460" y="440" text-anchor="middle" font-size="13" fill="#333">做成一次有效回应所需的时间（对数示意）</text>
+
+  <!-- 条目：y 位置，条长，颜色，标签，时间 -->
+  <!-- 金融 -->
+  <text x="185" y="100" text-anchor="end" font-size="15" fill="#222">金融市场</text>
+  <rect x="200" y="86" width="70" height="20" fill="#1e88e5"/>
+  <text x="285" y="101" font-size="13" fill="#1e88e5">秒 / 小时</text>
+  <!-- 信息 -->
+  <text x="185" y="140" text-anchor="end" font-size="15" fill="#222">信息传播</text>
+  <rect x="200" y="126" width="95" height="20" fill="#42a5f5"/>
+  <text x="310" y="141" font-size="13" fill="#1976d2">分 / 小时</text>
+  <!-- 政治 -->
+  <text x="185" y="180" text-anchor="end" font-size="15" fill="#222">政治决策</text>
+  <rect x="200" y="166" width="180" height="20" fill="#66bb6a"/>
+  <text x="395" y="181" font-size="13" fill="#2e7d32">周 / 月</text>
+  <!-- 医疗 -->
+  <text x="185" y="220" text-anchor="end" font-size="15" fill="#222">公共卫生</text>
+  <rect x="200" y="206" width="260" height="20" fill="#ffb300"/>
+  <text x="475" y="221" font-size="13" fill="#ef6c00">月 / 年</text>
+  <!-- 基础设施 -->
+  <text x="185" y="260" text-anchor="end" font-size="15" fill="#222">基础设施</text>
+  <rect x="200" y="246" width="360" height="20" fill="#fb8c00"/>
+  <text x="575" y="261" font-size="13" fill="#e65100">5–20 年</text>
+  <!-- 社会信任 -->
+  <text x="185" y="300" text-anchor="end" font-size="15" fill="#222">社会信任</text>
+  <rect x="200" y="286" width="420" height="20" fill="#f4511e"/>
+  <text x="635" y="301" font-size="13" fill="#d84315">数年</text>
+  <!-- 生态 -->
+  <text x="185" y="340" text-anchor="end" font-size="15" fill="#222">生态环境</text>
+  <rect x="200" y="326" width="500" height="20" fill="#c62828"/>
+  <text x="715" y="341" text-anchor="end" font-size="13" fill="#b71c1c">十年 / 百年</text>
+
+  <!-- 提示框 -->
+  <rect x="200" y="360" width="510" height="26" fill="#f5f5f5" stroke="#ccc"/>
+  <text x="455" y="378" text-anchor="middle" font-size="13" fill="#555">冲击通常来自左边的“快时钟”，回应却落在右边的“慢时钟”</text>
+</svg>

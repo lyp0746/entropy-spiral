@@ -16,6 +16,7 @@ if [ -f scripts/build.sh ]; then bash scripts/build.sh >/dev/null; else
   "$PY" build_book.py --pdf >/dev/null
   "$PY" build_book.py --ereader --pdf >/dev/null
   "$PY" build_epub.py >/dev/null
+  "$PY" build_markdown.py >/dev/null
 fi
 
 REL="$ROOT/release"
@@ -29,6 +30,13 @@ copy output/book-ereader.pdf  "$REL/$BASE-ereader.pdf"
 copy output/book.epub         "$REL/$BASE.epub"
 copy output/book.html         "$REL/$BASE.html"
 copy output/book-ereader.html "$REL/$BASE-ereader.html"
+copy output/markdown/book.md  "$REL/$BASE.md"
+# 逐文件 Markdown（含被引用的图片，保持自包含）
+if [ -d output/markdown ]; then
+  mkdir -p "$REL/$BASE-markdown"
+  cp -r output/markdown/. "$REL/$BASE-markdown/"
+  echo "  + $BASE-markdown/（分文件 Markdown + assets）"
+fi
 copy assets/svg/cover.svg     "$REL/cover.svg"
 copy docs/READERS.md          "$REL/README.md"
 copy docs/RELEASE-NOTES.md    "$REL/修订说明.md"
@@ -42,6 +50,8 @@ $BASE-print.pdf    印刷/正式版 PDF（A4，宋体+Times，四级书签）
 $BASE-ereader.pdf  电子阅读版 PDF
 $BASE.epub         EPUB 3（nav + NCX 四级目录）
 $BASE.html         网页版（自包含）
+$BASE.md           合并全书 Markdown（GFM 表格与引用块）
+$BASE-markdown/    分文件 Markdown（含 assets/ 图片）
 cover.svg          封面矢量图
 README.md          读者说明
 修订说明.md        版次与主要变化

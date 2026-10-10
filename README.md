@@ -8,7 +8,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23276888.svg)](https://doi.org/10.5281/zenodo.23276888)
 
 一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
-同时输出**印刷版 PDF、电子阅读版 PDF 与 EPUB 3**。
+同时输出**印刷版 PDF、电子阅读版 PDF、EPUB 3 与 Markdown**。
 目录（部分 → 章 → 节 → 子节）在 HTML、PDF 与 EPUB 中**均可逐级跳转**。
 
 **核心主张。** 脆弱性除了结构来源，还有一个独立的时间来源：
@@ -31,6 +31,7 @@ entropy-spiral/
 ├── README.md                  # 本文件
 ├── build_book.py              # 组装 HTML + 打印 PDF（含分级书签）
 ├── build_epub.py              # 生成 EPUB 3（nav + NCX 分级目录）
+├── build_markdown.py          # 导出 Markdown（合并全书 + 分文件，含 assets）
 ├── requirements.txt
 │
 ├── source/                    # 书稿源文件（唯一正文来源）
@@ -39,6 +40,10 @@ entropy-spiral/
 │   ├── front_copyright.html   # 版权与数据来源页
 │   ├── front_executive_summary.html  # 执行摘要（中英）
 │   ├── front_preface.html     # 前言
+│   ├── front_quickstart.html  # 十分钟读懂本书（无公式）
+│   ├── front_ch0.html         # 第 0 章　四个故事讲述一个结构（日常类比 + 图 0.1—0.3）
+│   ├── front_roadmap.html     # 理论地图（路线图：假设/变量/强弱声明/阅读路径）
+│   ├── front_terms.html       # 术语速查表（关键概念一览）
 │   ├── ch01.html … ch15.html  # 十五章正文
 │   └── back_epilogue.html, appendix_a…g.html
 │
@@ -107,6 +112,7 @@ python analysis/audit.py            # 校对，生成 校对清单.md
 python build_book.py --pdf          # output/book.html + output/book.pdf
 python build_book.py --ereader --pdf  # output/book-ereader.*
 python build_epub.py                # output/book.epub
+python build_markdown.py            # output/markdown/book.md + 分文件
 ```
 
 ---
@@ -120,6 +126,8 @@ python build_epub.py                # output/book.epub
 | `output/book-ereader.pdf` | B5、12pt、1.8 倍行距、斑马纹表格 | 平板 / 屏幕阅读 | PDF 分级书签（4 级） |
 | `output/book-ereader.html` | 同上 | 响应式阅读 | 四级内部链接 |
 | `output/book.epub` | EPUB 3，可重排 | Kindle / Apple Books / 多看 | nav + NCX 四级目录 |
+| `output/markdown/book.md` | Markdown（GFM 表格、引用块、公式行） | GitHub / Obsidian / 纯文本 | 自动生成的分文件目录 |
+| `output/markdown/*.md` | 分文件 Markdown（`assets/` 内嵌图片） | 单章引用 / 协作编辑 | 每文件一个章节 |
 
 **字体说明**：正文为中文宋体（SimSun）+ 西文 Times New Roman；
 标题为微软雅黑（Microsoft YaHei）/ Arial。**不使用思源（Source Han / Noto）系列**，
@@ -146,6 +154,8 @@ python build_epub.py                # output/book.epub
 《错位的时间》以**时间**为中心线索：脆弱性除了结构来源，还有一个独立的时间来源。
 全书不预测崩溃时点，只做“诚实的局部诊断”，并提供可证伪的命题登记簿。
 
+前置一份非技术的**《理论地图》**（路线图），用一张表把结论分为“强／中／已否证／未检验／价值判断”五档；并附**《术语速查表》**，方便读者先建立坐标再进入推导。
+
 | 部分 | 章 | 内容 |
 |---|---|---|
 | 一 理论转向与时间问题的发现 | 1—4 | 周期论破产；从周期到螺旋；螺旋的时间结构与熵增机制；**时间层级的社会学（理论中枢）** |
@@ -154,6 +164,7 @@ python build_epub.py                # output/book.epub
 | 四 应用、测试与边界 | 10—12 | 三情景实装检验；发现的逻辑；局部可描述性；行动议程 |
 | 五 时间、可控性与现代性诊断 | 13—15 | 可控性边界与控制论；**优雅降级**；**学习滞后（二阶时间错配）**；重新定义 I；六大领域的扩散 |
 | 结语与后记 | — | 结语《承认与启蒙》；**后记《方法论的自限性与伦理立场》** |
+| 前置 | — | 开篇《一个关于“来不及”的故事》；前言；**十分钟读懂本书**；**第 0 章　四个故事讲述一个结构**；**理论地图**；**术语速查表**；执行摘要 |
 
 **核心变量。**
 

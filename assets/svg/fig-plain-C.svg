@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="470" viewBox="0 0 780 470" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <text x="390" y="34" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">可控性随时间错配下降</text>
+
+  <!-- 区域背景 -->
+  <rect x="140" y="70" width="540" height="130" fill="#e8f5e9"/>
+  <rect x="140" y="200" width="540" height="110" fill="#fff8e1"/>
+  <rect x="140" y="310" width="540" height="110" fill="#ffebee"/>
+
+  <!-- 坐标轴 -->
+  <line x1="140" y1="70" x2="140" y2="420" stroke="#333" stroke-width="2"/>
+  <line x1="140" y1="420" x2="680" y2="420" stroke="#333" stroke-width="2"/>
+  <text x="45" y="250" text-anchor="middle" font-size="15" fill="#333" transform="rotate(-90 45 250)">可控性（还来不来得及）</text>
+  <text x="410" y="455" text-anchor="middle" font-size="15" fill="#333">时间错配 →（应对时间 ÷ 可用时间，越右越糟）</text>
+
+  <!-- 临界线 y=265 -->
+  <line x1="140" y1="265" x2="680" y2="265" stroke="#333" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="686" y="269" font-size="13" fill="#333">临界线</text>
+
+  <!-- 曲线：C 随 τ 下降 -->
+  <path d="M 150 90 C 260 110, 340 200, 430 265 C 520 335, 600 375, 672 390"
+        fill="none" stroke="#c62828" stroke-width="4"/>
+
+  <!-- 区域文字 -->
+  <text x="410" y="120" text-anchor="middle" font-size="15" font-weight="bold" fill="#2e7d32">可控制：能主动干预</text>
+  <text x="410" y="143" text-anchor="middle" font-size="12" fill="#33691e">还有富余时间，应抓住窗口</text>
+  <text x="410" y="250" text-anchor="middle" font-size="15" font-weight="bold" fill="#ef6c00">部分可控：只能争取</text>
+  <text x="410" y="280" text-anchor="middle" font-size="12" fill="#e65100">时间与能力都不充裕，需精打细算</text>
+  <text x="410" y="360" text-anchor="middle" font-size="15" font-weight="bold" fill="#c62828">来不及：只能优雅降级</text>
+  <text x="410" y="383" text-anchor="middle" font-size="12" fill="#b71c1c">提前决定放弃什么、保护什么</text>
+
+  <!-- 三个示例点 -->
+  <circle cx="300" cy="175" r="6" fill="#2e7d32"/>
+  <text x="312" y="172" font-size="12" fill="#2e7d32">芯片中断（较可控）</text>
+  <circle cx="470" cy="300" r="6" fill="#ef6c00"/>
+  <text x="482" y="297" font-size="12" fill="#ef6c00">东南亚融资断裂（勉强）</text>
+  <circle cx="650" cy="385" r="6" fill="#c62828"/>
+  <text x="642" y="378" text-anchor="end" font-size="12" fill="#c62828">全球债务同步（不可控）</text>
+
+  <text x="390" y="52" text-anchor="middle" font-size="13" fill="#666">本书不是把曲线抬高，而是帮你判断自己站在哪一段</text>
+</svg>
