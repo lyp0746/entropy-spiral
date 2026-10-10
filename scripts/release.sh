@@ -36,6 +36,17 @@ if [ -d output/markdown ]; then
   mkdir -p "$REL/$BASE-markdown"
   cp -r output/markdown/. "$REL/$BASE-markdown/"
   echo "  + $BASE-markdown/（分文件 Markdown + assets）"
+  # 额外打包一个 zip，便于一次性下载（GitHub Release 不能上传目录）
+  "$PY" - "release/$BASE-markdown.zip" "output/markdown" <<'PY'
+import os, sys, zipfile
+out, src = sys.argv[1], sys.argv[2]
+with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
+    for root, _, files in os.walk(src):
+        for f in files:
+            p = os.path.join(root, f)
+            z.write(p, os.path.relpath(p, src))
+print('  + %s（Markdown 打包）' % os.path.basename(out))
+PY
 fi
 copy assets/svg/cover.svg     "$REL/cover.svg"
 copy docs/READERS.md          "$REL/README.md"
@@ -52,6 +63,7 @@ $BASE.epub         EPUB 3（nav + NCX 四级目录）
 $BASE.html         网页版（自包含）
 $BASE.md           合并全书 Markdown（GFM 表格与引用块）
 $BASE-markdown/    分文件 Markdown（含 assets/ 图片）
+$BASE-markdown.zip 分文件 Markdown 打包（便于一次性下载）
 cover.svg          封面矢量图
 README.md          读者说明
 修订说明.md        版次与主要变化

@@ -62,11 +62,15 @@ def main():
         "- `entropy-spiral-print.pdf`　印刷版（A4，宋体+Times，四级书签）\n"
         "- `entropy-spiral-ereader.pdf`　电子阅读版（B5）\n"
         "- `entropy-spiral.epub`　EPUB 3（nav + NCX 四级目录）\n"
+        "- `entropy-spiral.html`　网页版（自包含）\n"
+        "- `entropy-spiral.md`　合并全书 Markdown\n"
+        "- `entropy-spiral-markdown.zip`　分文件 Markdown（含 assets/）\n"
         "- `cover.svg`　封面矢量图\n\n"
         "五部分、十五章 + 开篇 + 结语 + **后记** + 附录 A–H；正文与元数据不含版本号，"
         "日期为真实完成日期。内容许可 CC BY 4.0，代码许可 MIT。\n\n"
-        "本修订新增：§11.9 操作检验流程、§13.11 学习滞后（二阶时间错配）、"
-        "后记《方法论的自限性与伦理立场》。"
+        "本修订（可访问性分层）：新增《十分钟读懂本书》《第 0 章　四个故事讲述一个结构》"
+        "与三张示意图（图 0.1—0.3），理论地图增“概念翻译表”（学术／日常／身体感受），"
+        "各章增“用日常话说”，附录 H 增“数据翻译表与地域偏向”；并新增 Markdown 输出格式。"
     )
     rel = create_release_with_retry(token, body)
     upload_url = rel["upload_url"].split("{")[0]
@@ -76,6 +80,9 @@ def main():
         ("release/entropy-spiral-print.pdf", "application/pdf"),
         ("release/entropy-spiral-ereader.pdf", "application/pdf"),
         ("release/entropy-spiral.epub", "application/epub+zip"),
+        ("release/entropy-spiral.html", "text/html"),
+        ("release/entropy-spiral.md", "text/markdown"),
+        ("release/entropy-spiral-markdown.zip", "application/zip"),
         ("release/cover.svg", "image/svg+xml"),
     ]
     for path, ctype in assets:
