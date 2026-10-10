@@ -1287,6 +1287,10 @@
       "snippet": "性质：操作分工（方法论，质量 C"
     },
     {
+      "chapter": "ch14.html",
+      "snippet": "性质：操作分工（方法论，质量 C"
+    },
+    {
       "chapter": "ch15.html",
       "snippet": "性质：定性历史归纳（质量 C）"
     },
@@ -1350,7 +1354,8 @@
       "ch08.html",
       "ch10.html",
       "ch11.html",
-      "ch13.html"
+      "ch13.html",
+      "ch15.html"
     ],
     "14": [
       "ch06.html",
@@ -2473,7 +2478,8 @@
       "ch09.html",
       "ch11.html",
       "ch12.html",
-      "ch13.html"
+      "ch13.html",
+      "ch15.html"
     ],
     "4.4": [
       "ch04.html",

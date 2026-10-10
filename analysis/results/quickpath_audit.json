@@ -93,7 +93,7 @@
     {
       "file": "ch04.html",
       "fast_chars": 1219,
-      "full_chars": 9087,
+      "full_chars": 9084,
       "fast_ratio": 0.134,
       "key_output_items": [
         {
@@ -126,8 +126,8 @@
     {
       "file": "ch05.html",
       "fast_chars": 2565,
-      "full_chars": 22158,
-      "fast_ratio": 0.116,
+      "full_chars": 22013,
+      "fast_ratio": 0.117,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Θ 的现代代理长期同向上升、重心不回落；前现代盐铁代理反向（ρ=−0.57），强版本被否证。",
@@ -157,9 +157,9 @@
     },
     {
       "file": "ch06.html",
-      "fast_chars": 1604,
-      "full_chars": 11043,
-      "fast_ratio": 0.145,
+      "fast_chars": 1868,
+      "full_chars": 11175,
+      "fast_ratio": 0.167,
       "key_output_items": [
         {
           "item": "强（可直接使用）：复杂度—寿命的倒 U 关系未被数据支持：三个代理的二次项均不显著，复杂度与时长几乎无正相关。",
@@ -194,8 +194,8 @@
     {
       "file": "ch07.html",
       "fast_chars": 1232,
-      "full_chars": 8737,
-      "fast_ratio": 0.141,
+      "full_chars": 8676,
+      "fast_ratio": 0.142,
       "key_output_items": [
         {
           "item": "强（可直接使用）：κ 在商品、金融、信息三个维度上升，信息耦合最高、最难替代；它对脆弱性有直接的传导机制。",
@@ -397,8 +397,8 @@
     {
       "file": "ch13.html",
       "fast_chars": 1156,
-      "full_chars": 11136,
-      "fast_ratio": 0.104,
+      "full_chars": 11965,
+      "fast_ratio": 0.097,
       "key_output_items": [
         {
           "item": "强（可直接使用）：C = T_policy / T_threat；C<1 即结构性不可控，总可控性取最弱环节。",
@@ -427,8 +427,8 @@
     {
       "file": "ch14.html",
       "fast_chars": 1404,
-      "full_chars": 6430,
-      "fast_ratio": 0.218,
+      "full_chars": 7428,
+      "fast_ratio": 0.189,
       "key_output_items": [
         {
           "item": "强（可直接使用）：I 的失败不是测量失败，而是概念错置：它是时间量，不是状态量。",
@@ -461,9 +461,9 @@
     },
     {
       "file": "ch15.html",
-      "fast_chars": 4455,
-      "full_chars": 6828,
-      "fast_ratio": 0.652,
+      "fast_chars": 5282,
+      "full_chars": 8108,
+      "fast_ratio": 0.651,
       "key_output_items": [
         {
           "item": "强（可直接使用）：医疗、气候、心理、教育、能源、知识共享同一“适应尺度 ≫ 变化尺度”的结构。",
@@ -484,7 +484,9 @@
         }
       ],
       "undefined_concepts": [],
-      "forward_refs_into_gear": [],
+      "forward_refs_into_gear": [
+        "15.3"
+      ],
       "has_declaration": true
     }
   ]

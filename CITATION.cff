@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below. 若使用本作，请按下述格式引用。"
 type: book
-title: "错位的时间：社会系统的熵增螺旋、制度错配与可控性边界"
+title: "错位的时间：为什么我们总是来不及"
 abstract: >-
   本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它在三根不可逆轴
   （Θ 租佃份额、I 组织复杂度、κ 地缘耦合）之外，提出一个独立的时间来源：
   时间错配 τ = T_min / T_available 与可控性 C = T_policy / T_threat = 1/τ。
-  全书不预测崩溃时点，只做诚实的局部诊断，并提供可证伪的命题登记簿。
+  全书不预测崩溃时点，只做受限的局部诊断，并提供可证伪的命题登记簿。
 authors:
   - family-names: "李"
     given-names: "毅芃"

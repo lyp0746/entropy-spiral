@@ -20,8 +20,8 @@ FONT_SANS = "'Microsoft YaHei','Heiti SC','SimHei',Arial,sans-serif"
 
 TITLE_1 = "错位的时间"
 TITLE_2 = ""
-SUB_CN = "社会系统的熵增螺旋、制度错配与可控性边界"
-SUB_EN = "DESYNCHRONIZED TIME · ENTROPY SPIRAL · CONTROLLABILITY BOUNDARY"
+SUB_CN = "为什么我们总是来不及：社会系统的时间错配与可控性边界"
+SUB_EN = "WHY WE ARE ALWAYS TOO LATE · TIME MISMATCH AND THE BOUNDARY OF CONTROLLABILITY"
 
 CX, CY = 706, 872          # 时钟环中心
 RINGS = [
@@ -150,11 +150,11 @@ def main():
              f'letter-spacing="6">错位的时间</text>')
     o.append('<rect x="82" y="378" width="330" height="2.6" fill="url(#rule)"/>')
     o.append(f'<text x="82" y="430" font-size="23" fill="#b9c6dd" letter-spacing="0.5">'
-             f'社会系统的熵增螺旋、</text>')
+             f'为什么我们总是来不及：</text>')
     o.append(f'<text x="82" y="466" font-size="23" fill="#b9c6dd" letter-spacing="0.5">'
-             f'制度错配与可控性边界</text>')
+             f'社会系统的时间错配与可控性边界</text>')
     o.append('<text x="82" y="504" font-size="12.5" letter-spacing="2.2" fill="#7f8db0">'
-             'DESYNCHRONIZED TIME · ENTROPY SPIRAL · CONTROLLABILITY BOUNDARY</text>')
+             'WHY WE ARE ALWAYS TOO LATE · TIME MISMATCH AND THE BOUNDARY OF CONTROLLABILITY</text>')
 
     # 四轴芯片（含新增的 τ）
     chips = [("Θ", "租佃份额"), ("I", "组织复杂度"), ("κ", "地缘耦合"), ("τ", "时间错配")]
