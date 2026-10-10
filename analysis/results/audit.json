@@ -45,7 +45,7 @@
       "first": "ch05.html"
     },
     "不可逆轴": {
-      "total": 19,
+      "total": 20,
       "by_chapter": [
         [
           "ch01.html",
@@ -53,7 +53,7 @@
         ],
         [
           "ch02.html",
-          9
+          10
         ],
         [
           "ch03.html",
@@ -205,11 +205,11 @@
       "by_chapter": [
         [
           "ch01.html",
-          16
+          19
         ],
         [
           "ch02.html",
-          6
+          3
         ],
         [
           "ch03.html",
@@ -247,15 +247,15 @@
       "first": "ch01.html"
     },
     "螺旋": {
-      "total": 53,
+      "total": 66,
       "by_chapter": [
         [
           "ch01.html",
-          3
+          6
         ],
         [
           "ch02.html",
-          32
+          42
         ],
         [
           "ch03.html",
@@ -287,7 +287,7 @@
       "first": "ch01.html"
     },
     "熵": {
-      "total": 20,
+      "total": 22,
       "by_chapter": [
         [
           "ch02.html",
@@ -295,7 +295,7 @@
         ],
         [
           "ch03.html",
-          15
+          17
         ]
       ],
       "first": "ch02.html"
@@ -692,6 +692,7 @@
     "9.9"
   ],
   "A3_figures_defined": [
+    "1.1",
     "10.1",
     "10.2",
     "13.1",
@@ -1332,6 +1333,7 @@
       "ch03.html"
     ],
     "3": [
+      "ch01.html",
       "ch02.html",
       "ch03.html",
       "ch04.html"
@@ -1927,6 +1929,9 @@
     "0990.742": [
       "ch07.html"
     ],
+    "1.0": [
+      "ch01.html"
+    ],
     "1.00": [
       "ch01.html",
       "ch05.html",
@@ -2205,6 +2210,7 @@
       "ch09.html"
     ],
     "2.1": [
+      "ch01.html",
       "ch02.html"
     ],
     "2.10": [
@@ -2283,6 +2289,8 @@
       "ch08.html"
     ],
     "3.1": [
+      "ch01.html",
+      "ch02.html",
       "ch03.html",
       "ch11.html"
     ],

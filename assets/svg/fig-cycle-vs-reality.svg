@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="430" viewBox="0 0 780 430" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="780" height="430" fill="#ffffff"/>
+  <text x="390" y="32" text-anchor="middle" font-size="19" font-weight="bold" fill="#1a1a1a">周期模型的预测 vs 实际发生</text>
+
+  <!-- 坐标轴 -->
+  <line x1="80" y1="360" x2="720" y2="360" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="60" x2="80" y2="360" stroke="#333" stroke-width="2"/>
+  <text x="400" y="400" text-anchor="middle" font-size="14" fill="#333">时间 →</text>
+  <text x="40" y="210" text-anchor="middle" font-size="14" fill="#333" transform="rotate(-90 40 210)">系统状态（如集中度、耦合度）</text>
+
+  <!-- 周期模型预测：固定振幅，回到同一水平（蓝色虚线） -->
+  <path d="M 90 210 C 130 150, 170 150, 210 210 C 250 270, 290 270, 330 210 C 370 150, 410 150, 450 210 C 490 270, 530 270, 570 210 C 610 150, 650 150, 690 210"
+        fill="none" stroke="#3a6ea5" stroke-width="3" stroke-dasharray="8 1 2 1"/>
+  <!-- 实际：振幅相近但整体上移，回不到原点（红色） -->
+  <path d="M 90 235 C 130 195, 170 185, 210 205 C 250 145, 290 125, 330 175 C 370 115, 410 95, 450 145 C 490 85, 530 65, 570 115 C 610 65, 650 50, 690 95"
+        fill="none" stroke="#c94f4f" stroke-width="4"/>
+
+  <!-- 起点参考线 -->
+  <line x1="90" y1="235" x2="90" y2="360" stroke="#999" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="86" y="255" text-anchor="end" font-size="12" fill="#888">起点</text>
+
+  <!-- 图例 -->
+  <line x1="120" y1="52" x2="160" y2="52" stroke="#3a6ea5" stroke-width="3" stroke-dasharray="8 1 2 1"/>
+  <text x="168" y="57" font-size="13" fill="#3a6ea5">周期模型预测（回到同一水平）</text>
+  <line x1="430" y1="52" x2="470" y2="52" stroke="#c94f4f" stroke-width="4"/>
+  <text x="478" y="57" font-size="13" fill="#c94f4f">实际发生（反复，但整体不回）</text>
+
+  <!-- 注释 -->
+  <text x="690" y="88" text-anchor="end" font-size="12" fill="#c94f4f">每一轮都比上一轮更高</text>
+  <text x="690" y="228" text-anchor="end" font-size="12" fill="#3a6ea5">永远在同一区间摆动</text>
+</svg>
