@@ -1,25 +1,37 @@
 {
-  "title": "错位的时间：为什么我们总是来不及",
-  "description": "<p>本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它在三根不可逆轴（Θ 租佃份额、I 组织复杂度、κ 地缘耦合）之外，提出一个独立的时间来源：<b>时间错配 τ = T_min / T_available</b> 与 <b>可控性 C = T_policy / T_threat = 1/τ</b>。现代社会不是一个钟，而是许多转速不同的钟；错位是结构性的，而非暂时失调。全书不预测崩溃时点，只做受限的局部诊断，并提供可证伪的命题登记簿与开放的数据缺口清单。</p><p>源码、数据与构建流程：<a href=\"https://github.com/lyp0746/entropy-spiral\">GitHub</a>。内容许可 CC BY 4.0；代码许可 MIT。</p>",
+  "title": "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界 / Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and the Boundary of Controllability in Social Systems",
+  "description": "<p>本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它在三根不可逆轴（Θ 租佃份额、I 组织复杂度、κ 地缘耦合）之外，提出一个独立的时间来源：<b>时间错配 τ = T_min / T_available</b> 与 <b>可控性 C = T_policy / T_threat = 1/τ</b>。现代社会不是一个钟，而是许多转速不同的钟；错位是结构性的，而非暂时失调。全书五部分、十九章、附录 A—J；不预测崩溃时点，只做受限的局部诊断，并提供可证伪的命题登记簿与开放的数据缺口清单。</p><p>源码、数据与构建流程：<a href=\"https://github.com/lyp0746/entropy-spiral\">GitHub</a>。内容许可 CC BY 4.0；代码许可 MIT。</p><p><b>English.</b> <i>Desynchronized Time: Why We Are Always Too Late</i> diagnoses the vulnerability of modern societies through the lens of time. It abandons \"predicting collapse\" and asks a more actionable question: <b>can a system still save itself in time?</b> Beyond the three irreversible axes Θ (rent/monopoly extraction share), I (coordination time), κ (geopolitical coupling), it introduces an independent temporal source: <b>temporal mismatch τ = T_min / T_available</b> and <b>controllability C = T_policy / T_threat = 1/τ</b>. Modern society is not one clock but many clocks running at different speeds; the mismatch is structural, not temporary. Five parts, nineteen chapters, appendices A–J. It makes no point predictions of collapse, offering only bounded local diagnosis, a falsifiability register, and an open data-gap list.</p>",
   "creators": [
     {
       "name": "李毅芃",
-      "affiliation": "独立研究者"
+      "affiliation": "独立研究者 / Independent Researcher"
     }
   ],
   "keywords": [
     "错位的时间",
+    "Desynchronized Time",
     "熵增螺旋",
-    "时间错配",
-    "可控性边界",
-    "脆弱性诊断",
-    "局部可描述性",
-    "时间社会学",
     "entropy spiral",
+    "时间错配",
     "temporal mismatch",
+    "可控性边界",
     "controllability boundary",
-    "vulnerability diagnosis"
+    "脆弱性诊断",
+    "vulnerability diagnosis",
+    "局部可描述性",
+    "local describability",
+    "时间社会学",
+    "sociology of time",
+    "时间预算",
+    "time budget",
+    "优雅降级",
+    "graceful degradation",
+    "多时钟社会",
+    "multiple clocks",
+    "数据缺口",
+    "data gaps"
   ],
+  "notes": "科目 / Subjects — 中文：经济学、系统科学、复杂性科学、风险管理、国际政治经济、时间社会学、公共政策、气候与能源治理。English: Economics, Systems Science, Complexity Science, Risk Management, International Political Economy, Sociology of Time, Public Policy, Climate and Energy Governance.",
   "license": "CC-BY-4.0",
   "upload_type": "publication",
   "publication_type": "book",
@@ -37,7 +49,7 @@
       "scheme": "doi"
     },
     {
-      "identifier": "10.5281/zenodo.23264927",
+      "identifier": "10.5281/zenodo.23276888",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     }

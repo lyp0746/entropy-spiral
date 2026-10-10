@@ -5,7 +5,7 @@
 [![内容许可: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![代码许可: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
 [![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/latest)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23276888.svg)](https://doi.org/10.5281/zenodo.23276888)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23286403.svg)](https://doi.org/10.5281/zenodo.23286403)
 
 一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
 同时输出**印刷版 PDF、电子阅读版 PDF、EPUB 3 与 Markdown**。
@@ -236,14 +236,15 @@ v5 风险分解与缓冲、v6 错位的时间）的定位与变化，见 `versio
 若你在研究或写作中使用本书，请引用：
 
 > 李毅芃. 《错位的时间：为什么我们总是来不及》. 2026-10-11. CC BY 4.0.
-> DOI: [10.5281/zenodo.23276888](https://doi.org/10.5281/zenodo.23276888)
+> DOI: [10.5281/zenodo.23286403](https://doi.org/10.5281/zenodo.23286403)
 
 机器可读引用见 [`CITATION.cff`](CITATION.cff)。
 
-- **当前归档 DOI（最新）**：<https://doi.org/10.5281/zenodo.23276888>
+- **当前归档 DOI（最新）**：<https://doi.org/10.5281/zenodo.23286403>
 - **概念 DOI（无版本，始终指向最新）**：<https://doi.org/10.5281/zenodo.23217100>
-- **上一版归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23264927>
-- **Zenodo 当前记录**：<https://zenodo.org/records/23276888>
+- **上一版归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23276888>
+- **更早的归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23264927>
+- **Zenodo 当前记录**：<https://zenodo.org/records/23286403>
 
 建议：引用具体版本时用**当前归档 DOI**；泛指本作（含未来修订）时用**概念 DOI**。
 每次修订在 Zenodo 生成新的归档记录，旧记录保留但标记为已被取代。

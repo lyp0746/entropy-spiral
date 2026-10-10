@@ -1,32 +1,42 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below. 若使用本作，请按下述格式引用。"
 type: book
-title: "错位的时间：为什么我们总是来不及"
+title: "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界 / Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and the Boundary of Controllability in Social Systems"
 abstract: >-
   本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它在三根不可逆轴
   （Θ 租佃份额、I 组织复杂度、κ 地缘耦合）之外，提出一个独立的时间来源：
   时间错配 τ = T_min / T_available 与可控性 C = T_policy / T_threat = 1/τ。
-  全书不预测崩溃时点，只做受限的局部诊断，并提供可证伪的命题登记簿。
+  全书五部分、十九章、附录 A—J；不预测崩溃时点，只做受限的局部诊断，
+  并提供可证伪的命题登记簿与开放的数据缺口清单。
+  English: This monograph abandons "predicting collapse" and asks a more
+  actionable question — can a system still save itself in time? Beyond the
+  three irreversible axes Θ (rent/monopoly extraction share), I (coordination
+  time) and κ (geopolitical coupling), it introduces an independent temporal
+  source: temporal mismatch τ = T_min / T_available and controllability
+  C = T_policy / T_threat = 1/τ. Five parts, nineteen chapters, appendices A–J.
 authors:
   - family-names: "李"
     given-names: "毅芃"
     alias: "Li Yipeng"
     email: "1610369302@qq.com"
 date-released: "2026-10-11"
-doi: "10.5281/zenodo.23276888"
+doi: "10.5281/zenodo.23286403"
 license: CC-BY-4.0
 repository-code: "https://github.com/lyp0746/entropy-spiral"
-url: "https://doi.org/10.5281/zenodo.23276888"
+url: "https://doi.org/10.5281/zenodo.23286403"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.23276888"
+    value: "10.5281/zenodo.23286403"
     description: "当前归档 DOI（最新）"
   - type: doi
     value: "10.5281/zenodo.23217100"
     description: "概念 DOI（concept DOI，无版本，始终指向最新）"
   - type: doi
-    value: "10.5281/zenodo.23264927"
+    value: "10.5281/zenodo.23276888"
     description: "上一版归档 DOI（已被取代）"
+  - type: doi
+    value: "10.5281/zenodo.23264927"
+    description: "更早的归档 DOI（已被取代）"
 keywords:
   - 错位的时间
   - 熵增螺旋
@@ -35,6 +45,23 @@ keywords:
   - 脆弱性诊断
   - 局部可描述性
   - 时间社会学
+  - 时间预算
+  - 优雅降级
+  - 数据缺口
+  - Desynchronized Time
   - entropy spiral
   - temporal mismatch
   - controllability boundary
+  - vulnerability diagnosis
+  - local describability
+  - sociology of time
+  - time budget
+  - graceful degradation
+  - data gaps
+  - Economics
+  - Systems Science
+  - Complexity Science
+  - Risk Management
+  - International Political Economy
+  - Public Policy
+  - Climate and Energy Governance
