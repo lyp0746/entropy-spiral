@@ -63,7 +63,7 @@ entropy-spiral/
 │   └── results/               # JSON 结果 + audit.json
 │
 ├── assets/
-│   ├── css/                   # paper.css（第一版版式）/ book.css / ereader.css
+│   ├── css/                   # paper.css（正式书稿版式）/ book.css / ereader.css
 │   ├── svg/                   # 封面与矢量插图
 │   ├── charts/                # 400 dpi PNG 图
 │   └── templates/             # 可选 XeLaTeX 模板
@@ -121,7 +121,7 @@ python build_markdown.py            # output/markdown/book.md + 分文件
 
 | 文件 | 版式 | 用途 | 目录 |
 |---|---|---|---|
-| `output/book.pdf` | **第一版风格**：A4、宋体+Times、10.5pt、1.5 倍行距、35mm 边距 | 打印 / 投稿 | PDF 分级书签（4 级） |
+| `output/book.pdf` | **正式书稿风格**：A4、宋体+Times、10.5pt、1.5 倍行距、35mm 边距 | 打印 / 投稿 | PDF 分级书签（4 级） |
 | `output/book.html` | 同上（自包含，图片内嵌） | 网页浏览 | 四级内部链接 |
 | `output/book-ereader.pdf` | B5、12pt、1.8 倍行距、斑马纹表格 | 平板 / 屏幕阅读 | PDF 分级书签（4 级） |
 | `output/book-ereader.html` | 同上 | 响应式阅读 | 四级内部链接 |
@@ -131,11 +131,11 @@ python build_markdown.py            # output/markdown/book.md + 分文件
 
 **字体说明**：正文为中文宋体（SimSun）+ 西文 Times New Roman；
 标题为微软雅黑（Microsoft YaHei）/ Arial。**不使用思源（Source Han / Noto）系列**，
-以保持第一版的书稿观感。若系统缺少某字体，会按 CSS 回退到 `serif` / `sans-serif`。
+以保持书稿观感。若系统缺少某字体，会按 CSS 回退到 `serif` / `sans-serif`。
 
 ---
 
-## 版式规范（第一版）
+## 版式规范
 
 | 项目 | 取值 |
 |---|---|
@@ -236,7 +236,7 @@ v5 风险分解与缓冲、v6 错位的时间）的定位与变化，见 `versio
 
 若你在研究或写作中使用本书，请引用：
 
-> 李毅芃. 《错位的时间：社会系统的熵增螺旋、制度错配与可控性边界》. 初版, 2026-10-09. CC BY 4.0.
+> 李毅芃. 《错位的时间：社会系统的熵增螺旋、制度错配与可控性边界》. 2026-10-11. CC BY 4.0.
 > DOI: [10.5281/zenodo.23276888](https://doi.org/10.5281/zenodo.23276888)
 
 机器可读引用见 [`CITATION.cff`](CITATION.cff)。

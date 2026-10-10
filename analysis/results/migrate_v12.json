@@ -1,0 +1,173 @@
+{
+  "chapter_map": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "12",
+    "13": "13",
+    "14": "14",
+    "15": "15"
+  },
+  "section_map": {},
+  "table_map": {},
+  "figure_map": {},
+  "changes": [],
+  "files_scanned": 33,
+  "figure_definitions": [
+    {
+      "figure": "1.1",
+      "file": "ch01.html"
+    },
+    {
+      "figure": "2.1",
+      "file": "ch02.html"
+    },
+    {
+      "figure": "2.2",
+      "file": "ch02.html"
+    },
+    {
+      "figure": "2.1",
+      "file": "ch02.html"
+    },
+    {
+      "figure": "3.1",
+      "file": "ch03.html"
+    },
+    {
+      "figure": "3.2",
+      "file": "ch03.html"
+    },
+    {
+      "figure": "4.1",
+      "file": "ch04.html"
+    },
+    {
+      "figure": "4.2",
+      "file": "ch04.html"
+    },
+    {
+      "figure": "4.3",
+      "file": "ch04.html"
+    },
+    {
+      "figure": "4.4",
+      "file": "ch04.html"
+    },
+    {
+      "figure": "5.1",
+      "file": "ch05.html"
+    },
+    {
+      "figure": "5.2",
+      "file": "ch05.html"
+    },
+    {
+      "figure": "5.3",
+      "file": "ch05.html"
+    },
+    {
+      "figure": "6.1",
+      "file": "ch06.html"
+    },
+    {
+      "figure": "7.1",
+      "file": "ch07.html"
+    },
+    {
+      "figure": "7.2",
+      "file": "ch07.html"
+    },
+    {
+      "figure": "8.1",
+      "file": "ch08.html"
+    },
+    {
+      "figure": "8.2",
+      "file": "ch08.html"
+    },
+    {
+      "figure": "8.3",
+      "file": "ch08.html"
+    },
+    {
+      "figure": "8.4",
+      "file": "ch08.html"
+    },
+    {
+      "figure": "9.1",
+      "file": "ch09.html"
+    },
+    {
+      "figure": "9.2",
+      "file": "ch09.html"
+    },
+    {
+      "figure": "9.3",
+      "file": "ch09.html"
+    },
+    {
+      "figure": "10.1",
+      "file": "ch10.html"
+    },
+    {
+      "figure": "10.2",
+      "file": "ch10.html"
+    },
+    {
+      "figure": "13.1",
+      "file": "ch13.html"
+    },
+    {
+      "figure": "13.2",
+      "file": "ch13.html"
+    },
+    {
+      "figure": "14.1",
+      "file": "ch14.html"
+    },
+    {
+      "figure": "14.2",
+      "file": "ch14.html"
+    },
+    {
+      "figure": "15.1",
+      "file": "ch15.html"
+    },
+    {
+      "figure": "15.2",
+      "file": "ch15.html"
+    },
+    {
+      "figure": "0.1",
+      "file": "front_quickstart.html"
+    },
+    {
+      "figure": "0.2",
+      "file": "front_quickstart.html"
+    },
+    {
+      "figure": "0.3",
+      "file": "front_quickstart.html"
+    },
+    {
+      "figure": "0.1",
+      "file": "front_roadmap.html"
+    },
+    {
+      "figure": "0.1",
+      "file": "front_roadmap.html"
+    }
+  ],
+  "leftovers": {},
+  "total_replacements": 0,
+  "status": "no-op (已经迁移，幂等)"
+}

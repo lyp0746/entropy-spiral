@@ -1,6 +1,6 @@
 /* ============================================================
- * 出版级排版 —— 第一版版式（Print / 正式书稿）
- * 恢复第一版的字体体系：
+ * 出版级排版 —— 正式书稿版式（Print）
+ * 字体体系：
  *   正文（中文宋体 + 西文 Times），标题（微软雅黑/Arial 无衬线）。
  * 明确不使用思源（Source Han / Noto）系列，避免“网页化”观感。
  * 页面：A4 单栏、30/35/32/35mm 边距、10.5pt、1.5 倍行距。
@@ -14,7 +14,7 @@
 * { box-sizing: border-box; }
 
 body {
-  /* 西文 Times + 中文宋体，构成第一版的衬线正文 */
+  /* 西文 Times + 中文宋体，构成衬线正文 */
   font-family: "Times New Roman", "SimSun", "Songti SC", "STSong", "NSimSun", Georgia, serif;
   font-size: 10.5pt;
   line-height: 1.5;
@@ -29,7 +29,7 @@ body {
 
 /* ------------------------------ 标题层级 ------------------------------ */
 h1, h2, h3, h4, h5 {
-  /* 中文黑体 + 西文 Arial，与第一版标题一致 */
+  /* 中文黑体 + 西文 Arial，标题字体 */
   font-family: "Microsoft YaHei", "Heiti SC", "SimHei", "Arial", "Helvetica Neue", sans-serif;
   color: #1a1a1a;
   line-height: 1.28;

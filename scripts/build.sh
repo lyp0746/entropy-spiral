@@ -9,7 +9,7 @@ PY="${PYTHON:-python}"
 echo "== 1/5 校对 =="
 "$PY" analysis/audit.py
 
-echo "== 2/5 印刷版（第一版版式）=="
+echo "== 2/5 印刷版（正式书稿版式）=="
 "$PY" build_book.py --pdf
 
 echo "== 3/5 电子阅读版 =="

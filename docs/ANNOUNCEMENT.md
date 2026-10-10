@@ -40,7 +40,7 @@
 登记机制。
 
 **引用。**
-> 李毅芃. 《错位的时间：社会系统的熵增螺旋、制度错配与可控性边界》. 初版, 2026-10-09. CC BY 4.0.
+> 李毅芃. 《错位的时间：社会系统的熵增螺旋、制度错配与可控性边界》. 2026-10-11. CC BY 4.0.
 > DOI: 10.5281/zenodo.23276888
 
 **参与。** 欢迎补充数据（尤其是"制度反应时间""信息失真代理""知识验证时长"等缺口项），
@@ -85,7 +85,7 @@ prophecy but a ruler and a falsifiable register.
 
 **Citation.**
 > Li Yipeng. *Desynchronized Time: The Entropy Spiral of Social Systems, Institutional
-> Mismatch, and the Boundary of Controllability.* First edition, 2026-10-09. CC BY 4.0.
+> Mismatch, and the Boundary of Controllability.* 2026-10-11. CC BY 4.0.
 > DOI: 10.5281/zenodo.23276888
 
 **Contribute.** Data contributions are welcome — especially "institutional response time",

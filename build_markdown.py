@@ -332,7 +332,7 @@ def main():
 
     # 3) 合并全书（部分 = #，章 = ##，节 = ###）
     combined = [build_title_md(book), "\n---\n"]
-    # 前置（按 FRONT 顺序，含版权、开篇、前言、十分钟、第0章、理论地图、术语、执行摘要）
+    # 前置（按 FRONT 顺序，含版权、开篇、前言、十分钟、理论地图、术语、执行摘要）
     front_order = ["copyright"] + [a for _, _, a in FRONT]
     for anchor, title, md, fname in files:
         if anchor in front_order:

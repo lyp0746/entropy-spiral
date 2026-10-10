@@ -87,7 +87,7 @@
       "first": "ch01.html"
     },
     "脆弱性": {
-      "total": 132,
+      "total": 137,
       "by_chapter": [
         [
           "ch01.html",
@@ -103,7 +103,7 @@
         ],
         [
           "ch04.html",
-          4
+          5
         ],
         [
           "ch05.html",
@@ -115,15 +115,15 @@
         ],
         [
           "ch07.html",
-          15
+          16
         ],
         [
           "ch08.html",
-          30
+          31
         ],
         [
           "ch09.html",
-          24
+          25
         ],
         [
           "ch10.html",
@@ -147,7 +147,7 @@
         ],
         [
           "ch15.html",
-          3
+          4
         ]
       ],
       "first": "ch01.html"
@@ -179,7 +179,7 @@
       "first": "ch02.html"
     },
     "地缘耦合": {
-      "total": 13,
+      "total": 14,
       "by_chapter": [
         [
           "ch01.html",
@@ -195,7 +195,7 @@
         ],
         [
           "ch07.html",
-          4
+          5
         ],
         [
           "ch08.html",
@@ -205,7 +205,7 @@
       "first": "ch01.html"
     },
     "代理": {
-      "total": 168,
+      "total": 173,
       "by_chapter": [
         [
           "ch01.html",
@@ -221,11 +221,11 @@
         ],
         [
           "ch05.html",
-          80
+          84
         ],
         [
           "ch06.html",
-          14
+          15
         ],
         [
           "ch08.html",
@@ -251,7 +251,7 @@
       "first": "ch01.html"
     },
     "螺旋": {
-      "total": 71,
+      "total": 74,
       "by_chapter": [
         [
           "ch01.html",
@@ -259,7 +259,7 @@
         ],
         [
           "ch02.html",
-          47
+          50
         ],
         [
           "ch03.html",
@@ -305,7 +305,7 @@
       "first": "ch02.html"
     },
     "局部可描述性": {
-      "total": 14,
+      "total": 16,
       "by_chapter": [
         [
           "ch02.html",
@@ -321,7 +321,7 @@
         ],
         [
           "ch11.html",
-          10
+          12
         ]
       ],
       "first": "ch02.html"
@@ -386,6 +386,7 @@
     "5.4": "ch05.html",
     "5.5": "ch05.html",
     "6.1": "ch06.html",
+    "6.2": "ch06.html",
     "7.1": "ch07.html",
     "7.3": "ch07.html",
     "8.1": "ch08.html",
@@ -1008,6 +1009,10 @@
     },
     {
       "chapter": "ch07.html",
+      "snippet": "本书也无法排除（不确定）：κ 的示意序列须由 WTO／BIS／ITU 真实序列替换后核验"
+    },
+    {
+      "chapter": "ch07.html",
       "snippet": "κ 在三个维度上持续上升（按示意序列），其中信息耦合水平最高、最难替代"
     },
     {
@@ -1179,6 +1184,10 @@
       "snippet": "表 9.8　全球债务的五种条件情景（示意）"
     },
     {
+      "chapter": "ch09.html",
+      "snippet": "本书也无法排除（不确定）：情景概率是示意性先验，不是估计"
+    },
+    {
       "chapter": "ch10.html",
       "snippet": "性质：方法演示的横向比较（质量 C）"
     },
@@ -1337,6 +1346,7 @@
       "ch13.html"
     ],
     "14": [
+      "ch06.html",
       "ch10.html",
       "ch11.html",
       "ch12.html",

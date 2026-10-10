@@ -34,7 +34,6 @@ DATA_DIR = os.path.join(HERE, "data")
 FRONT = [("开篇　一个关于“来不及”的故事", "front_opening.html", "opening"),
          ("前言　为什么放弃周期论，为什么以时间为线索", "front_preface.html", "preface"),
          ("十分钟读懂本书", "front_quickstart.html", "quickstart"),
-         ("第 0 章　四个故事讲述一个结构", "front_ch0.html", "ch0"),
          ("理论地图　一份给读者的路线图", "front_roadmap.html", "roadmap"),
          ("术语速查表　关键概念一览", "front_terms.html", "terms"),
          ("执行摘要（Executive Summary）", "front_executive_summary.html", "execsummary")]
@@ -47,7 +46,8 @@ BACK = [("结语　承认与启蒙", "back_epilogue.html", "epilogue"),
         ("附录 E　术语表", "appendix_glossary.html", "apxE"),
         ("附录 F　应用工具包：诊断指南与政策矩阵", "appendix_f_toolkit.html", "apxF"),
         ("附录 G　情景库与可复现框架", "appendix_g_scenario_library.html", "apxG"),
-        ("附录 H　可得数据补充与数据缺口", "appendix_h_data_supplement.html", "apxH")]
+        ("附录 H　可得数据补充与数据缺口", "appendix_h_data_supplement.html", "apxH"),
+        ("附录 I　事前登记清单", "appendix_i_preregistration.html", "apxI")]
 
 
 def load_json(p, default=None):
