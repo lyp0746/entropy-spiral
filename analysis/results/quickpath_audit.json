@@ -2,9 +2,9 @@
   "chapters": [
     {
       "file": "ch01.html",
-      "fast_chars": 1906,
-      "full_chars": 5577,
-      "fast_ratio": 0.342,
+      "fast_chars": 2006,
+      "full_chars": 5627,
+      "fast_ratio": 0.356,
       "key_output_items": [
         {
           "item": "强（可直接使用）：周期论的三个前提——单一代理、线性递推、独立维度——与数据不符：盐铁代理 ρ=−0.57、复杂度—寿命倒 U 不显著、现代代理共线 0.79—",
@@ -30,9 +30,9 @@
     },
     {
       "file": "ch02.html",
-      "fast_chars": 2298,
-      "full_chars": 9782,
-      "fast_ratio": 0.235,
+      "fast_chars": 2398,
+      "full_chars": 9832,
+      "fast_ratio": 0.244,
       "key_output_items": [
         {
           "item": "强（可直接使用）：螺旋能同时解释“反复但不回归、多个指标同向、耦合传导”三件事，而随机游走、混沌、分形做不到。",
@@ -62,9 +62,9 @@
     },
     {
       "file": "ch03.html",
-      "fast_chars": 1121,
-      "full_chars": 9627,
-      "fast_ratio": 0.116,
+      "fast_chars": 1215,
+      "full_chars": 9674,
+      "fast_ratio": 0.126,
       "key_output_items": [
         {
           "item": "强（可直接使用）：“回不去”有一个可讲的机制：集中降低纠错能力、复杂度拉长响应时间、耦合加快传导。",
@@ -92,9 +92,9 @@
     },
     {
       "file": "ch04.html",
-      "fast_chars": 1219,
-      "full_chars": 9084,
-      "fast_ratio": 0.134,
+      "fast_chars": 1309,
+      "full_chars": 9129,
+      "fast_ratio": 0.143,
       "key_output_items": [
         {
           "item": "强（可直接使用）：子系统时间尺度跨越六个数量级，不可同步是结构性的；τ 给出可比较的序数（0.5／3.5／30）。",
@@ -125,9 +125,9 @@
     },
     {
       "file": "ch05.html",
-      "fast_chars": 2677,
-      "full_chars": 16082,
-      "fast_ratio": 0.166,
+      "fast_chars": 2761,
+      "full_chars": 16124,
+      "fast_ratio": 0.171,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Θ 的现代代理长期同向上升、重心不回落；前现代盐铁代理反向（ρ=−0.57），强版本被否证。",
@@ -157,9 +157,9 @@
     },
     {
       "file": "ch06.html",
-      "fast_chars": 1868,
-      "full_chars": 11175,
-      "fast_ratio": 0.167,
+      "fast_chars": 1960,
+      "full_chars": 11221,
+      "fast_ratio": 0.175,
       "key_output_items": [
         {
           "item": "强（可直接使用）：复杂度—寿命的倒 U 关系未被数据支持：三个代理的二次项均不显著，复杂度与时长几乎无正相关。",
@@ -193,9 +193,9 @@
     },
     {
       "file": "ch07.html",
-      "fast_chars": 1232,
-      "full_chars": 8190,
-      "fast_ratio": 0.15,
+      "fast_chars": 1324,
+      "full_chars": 8236,
+      "fast_ratio": 0.161,
       "key_output_items": [
         {
           "item": "强（可直接使用）：κ 在商品、金融、信息三个维度上升，信息耦合最高、最难替代；它对脆弱性有直接的传导机制。",
@@ -227,9 +227,9 @@
     },
     {
       "file": "ch08.html",
-      "fast_chars": 1479,
-      "full_chars": 10967,
-      "fast_ratio": 0.135,
+      "fast_chars": 1567,
+      "full_chars": 11011,
+      "fast_ratio": 0.142,
       "key_output_items": [
         {
           "item": "强（可直接使用）：权重来自机制而非拟合，γ>α>λ>β 的“耦合优先”高层结论成立。",
@@ -265,9 +265,9 @@
     },
     {
       "file": "ch09.html",
-      "fast_chars": 3387,
-      "full_chars": 13389,
-      "fast_ratio": 0.253,
+      "fast_chars": 3461,
+      "full_chars": 13426,
+      "fast_ratio": 0.258,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Risk(S) 必须冲击特异：不存在跨情景通用的脆弱性排序；前三个案例已接入真实序列。",
@@ -295,9 +295,9 @@
     },
     {
       "file": "ch10.html",
-      "fast_chars": 3867,
-      "full_chars": 9429,
-      "fast_ratio": 0.41,
+      "fast_chars": 3939,
+      "full_chars": 9465,
+      "fast_ratio": 0.416,
       "key_output_items": [
         {
           "item": "强（可直接使用）：框架在单点与单国冲击上坚固；置信区间随冲击范围系统性扩大（±0.10→±0.60）。",
@@ -326,9 +326,9 @@
     },
     {
       "file": "ch11.html",
-      "fast_chars": 2249,
-      "full_chars": 12235,
-      "fast_ratio": 0.184,
+      "fast_chars": 2331,
+      "full_chars": 12276,
+      "fast_ratio": 0.19,
       "key_output_items": [
         {
           "item": "强（可直接使用）：局部可描述性由时间、空间、变量三重约束定义，可自检为“可描述／条件可描述／不可描述”三档。",
@@ -556,9 +556,9 @@
     },
     {
       "file": "ch18.html",
-      "fast_chars": 1061,
-      "full_chars": 3156,
-      "fast_ratio": 0.336,
+      "fast_chars": 1173,
+      "full_chars": 3268,
+      "fast_ratio": 0.359,
       "key_output_items": [
         {
           "item": "强（可直接使用）：认知时间错配是带宽约束；个人层的有效工具是关注清单、预承诺与校准。",
@@ -584,14 +584,16 @@
       "undefined_concepts": [
         "C"
       ],
-      "forward_refs_into_gear": [],
+      "forward_refs_into_gear": [
+        "18.5"
+      ],
       "has_declaration": true
     },
     {
       "file": "ch19.html",
       "fast_chars": 987,
-      "full_chars": 3564,
-      "fast_ratio": 0.277,
+      "full_chars": 3956,
+      "fast_ratio": 0.249,
       "key_output_items": [
         {
           "item": "强（可直接使用）：“诊断—分级—时间预算—登记—审查”五步可作为一个系统的完整行动闭环；触发与日落可自动化，授权与降级可预定。",
