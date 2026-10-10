@@ -1,0 +1,491 @@
+{
+  "chapters": [
+    {
+      "file": "ch01.html",
+      "fast_chars": 1906,
+      "full_chars": 5577,
+      "fast_ratio": 0.342,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：周期论的三个前提——单一代理、线性递推、独立维度——与数据不符：盐铁代理 ρ=−0.57、复杂度—寿命倒 U 不显著、现代代理共线 0.79—",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：“所以螺旋才是对的”不能由本章单独支持，它需要第 2 章的消元论证。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：是否还存在周期、随机、混沌、分形、螺旋之外的第六种解释，本章不作保证。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [
+        "1.1"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch02.html",
+      "fast_chars": 2298,
+      "full_chars": 9782,
+      "fast_ratio": 0.235,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：螺旋能同时解释“反复但不回归、多个指标同向、耦合传导”三件事，而随机游走、混沌、分形做不到。",
+          "concepts": [
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：“螺旋是最佳解释”是消元结论，不等于被证明；三根轴是否真的不可逆，要看第 5—7 章。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：作者仍可能高估了“轴”的稳定性；螺旋推论只在三个前提（所涉维度存在、无相消效应、投影选择已声明）同时成立时可用（完整路径 §2.3）。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "C"
+      ],
+      "forward_refs_into_gear": [
+        "2.3"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch03.html",
+      "fast_chars": 1121,
+      "full_chars": 9627,
+      "fast_ratio": 0.116,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：“回不去”有一个可讲的机制：集中降低纠错能力、复杂度拉长响应时间、耦合加快传导。",
+          "concepts": [
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：这些机制是概念性的，社会熵不能像物理熵那样计算；公式只作方向指引。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：“失稳条件”不能用于预测具体年份。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [
+        "3.1"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch04.html",
+      "fast_chars": 1219,
+      "full_chars": 9087,
+      "fast_ratio": 0.134,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：子系统时间尺度跨越六个数量级，不可同步是结构性的；τ 给出可比较的序数（0.5／3.5／30）。",
+          "concepts": [
+            "τ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：时间量级多为示意而非实测分布；τ 依赖“崩溃”阈值的选择。",
+          "concepts": [
+            "κ",
+            "τ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：τ 不能作基数报告（命题 4.1）；信息加速能否缓解认知错配，尚无证据。",
+          "concepts": [
+            "τ"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch05.html",
+      "fast_chars": 2565,
+      "full_chars": 22158,
+      "fast_ratio": 0.116,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：Θ 的现代代理长期同向上升、重心不回落；前现代盐铁代理反向（ρ=−0.57），强版本被否证。",
+          "concepts": [
+            "Θ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：六个代理高度共线（0.79—1.00），不是六份独立证据；跨时代水平不可比。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：2015 年后美国前 1% 财富份额由升转降，是资产价格周期还是政策转向，未定。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "C",
+        "I",
+        "V"
+      ],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch06.html",
+      "fast_chars": 1604,
+      "full_chars": 11043,
+      "fast_ratio": 0.145,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：复杂度—寿命的倒 U 关系未被数据支持：三个代理的二次项均不显著，复杂度与时长几乎无正相关。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：最优复杂度依赖 Θ 的条件机制，在当前数据上无法检验。",
+          "concepts": [
+            "Θ",
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：I 是条件函数、只能事后反推（定义 6.2），不能当常数代入 V。",
+          "concepts": [
+            "I",
+            "V"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "V"
+      ],
+      "forward_refs_into_gear": [
+        "6.2"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch07.html",
+      "fast_chars": 1232,
+      "full_chars": 8737,
+      "fast_ratio": 0.141,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：κ 在商品、金融、信息三个维度上升，信息耦合最高、最难替代；它对脆弱性有直接的传导机制。",
+          "concepts": [
+            "κ",
+            "V"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：κ 的示意序列须由 WTO／BIS／ITU 真实序列替换后核验；三个案例是机制清单，不是证据。",
+          "concepts": [
+            "I",
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：κ 的可逆成本是否已达“相变级别”，目前缺少直接测量。",
+          "concepts": [
+            "κ"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch08.html",
+      "fast_chars": 1365,
+      "full_chars": 13502,
+      "fast_ratio": 0.101,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：权重来自机制而非拟合，γ>α>λ>β 的“耦合优先”高层结论成立。",
+          "concepts": [
+            "κ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：排序随 κ 的操作化反转，美国“最脆弱”、欧盟“居首”都不稳健，应撤回。",
+          "concepts": [
+            "κ",
+            "V"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：I 为丙类（事后推断），V 排序属分组级结论，不构成点估计（完整路径警告 8.6.1）。",
+          "concepts": [
+            "I",
+            "V"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "C"
+      ],
+      "forward_refs_into_gear": [
+        "8.5"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch09.html",
+      "fast_chars": 3387,
+      "full_chars": 23893,
+      "fast_ratio": 0.142,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：Risk(S) 必须冲击特异：不存在跨情景通用的脆弱性排序；前三个案例已接入真实序列。",
+          "concepts": [
+            "V"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：情景概率是示意性先验，不是估计；V 排序为分组级。",
+          "concepts": [
+            "V"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：第四个案例（知识）尚无序列，可登记但暂不可检验。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch10.html",
+      "fast_chars": 3765,
+      "full_chars": 9378,
+      "fast_ratio": 0.401,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：框架在单点与单国冲击上坚固；置信区间随冲击范围系统性扩大（±0.10→±0.60）。",
+          "concepts": [
+            "V"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：仅三个情景，样本小；只给结构与方向，不给时点预测。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：被隐藏的变量是时间（丙类·事后）：风险公式隐含“系统有时间动员适应能力”这一前提。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [
+        "10.2",
+        "10.3"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch11.html",
+      "fast_chars": 2137,
+      "full_chars": 12179,
+      "fast_ratio": 0.175,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：局部可描述性由时间、空间、变量三重约束定义，可自检为“可描述／条件可描述／不可描述”三档。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：可描述 ≠ 可控；量纲不可通约（命题 4.1）限制 τ 只能作序数使用。",
+          "concepts": [
+            "τ"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：§11.7.1 与附录 I 的三项盲测需到 2027 年才能核对。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "I",
+        "Θ",
+        "τ"
+      ],
+      "forward_refs_into_gear": [
+        "11.2",
+        "11.7",
+        "11.9"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch12.html",
+      "fast_chars": 2642,
+      "full_chars": 7009,
+      "fast_ratio": 0.377,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：否证命题用来校正工具，支持命题用来搭建常设监测，待检命题按紧迫性与可行性排序。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：三个优先行动是可选而非必然；政治与经济障碍被明确列出。",
+          "concepts": [
+            "ι"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：五步诊断第③步“估 I”只能给下限或事后校准（警告 12.8.1）。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [
+        "C"
+      ],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch13.html",
+      "fast_chars": 1156,
+      "full_chars": 11136,
+      "fast_ratio": 0.104,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：C = T_policy / T_threat；C<1 即结构性不可控，总可控性取最弱环节。",
+          "concepts": [
+            "C"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：“能力增长集中在快系统、协调阶数增长在慢系统”是结构性判断，非实测。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：学习本身也有时间约束（ρ_learn）；边界之外的降级排序是价值选择，不是计算结果。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    },
+    {
+      "file": "ch14.html",
+      "fast_chars": 1404,
+      "full_chars": 6430,
+      "fast_ratio": 0.218,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：I 的失败不是测量失败，而是概念错置：它是时间量，不是状态量。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：I 是条件函数、只能从结果事后反推（完整路径命题 14.1）；把 I 当常数算 V 有循环论证风险。",
+          "concepts": [
+            "I",
+            "V"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：I₂（协调时间）与 I₄（共同理解）仍无稳定测量方法；“更多信息”不是解药。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [
+        "14.1"
+      ],
+      "has_declaration": true
+    },
+    {
+      "file": "ch15.html",
+      "fast_chars": 4455,
+      "full_chars": 6828,
+      "fast_ratio": 0.652,
+      "key_output_items": [
+        {
+          "item": "强（可直接使用）：医疗、气候、心理、教育、能源、知识共享同一“适应尺度 ≫ 变化尺度”的结构。",
+          "concepts": [],
+          "unsupported": []
+        },
+        {
+          "item": "弱（有条件使用）：制度优越性是（制度类型 × 威胁时间尺度）的函数，不存在跨尺度的最优制度。",
+          "concepts": [
+            "I"
+          ],
+          "unsupported": []
+        },
+        {
+          "item": "不确定（尚不可用）：统一诊断是结构性主张，不作点预测；它主张现代性在原理上无法同时解决所有尺度。",
+          "concepts": [],
+          "unsupported": []
+        }
+      ],
+      "undefined_concepts": [],
+      "forward_refs_into_gear": [],
+      "has_declaration": true
+    }
+  ]
+}
