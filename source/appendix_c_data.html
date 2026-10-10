@@ -37,7 +37,7 @@
 <tr><td class="l">表 3.3、3.5、3.6</td><td class="l">三通道特征、五类反馈通道、反馈拓扑同构类</td><td class="l">说明性／理论分类</td><td class="l">仅方向，不可引用数值</td></tr>
 <tr><td class="l">表 5.6、5.7</td><td class="l">行业集中度、前现代垄断／地租估计</td><td class="l">量级示意</td><td class="l">不可引用数值</td></tr>
 <tr><td class="l">表 6.2</td><td class="l">三系统 I 与 Θ 的示意定位</td><td class="l">量级示意</td><td class="l">不可精确比较</td></tr>
-<tr><td class="l">表 7.1；图 7.1、7.2</td><td class="l">κ 三维度示意轨迹与通道</td><td class="l">构造序列</td><td class="l">正式出版须以官方序列替换</td></tr>
+<tr><td class="l">附录 C 表 C.6；图 7.1、7.2</td><td class="l">κ 三维度示意轨迹与通道</td><td class="l">构造序列</td><td class="l">正式出版须以官方序列替换</td></tr>
 <tr><td class="l">表 8.2、8.3</td><td class="l">V 的权重方案与先验区间</td><td class="l">先验范围</td><td class="l">待敏感性检验</td></tr>
 <tr><td class="l">表 9.1—9.8；图 9.1—9.3</td><td class="l">三案例基准、节点索引、债务情景</td><td class="l">指示性赋值</td><td class="l">结构指标，非风险概率</td></tr>
 <tr><td class="l">表 B.1</td><td class="l">五步模板填写范例</td><td class="l">指示性</td><td class="l">仅示例</td></tr>
@@ -78,6 +78,57 @@
 
 <div class="warning"><span class="bt">警告 C.1　不要把 V 的数值当作“测量值”</span>
 V 是<b>一个依机制权重合成的指标</b>，权重来自理论而非拟合。这意味着：<b>（一）</b>V 的绝对值没有外在标准可比；<b>（二）</b>当权重变动导致排序改变时，应报告“排序不稳”，而不应选择使结论最好看的权重。第 8.5 节与本节共同构成对这一风险的公开应对：<b>先公布权重与灵敏度，再让读者判断结论的稳健度。</b></div>
+
+<h3>C.1d　Θ 代理的数据收集偏差审计（由第 5 章移入）</h3>
+
+<p class="lead">本节承接第 5 章警告 5.9.1（代理高度共线），回答一个更难的反驳：<b>共同上升会不会只是共同的“数据收集偏差”？</b>正文因篇幅只保留结论，完整的口径排查与独立源对照在此登记，供复核。</p>
+
+<p>警告 5.9.1 承认了代理高度共线，但这引出一个更难处理的反驳：<b>如果共同上升趋势不是真实现象，而是共同的“数据收集偏差”，怎么办？</b>这种偏差至少有两种形态。其一，<b>统计口径变更</b>：1980—2024 年间，各国统计机构多次修改收入、金融利润与债务的定义（例如 SNA 2008 将部分金融工具重新分类），若变化方向与“Θ 上升”一致，就会制造共同趋势。其二，<b>共同方法源头</b>：多个代理可能实际上来自同一个上游数据源，则“六重”只是同一测量的六种切法。本节做两件事：追查口径变更，并用独立源交叉验证。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.4　共同数据收集偏差的两类来源与排查</b></caption>
+<tr><th class="l">偏差类型</th><th class="l">具体表现</th><th class="l">对 Θ 方向的影响</th><th class="l">排查方法</th></tr>
+<tr><td class="l">统计口径变更</td><td class="l">SNA 1993/2008 对金融中介服务的重新分类；各国 Gini 调查口径不一；债务定义（广义／中央）变更</td><td class="l">可能虚增金融利润与债务水平，但<b>不改变 1980—2024 的方向</b>（口径变更多为一次性水平调整）</td><td class="l">对照官方修订说明；用变更前后同口径子区间重算趋势</td></tr>
+<tr><td class="l">共同方法源头</td><td class="l">多个代理共用同一底层数据（如均依赖税收申报或同一市场数据库）</td><td class="l">若源头偏差与时间同向，则共线可能虚假</td><td class="l">用<b>不共享源头</b>的独立数据交叉验证（下表）</td></tr>
+<tr><td class="l">样本与幸存偏差</td><td class="l">合并与退市使集中度指标自动上升</td><td class="l">可能高估企业集中度的上升</td><td class="l">用含退市公司的全样本重算；区分“内生集中”与“市场结构变化”</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>方法审计（质量 C）。<b>注释：</b>排查的目标不是“排除所有偏差”（那不可能），而是判断<b>偏差能否单独制造出本书报告的方向</b>；若不能，则共线更可能反映真实机制耦合。</div>
+
+<p>独立源交叉验证的想法很简单：<b>如果 Θ 的上升是真实的，那么不共享源头、不服务于同一政策叙事的外部信息，也应看到同向变化。</b>表 C.5 列出四组交叉验证；其中两组的证据等级为 A（税收数据与公司申报），另两组为 B（富豪榜与学术元数据）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.5　Θ 代理的独立源交叉验证</b></caption>
+<tr><th class="l">代理</th><th class="l">原数据源</th><th class="l">独立验证源（不共享源头）</th><th class="l">方向是否一致</th><th>证据等级</th></tr>
+<tr><td class="l">P2b 财富集中</td><td class="l">WID / Saez–Zucman（税收资本化）</td><td class="l">美联储 DFA（分配金融账户，调查+Hedge 估计）；福布斯富豪榜</td><td class="l">一致（峰值均在 2015—2021 前后）</td><td>A/B</td></tr>
+<tr><td class="l">P3 金融利润份额</td><td class="l">BEA 行业统计</td><td class="l">上市公司财报汇总（Compustat）；金融业增加值 GDP 份额</td><td class="l">一致（2001 峰值、危机后恢复）</td><td>A</td></tr>
+<tr><td class="l">P5 企业集中度</td><td class="l">指数权重（公开市场）</td><td class="l">行业 CR4／HHI 的学术数据库；SEC 申报</td><td class="l">部分一致（上升集中在网络效应行业，非全面）</td><td>A/B</td></tr>
+<tr><td class="l">P6 债务／GDP</td><td class="l">IMF Global Debt Monitor</td><td class="l">BIS 信用统计；各国财政部债务公报</td><td class="l">一致（水平差异来自口径，方向一致）</td><td>A</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>详见附录 C 表 C.1。<b>质量等级：</b>税收与申报类为 A，调查与榜单类为 B。<b>注释：</b>独立源方向一致，<b>降低了“共同数据偏差制造共同趋势”的可能性，但不完全排除它</b>；因此本节不把交叉验证当作证明，只当作对共线警告的限定。</div>
+
+<p>此外，学术元数据库、NGO／国际组织报告与企业级申报构成三类非官方验证源；它们立场各异，因而不太可能与官方统计共享同一偏差方向。</p>
+
+<div class="warning"><span class="bt">警告 C.2　交叉验证的局限：它降低而非消除风险</span>
+独立源交叉验证能排除“单一源头偏差”，却无法排除“多个源头都受同一宏观过程影响”。例如，1980 年后的金融化本身就可能同时改变税收数据、调查数据与公司申报——这种情况下各源一致，却仍是同一机制的多个侧面。<b>因此，本节得出的结论仍是条件性的：Θ 的上升方向在四种独立源下一致，但“独立”只到“不共享数据管道”为止，不到“相互独立的因果过程”为止。</b>这一限制已登记在第 11 章表 11.4 的 P4.2。</div>
+
+<h3>C.1e　κ 三维度的指示性构造序列（由第 7 章移入）</h3>
+
+<p>第 7.3 节的真实序列（表 7.1b、7.1c）已取代下列指示性构造；此处保留构造序列与合成规则，供复核“示意与实际有多少偏差”。</p>
+
+<p></p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.6　全球耦合的三个维度（指示性构造，1980—2026，质量 C）</b></caption>
+<tr><th class="l">维度</th><th class="l">指标</th><th>1980</th><th>2000</th><th>2010</th><th>2020</th><th>2026</th></tr>
+<tr><td class="l">商品耦合</td><td class="l">贸易开放度</td><td>0.23</td><td>0.28</td><td>0.30</td><td>0.31</td><td>0.32</td></tr>
+<tr><td class="l">商品耦合</td><td class="l">供应链集中度</td><td>0.42</td><td>0.68</td><td>0.85</td><td>0.87</td><td>0.89</td></tr>
+<tr><td class="l">金融耦合</td><td class="l">跨境投资/GDP</td><td>0.07</td><td>0.17</td><td>0.25</td><td>0.28</td><td>0.30</td></tr>
+<tr><td class="l">金融耦合</td><td class="l">央行资产关联</td><td>0.21</td><td>0.54</td><td>0.78</td><td>0.82</td><td>0.84</td></tr>
+<tr><td class="l">信息耦合</td><td class="l">互联网普及</td><td>0.00</td><td>0.05</td><td>0.30</td><td>0.60</td><td>0.66</td></tr>
+<tr><td class="l">信息耦合</td><td class="l">平台数据集中</td><td>0.08</td><td>0.35</td><td>0.72</td><td>0.92</td><td>0.95</td></tr>
+<tr><td class="l"><b>合成</b></td><td class="l"><b>耦合指数 κ</b></td><td><b>0.00</b></td><td><b>0.41</b></td><td><b>0.77</b></td><td><b>0.94</b></td><td><b>1.00</b></td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>指示性构造（质量 C）。<b>正式来源应为：</b>World Bank NE.TRD.GNFS.ZS（贸易）；BIS 跨境头寸 / IMF CPIS（金融）；ITU 互联网普及率与平台集中度统计（信息）。<b>质量等级：</b>C。<b>注释：</b>合成指数为各维度内指标归一后等权平均；数值仅表方向，不代表真实水平。按该示意序列，κ 单调上升（ρ=1.00），但增量在 2010 年代后<b>递减而非加速</b>——这一点与"信息耦合持续加速"的常见叙事不同，须以真实数据核验。</div>
 
 <h3>C.2　复现步骤</h3>
 <p>全部脚本位于 <code>analysis/</code>，结果写入 <code>data/</code> 与 <code>analysis/results/</code>。重跑顺序：</p>

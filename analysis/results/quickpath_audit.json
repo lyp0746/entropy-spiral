@@ -125,9 +125,9 @@
     },
     {
       "file": "ch05.html",
-      "fast_chars": 2565,
-      "full_chars": 22013,
-      "fast_ratio": 0.117,
+      "fast_chars": 2677,
+      "full_chars": 20936,
+      "fast_ratio": 0.128,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Θ 的现代代理长期同向上升、重心不回落；前现代盐铁代理反向（ρ=−0.57），强版本被否证。",
@@ -194,8 +194,8 @@
     {
       "file": "ch07.html",
       "fast_chars": 1232,
-      "full_chars": 8676,
-      "fast_ratio": 0.142,
+      "full_chars": 8190,
+      "fast_ratio": 0.15,
       "key_output_items": [
         {
           "item": "强（可直接使用）：κ 在商品、金融、信息三个维度上升，信息耦合最高、最难替代；它对脆弱性有直接的传导机制。",
@@ -227,9 +227,9 @@
     },
     {
       "file": "ch08.html",
-      "fast_chars": 1365,
-      "full_chars": 13502,
-      "fast_ratio": 0.101,
+      "fast_chars": 1479,
+      "full_chars": 13559,
+      "fast_ratio": 0.109,
       "key_output_items": [
         {
           "item": "强（可直接使用）：权重来自机制而非拟合，γ>α>λ>β 的“耦合优先”高层结论成立。",
@@ -295,9 +295,9 @@
     },
     {
       "file": "ch10.html",
-      "fast_chars": 3765,
-      "full_chars": 9378,
-      "fast_ratio": 0.401,
+      "fast_chars": 3867,
+      "full_chars": 9429,
+      "fast_ratio": 0.41,
       "key_output_items": [
         {
           "item": "强（可直接使用）：框架在单点与单国冲击上坚固；置信区间随冲击范围系统性扩大（±0.10→±0.60）。",
@@ -326,9 +326,9 @@
     },
     {
       "file": "ch11.html",
-      "fast_chars": 2137,
-      "full_chars": 12179,
-      "fast_ratio": 0.175,
+      "fast_chars": 2249,
+      "full_chars": 12235,
+      "fast_ratio": 0.184,
       "key_output_items": [
         {
           "item": "强（可直接使用）：局部可描述性由时间、空间、变量三重约束定义，可自检为“可描述／条件可描述／不可描述”三档。",
@@ -396,9 +396,9 @@
     },
     {
       "file": "ch13.html",
-      "fast_chars": 1156,
-      "full_chars": 11965,
-      "fast_ratio": 0.097,
+      "fast_chars": 1765,
+      "full_chars": 12967,
+      "fast_ratio": 0.136,
       "key_output_items": [
         {
           "item": "强（可直接使用）：C = T_policy / T_threat；C<1 即结构性不可控，总可控性取最弱环节。",
@@ -427,8 +427,8 @@
     {
       "file": "ch14.html",
       "fast_chars": 1404,
-      "full_chars": 7428,
-      "fast_ratio": 0.189,
+      "full_chars": 7703,
+      "fast_ratio": 0.182,
       "key_output_items": [
         {
           "item": "强（可直接使用）：I 的失败不是测量失败，而是概念错置：它是时间量，不是状态量。",
@@ -462,8 +462,8 @@
     {
       "file": "ch15.html",
       "fast_chars": 5282,
-      "full_chars": 8108,
-      "fast_ratio": 0.651,
+      "full_chars": 8752,
+      "fast_ratio": 0.604,
       "key_output_items": [
         {
           "item": "强（可直接使用）：医疗、气候、心理、教育、能源、知识共享同一“适应尺度 ≫ 变化尺度”的结构。",
