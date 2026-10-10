@@ -19,6 +19,7 @@
 - 🚀 **快速开始**　[快速开始](#快速开始)（一条命令构建 PDF/EPUB）
 - 📥 **下载**　[`Releases`](../../releases/latest)（印刷版 PDF · 电子阅读版 PDF · EPUB 3 · 封面），或本地 `bash scripts/release.sh` → `release/`
 - 🤝 **参与**　[CONTRIBUTING.md](CONTRIBUTING.md) · 数据缺口见 [`docs/DATA-GAPS.md`](docs/DATA-GAPS.md)
+- 📣 **发布公告**　[`docs/ANNOUNCEMENT.md`](docs/ANNOUNCEMENT.md)（中英双语）
 - 📚 **引用**　见 [引用](#引用) 与 [`CITATION.cff`](CITATION.cff)
 
 ---
