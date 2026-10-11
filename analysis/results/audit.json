@@ -91,7 +91,7 @@
       "first": "ch01.html"
     },
     "脆弱性": {
-      "total": 131,
+      "total": 132,
       "by_chapter": [
         [
           "ch01.html",
@@ -107,7 +107,7 @@
         ],
         [
           "ch04.html",
-          7
+          8
         ],
         [
           "ch05.html",
@@ -1326,7 +1326,11 @@
     },
     {
       "chapter": "ch15.html",
-      "snippet": "性质：理论映射（方向性，质量 C）"
+      "snippet": "方向性，质量 C）"
+    },
+    {
+      "chapter": "ch15.html",
+      "snippet": "性质：理论对照（方向性，质量 C）"
     },
     {
       "chapter": "ch15.html",
@@ -2276,7 +2280,6 @@
     ],
     "13.9": [
       "ch13.html",
-      "ch15.html",
       "ch18.html"
     ],
     "13939.4": [
@@ -2305,7 +2308,8 @@
     ],
     "14.7": [
       "ch10.html",
-      "ch14.html"
+      "ch14.html",
+      "ch15.html"
     ],
     "14.8": [
       "ch04.html",
@@ -2516,7 +2520,9 @@
     ],
     "3.11": [
       "ch03.html",
+      "ch04.html",
       "ch06.html",
+      "ch08.html",
       "ch12.html",
       "ch14.html"
     ],
@@ -2530,7 +2536,8 @@
     ],
     "3.3": [
       "ch01.html",
-      "ch03.html"
+      "ch03.html",
+      "ch15.html"
     ],
     "3.4": [
       "ch03.html",
@@ -2968,6 +2975,7 @@
       "ch12.html"
     ],
     "8.13": [
+      "ch04.html",
       "ch08.html",
       "ch09.html",
       "ch12.html",
