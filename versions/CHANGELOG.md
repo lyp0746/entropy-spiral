@@ -11,6 +11,7 @@
 > - 上一版归档 DOI（已被取代）：[10.5281/zenodo.23276888](https://doi.org/10.5281/zenodo.23276888)
 > - 更早的归档 DOI（已被取代）：[10.5281/zenodo.23264927](https://doi.org/10.5281/zenodo.23264927)
 > - 概念 DOI（无版本，始终指向最新）：[10.5281/zenodo.23217100](https://doi.org/10.5281/zenodo.23217100)
+> - 本轮 GitHub Release（审计闭环）：[edition-2026-10-11-audit](https://github.com/lyp0746/entropy-spiral/releases/tag/edition-2026-10-11-audit)（Zenodo 版本 DOI 待人工归档后补登）
 >
 > 引用请使用**当前归档 DOI**；泛指本作时使用**概念 DOI**。
 
