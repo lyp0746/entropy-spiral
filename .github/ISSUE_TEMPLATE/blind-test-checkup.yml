@@ -1,0 +1,86 @@
+name: 盲测核销（B1/B2/B3）
+description: 对附录 I 的事前登记盲测做一次可追溯的核销
+title: "[核销] B? — <情景/指标> — <YYYY-MM-DD>"
+labels: ["preregistration", "blind-test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        按 `docs/preregistration/README.md` 执行。核销时**四项分开**：(i) 原始预测；(ii) 观测结果；(iii) 是否达标；(iv) 差异原因。
+        观测后不得修改已登记行，只能追加。
+  - type: dropdown
+    id: test
+    attributes:
+      label: 命题编号
+      options:
+        - B1 新兴市场美元融资断裂
+        - B2 关键矿产替代滞后
+        - B3 AI 生成物验证滞后
+    validations:
+      required: true
+  - type: input
+    id: check_date
+    attributes:
+      label: 核对日期
+      placeholder: "2027-01-15"
+    validations:
+      required: true
+  - type: input
+    id: indicator
+    attributes:
+      label: 指标（与 registry.json 一致）
+    validations:
+      required: true
+  - type: input
+    id: value
+    attributes:
+      label: 观测值 + 单位
+      placeholder: "-4% / 3.2 months / 18%"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 数据来源与 vintage
+      placeholder: "IMF IFS, 2026Q4"
+    validations:
+      required: true
+  - type: dropdown
+    id: triggered
+    attributes:
+      label: 是否触发
+      options: ["no", "partial", "yes"]
+    validations:
+      required: true
+  - type: textarea
+    id: prediction
+    attributes:
+      label: (i) 原始预测（照抄 registry.json，不得改写）
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: (ii) 观测结果
+    validations:
+      required: true
+  - type: dropdown
+    id: met
+    attributes:
+      label: (iii) 是否满足成功标准
+      options: ["命中", "落空", "部分", "尚不可判定"]
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: (iv) 差异的可能原因
+  - type: checkboxes
+    id: commit
+    attributes:
+      label: 承诺
+      options:
+        - label: 我没有修改已登记的预测或旧账本行
+          required: true
+        - label: 我会把本 issue 的结果追加进 docs/preregistration/checkups.csv
+          required: true

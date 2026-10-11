@@ -111,6 +111,30 @@ V 是<b>一个依机制权重合成的指标</b>，权重来自理论而非拟�
 <div class="warning"><span class="bt">警告 C.2　交叉验证的局限：它降低而非消除风险</span>
 独立源交叉验证能排除“单一源头偏差”，却无法排除“多个源头都受同一宏观过程影响”。例如，1980 年后的金融化本身就可能同时改变税收数据、调查数据与公司申报——这种情况下各源一致，却仍是同一机制的多个侧面。<b>因此，本节得出的结论仍是条件性的：Θ 的上升方向在四种独立源下一致，但“独立”只到“不共享数据管道”为止，不到“相互独立的因果过程”为止。</b>这一限制已登记在第 11 章表 11.4 的 P4.2。</div>
 
+<h4 class="arg">C.1d-2　代理的因子结构：一个共同过程，还是多个？</h4>
+
+<p>表 5.4 的相关矩阵说明代理两两高度共线，但没有回答“共有几个独立维度”。对五个长期代理（1980—2020）做主成分分析（PCA）与平行分析（脚本 <code>analysis/theta_sensitivity.py</code>，结果见 <code>analysis/results/theta_sensitivity.json</code> 的 <code>pca</code> 字段），得到三个口径下的完整特征值：</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.7　五个长期代理的主成分特征值与有效维数（1980—2020）</b></caption>
+<tr><th class="l">输入矩阵</th><th>λ₁</th><th>λ₂</th><th>λ₃</th><th>λ₄</th><th>λ₅</th><th>PC1 方差</th><th>N<sub>eff</sub></th></tr>
+<tr><td class="l">水平序列</td><td>4.60</td><td>0.32</td><td>0.06</td><td>0.01</td><td>0.00</td><td>92.1%</td><td><b>1.17</b></td></tr>
+<tr><td class="l">一阶差分</td><td>3.05</td><td>0.94</td><td>0.49</td><td>0.42</td><td>0.11</td><td>60.9%</td><td>2.36</td></tr>
+<tr><td class="l">逐代理去趋势</td><td>4.20</td><td>0.41</td><td>0.22</td><td>0.14</td><td>0.03</td><td>84.1%</td><td>1.40</td></tr>
+</table>
+
+<table class="nat">
+<caption class="cap"><b>表 C.8　PC1 载荷（变量与第一主成分的相关）</b></caption>
+<tr><th class="l">代理</th><th>水平序列</th><th>一阶差分</th><th>逐代理去趋势</th></tr>
+<tr><td class="l">P2 收入不平等</td><td>0.93</td><td>0.38</td><td>0.85</td></tr>
+<tr><td class="l">P2b 财富集中</td><td>0.99</td><td>0.78</td><td>0.95</td></tr>
+<tr><td class="l">P3 金融利润份额</td><td>0.97</td><td>0.81</td><td>0.87</td></tr>
+<tr><td class="l">P5 企业集中度</td><td>0.96</td><td><b>−0.86</b></td><td><b>−0.93</b></td></tr>
+<tr><td class="l">P6 债务／GDP</td><td>0.95</td><td><b>−0.95</b></td><td><b>−0.98</b></td></tr>
+</table>
+<div class="datasrc"><b>方法：</b>逐代理 z 分数后相关矩阵特征分解；有效维数 N<sub>eff</sub>=K²/Σλ²；平行分析（2000 次随机模拟的 95 分位）与 Kaiser 准则（λ&gt;1）在水平口径下均只保留 <b>1</b> 个成分。<b>质量等级：</b>C（统计量合成，输入含 B 级近似序列）。<b>关键读法：</b>（一）水平序列 PCA 表明五个代理几乎只测一个维度（N<sub>eff</sub>≈1.2），所以“六个代理＝六份独立证据”不成立，V 的 Θ 分量应读作一条综合轴；（二）一阶差分剔除共同趋势后，PC1 仍占 60.9%、N<sub>eff</sub>≈2.4，说明共同结构并非纯趋势假象，但也不再是单一维度；<b>（三）差分后企业集中度与债务的载荷变号</b>，提示“去趋势后的短期共动”包含方向相反的分量，不得把它当作 Θ 的短期信号。<b>结论：</b>代理测的是“一个主导过程 + 二至三个次要维度”的混合，主导过程约占七成到九成方差。本节不改变第 5 章的方向判断，只进一步收窄其可声称的精度。</div>
+
+
 <h3>C.1e　κ 三维度的指示性构造序列（由第 7 章移入）</h3>
 
 <p>第 7.3 节的真实序列（表 7.1b、7.1c）已取代下列指示性构造；此处保留构造序列与合成规则，供复核“示意与实际有多少偏差”。</p>
@@ -139,6 +163,9 @@ V 是<b>一个依机制权重合成的指标</b>，权重来自理论而非拟�
 <li><code>fetch_chapter5.py</code> —— 政府支出 + WGI 制度质量。</li>
 <li><code>parse_wid.py</code> —— 解析 WID 财富／收入 CSV。</li>
 <li><code>parse_chapter8_inputs.py</code> —— 解析 Brent 日度与 WGI xlsx。</li>
+<li><code>theta_sensitivity.py</code> —— Θ 六重代理的趋势、合成、留一、相关矩阵与<b>主成分／因子分析</b>（表 5.2—5.4、5.4b，图 5.1、5.2；结果含 <code>theta_sensitivity.json</code> 的 <code>pca</code> 字段）。</li>
+<li><code>tau_sensitivity.py</code> —— τ = T<sub>min</sub>/T<sub>available</sub> 的蒙特卡洛不确定性传播（表 14.6、14.7；图 14.3；结果含 <code>tau_sensitivity.json</code>）。</li>
+<li><code>fetch_preregistration_baseline.py</code> —— 抓取 B1—B3 的机器快照（WB／Comtrade 公共预览／arXiv；附录 I 表 I.4；结果 <code>docs/preregistration/baseline_snapshot.json</code>）。</li>
 <li><code>fetch_seshat.py</code> —— 抽取中国政体序列（表 2.3、图 2.2）。</li>
 <li><code>kappa_nodes.py</code> —— κ 脆弱节点的 V 应用与 γ 敏感性（表 9.2b、图 9.1）。</li>
 <li><code>fetch_kappa_wdi.py</code> —— World Bank WDI 贸易／能源／燃料真实序列（κ 分量，质量 A）。</li>

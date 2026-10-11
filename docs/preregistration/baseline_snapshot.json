@@ -1,0 +1,290 @@
+{
+  "generated_at": "2026-10-11T14:19:51+08:00",
+  "note": "登记时基线快照；失败来源不伪造数值。",
+  "B1": {
+    "indicators": {
+      "reserves_months_imports": {
+        "BRA": {
+          "year": 2025,
+          "value": 8.4209144130353
+        },
+        "IDN": {
+          "year": 2025,
+          "value": 5.51422229377152
+        },
+        "IND": {
+          "year": 2025,
+          "value": 7.85087469673437
+        },
+        "MEX": {
+          "year": 2025,
+          "value": 3.73015745906868
+        },
+        "MYS": {
+          "year": 2025,
+          "value": 4.27565652363604
+        },
+        "PHL": {
+          "year": 2025,
+          "value": 7.30646444214584
+        },
+        "THA": {
+          "year": 2025,
+          "value": 8.05111379219367
+        },
+        "TUR": {
+          "year": 2025,
+          "value": 5.127654800312
+        },
+        "VNM": {
+          "year": 2025,
+          "value": 2.08102376091032
+        },
+        "ZAF": {
+          "year": 2025,
+          "value": 6.22465629934581
+        }
+      },
+      "reserves_usd": {
+        "BRA": {
+          "year": 2025,
+          "value": 358513128727.455
+        },
+        "IDN": {
+          "year": 2025,
+          "value": 156542507869.671
+        },
+        "IND": {
+          "year": 2025,
+          "value": 700073798240.701
+        },
+        "MEX": {
+          "year": 2025,
+          "value": 256178680249.027
+        },
+        "MYS": {
+          "year": 2025,
+          "value": 125629250346.155
+        },
+        "PHL": {
+          "year": 2025,
+          "value": 110928780532.069
+        },
+        "THA": {
+          "year": 2025,
+          "value": 282261124353.134
+        },
+        "TUR": {
+          "year": 2025,
+          "value": 185567690700.458
+        },
+        "VNM": {
+          "year": 2025,
+          "value": 85580367980.9693
+        },
+        "ZAF": {
+          "year": 2025,
+          "value": 76023398333.6108
+        }
+      },
+      "short_term_debt_pct_reserves": {
+        "BRA": {
+          "year": 2024,
+          "value": 25.5607937833689
+        },
+        "IDN": {
+          "year": 2024,
+          "value": 41.8237340121998
+        },
+        "IND": {
+          "year": 2024,
+          "value": 21.7043276053502
+        },
+        "MEX": {
+          "year": 2024,
+          "value": 26.3642616542975
+        },
+        "PHL": {
+          "year": 2024,
+          "value": 19.7234767080533
+        },
+        "THA": {
+          "year": 2024,
+          "value": 29.2875073196681
+        },
+        "TUR": {
+          "year": 2024,
+          "value": 114.519671079132
+        },
+        "VNM": {
+          "year": 2024,
+          "value": 44.639579988541
+        },
+        "ZAF": {
+          "year": 2024,
+          "value": 71.5648989974117
+        }
+      },
+      "official_fx_lcu_per_usd": {
+        "BRA": {
+          "year": 2025,
+          "value": 5.58728623856661
+        },
+        "IDN": {
+          "year": 2025,
+          "value": 16477.8651797835
+        },
+        "IND": {
+          "year": 2025,
+          "value": 87.1584483507393
+        },
+        "MEX": {
+          "year": 2025,
+          "value": 19.2375083333333
+        },
+        "MYS": {
+          "year": 2025,
+          "value": 4.28442415048243
+        },
+        "PHL": {
+          "year": 2025,
+          "value": 57.5050971489714
+        },
+        "THA": {
+          "year": 2025,
+          "value": 32.882809252867
+        },
+        "TUR": {
+          "year": 2025,
+          "value": 39.4548130977982
+        },
+        "VNM": {
+          "year": 2024,
+          "value": 24164.8858333333
+        },
+        "ZAF": {
+          "year": 2025,
+          "value": 17.8887489855833
+        }
+      },
+      "portfolio_equity_net_inflow_usd": {}
+    },
+    "unavailable": []
+  },
+  "B2": {
+    "year": "2023",
+    "commodities": {
+      "rare_earth_280530": {
+        "USA": {
+          "total_usd": 22096375,
+          "hhi": 0.9749,
+          "top_partner_code": 156,
+          "top_share": 0.9873,
+          "n_partners": 12
+        },
+        "JPN": {
+          "total_usd": 333323081,
+          "hhi": 0.4442,
+          "top_partner_code": 156,
+          "top_share": 0.5864,
+          "n_partners": 9
+        },
+        "IND": {
+          "total_usd": 4902683,
+          "hhi": 0.9776,
+          "top_partner_code": 156,
+          "top_share": 0.9887,
+          "n_partners": 4
+        },
+        "CHN": {
+          "total_usd": 20381012,
+          "hhi": 0.7424,
+          "top_partner_code": 704,
+          "top_share": 0.8524,
+          "n_partners": 10
+        },
+        "DEU": {
+          "total_usd": 4255412,
+          "hhi": 0.8328,
+          "top_partner_code": 156,
+          "top_share": 0.9115,
+          "n_partners": 11
+        },
+        "KOR": {
+          "total_usd": 12327119,
+          "hhi": 0.7528,
+          "top_partner_code": 156,
+          "top_share": 0.8647,
+          "n_partners": 13
+        }
+      },
+      "lithium_283691": {
+        "USA": {
+          "total_usd": 250584381,
+          "hhi": 0.5287,
+          "top_partner_code": 152,
+          "top_share": 0.6461,
+          "n_partners": 13
+        },
+        "JPN": {
+          "total_usd": 1069745407,
+          "hhi": 0.453,
+          "top_partner_code": 152,
+          "top_share": 0.6169,
+          "n_partners": 6
+        },
+        "IND": {
+          "total_usd": 30558210,
+          "hhi": 0.1704,
+          "top_partner_code": 152,
+          "top_share": 0.2512,
+          "n_partners": 14
+        },
+        "CHN": {
+          "total_usd": 6329250472,
+          "hhi": 0.839,
+          "top_partner_code": 152,
+          "top_share": 0.9128,
+          "n_partners": 15
+        },
+        "DEU": {
+          "total_usd": 65364264,
+          "hhi": 0.5543,
+          "top_partner_code": 152,
+          "top_share": 0.7346,
+          "n_partners": 16
+        },
+        "KOR": {
+          "total_usd": 2456866696,
+          "hhi": 0.7303,
+          "top_partner_code": 152,
+          "top_share": 0.8491,
+          "n_partners": 17
+        }
+      }
+    },
+    "unavailable": []
+  },
+  "B3": {
+    "queries": {
+      "cs.AI": {
+        "total_results": 205821,
+        "query": "cat:cs.AI"
+      },
+      "cs.CL": {
+        "total_results": 121860,
+        "query": "cat:cs.CL"
+      },
+      "large_language_model": {
+        "total_results": 79192,
+        "query": "all:\"large language model\""
+      },
+      "GPT": {
+        "total_results": 16331,
+        "query": "all:GPT"
+      }
+    },
+    "unavailable": []
+  },
+  "unavailable_note": "本环境 FRED/IMF DataMapper 常超时或 403；核销时应补查：FRED DEXTHUS（泰铢汇率）、DGS10、EMBI 利差；IMF IFS 外储与资本流动。"
+}

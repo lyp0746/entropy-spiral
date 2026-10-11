@@ -1,0 +1,159 @@
+{
+  "project": "错位的时间（社会系统熵增螺旋与脆弱性诊断）",
+  "schema_version": "1.0",
+  "registered_at": "2026-10-11",
+  "repo": "https://github.com/lyp/entropy-spiral",
+  "migration": {
+    "status": "in-repo (public git history provides the timestamp)",
+    "target_platforms": [
+      "GitHub Issues",
+      "OSF"
+    ],
+    "note": "本文件随仓库提交即产生可时间戳的公开记录；迁移到 Issues/OSF 后此字段更新为对应 URL，原提交不删除。"
+  },
+  "rules": {
+    "committed_before": "所有预测在事件发生之前写定；观测后不得回调。",
+    "judgement": "以方向（C<1 与否）判定，不以点值判定（命题 4.1）。",
+    "reporting": "核销时四项分开报告：(i) 原始预测；(ii) 观测结果；(iii) 是否满足成功标准；(iv) 差异的可能原因。",
+    "i2_calibration": "I₂ 的事后校准遵循第 14.8.3 节规则 R1–R5（同类事件集、中位数、N^α 转移、偏差声明、事前登记）。"
+  },
+  "tests": [
+    {
+      "id": "B1",
+      "title": "新兴市场美元融资断裂",
+      "registered_at": "2026-10-11",
+      "observation_due": "2027",
+      "prediction": "C<1：若无外部快速互换线，将出现失控式贬值（本币贬值>15% 且未及时止住）",
+      "indicators": [
+        {
+          "name": "外资 72 小时集中撤离",
+          "source": "IIF Capital Flows Tracker / EPFR",
+          "endpoint": ""
+        },
+        {
+          "name": "本币兑美元变动",
+          "source": "IMF IFS / central bank",
+          "endpoint": ""
+        },
+        {
+          "name": "外汇储备",
+          "source": "IMF IFS",
+          "endpoint": ""
+        },
+        {
+          "name": "双边互换额度动用",
+          "source": "Fed H.4.1 / central banks",
+          "endpoint": ""
+        },
+        {
+          "name": "EMBI 利差",
+          "source": "J.P. Morgan via FRED",
+          "endpoint": ""
+        }
+      ],
+      "success_criterion": "出现 C<1 且发生失控式贬值（本币贬值>15% 且未及时止住）",
+      "negation": "若冲击发生而在 72 小时内被政策止住（贬值<15%），则 B1 落空",
+      "baseline": {
+        "triggered": false,
+        "as_of": "2026-10-11",
+        "note": "无触发事件。参照情景基线：泰国外汇储备≈3.2 个月进口（第 10 章表 10.3）。",
+        "snapshot_ref": "docs/preregistration/baseline_snapshot.json",
+        "fetched_at": "2026-10-11T14:19:51+08:00",
+        "headline": {
+          "THA": {
+            "year": 2025,
+            "value": 8.05111379219367
+          },
+          "IDN": {
+            "year": 2025,
+            "value": 5.51422229377152
+          },
+          "MYS": {
+            "year": 2025,
+            "value": 4.27565652363604
+          }
+        }
+      }
+    },
+    {
+      "id": "B2",
+      "title": "关键矿产出口配额与替代滞后",
+      "registered_at": "2026-10-11",
+      "observation_due": "2027",
+      "prediction": "C<1：下游将在库存耗尽前未见替代，价格与配额持续紧张",
+      "indicators": [
+        {
+          "name": "出口配额/管制公告",
+          "source": "各国海关与商务部公告",
+          "endpoint": ""
+        },
+        {
+          "name": "下游库存天数",
+          "source": "行业统计 / UN Comtrade",
+          "endpoint": ""
+        },
+        {
+          "name": "替代产能投产时间",
+          "source": "企业公告与产业公报",
+          "endpoint": ""
+        },
+        {
+          "name": "进口来源 HHI",
+          "source": "UN Comtrade（脚本 fetch_hhi_comtrade.py）",
+          "endpoint": ""
+        }
+      ],
+      "success_criterion": "库存耗尽前替代产能未上线，且价格/配额持续紧张",
+      "negation": "若替代产能在库存耗尽前上线并使价格回落，则 B2 落空",
+      "baseline": {
+        "triggered": false,
+        "as_of": "2026-10-11",
+        "note": "公开配额/管制公告已归档；替代产能未上线。进口来源集中度基线见附录 D.9 / 表 7.1c。",
+        "snapshot_ref": "docs/preregistration/baseline_snapshot.json",
+        "fetched_at": "2026-10-11T14:19:51+08:00",
+        "headline": {
+          "USA": 0.9749,
+          "JPN": 0.4442,
+          "IND": 0.9776
+        }
+      }
+    },
+    {
+      "id": "B3",
+      "title": "AI 生成物的验证滞后",
+      "registered_at": "2026-10-11",
+      "observation_due": "2027",
+      "prediction": "C<1：热度消退前完成验证的比例 < 20%",
+      "indicators": [
+        {
+          "name": "批量 AI 生成初稿数",
+          "source": "预印本平台（arXiv/SSRN 等）",
+          "endpoint": ""
+        },
+        {
+          "name": "热度窗口内完成独立复现的比例",
+          "source": "期刊更正记录 / 机构复现报告",
+          "endpoint": ""
+        },
+        {
+          "name": "平均验证时间 vs 热度窗口",
+          "source": "预印本时间戳与讨论热度",
+          "endpoint": ""
+        }
+      ],
+      "success_criterion": "热度窗口内完成验证比例 < 20%",
+      "negation": "若热度消退前完成验证比例>50%，且平均验证时间短于热度窗口，则 B3 被削弱",
+      "baseline": {
+        "triggered": false,
+        "as_of": "2026-10-11",
+        "note": "预印本与更正记录开始归档；尚无完成复现统计。触发阈值 V_知识>0.5 见第 9.5 节。",
+        "snapshot_ref": "docs/preregistration/baseline_snapshot.json",
+        "fetched_at": "2026-10-11T14:19:51+08:00",
+        "headline": {
+          "cs.AI": 205821,
+          "cs.CL": 121860
+        }
+      }
+    }
+  ]
+}

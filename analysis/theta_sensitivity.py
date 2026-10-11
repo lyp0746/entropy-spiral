@@ -53,13 +53,17 @@ def panel(ax, letter):
 
 # ---------------------------------------------------------- 真实数据：世界银行 Gini
 def wb_gini(country_code):
-    f = os.path.join(DATA, "API_SI.POV.GINI_DS2_en_csv_v2_457854.csv")
-    df = pd.read_csv(f, skiprows=4)
-    row = df[df["Country Code"] == country_code]
-    if row.empty:
-        return {}
-    s = row.iloc[0, 5:].dropna()
-    return {int(k): float(v) for k, v in s.items()}
+    """真实 Gini。优先用 WDI API 原始导出；缺失时回退到 data/usa_gini.csv（year,value）。"""
+    api = os.path.join(DATA, "API_SI.POV.GINI_DS2_en_csv_v2_457854.csv")
+    if os.path.exists(api):
+        df = pd.read_csv(api, skiprows=4)
+        row = df[df["Country Code"] == country_code]
+        if not row.empty:
+            s = row.iloc[0, 5:].dropna()
+            return {int(k): float(v) for k, v in s.items()}
+    fb = os.path.join(DATA, "usa_gini.csv")
+    df = pd.read_csv(fb)
+    return {int(r.year): float(r.value) for r in df.itertuples()}
 
 
 # ---------------------------------------------------------- 代理序列
@@ -190,6 +194,99 @@ C = np.corrcoef(M)
 R["corr_matrix"] = {"names": mat_names, "years": "1980-2020",
                     "matrix": C.tolist()}
 
+# ---------------------------------------------------------- 3b. 主成分／因子分析
+# 审稿意见要求回答：六个代理究竟在测几个独立维度？
+# 做法：(i) 水平序列 PCA；(ii) 一阶差分 PCA（剔除共同时间趋势）；
+#       (iii) 平行分析定阶；(iv) 有效维数 N_eff = K^2 / Σλ^2；
+#       (v) 单一共同因子方差占比。
+
+def _pca(mat):
+    """mat: K x T（行=变量）。返回特征值降序、方差解释、载荷（变量-成分相关）。"""
+    Cm = np.corrcoef(mat)
+    evals, evecs = np.linalg.eigh(Cm)      # 升序
+    order = np.argsort(evals)[::-1]
+    evals, evecs = evals[order], evecs[:, order]
+    for j in range(evecs.shape[1]):        # 符号约定：主成分首位载荷为正
+        if evecs[0, j] < 0:
+            evecs[:, j] *= -1
+    var = evals / evals.sum()
+    loadings = evecs * np.sqrt(np.clip(evals, 0, None))  # 变量与成分的相关
+    neff = float(evals.sum() ** 2 / np.sum(evals ** 2))  # 有效独立维数
+    return Cm, evals, var, evecs, loadings, neff
+
+
+def _parallel(mat, n_iter=2000, seed=0):
+    """平行分析：随机不相关数据的特征值 95 分位。"""
+    rng = np.random.default_rng(seed)
+    K, T = mat.shape
+    sims = np.empty((n_iter, K))
+    for i in range(n_iter):
+        X = rng.standard_normal((K, T))
+        sims[i] = np.sort(np.linalg.eigh(np.corrcoef(X))[0])[::-1]
+    return np.percentile(sims, 95, axis=0)
+
+
+levels = np.array([z_series(n, overlap_years) for n in mat_names])  # K x T，水平
+C_lv, ev_lv, var_lv, evec_lv, load_lv, neff_lv = _pca(levels)
+
+# 一阶差分：去掉共同时间趋势后还剩多少共同结构
+D = np.diff(levels, axis=1)
+C_df, ev_df, var_df, evec_df, load_df, neff_df = _pca(D)
+
+# 去趋势水平：对每个代理各自剔除线性时间趋势后再做 PCA
+Tlen = levels.shape[1]
+tt = np.arange(Tlen, dtype=float)
+resid = np.empty_like(levels)
+for i in range(levels.shape[0]):
+    b = np.polyfit(tt, levels[i], 1)
+    resid[i] = levels[i] - np.polyval(b, tt)
+C_dt, ev_dt, var_dt, evec_dt, load_dt, neff_dt = _pca(resid)
+
+pa95 = _parallel(levels)
+n_factors = int(np.sum(ev_lv > pa95))
+
+R["pca"] = {
+    "note": "K=5 长期现代代理（Gini/财富/金融/企业/债务），窗口 1980—2020，逐代理 z 分数。",
+    "names": mat_names,
+    "levels": {
+        "eigenvalues": ev_lv.tolist(),
+        "variance_explained": var_lv.tolist(),
+        "cumulative": np.cumsum(var_lv).tolist(),
+        "loadings_pc1": load_lv[:, 0].tolist(),
+        "loadings_pc2": load_lv[:, 1].tolist(),
+        "effective_dimensionality": neff_lv,
+        "pc1_share": float(var_lv[0]),
+    },
+    "first_differences": {
+        "eigenvalues": ev_df.tolist(),
+        "variance_explained": var_df.tolist(),
+        "cumulative": np.cumsum(var_df).tolist(),
+        "loadings_pc1": load_df[:, 0].tolist(),
+        "effective_dimensionality": neff_df,
+        "pc1_share": float(var_df[0]),
+        "corr_matrix": C_df.tolist(),
+    },
+    "detrended_levels": {
+        "eigenvalues": ev_dt.tolist(),
+        "variance_explained": var_dt.tolist(),
+        "cumulative": np.cumsum(var_dt).tolist(),
+        "loadings_pc1": load_dt[:, 0].tolist(),
+        "effective_dimensionality": neff_dt,
+        "pc1_share": float(var_dt[0]),
+    },
+    "parallel_analysis": {
+        "observed": ev_lv.tolist(),
+        "random_95pct": pa95.tolist(),
+        "n_components_retained": n_factors,
+        "kaiser_gt1": int(np.sum(ev_lv > 1.0)),
+    },
+    "reading": (
+        "水平序列的 PC1 吸收绝大部分方差，但这主要来自共同的上升时间趋势；"
+        "一阶差分与去趋势后若有效维数仍接近 1，则代理确实在测同一潜在过程；"
+        "若接近 K，则‘共同上升’可由各自独立的时间趋势解释，共同因子不成立。"
+    ),
+}
+
 # ---------------------------------------------------------- 4. 2015 转折点
 def breakpoint_analysis(vals, breaks):
     out = {}
@@ -289,6 +386,32 @@ panel(ax, "f")
 fig.savefig(os.path.join(FIGS, "theta_matrix.png"))
 plt.close(fig)
 
+# ---------------------------------------------------------- 因子分析图
+fig2, axes = plt.subplots(1, 2, figsize=(7.2, 2.5), layout="constrained")
+ax = axes[0]
+ks = np.arange(1, len(ev_lv) + 1)
+ax.plot(ks, ev_lv, "o-", color=OI["blue"], ms=3.5, lw=1.2, label="水平序列")
+ax.plot(ks, ev_df, "s--", color=OI["vermillion"], ms=3.2, lw=1.1, label="一阶差分")
+ax.plot(ks, ev_dt, "^:", color=OI["green"], ms=3.2, lw=1.1, label="逐代理去趋势")
+ax.plot(ks, pa95, "x-", color=OI["grey"], ms=3.2, lw=1.0, label="平行分析 95%")
+ax.axhline(1.0, color=OI["grey"], ls="--", lw=0.7)
+ax.set_xlabel("成分序号"); ax.set_ylabel("特征值")
+ax.set_title("碎石图与平行分析"); ax.legend(fontsize=4.8)
+panel(ax, "a")
+
+ax = axes[1]
+x = np.arange(len(mat_names))
+ax.bar(x - 0.2, load_lv[:, 0], width=0.4, color=OI["blue"], label="水平 PC1")
+ax.bar(x + 0.2, load_df[:, 0], width=0.4, color=OI["vermillion"], label="差分 PC1")
+ax.set_xticks(x)
+ax.set_xticklabels([n[:4] for n in mat_names], rotation=30, ha="right", fontsize=5.0)
+ax.axhline(0, color=OI["grey"], lw=0.6)
+ax.set_ylabel("载荷（与成分相关）")
+ax.set_title("PC1 载荷：水平 vs 差分"); ax.legend(fontsize=5.0)
+panel(ax, "b")
+fig2.savefig(os.path.join(FIGS, "theta_pca.png"))
+plt.close(fig2)
+
 with open(os.path.join(OUT, "theta_sensitivity.json"), "w", encoding="utf-8") as f:
     json.dump(R, f, ensure_ascii=False, indent=2)
 
@@ -310,3 +433,15 @@ for i, n in enumerate(mat_names):
 print("=== 2015 断点 ===")
 print("  US Gini:", R["breakpoint_us_gini"])
 print("  US top1:", R["breakpoint_us_top1"])
+print("=== 主成分／因子分析（K=%d，1980—2020）===" % len(mat_names))
+print("  水平  PC1 方差占比=%.3f  有效维数=%.2f"
+      % (R["pca"]["levels"]["pc1_share"], R["pca"]["levels"]["effective_dimensionality"]))
+print("  差分  PC1 方差占比=%.3f  有效维数=%.2f"
+      % (R["pca"]["first_differences"]["pc1_share"],
+         R["pca"]["first_differences"]["effective_dimensionality"]))
+print("  去趋势 PC1 方差占比=%.3f  有效维数=%.2f"
+      % (R["pca"]["detrended_levels"]["pc1_share"],
+         R["pca"]["detrended_levels"]["effective_dimensionality"]))
+print("  平行分析保留成分数=%d，Kaiser(λ>1)=%d"
+      % (R["pca"]["parallel_analysis"]["n_components_retained"],
+         R["pca"]["parallel_analysis"]["kaiser_gt1"]))

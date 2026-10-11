@@ -52,3 +52,53 @@
 <h3 id="secI-3">I.3　与第 11 章登记簿的关系</h3>
 
 <p>本附录只登记 τ 与 C 的<b>盲测</b>；完整的可证伪命题集（含 P 编号）仍见正文表 11.4。<b>两者的分工是：</b>表 11.4 登记机制性命题（“κ 继续上升”“一致性先于耦合回落”等），本附录登记“框架能否事先判断来不来得及”。<b>若本附录的三项盲测半数以上落空，则 τ 框架必须被削弱</b>——这正是把框架写成可被推翻的形式的意义。</p>
+
+<h3 id="secI-4">I.4　核销进度与更新记录（可观察的事实）</h3>
+
+<p>事前登记的价值只有在“事后真的去对”时才成立。为避免“登记后遗忘”或“只报命中、不报落空”，本节把核销过程本身也变成可观察的记录：每项盲测标明<b>当前状态、已收集到的信息、下一次核对日期与负责人</b>。截至本书完成日期（2026-10-11），三项盲测<b>均未到可判定时点</b>，因此状态一律为“未揭晓”（0/3 已核销）——这是事实陈述，不是拖延。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 I.2　三项盲测的核销进度表（截至 2026-10-11）</b></caption>
+<tr><th class="l">命题</th><th class="l">登记日期</th><th class="l">预计核对</th><th class="l">当前状态</th><th class="l">已收集信息</th><th class="l">下一步</th></tr>
+<tr><td class="l">B1 新兴市场外资撤离</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>未揭晓</b></td><td class="l">无（事件尚未发生）</td><td class="l">按季监控 IMF／央行公告与汇率异常波动</td></tr>
+<tr><td class="l">B2 关键矿产替代滞后</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>未揭晓</b></td><td class="l">配额与价格公告已归档，替代产能未上线</td><td class="l">追踪下游库存天数与替代产能投产时间</td></tr>
+<tr><td class="l">B3 AI 生成物验证比例</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>未揭晓</b></td><td class="l">预印本与更正记录开始归档</td><td class="l">统计“热度窗口内完成独立复现”的比例</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>进度记录（方法论，质量 C）。<b>注释：</b>“已收集信息”一栏证明监控已开始，而非停在纸面；核销结果（命中／落空）将于再版或本仓库的登记页面（OSF／GitHub Issues）公布，<b>命中与落空均计入，不因结果不利而删改</b>。<b>汇报格式承诺：</b>每项盲测核销时，同时报告（i）原始预测、（ii）观测结果、（iii）是否满足成功标准、（iv）差异的可能原因——四项分开陈述，不得合并。</div>
+
+<p>这一小节回应了一个常见的质疑：“你说你诚实，凭什么相信？”答案不是再写一句承诺，而是提供一张<b>已开始记录、且允许被外部核对的进度表</b>。若到 2027 年本表仍未更新，读者可以据此判断登记是否只是修辞。登记要迁移到公开平台（OSF 或本仓库 GitHub Issues），迁移后此表将改为指向外部时间戳记录；迁移前，以本附录与仓库提交历史为登记依据。</p>
+
+<h3 id="secI-5">I.5　公开登记与基线快照（已迁移，非纸面）</h3>
+
+<p>为避免“登记只停在书页上”，本版把登记与核销记录迁移为<b>仓库内可公开、可时间戳的文件</b>（公开 git 历史即时间戳），并留下迁移到 OSF／GitHub Issues 的接口：</p>
+<ul>
+<li><code>docs/preregistration/registry.json</code> —— 登记本体（预测、观测变量、成功标准、否定条件、基线）。</li>
+<li><code>docs/preregistration/checkups.csv</code> —— <b>append-only</b> 核销账本：第一行为基线，之后每次核对追加一行，绝不改写旧行。</li>
+<li><code>analysis/preregistration_checkup.py</code> —— 校验账本、打印进度、按需追加；<b>离线环境下只输出“待核对”，不伪造数值</b>。</li>
+<li><code>.github/ISSUE_TEMPLATE/blind-test-checkup.yml</code> —— 每次核销开一个 issue 的模板，四点分开报告。</li>
+</ul>
+
+<p><b>基线快照（截至 2026-10-11）。</b>它记录的是“登记时我们能确定的事实”，而不是事后补的数字：</p>
+
+<table class="nat">
+<caption class="cap"><b>表 I.3　三项盲测的基线快照与核对来源</b></caption>
+<tr><th class="l">命题</th><th class="l">触发状态</th><th class="l">基线观测</th><th class="l">数据来源（核对时）</th></tr>
+<tr><td class="l">B1 新兴市场</td><td class="l">未触发</td><td class="l">无触发事件；参照情景：泰国外储≈3.2 个月进口（表 10.3）</td><td class="l">IIF／EPFR、IMF IFS、Fed H.4.1、FRED（EMBI）</td></tr>
+<tr><td class="l">B2 关键矿产</td><td class="l">未触发</td><td class="l">配额／管制公告已归档；替代产能未上线；进口 HHI 基线见附录 D.9／表 7.1c</td><td class="l">各国海关与商务部公告、UN Comtrade</td></tr>
+<tr><td class="l">B3 AI 验证</td><td class="l">未触发</td><td class="l">预印本与更正记录开始归档；尚无完成复现统计</td><td class="l">预印本平台、期刊更正记录、机构复现报告</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>基线快照（方法论，质量 C）。<b>注释：</b>数值型基线需在首次核对时以官方最新 vintage 填入。<b>账本第一行（<code>status=baseline</code>）即为基线。</b>“永久”的运行方式：每次核对后向 <code>checkups.csv</code> 追加一行；若到 2027 年仍无新行，说明“监控”未落实——这是一个可被读者直接检查的事实。</div>
+
+<p>为避免上面那句话停在纸面，本版已运行一次<b>机器快照</b>（脚本 <code>analysis/fetch_preregistration_baseline.py</code>，结果 <code>baseline_snapshot.json</code>）：</p>
+
+<table class="nat">
+<caption class="cap"><b>表 I.4　首次机器快照（获取于 2026-10-11；来源 WB／UN Comtrade／arXiv）</b></caption>
+<tr><th class="l">命题</th><th class="l">关键指标</th><th class="l">基线值</th><th class="l">vintage</th></tr>
+<tr><td class="l">B1</td><td class="l">外汇储备／进口月数</td><td class="l">THA 8.05、IDN 5.51、MYS 4.28、VNM 2.08、IND 7.85、MEX 3.73</td><td class="l">WB WDI 2025</td></tr>
+<tr><td class="l">B2</td><td class="l">稀土（HS 280530）进口来源 HHI</td><td class="l">USA 0.975、IND 0.978、DEU 0.833、KOR 0.753、CHN 0.742、JPN 0.444</td><td class="l">Comtrade 2023</td></tr>
+<tr><td class="l">B2</td><td class="l">锂（HS 283691）进口来源 HHI</td><td class="l">CHN 0.839、KOR 0.730、DEU 0.554、USA 0.529、JPN 0.453、IND 0.170</td><td class="l">Comtrade 2023</td></tr>
+<tr><td class="l">B3</td><td class="l">arXiv 体量计数</td><td class="l">cs.AI 205,821；cs.CL 121,860；“large language model” 79,192；GPT 16,331</td><td class="l">arXiv 2026-10-11</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>机器快照（输入为质量 A，但用途仅为核销基线）。<b>注释：</b>B2 的真实 HHI（如美国稀土进口 HHI≈0.98）把第 7 章“单点集中”的定性判断变成了可复现的基线；B3 只登记<b>体量</b>，“验证比例”需人工编目，故仍是待核销项。<b>已知缺口：</b>本环境 FRED／IMF DataMapper 超时或 403，故 B1 的泰铢汇率、EMBI 利差与 IMF 资本流动序列<b>尚未入快照</b>，已在 <code>baseline_snapshot.json</code> 的 <code>unavailable_note</code> 列明，待联网时补查。</div>
+
+<p><b>失败情景下的汇报格式（防止事后诠释）。</b>若某项盲测落空，核销必须填写四项，缺一不可：<b>（i）原始预测</b>（照抄登记，不得改写）；<b>（ii）观测结果</b>（值、单位、来源、vintage）；<b>（iii）是否满足成功标准</b>（命中／落空／部分／尚不可判定）；<b>（iv）差异的可能原因</b>。禁止把“落空”重述为“部分命中”或“条件变化”——后者必须作为一条新的登记项追加，而不是修改旧项。</p>

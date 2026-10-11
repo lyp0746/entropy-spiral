@@ -1,0 +1,7 @@
+test_id,check_date,checker,status,indicator,value,unit,source,vintage,triggered,note
+B1,2026-10-11,author,baseline,触发状态,,,registry.json,2026-10,no,无触发事件；参照泰国外储≈3.2个月进口（表10.3）
+B2,2026-10-11,author,baseline,触发状态,,,registry.json,2026-10,no,公开配额/管制公告已归档；替代产能未上线
+B3,2026-10-11,author,baseline,触发状态,,,registry.json,2026-10,no,预印本与更正记录开始归档；尚无完成复现统计
+B1,2026-10-11,author,snapshot,基线快照,"{""THA"": {""year"": 2025, ""value"": 8.05111379219367}, ""IDN"": {""year"": 2025, ""value"": 5.51422229377152}, ""MYS"": {""year"": 2025, ""value"": 4.27565652363604}}",见 snapshot,WB/Comtrade/arXiv,2026-10,no,快照基线（见 baseline_snapshot.json）
+B2,2026-10-11,author,snapshot,基线快照,"{""USA"": 0.9749, ""JPN"": 0.4442, ""IND"": 0.9776}",见 snapshot,WB/Comtrade/arXiv,2026-10,no,快照基线（见 baseline_snapshot.json）
+B3,2026-10-11,author,snapshot,基线快照,"{""cs.AI"": 205821, ""cs.CL"": 121860}",见 snapshot,WB/Comtrade/arXiv,2026-10,no,快照基线（见 baseline_snapshot.json）

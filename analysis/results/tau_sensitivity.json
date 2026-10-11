@@ -1,0 +1,92 @@
+{
+  "note": "Monte Carlo，N=400000；参数为 stipulate（质量 C），非拟合。",
+  "model": "tau = T_min/T_available; T_min,I4 failure; lognormal",
+  "baseline_source": "第 4 章表 4.2",
+  "scenarios": {
+    "S1 台湾芯片": {
+      "p10": 0.364,
+      "p50": 0.5,
+      "p90": 0.687,
+      "relative_width_10_90": 0.646,
+      "P_tau_lt_1": 0.9972,
+      "direction_flip_prob": 0.0028,
+      "i4_failure_prob": 0.0,
+      "point_estimate_licensed": true,
+      "direction_robust": true,
+      "regime": "I₁+I₃ 可测，I₂ 事后校准（CV_m=0.20）",
+      "licensed_claim": "序数 + 较窄区间"
+    },
+    "S2 东南亚债务": {
+      "p10": 2.008,
+      "p50": 4.691,
+      "p90": 26.316,
+      "relative_width_10_90": 5.182,
+      "P_tau_lt_1": 0.0056,
+      "direction_flip_prob": 0.0056,
+      "i4_failure_prob": 0.2998,
+      "point_estimate_licensed": false,
+      "direction_robust": true,
+      "regime": "I₂ 仅少数同类事件（CV_m=0.45，I₄ 不定）",
+      "licensed_claim": "只能给序数（方向稳定，幅度不可报）"
+    },
+    "S3 全球债务": {
+      "p10": 20.812,
+      "p50": 464.253,
+      "p90": 1845.508,
+      "relative_width_10_90": 3.93,
+      "P_tau_lt_1": 0.0,
+      "direction_flip_prob": 0.0,
+      "i4_failure_prob": 0.6992,
+      "point_estimate_licensed": false,
+      "direction_robust": true,
+      "regime": "仅 I₁ 可测（CV_m=0.80，I₂/I₄ 缺）",
+      "licensed_claim": "只能给方向；I₄ 失效时不得给点估计"
+    }
+  },
+  "fixed_S1_by_regime": {
+    "I₁+I₃ 可测，I₂ 事后校准（CV_m=0.20）": {
+      "p10": 0.363,
+      "p50": 0.5,
+      "p90": 0.687,
+      "relative_width_10_90": 0.647,
+      "P_tau_lt_1": 0.9973,
+      "direction_flip_prob": 0.0027,
+      "i4_failure_prob": 0.0,
+      "point_estimate_licensed": true,
+      "direction_robust": true,
+      "licensed_claim": "序数 + 较窄区间"
+    },
+    "I₂ 仅少数同类事件（CV_m=0.45，I₄ 不定）": {
+      "p10": 0.307,
+      "p50": 0.646,
+      "p90": 3.652,
+      "relative_width_10_90": 5.181,
+      "P_tau_lt_1": 0.6591,
+      "direction_flip_prob": 0.3409,
+      "i4_failure_prob": 0.2986,
+      "point_estimate_licensed": false,
+      "direction_robust": false,
+      "licensed_claim": "方向也不稳定，只能给条件分支"
+    },
+    "仅 I₁ 可测（CV_m=0.80，I₂/I₄ 缺）": {
+      "p10": 0.368,
+      "p50": 8.322,
+      "p90": 26.927,
+      "relative_width_10_90": 3.192,
+      "P_tau_lt_1": 0.2488,
+      "direction_flip_prob": 0.7512,
+      "i4_failure_prob": 0.701,
+      "point_estimate_licensed": false,
+      "direction_robust": false,
+      "licensed_claim": "只能给方向；I₄ 失效时不得给点估计"
+    }
+  },
+  "review_check_I2_pm20pct": {
+    "scenario": "S1",
+    "tau_10_90": [
+      0.388,
+      0.644
+    ],
+    "note": "I₂ 取 ±20%（对数正态 1σ 近似对称）时 S1 的 τ 区间；A 固定，以单独显示 I₂ 的影响。"
+  }
+}
