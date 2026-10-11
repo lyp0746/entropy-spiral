@@ -49,7 +49,7 @@
       "first": "ch05.html"
     },
     "不可逆轴": {
-      "total": 25,
+      "total": 27,
       "by_chapter": [
         [
           "ch01.html",
@@ -57,7 +57,7 @@
         ],
         [
           "ch02.html",
-          12
+          13
         ],
         [
           "ch03.html",
@@ -85,6 +85,10 @@
         ],
         [
           "ch11.html",
+          1
+        ],
+        [
+          "ch15.html",
           1
         ]
       ],
@@ -263,7 +267,7 @@
       "first": "ch01.html"
     },
     "螺旋": {
-      "total": 76,
+      "total": 77,
       "by_chapter": [
         [
           "ch01.html",
@@ -283,7 +287,7 @@
         ],
         [
           "ch15.html",
-          1
+          2
         ]
       ],
       "first": "ch01.html"
@@ -678,6 +682,7 @@
     "15.5",
     "15.6",
     "15.7",
+    "15.8",
     "16.1",
     "16.2",
     "16.3",
@@ -867,6 +872,10 @@
     {
       "chapter": "ch04.html",
       "snippet": "性质：量级示意（质量 C）"
+    },
+    {
+      "chapter": "ch04.html",
+      "snippet": "表中的 τ 是示意值（质量 C），不是测量值"
     },
     {
       "chapter": "ch04.html",
@@ -1334,6 +1343,10 @@
     },
     {
       "chapter": "ch15.html",
+      "snippet": "性质：学派对照（方向性，质量 C）"
+    },
+    {
+      "chapter": "ch15.html",
       "snippet": "近期事件的方向性读数（2025—2026，质量 C）"
     },
     {
@@ -1393,7 +1406,8 @@
     "1": [
       "ch01.html",
       "ch02.html",
-      "ch03.html"
+      "ch03.html",
+      "ch15.html"
     ],
     "10": [
       "ch02.html",
@@ -2304,9 +2318,11 @@
       "ch14.html"
     ],
     "14.6": [
+      "ch04.html",
       "ch14.html"
     ],
     "14.7": [
+      "ch04.html",
       "ch10.html",
       "ch14.html",
       "ch15.html"
@@ -2340,6 +2356,9 @@
       "ch15.html"
     ],
     "15.7": [
+      "ch15.html"
+    ],
+    "15.8": [
       "ch15.html"
     ],
     "16.1": [
@@ -2905,6 +2924,7 @@
       "ch15.html"
     ],
     "7.2": [
+      "ch02.html",
       "ch06.html",
       "ch07.html",
       "ch11.html",
@@ -3213,6 +3233,9 @@
     "Kaplan": [
       "2012"
     ],
+    "Kondratieff": [
+      "1935"
+    ],
     "Koselleck": [
       "2004"
     ],
@@ -3236,6 +3259,9 @@
     ],
     "Minsky": [
       "1986"
+    ],
+    "Modelski": [
+      "1987"
     ],
     "North": [
       "1990",
@@ -3284,6 +3310,9 @@
     ],
     "Scheffer": [
       "2009"
+    ],
+    "Scheidel": [
+      "2017"
     ],
     "Schumpeter": [
       "1939"
