@@ -58,6 +58,20 @@
 </table>
 <div class="datasrc"><b>数据来源：</b>真实序列合成（<code>analysis/v_timeseries.py</code>，结果 <code>analysis/results/v_timeseries.json</code>）。<b>质量等级：</b>输入为 A/B，合成为 C（权重含先验）。<b>注释：</b>各分量已按 [0,1] 归一化；V 与 V<sub>ι</sub> 只在同一操作化内部可比，不可跨操作化或跨领域比较。2022 年 V<sub>ι</sub> 峰值约 1.27，是样本内最大值。</div>
 
+<p>下表把观测窗口内<b>中国</b>的关键开放指标单独列出。它的意义不是“给中国下一张标签”，而是提供一个支撑本书核心修正的对照组：<b>中国的商品耦合与外资耦合都在 2010 年前后见顶后回落，而金融化（信贷）持续上升、收入 Gini 见顶回落。</b>这说明 Θ 与 κ 在各国都不是单调上升的（见表 7.1c 注释）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.1b　中国关键开放指标（1990—2024，质量 A/B）</b></caption>
+<tr><th class="l">指标</th><th class="l">来源与口径</th><th>1990</th><th>2000</th><th>2010</th><th>2015</th><th>2020</th><th>2024</th><th class="l">方向</th></tr>
+<tr><td class="l">贸易/GDP（%）</td><td class="l">World Bank WDI（NE.TRD.GNFS.ZS）</td><td>24.2</td><td>39.0</td><td><b>49.9</b></td><td>38.7</td><td>34.3</td><td>38.0</td><td class="l">2010 见顶后回落</td></tr>
+<tr><td class="l">FDI 净流入/GDP（%）</td><td class="l">World Bank WDI（BX.KLT.DINV.WD.GD.ZS）</td><td>1.0</td><td>3.4</td><td><b>3.9</b></td><td>2.1</td><td>1.7</td><td>0.2</td><td class="l">见顶后大幅回落</td></tr>
+<tr><td class="l">私营部门信贷/GDP（%）</td><td class="l">World Bank WDI（FS.AST.PRVT.GD.ZS）</td><td>86.0</td><td>110.0</td><td>124.4</td><td>149.6</td><td>179.1</td><td><b>194.3</b></td><td class="l">持续上升（金融化）</td></tr>
+<tr><td class="l">收入 Gini</td><td class="l">World Bank WDI（SI.POV.GINI）</td><td>32.2</td><td>—</td><td><b>43.7</b></td><td>38.6</td><td>37.1</td><td>36.0<sup>a</sup></td><td class="l">2010 见顶后回落</td></tr>
+<tr><td class="l">制造业/GDP（%）</td><td class="l">World Bank WDI（NV.IND.MANF.ZS）</td><td>—</td><td>—</td><td>31.1</td><td>28.4</td><td>25.6</td><td>24.8</td><td class="l">持续下降</td></tr>
+<tr><td class="l">互联网用户（%）</td><td class="l">World Bank WDI（IT.NET.USER.ZS）</td><td>0.0</td><td>1.8</td><td>34.3</td><td>50.3</td><td>70.1</td><td><b>92.0</b></td><td class="l">快速上升（信息耦合）</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI，中国（CHN）；脚本 <code>analysis/fetch_china_indicators.py</code>，结果 <code>data/china_indicators.json</code>。<b>质量等级：</b>A（官方序列，除注明者）。<b>注释：</b><sup>a</sup> Gini 最新可得年份为 2022（2023—24 未公布）。进口来源集中度（芯片 0.231、铁矿石 0.460、大豆 0.542、稀土 0.742、原油 0.099，2023）见 <code>data/china_import_hhi.json</code> 与表 7.1c。<b>已知缺口：</b>中国广义政府债务/GDP 无 WB WDI 开放序列，本表不填入（不伪造）；口径为“私营部门信贷”，不是政府债务。</div>
+
 <h3>H.2　四个案例的公开事件时间线</h3>
 
 <p>时间错配的论证依赖“事件间隔”，而事件日期大多属于公开信息。下表把它们整理为可核对的时间线；它们的作用是展示“冲击展开时间 vs 协调时间”的量级差，而非精确的因果归因。所有日期为公开报道的近似值（质量 B/C）。</p>

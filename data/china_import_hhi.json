@@ -1,0 +1,32 @@
+{
+ "chips_854231": {
+  "hhi": 0.231,
+  "top_partner": null,
+  "top_share": 0.437,
+  "n_partners": 92
+ },
+ "rare_earth_280530": {
+  "hhi": 0.742,
+  "top_partner": null,
+  "top_share": 0.852,
+  "n_partners": 10
+ },
+ "iron_ore_260111": {
+  "hhi": 0.46,
+  "top_partner": null,
+  "top_share": 0.642,
+  "n_partners": 61
+ },
+ "crude_270900": {
+  "hhi": 0.099,
+  "top_partner": null,
+  "top_share": 0.18,
+  "n_partners": 49
+ },
+ "soybean_120190": {
+  "hhi": 0.542,
+  "top_partner": null,
+  "top_share": 0.689,
+  "n_partners": 12
+ }
+}
