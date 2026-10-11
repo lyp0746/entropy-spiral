@@ -107,6 +107,17 @@
 </table>
 <div class="datasrc"><b>性质：</b>方法演示的横向比较（质量 C）。<b>注释：</b>“可测因素比例”为定性估计，用于说明<b>不确定性随冲击范围扩大而系统性上升</b>这一趋势，不作为精确指标。</div>
 
+<p>表 10.4 说明不确定性随情景扩大而上升，但“不确定性到底来自哪里”仍未回答。我们用一次蒙特卡洛把 V（式 8.1／8.2）的方差分解到四根轴（脚本 <code>analysis/v_uncertainty_decomposition.py</code>），结果见表 10.6。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 10.6　V 的不确定性来源分解（七系统平均，MC 一阶方差贡献）</b></caption>
+<tr><th class="l">I 可测性制度</th><th>Θ</th><th>I</th><th>κ</th><th>ι</th><th class="l">对应情景</th></tr>
+<tr><td class="l">A：I₁+I₃ 可测，I₂ 事后</td><td><b>47%</b></td><td>0%</td><td><b>40%</b></td><td>12%</td><td class="l">S1</td></tr>
+<tr><td class="l">B：I₂ 仅少数同类事件</td><td><b>47%</b></td><td>2%</td><td><b>40%</b></td><td>12%</td><td class="l">S2</td></tr>
+<tr><td class="l">C：仅 I₁ 可测</td><td>45%</td><td>5%</td><td>39%</td><td>12%</td><td class="l">S3</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>MC（N=2×10⁵），冻结法一阶方差分解；权重取式(8.1) 默认（α=0.30、β=0.05、γ=0.45、λ=0.20）；各轴 CV 为<b>显式约定值（质量 C）</b>；脚本见 <code>analysis/v_uncertainty_decomposition.py</code>。<b>结论：</b>V 的方差由 <b>Θ 与 κ 主导（合计约 85%）</b>；即使 I 极不可测（CV=0.80），它对 V 方差的贡献也 <b>≤5%</b>——因为 β=0.05。<b>这不是说 I 不重要，而是说：I 的不确定性主要影响 τ（时间诊断），而不是 V（结构诊断）。</b>两套不确定性的来源不同，不能混为一谈；这也解释了为何第 14 章的 MC（表 14.6／14.7）针对的是 τ 而非 V。</div>
+
 <h3 id="sec10-6">10.6　框架失效的三重证据</h3>
 
 <p>把三个情景并置，失效并非均匀分布，而呈现三个清晰信号。</p>

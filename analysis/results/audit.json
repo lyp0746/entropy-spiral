@@ -267,7 +267,7 @@
       "first": "ch01.html"
     },
     "螺旋": {
-      "total": 77,
+      "total": 78,
       "by_chapter": [
         [
           "ch01.html",
@@ -275,7 +275,7 @@
         ],
         [
           "ch02.html",
-          51
+          52
         ],
         [
           "ch03.html",
@@ -526,7 +526,8 @@
       "ch08.html",
       "ch08.html",
       "ch09.html",
-      "ch09.html"
+      "ch09.html",
+      "ch10.html"
     ],
     "8.2": [
       "ch09.html"
@@ -649,6 +650,7 @@
     "10.3",
     "10.4",
     "10.5",
+    "10.6",
     "11.1",
     "11.2",
     "11.3",
@@ -1179,6 +1181,10 @@
     },
     {
       "chapter": "ch10.html",
+      "snippet": "各轴 CV 为显式约定值（质量 C）"
+    },
+    {
+      "chapter": "ch10.html",
       "snippet": "数值为量级示意（质量 C）"
     },
     {
@@ -1212,6 +1218,14 @@
     {
       "chapter": "ch11.html",
       "snippet": "性质：操作规范（质量 C，方向性）"
+    },
+    {
+      "chapter": "ch11.html",
+      "snippet": "表 11.6b　τ 的序数带 → 可用行动（方向性，质量 C）"
+    },
+    {
+      "chapter": "ch11.html",
+      "snippet": "性质：操作对照（方向性，质量 C）"
     },
     {
       "chapter": "ch12.html",
@@ -1784,6 +1798,7 @@
       "ch02.html",
       "ch05.html",
       "ch08.html",
+      "ch10.html",
       "ch14.html"
     ],
     "0.450": [
@@ -2319,6 +2334,7 @@
     ],
     "14.6": [
       "ch04.html",
+      "ch10.html",
       "ch14.html"
     ],
     "14.7": [
@@ -2980,6 +2996,7 @@
     "8.1": [
       "ch08.html",
       "ch09.html",
+      "ch10.html",
       "ch11.html",
       "ch12.html"
     ],
@@ -3004,6 +3021,7 @@
     "8.2": [
       "ch08.html",
       "ch09.html",
+      "ch10.html",
       "ch11.html",
       "ch12.html"
     ],
