@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-10-11T15:40:49+08:00",
+  "event": "openai/math 公开发布",
+  "registered_trigger": "任一机构批量发布 >100 篇 AI 生成的数学／科学初稿",
+  "pre_registration_caveat": "触发事件（2026-10-06）早于本书首次提交（2026-10-09）与登记表（2026-10-11）。故 B3 不是对触发的事前盲测，而是对结果（热度窗口内完成独立验证的比例）的前瞻预测；核销时按此口径报告。",
+  "note": "机器快照；失败来源不伪造数值。",
+  "repo": {
+    "full_name": "openai/math",
+    "html_url": "https://github.com/openai/math",
+    "description": null,
+    "created_at": "2026-10-06T21:47:02Z",
+    "pushed_at": "2026-10-08T05:20:00Z",
+    "updated_at": "2026-10-11T07:40:41Z",
+    "size": 822061,
+    "stargazers_count": 13804,
+    "forks_count": 1528,
+    "subscribers_count": 291,
+    "open_issues_count": 0,
+    "default_branch": "main",
+    "license": "Apache-2.0"
+  },
+  "counts": {
+    "manuscripts_readme": 719,
+    "families": 372,
+    "formalized_topline": 300,
+    "formalized_denom": 719,
+    "formalized_pct": 42,
+    "withdrawn_2026_10_07": 3,
+    "revised_2026_10_07": 14,
+    "citation_updates_2026_10_07": 13,
+    "formalizations_added_2026_10_07": 6
+  },
+  "subjects": [
+    "Number theory",
+    "Algebraic and complex geometry",
+    "Real and complex analysis",
+    "Convex and metric geometry",
+    "Theoretical computer science",
+    "Dynamical systems and ergodic theory",
+    "Combinatorics",
+    "Algebra",
+    "Probability and statistical mechanics",
+    "Mathematical logic",
+    "Group theory",
+    "Mathematical physics",
+    "Operator algebras",
+    "Topology",
+    "Functional analysis",
+    "Differential geometry",
+    "Partial differential equations"
+  ],
+  "n_subjects": 17,
+  "arxiv": {
+    "queries": {
+      "cs.AI": 205821,
+      "cs.CL": 121860
+    },
+    "unavailable": []
+  },
+  "unavailable": []
+}

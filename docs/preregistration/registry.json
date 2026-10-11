@@ -144,15 +144,38 @@
       "success_criterion": "热度窗口内完成验证比例 < 20%",
       "negation": "若热度消退前完成验证比例>50%，且平均验证时间短于热度窗口，则 B3 被削弱",
       "baseline": {
-        "triggered": false,
+        "triggered": true,
         "as_of": "2026-10-11",
-        "note": "预印本与更正记录开始归档；尚无完成复现统计。触发阈值 V_知识>0.5 见第 9.5 节。",
+        "note": "触发条件（任一机构批量发布 >100 篇 AI 生成初稿）已满足：OpenAI 于 2026-10-06 公开 openai/math，含 719 篇手稿/372 家族/17 领域。结果（热度窗口内完成独立验证的比例）尚未揭晓。",
         "snapshot_ref": "docs/preregistration/baseline_snapshot.json",
+        "event_snapshot_ref": "docs/preregistration/openai_math_snapshot.json",
+        "event_snapshot_script": "analysis/fetch_openai_math_snapshot.py",
         "fetched_at": "2026-10-11T14:19:51+08:00",
         "headline": {
           "cs.AI": 205821,
           "cs.CL": 121860
-        }
+        },
+        "trigger_event": {
+          "name": "openai/math 公开发布",
+          "url": "https://github.com/openai/math",
+          "created_at": "2026-10-06T21:47:02Z",
+          "manuscripts": 719,
+          "families": 372,
+          "subjects": 17,
+          "formalized_topline": 300,
+          "formalized_denom": 719,
+          "formalized_pct": 42,
+          "withdrawn_2026_10_07": 3,
+          "revised_2026_10_07": 14,
+          "stars": 13799,
+          "forks": 1527
+        },
+        "observation_window": {
+          "start": "2026-10-11",
+          "end_estimate": "2027-01-11",
+          "note": "热度窗口按 3 个月估计；独立验证按 6—18 个月估计；核销时以实际证据为准。"
+        },
+        "pre_registration_caveat": "触发事件（2026-10-06）早于本书首次提交（2026-10-09）与登记表（2026-10-11），故 B3 不是对“触发”的事前盲测，而是对“结果”的前瞻预测；核销时按此口径分别报告，不掩盖时点差异。"
       }
     }
   ]

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <rect width="1000" height="520" fill="#ffffff"/>
+  <text x="500" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">时间预算：把 T_policy 拆成三段，分别压缩</text>
+  <text x="500" y="64" text-anchor="middle" font-size="13" font-weight="" fill="#666">发现 → 决策 → 执行，三段各自有对应的前置工具</text>
+  <rect x="70" y="120" width="280" height="78" rx="8" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <text x="210" y="154" text-anchor="middle" font-size="17" font-weight="bold" fill="#1e88e5">发现时间</text>
+  <text x="210" y="180" text-anchor="middle" font-size="12.5" font-weight="" fill="#666">从信号出现到被识别</text>
+  <rect x="360" y="120" width="280" height="78" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="500" y="154" text-anchor="middle" font-size="17" font-weight="bold" fill="#e65100">决策时间</text>
+  <text x="500" y="180" text-anchor="middle" font-size="12.5" font-weight="" fill="#666">从识别到作出决定</text>
+  <rect x="650" y="120" width="280" height="78" rx="8" fill="#e8f5e9" stroke="#009E73" stroke-width="2"/>
+  <text x="790" y="154" text-anchor="middle" font-size="17" font-weight="bold" fill="#009E73">执行时间</text>
+  <text x="790" y="180" text-anchor="middle" font-size="12.5" font-weight="" fill="#666">从决定到生效</text>
+  <line x1="210" y1="252" x2="210" y2="208" stroke="#b8862f" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="70" y="254" width="280" height="86" rx="8" fill="#fffdf3" stroke="#b8862f" stroke-width="1.5"/>
+  <text x="210" y="284" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#8a6a14">监测指标 + 触发阈值</text>
+  <text x="210" y="308" text-anchor="middle" font-size="12" font-weight="" fill="#666">把“发现”变成核对而非重新讨论</text>
+  <line x1="500" y1="252" x2="500" y2="208" stroke="#b8862f" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="360" y="254" width="280" height="86" rx="8" fill="#fffdf3" stroke="#b8862f" stroke-width="1.5"/>
+  <text x="500" y="284" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#8a6a14">预授权 + 快速通道</text>
+  <text x="500" y="308" text-anchor="middle" font-size="12" font-weight="" fill="#666">平静时授权，危机时只执行</text>
+  <line x1="790" y1="252" x2="790" y2="208" stroke="#b8862f" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="650" y="254" width="280" height="86" rx="8" fill="#fffdf3" stroke="#b8862f" stroke-width="1.5"/>
+  <text x="790" y="284" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#8a6a14">资源前置</text>
+  <text x="790" y="308" text-anchor="middle" font-size="12" font-weight="" fill="#666">缓冲、备用产能、常设互换线</text>
+  <rect x="70" y="430" width="860" height="60" rx="8" fill="#fbfbfb" stroke="#ddd" stroke-width="1"/>
+  <text x="500" y="455" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">每一段都必须带三道闸：触发条件可判定 · 授权带日落 · 事后公开追责</text>
+  <text x="500" y="477" text-anchor="middle" font-size="12" font-weight="" fill="#666">没有这三道闸的预授权，不是行动设计，而是权力扩张（§16.3）</text>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#b8862f"/></marker></defs>
+</svg>

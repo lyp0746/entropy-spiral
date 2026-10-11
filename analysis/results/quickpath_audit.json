@@ -63,8 +63,8 @@
     {
       "file": "ch03.html",
       "fast_chars": 1215,
-      "full_chars": 9674,
-      "fast_ratio": 0.126,
+      "full_chars": 10623,
+      "fast_ratio": 0.114,
       "key_output_items": [
         {
           "item": "强（可直接使用）：“回不去”有一个可讲的机制：集中降低纠错能力、复杂度拉长响应时间、耦合加快传导。",
@@ -93,8 +93,8 @@
     {
       "file": "ch04.html",
       "fast_chars": 1309,
-      "full_chars": 9129,
-      "fast_ratio": 0.143,
+      "full_chars": 11088,
+      "fast_ratio": 0.118,
       "key_output_items": [
         {
           "item": "强（可直接使用）：子系统时间尺度跨越六个数量级，不可同步是结构性的；τ 给出可比较的序数（0.5／3.5／30）。",
@@ -125,9 +125,9 @@
     },
     {
       "file": "ch05.html",
-      "fast_chars": 2761,
-      "full_chars": 16124,
-      "fast_ratio": 0.171,
+      "fast_chars": 2805,
+      "full_chars": 18231,
+      "fast_ratio": 0.154,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Θ 的现代代理长期同向上升、重心不回落；前现代盐铁代理反向（ρ=−0.57），强版本被否证。",
@@ -137,8 +137,10 @@
           "unsupported": []
         },
         {
-          "item": "弱（有条件使用）：六个代理高度共线（0.79—1.00），不是六份独立证据；跨时代水平不可比。",
-          "concepts": [],
+          "item": "弱（有条件使用）：六个代理高度共线（0.79—1.00），不是六份独立证据；PCA 有效维数 Neff≈1.2（表 5.4b），即五份长期代理的信息量约等于一份",
+          "concepts": [
+            "C"
+          ],
           "unsupported": []
         },
         {
@@ -152,13 +154,15 @@
         "I",
         "V"
       ],
-      "forward_refs_into_gear": [],
+      "forward_refs_into_gear": [
+        "5.4"
+      ],
       "has_declaration": true
     },
     {
       "file": "ch06.html",
       "fast_chars": 1960,
-      "full_chars": 11221,
+      "full_chars": 11180,
       "fast_ratio": 0.175,
       "key_output_items": [
         {
@@ -228,7 +232,7 @@
     {
       "file": "ch08.html",
       "fast_chars": 1567,
-      "full_chars": 11011,
+      "full_chars": 11026,
       "fast_ratio": 0.142,
       "key_output_items": [
         {
@@ -266,8 +270,8 @@
     {
       "file": "ch09.html",
       "fast_chars": 3461,
-      "full_chars": 13426,
-      "fast_ratio": 0.258,
+      "full_chars": 13700,
+      "fast_ratio": 0.253,
       "key_output_items": [
         {
           "item": "强（可直接使用）：Risk(S) 必须冲击特异：不存在跨情景通用的脆弱性排序；前三个案例已接入真实序列。",
@@ -295,9 +299,9 @@
     },
     {
       "file": "ch10.html",
-      "fast_chars": 3939,
-      "full_chars": 9465,
-      "fast_ratio": 0.416,
+      "fast_chars": 4166,
+      "full_chars": 9692,
+      "fast_ratio": 0.43,
       "key_output_items": [
         {
           "item": "强（可直接使用）：框架在单点与单国冲击上坚固；置信区间随冲击范围系统性扩大（±0.10→±0.60）。",
@@ -327,8 +331,8 @@
     {
       "file": "ch11.html",
       "fast_chars": 2331,
-      "full_chars": 12276,
-      "fast_ratio": 0.19,
+      "full_chars": 12507,
+      "fast_ratio": 0.186,
       "key_output_items": [
         {
           "item": "强（可直接使用）：局部可描述性由时间、空间、变量三重约束定义，可自检为“可描述／条件可描述／不可描述”三档。",
@@ -426,9 +430,9 @@
     },
     {
       "file": "ch14.html",
-      "fast_chars": 1404,
-      "full_chars": 7910,
-      "fast_ratio": 0.177,
+      "fast_chars": 1548,
+      "full_chars": 12356,
+      "fast_ratio": 0.125,
       "key_output_items": [
         {
           "item": "强（可直接使用）：I 的失败不是测量失败，而是概念错置：它是时间量，不是状态量。",
@@ -446,16 +450,23 @@
           "unsupported": []
         },
         {
-          "item": "不确定（尚不可用）：I₂（协调时间）与 I₄（共同理解）仍无稳定测量方法；“更多信息”不是解药。",
+          "item": "不确定（尚不可用）：I₂（协调时间）与 I₄（共同理解）仍无稳定测量方法；“更多信息”不是解药。MC 检验（表 14.6、14.7）补充：τ 的方向对 I₂ 的",
           "concepts": [
-            "I"
+            "I",
+            "τ",
+            "C"
           ],
           "unsupported": []
         }
       ],
-      "undefined_concepts": [],
+      "undefined_concepts": [
+        "C",
+        "τ"
+      ],
       "forward_refs_into_gear": [
-        "14.1"
+        "14.1",
+        "14.6",
+        "14.8"
       ],
       "has_declaration": true
     },

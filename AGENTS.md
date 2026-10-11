@@ -32,6 +32,7 @@ bash scripts/release.sh          # 全量构建（audit→PDF→EPUB→Markdown�
 - `analysis/tau_sensitivity.py` —— τ=T_min/T_available 的**蒙特卡洛**不确定性传播
 - `analysis/preregistration_checkup.py` —— 事前登记账本校验/进度/追加
 - `analysis/fetch_preregistration_baseline.py` —— B1–B3 机器基线快照（WB/Comtrade/arXiv）
+- `analysis/fetch_openai_math_snapshot.py` —— B3 触发事件（openai/math）机器快照
 
 ## 仓库约定
 

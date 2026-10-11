@@ -55,14 +55,14 @@
 
 <h3 id="secI-4">I.4　核销进度与更新记录（可观察的事实）</h3>
 
-<p>事前登记的价值只有在“事后真的去对”时才成立。为避免“登记后遗忘”或“只报命中、不报落空”，本节把核销过程本身也变成可观察的记录：每项盲测标明<b>当前状态、已收集到的信息、下一次核对日期与负责人</b>。截至本书完成日期（2026-10-11），三项盲测<b>均未到可判定时点</b>，因此状态一律为“未揭晓”（0/3 已核销）——这是事实陈述，不是拖延。</p>
+<p>事前登记的价值只有在“事后真的去对”时才成立。为避免“登记后遗忘”或“只报命中、不报落空”，本节把核销过程本身也变成可观察的记录：每项盲测标明<b>当前状态、已收集到的信息、下一次核对日期与负责人</b>。截至本书完成日期（2026-10-11），<b>B3 的触发条件已经满足</b>（见 I.6），但其结果（热度窗口内完成独立验证的比例）尚未揭晓；B1、B2 尚未触发。因此三项均为“未揭晓”（<b>0/3 已核销</b>）——这是事实陈述，不是拖延。</p>
 
 <table class="nat">
 <caption class="cap"><b>表 I.2　三项盲测的核销进度表（截至 2026-10-11）</b></caption>
 <tr><th class="l">命题</th><th class="l">登记日期</th><th class="l">预计核对</th><th class="l">当前状态</th><th class="l">已收集信息</th><th class="l">下一步</th></tr>
 <tr><td class="l">B1 新兴市场外资撤离</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>未揭晓</b></td><td class="l">无（事件尚未发生）</td><td class="l">按季监控 IMF／央行公告与汇率异常波动</td></tr>
 <tr><td class="l">B2 关键矿产替代滞后</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>未揭晓</b></td><td class="l">配额与价格公告已归档，替代产能未上线</td><td class="l">追踪下游库存天数与替代产能投产时间</td></tr>
-<tr><td class="l">B3 AI 生成物验证比例</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>未揭晓</b></td><td class="l">预印本与更正记录开始归档</td><td class="l">统计“热度窗口内完成独立复现”的比例</td></tr>
+<tr><td class="l">B3 AI 生成物验证比例</td><td class="l">2026-10-11</td><td class="l">2027 年内</td><td class="l"><b>已触发，结果未揭晓</b></td><td class="l">触发事件已发生：openai/math 于 2026-10-06 发布 719 篇手稿（372 家族／17 领域，300/719≈42% 有 Lean 形式化）；事件后已撤回 3 篇、修订 14 篇</td><td class="l">统计“热度窗口内完成独立复现”的比例；区分生产者自评与独立验证</td></tr>
 </table>
 <div class="datasrc"><b>性质：</b>进度记录（方法论，质量 C）。<b>注释：</b>“已收集信息”一栏证明监控已开始，而非停在纸面；核销结果（命中／落空）将于再版或本仓库的登记页面（OSF／GitHub Issues）公布，<b>命中与落空均计入，不因结果不利而删改</b>。<b>汇报格式承诺：</b>每项盲测核销时，同时报告（i）原始预测、（ii）观测结果、（iii）是否满足成功标准、（iv）差异的可能原因——四项分开陈述，不得合并。</div>
 
@@ -85,7 +85,7 @@
 <tr><th class="l">命题</th><th class="l">触发状态</th><th class="l">基线观测</th><th class="l">数据来源（核对时）</th></tr>
 <tr><td class="l">B1 新兴市场</td><td class="l">未触发</td><td class="l">无触发事件；参照情景：泰国外储≈3.2 个月进口（表 10.3）</td><td class="l">IIF／EPFR、IMF IFS、Fed H.4.1、FRED（EMBI）</td></tr>
 <tr><td class="l">B2 关键矿产</td><td class="l">未触发</td><td class="l">配额／管制公告已归档；替代产能未上线；进口 HHI 基线见附录 D.9／表 7.1c</td><td class="l">各国海关与商务部公告、UN Comtrade</td></tr>
-<tr><td class="l">B3 AI 验证</td><td class="l">未触发</td><td class="l">预印本与更正记录开始归档；尚无完成复现统计</td><td class="l">预印本平台、期刊更正记录、机构复现报告</td></tr>
+<tr><td class="l">B3 AI 验证</td><td class="l">已触发（2026-10-06）</td><td class="l">openai/math：719 篇／372 家族／17 领域；300/719≈42% 顶层结果有 Lean 形式化；事件后撤回 3 篇、修订 14 篇</td><td class="l">GitHub openai/math（README／history／overview）；arXiv 体量</td></tr>
 </table>
 <div class="datasrc"><b>性质：</b>基线快照（方法论，质量 C）。<b>注释：</b>数值型基线需在首次核对时以官方最新 vintage 填入。<b>账本第一行（<code>status=baseline</code>）即为基线。</b>“永久”的运行方式：每次核对后向 <code>checkups.csv</code> 追加一行；若到 2027 年仍无新行，说明“监控”未落实——这是一个可被读者直接检查的事实。</div>
 
@@ -102,3 +102,23 @@
 <div class="datasrc"><b>性质：</b>机器快照（输入为质量 A，但用途仅为核销基线）。<b>注释：</b>B2 的真实 HHI（如美国稀土进口 HHI≈0.98）把第 7 章“单点集中”的定性判断变成了可复现的基线；B3 只登记<b>体量</b>，“验证比例”需人工编目，故仍是待核销项。<b>已知缺口：</b>本环境 FRED／IMF DataMapper 超时或 403，故 B1 的泰铢汇率、EMBI 利差与 IMF 资本流动序列<b>尚未入快照</b>，已在 <code>baseline_snapshot.json</code> 的 <code>unavailable_note</code> 列明，待联网时补查。</div>
 
 <p><b>失败情景下的汇报格式（防止事后诠释）。</b>若某项盲测落空，核销必须填写四项，缺一不可：<b>（i）原始预测</b>（照抄登记，不得改写）；<b>（ii）观测结果</b>（值、单位、来源、vintage）；<b>（iii）是否满足成功标准</b>（命中／落空／部分／尚不可判定）；<b>（iv）差异的可能原因</b>。禁止把“落空”重述为“部分命中”或“条件变化”——后者必须作为一条新的登记项追加，而不是修改旧项。</p>
+
+<h3 id="secI-6">I.6　第一个触发事件：openai/math（2026-10-06）</h3>
+
+<p>盲测 B3 的触发条件是“任一机构批量发布 &gt;100 篇 AI 生成的数学／科学初稿”。这一条件<b>已经满足</b>：2026-10-06，OpenAI 在 GitHub 公开 <code>openai/math</code> 仓库。表 I.5 给出写作当日（2026-10-11）可核对的机器快照（脚本 <code>analysis/fetch_openai_math_snapshot.py</code>，结果 <code>docs/preregistration/openai_math_snapshot.json</code>）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 I.5　B3 触发事件快照（openai/math，截至 2026-10-11）</b></caption>
+<tr><th class="l">项目</th><th class="l">值</th><th class="l">来源</th></tr>
+<tr><td class="l">公开时间</td><td class="l">2026-10-06（首次提交 2026-10-06 21:58 UTC）</td><td class="l">GitHub API</td></tr>
+<tr><td class="l">手稿／家族／领域</td><td class="l">719 篇／372 个结果家族／17 个数学领域</td><td class="l">README、overview.pdf</td></tr>
+<tr><td class="l">Lean 形式化</td><td class="l">300/719 ≈ 42%（顶层结果）</td><td class="l">history.md（2026-10-08）</td></tr>
+<tr><td class="l">事件后自我修正</td><td class="l">撤回 3 篇（符号错误）、修订 14 篇、因引用更新 13 篇、新增形式化 6 项</td><td class="l">history.md（2026-10-07）</td></tr>
+<tr><td class="l">传播热度（近似）</td><td class="l">5 天获 13,799 星标、1,527 次 fork</td><td class="l">GitHub API（2026-10-11）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>机器快照（输入为质量 A 的公开元数据，但用途仅为核销基线）。<b>注释：</b>“形式化比例”是<b>生产者自评</b>（README 明言“未形式化的结果可能有错”），<b>不等于独立验证</b>；B3 的成功标准（热度窗口内完成<b>独立</b>验证的比例 &lt; 20%）因此仍待核销。</div>
+
+<p><b>这一事件为什么适合检验 τ 与“验证滞后”。</b>它把第 4.3.4 节与第 9.5 节的“时间层级”从假想变成可观测：生成与发布以天／小时计，事件在 5 天内已获万级关注（热度），而独立复现按既往经验需 6—18 个月。因此，<b>按登记的判定规则，预计热度窗口（约 1—3 个月）结束时，完成独立验证的比例将远低于 20%</b>——这是事前写定的方向判断，2027 年核对，观测后不回调。</p>
+
+<div class="warning"><span class="bt">诚实性披露：一个时点差异</span>
+必须指出：该触发事件发生于 2026-10-06，而本书首次提交为 2026-10-09、登记表为 2026-10-11。<b>因此 B3 不是对“触发”的事前盲测，而是对“结果”的前瞻预测。</b>我们选择披露而不是掩盖，并把它写进 <code>registry.json</code> 的 <code>pre_registration_caveat</code>。这不影响预测的可反驳性（结果在登记时确实未知），但削弱了“连触发都事先登记”的强主张——按本书自己的标准，这一点必须标出。</div>

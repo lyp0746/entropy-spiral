@@ -5,3 +5,6 @@ B3,2026-10-11,author,baseline,触发状态,,,registry.json,2026-10,no,预印本�
 B1,2026-10-11,author,snapshot,基线快照,"{""THA"": {""year"": 2025, ""value"": 8.05111379219367}, ""IDN"": {""year"": 2025, ""value"": 5.51422229377152}, ""MYS"": {""year"": 2025, ""value"": 4.27565652363604}}",见 snapshot,WB/Comtrade/arXiv,2026-10,no,快照基线（见 baseline_snapshot.json）
 B2,2026-10-11,author,snapshot,基线快照,"{""USA"": 0.9749, ""JPN"": 0.4442, ""IND"": 0.9776}",见 snapshot,WB/Comtrade/arXiv,2026-10,no,快照基线（见 baseline_snapshot.json）
 B3,2026-10-11,author,snapshot,基线快照,"{""cs.AI"": 205821, ""cs.CL"": 121860}",见 snapshot,WB/Comtrade/arXiv,2026-10,no,快照基线（见 baseline_snapshot.json）
+B3,2026-10-11,author,trigger,触发事件：openai/math 公开发布（>100 篇）,719,manuscripts,GitHub openai/math README+overview.pdf,2026-10-06,yes,触发条件已满足；事件早于本书首提交(2026-10-09)，非事前盲测（见 registry B3 pre_registration_caveat）
+B3,2026-10-11,author,event_metric,顶层结果 Lean 形式化比例,0.42,ratio,GitHub openai/math history.md,2026-10-08,yes,300/719≈42%；README 自述未形式化者可能有错，属生产者自评非独立验证
+B3,2026-10-11,author,event_metric,事件后撤回手稿数,3,manuscripts,GitHub openai/math history.md,2026-10-07,yes,符号错误撤回3篇；同日修订14篇、因引用更新13篇、补形式化6项

@@ -10,6 +10,8 @@
 |---|---|
 | `registry.json` | 登记本体：预测、观测变量、成功标准、否定条件、基线快照 |
 | `checkups.csv` | append-only 核销账本：每次核对追加一行（含日期、值、来源、vintage） |
+| `openai_math_snapshot.json` | B3 触发事件（openai/math，2026-10-06）的机器快照 |
+| `../../analysis/fetch_openai_math_snapshot.py` | 抓取并固化 B3 触发事件快照 |
 | `../../analysis/preregistration_checkup.py` | 校验账本 + 生成快照报告（可扩展为联网抓取） |
 
 ## 迁移状态
