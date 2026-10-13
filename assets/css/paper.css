@@ -92,6 +92,9 @@ table.nat {
 table.nat th, table.nat td {
   border: 0; border-bottom: 0.5px solid #e0e0e0;
   padding: 5px 7px; text-align: center; vertical-align: top;
+  /* 长 token（脚本路径 / API 代码 / URL）必须可断行，否则表格的 min-content
+     会超出页面内容盒，触发 Chrome 打印时的整体缩放（封面一并缩水）。 */
+  overflow-wrap: anywhere; word-break: break-word;
 }
 table.nat tr:first-child th, table.nat tr:first-child td {
   border-bottom: 1px solid #222; background: #ececec; font-weight: 700;
