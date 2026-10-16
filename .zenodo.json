@@ -52,6 +52,12 @@
       "identifier": "10.5281/zenodo.23276888",
       "relation": "isNewVersionOf",
       "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/lyp0746/knowledge-tradeoffs",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
     }
-  ]
+  ],
+  "publication_date": "2026-10-16"
 }
