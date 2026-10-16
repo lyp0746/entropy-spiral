@@ -921,7 +921,7 @@
     },
     {
       "chapter": "ch05.html",
-      "snippet": "质量等级：C（仅示意，不作精确引用）"
+      "snippet": "证据等级：C（仅示意，不作精确引用）"
     },
     {
       "chapter": "ch05.html",
@@ -937,19 +937,7 @@
     },
     {
       "chapter": "ch05.html",
-      "snippet": "质量等级：C"
-    },
-    {
-      "chapter": "ch05.html",
       "snippet": "注释：表中数值为数量级示意，不同研究的估计差异可达数倍"
-    },
-    {
-      "chapter": "ch05.html",
-      "snippet": "质量等级：C（合成与统计量，输入含 B 级近似序列）"
-    },
-    {
-      "chapter": "ch05.html",
-      "snippet": "质量等级：C（判断性诊断"
     },
     {
       "chapter": "ch05.html",
@@ -985,7 +973,7 @@
     },
     {
       "chapter": "ch06.html",
-      "snippet": "质量等级：C（示意）"
+      "snippet": "证据等级：C（示意）"
     },
     {
       "chapter": "ch06.html",
@@ -1298,10 +1286,6 @@
     {
       "chapter": "ch14.html",
       "snippet": "必须明确：CVm、p₄、f₄ 是显式标出的约定值（质量 C），不是拟合值——它们的用途是回答“结论对 I₂ 误差有多敏感”，而不是给出精确"
-    },
-    {
-      "chapter": "ch14.html",
-      "snippet": "质量等级：C（参数为约定值）"
     },
     {
       "chapter": "ch14.html",

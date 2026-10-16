@@ -20,7 +20,7 @@
 <div class="warning"><span class="bt">警告 9.1.1　本章不是预测</span>
 本章的"情景"是 if–then 命题：<b>给定一组可观测信号，系统的行为类型是什么。</b>它们不声称"某年某月发生某事"。任何把情景读成预测的做法都超出证据。本章的可信产出是<b>监测架构与判别标准</b>；情景概率是示意性先验，不是估计。</div>
 
-<div class="note"><b>关于排序的限制。</b>由于 I 为丙类（事后推断），本章任何使用 V 做的排序都属于<b>分组级</b>结论，不构成点估计；排序对 I 的假设敏感，换假设可能改变名次。本章因此只用 V 判断“结构位置”与“方向”，不提供跨国排名（与第 8.6 节一致）。</div>
+<div class="note"><b>关于排序的限制。</b>由于 I 为概念丙（事后推断），本章任何使用 V 做的排序都属于<b>分组级</b>结论，不构成点估计；排序对 I 的假设敏感，换假设可能改变名次。本章因此只用 V 判断“结构位置”与“方向”，不提供跨国排名（与第 8.6 节一致）。</div>
 
 <h4 class="arg">情景案例：俄罗斯小麦 vs 管道天然气——为什么 Risk(S) 必须冲击特异</h4>
 <p>“俄罗斯没有替代买家，因此极脆弱”是一个常见说法。本章用一个对比检验它。俄罗斯同时是<b>小麦</b>与<b>管道天然气</b>的大出口国，但两者的买家结构完全不同。用 FAOSTAT 详细贸易矩阵实测（完整数据与推导见附录 D.7）：<b>2021 年俄罗斯小麦的买家 HHI 仅 0.114，有效买家约 8.8 个，最大单一买家占 24.6%</b>——这是一个高度分散的市场；相比之下，俄罗斯输欧天然气依赖少数固定管道，买家几乎不可替换。</p>
@@ -107,7 +107,7 @@
 <tr><td class="l">跨市场相关性</td><td class="l">周</td><td class="l">显著上升 → 风险"共振"</td></tr>
 <tr><td class="l">外交对立事件计数</td><td class="l">周</td><td class="l">持续上升 → 对话渠道关闭</td></tr>
 </table>
-<div class="datasrc"><b>数据来源（应为）：</b>ICE／EIA（油价）；Clarksons／波罗的海指数（航运）；Fed（美元指数）；GDELT（事件计数）。<b>质量等级：</b>A（若使用上述来源）。<b>注释：</b>预警以"指标组合"确认，不以单指标决策。</div>
+<div class="datasrc"><b>数据来源（应为）：</b>ICE／EIA（油价）；Clarksons／波罗的海指数（航运）；Fed（美元指数）；GDELT（事件计数）。<b>证据等级：</b>A（若使用上述来源）。<b>注释：</b>预警以"指标组合"确认，不以单指标决策。</div>
 
 <h4 class="arg">真实数据面板：油价与政治稳定（1987—2026）</h4>
 <p>用真实序列（Brent 日度均价、WGI 政治稳定指数）可以检验本案例的两个核心信号：</p>
@@ -117,7 +117,7 @@
 <tr><td class="l">Brent 油价（$／桶，年均）</td><td>{{D:brent_oil_2008}}</td><td>{{D:brent_oil_2011}}</td><td>{{D:brent_oil_2015}}</td><td>{{D:brent_oil_2020}}</td><td>{{D:brent_oil_2022}}</td><td>{{D:brent_oil_2024}}</td><td>{{D:brent_oil_2026}}</td></tr>
 <tr><td class="l">美国政治稳定（WGI）</td><td>{{D:us_polstab_2008}}</td><td>—</td><td>{{D:us_polstab_2015}}</td><td>{{D:us_polstab_2020}}</td><td>{{D:us_polstab_2022}}</td><td>{{D:us_polstab_2024}}</td><td>{{D:us_polstab_2025}}</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>Brent 日度均价聚合为年度均值（用户导出）；WGI 政治稳定估计值（Worldwide Governance Indicators，美国）。<b>质量等级：</b>A。<b>注释：</b>WGI 取值约 −2.5 至 +2.5，越高越稳定；2025 年数据为 WGI 最新可用年份。</div>
+<div class="datasrc"><b>数据来源：</b>Brent 日度均价聚合为年度均值（用户导出）；WGI 政治稳定估计值（Worldwide Governance Indicators，美国）。<b>证据等级：</b>A。<b>注释：</b>WGI 取值约 −2.5 至 +2.5，越高越稳定；2025 年数据为 WGI 最新可用年份。</div>
 <p>两条序列给出了本案例最直接的读数：<b>（一）油价</b>——2011—12 年峰值约 {{D:brent_oil_2011}} 美元，2020 年跌至 {{D:brent_oil_2020}}，2022 年反弹至 {{D:brent_oil_2022}}，2025 年回落至 {{D:brent_oil_2025}}，2026 年又升至 {{D:brent_oil_2026}}——说明能源耦合的冲击是<b>反复而非单向</b>的。<b>（二）政治稳定</b>——美国 WGI 政治稳定从 1996 年的 0.97 降至 2025 年的 {{D:us_polstab_2025}}，其中 2020 年首次转负（{{D:us_polstab_2020}}）——<b>这是一个真实的、持续的下降趋势</b>，支持“美国内部一致性 ι 下降”的判断（与第 8 章的定性输入一致，现已有真实序列支撑）。</p>
 
 <h4 class="arg">数据驱动的历史链条：2008—2026</h4>
@@ -152,7 +152,7 @@
 <tr><td class="l">2023</td><td>33,403</td><td>358,842</td><td>9.3%</td></tr>
 <tr><td class="l">2024</td><td>37,843</td><td>330,639</td><td>11.5%</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>Eurostat <code>nrg_ti_gas</code>（geo=EU27_2020，siec=G3000 天然气，unit=MIO_M3）；脚本 <code>analysis/fetch_eu_gas_dependence.py</code>，结果 <code>data/eu_gas_ru_share.csv</code>。<b>质量等级：</b>A（官方可复现）。<b>注释：</b>份额下降同时反映“替代”与“总需求下降”（高价抑制消费）；2024 年回升部分来自基数效应。这不影响主结论：物理层纠错存在且可在两年尺度上观测。</div>
+<div class="datasrc"><b>数据来源：</b>Eurostat <code>nrg_ti_gas</code>（geo=EU27_2020，siec=G3000 天然气，unit=MIO_M3）；脚本 <code>analysis/fetch_eu_gas_dependence.py</code>，结果 <code>data/eu_gas_ru_share.csv</code>。<b>证据等级：</b>A（官方可复现）。<b>注释：</b>份额下降同时反映“替代”与“总需求下降”（高价抑制消费）；2024 年回升部分来自基数效应。这不影响主结论：物理层纠错存在且可在两年尺度上观测。</div>
 
 <p>这一诊断给第 3.8 节的 Ω 一个具体读数：能源案例的失配不是“冲击快、纠错为零”，而是“<b>冲击快、纠错慢但有界</b>”。真正的时间差（价格层数周 vs 物理层两年）才是失稳暴露期的长度。这也说明为何情景 D（灾难断裂）在此案例未被触发：只要物理层留有替代路径（LNG、挪威、阿塞拜疆、需求压缩），Ω 就是有限的。<b>反过来，若替代路径全部缺失（只能依赖单管道的内陆国家），物理层的 Ω 趋于无穷，才进入断裂型。</b>这一对比正是下一节“咽喉耦合”的切入点。</p>
 
@@ -227,7 +227,7 @@
 <tr><td class="l">2022（俄乌＋加息）</td><td>0.74</td><td>0.48</td><td>1.00</td><td>0.00</td><td><b>0.84</b></td><td><b>1.26</b></td></tr>
 <tr><td class="l">2024</td><td>0.82</td><td>0.47</td><td>0.59</td><td>0.03</td><td>0.63</td><td>0.93</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>World Bank WDI（收入 Gini、私人信贷/GDP、政府支出/GDP）；IMF（债务，用于交叉核验）；WGI（美国政治稳定）。<b>质量等级：</b>A/B。<b>方法脚本：</b><code>analysis/v_timeseries.py</code>。<b>注释：</b>归一化依赖窗口，换窗口会改变水平，但不改变“长期上升 + 2022 峰值”的定性结论。</div>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI（收入 Gini、私人信贷/GDP、政府支出/GDP）；IMF（债务，用于交叉核验）；WGI（美国政治稳定）。<b>证据等级：</b>A/B。<b>方法脚本：</b><code>analysis/v_timeseries.py</code>。<b>注释：</b>归一化依赖窗口，换窗口会改变水平，但不改变“长期上升 + 2022 峰值”的定性结论。</div>
 
 <img class="fig" src="assets/svg/fig-v-timeseries.svg" alt="脆弱性 V 的年度轨迹">
 <div class="cap"><b>图 9.3　脆弱性 V 与 V<sub>ι</sub> 的年度轨迹（2000—2024）</b>。蓝色为结构项 V，红色为含一致性调节的 V<sub>ι</sub>；金色虚线为 κ（世界贸易/GDP），绿色点线为 Θ 合成，浅蓝点线为 ι。虚线标出 2008、2020、2022 三个事件年。真实序列（A/B 级）归一化，仅用于轨迹与结构。</div>

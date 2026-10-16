@@ -39,7 +39,7 @@
 <tr><td class="l">巴西</td><td>0.080</td><td>0.082</td><td>0.034</td><td>0.196</td></tr>
 <tr><td class="l">印度</td><td>0.070</td><td>0.085</td><td>0.003</td><td>0.159</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>FAOSTAT 批量数据（QCL／TCL／PP／FBS）；脚本 <code>analysis/food_energy_validation.py</code>；结果 <code>analysis/results/food_v_panel.csv</code>、<code>food_v_summary.csv</code>。<b>质量等级：</b>C（探索性操作化）。<b>注释：</b>V = 0.40Θ+0.35I+0.25κ，分量为全样本 min-max 归一后的值。排序不作为结论，理由见正文与 D.4。</div>
+<div class="datasrc"><b>数据来源：</b>FAOSTAT 批量数据（QCL／TCL／PP／FBS）；脚本 <code>analysis/food_energy_validation.py</code>；结果 <code>analysis/results/food_v_panel.csv</code>、<code>food_v_summary.csv</code>。<b>证据等级：</b>C（探索性操作化）。<b>注释：</b>V = 0.40Θ+0.35I+0.25κ，分量为全样本 min-max 归一后的值。排序不作为结论，理由见正文与 D.4。</div>
 
 <img class="fig" src="assets/svg/fig-food-trend.svg" alt="粮食系统 V 的年度轨迹">
 <div class="cap"><b>图 D.1　粮食系统 V 的年度轨迹（八国等权平均）</b>。2021 年达到峰值 0.405，与全球粮价高峰一致；2022—2024 回落并趋稳。这一形态支持"三轴能对共同冲击作出反应"（检验问题二），但不支持任何关于国家排名的结论。</div>
@@ -59,7 +59,7 @@
 <tr><td class="l">美国</td><td>低</td><td>中</td><td>中</td><td>0.426</td></tr>
 <tr><td class="l">俄罗斯</td><td>低</td><td>低</td><td>低</td><td>0.104</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>World Bank（EG.IMP.CONS 等）与 4 国快速验证集（<code>energy_vulnerability_data/</code>）；脚本同上；结果 <code>analysis/results/energy_v_panel.csv</code>。<b>质量等级：</b>C。<b>注释：</b>年度均值：2015 年 0.508、2020 年 0.436、2021 年 0.474、2022 年 0.477——2020 年触底、2022 年回升，与能源冲击方向一致。</div>
+<div class="datasrc"><b>数据来源：</b>World Bank（EG.IMP.CONS 等）与 4 国快速验证集（<code>energy_vulnerability_data/</code>）；脚本同上；结果 <code>analysis/results/energy_v_panel.csv</code>。<b>证据等级：</b>C。<b>注释：</b>年度均值：2015 年 0.508、2020 年 0.436、2021 年 0.474、2022 年 0.477——2020 年触底、2022 年回升，与能源冲击方向一致。</div>
 
 <div class="warning"><span class="bt">能源结果的硬边界</span>
 俄罗斯排在最低（0.104），<b>并不表示它最安全</b>，而是因为本操作化只看"产量／出口能力"，完全没有刻画制裁、市场切断与买方联合抵制。中国的最高值主要来自进口依赖与出口能力不足。因此能源排序只能读作"供给侧结构"，不能读作"真实风险"。要修正这一点，需要双边能源贸易与制裁事件数据，超出本附录的数据范围。</div>
@@ -102,7 +102,7 @@
 <tr><td class="l">能源（4 国 × 5 年）</td><td><b>+0.57</b></td><td>−0.15</td><td>+0.24</td></tr>
 <tr><td class="l">政治经济（7 国）</td><td>−0.30</td><td>—（I 零方差）</td><td>—</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b><code>analysis/results/axis_independence.json</code>。<b>质量等级：</b>B（相关矩阵可复现；域内样本量有限）。<b>注释：</b>能源 n=16、政治经济 n=7，相关系数仅作方向参考。Spearman 同号（粮食 Θ–κ +0.36、能源 +0.55，均 p&lt;0.05）。</div>
+<div class="datasrc"><b>数据来源：</b><code>analysis/results/axis_independence.json</code>。<b>证据等级：</b>B（相关矩阵可复现；域内样本量有限）。<b>注释：</b>能源 n=16、政治经济 n=7，相关系数仅作方向参考。Spearman 同号（粮食 Θ–κ +0.36、能源 +0.55，均 p&lt;0.05）。</div>
 
 <p>三个发现：<b>（一）</b>Θ 与 κ 正耦合（粮食 +0.51、能源 +0.57）——集中与耦合一同出现，两轴不独立；<b>（二）</b>符号在政治经济域反转（−0.30），因为该域的 κ 由贸易／FDI 构造，与原定义不是同一个量；<b>（三）</b>I 在政治经济域零方差，从未被测量。</p>
 
@@ -123,7 +123,7 @@
 <tr><td class="l">美国</td><td>0.063</td><td>0.081</td><td>0.075</td><td>12.3</td><td>17.3%</td></tr>
 <tr><td class="l">印度</td><td>0.376</td><td>0.384</td><td>0.167</td><td>2.6</td><td>60.2%</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>FAOSTAT Detailed Trade Matrix（Export quantity，小麦），按伙伴国汇总后计算；脚本 <code>analysis/food_trade_diversification.py</code>，结果 <code>analysis/results/food_buyer_concentration.csv</code>。<b>质量等级：</b>A/B（矩阵可复现；部分国家报告不全）。<b>注释：</b>有效买家数 = 1/HHI；HHI 越低表示买家越分散。俄罗斯 2022 年在矩阵中缺失。</div>
+<div class="datasrc"><b>数据来源：</b>FAOSTAT Detailed Trade Matrix（Export quantity，小麦），按伙伴国汇总后计算；脚本 <code>analysis/food_trade_diversification.py</code>，结果 <code>analysis/results/food_buyer_concentration.csv</code>。<b>证据等级：</b>A/B（矩阵可复现；部分国家报告不全）。<b>注释：</b>有效买家数 = 1/HHI；HHI 越低表示买家越分散。俄罗斯 2022 年在矩阵中缺失。</div>
 
 <p>结果与常见直觉相反：<b>即使在 2021 年最集中的时刻，俄罗斯小麦的有效买家仍有约 9 个、首位买家仅占 24.6%。</b>乌克兰与美国更分散（有效买家 12—13 个）。也就是说，<b>至少在“小麦”这一商品上，“俄罗斯缺少替代买家”并不成立。</b></p>
 
@@ -145,7 +145,7 @@
 <tr><td class="l">大米</td><td class="l">泰国</td><td>4,349</td><td>4.2</td><td>6.0</td></tr>
 <tr><td class="l">大米</td><td class="l">印度</td><td>35,000</td><td>3.7</td><td><b>20.7</b></td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>USDA FAS Production, Supply and Distribution（PS&D）全量 CSV；脚本 <code>analysis/fetch_psd_reserves.py</code>，结果 <code>analysis/results/reserves_psd.csv</code>。<b>质量等级：</b>A/B（官方估计，部分为预测值）。<b>注释：</b>缓冲月数按国内消费计；出口可支撑月数按出口计，对出口国更能反映可释放空间。</div>
+<div class="datasrc"><b>数据来源：</b>USDA FAS Production, Supply and Distribution（PS&D）全量 CSV；脚本 <code>analysis/fetch_psd_reserves.py</code>，结果 <code>analysis/results/reserves_psd.csv</code>。<b>证据等级：</b>A/B（官方估计，部分为预测值）。<b>注释：</b>缓冲月数按国内消费计；出口可支撑月数按出口计，对出口国更能反映可释放空间。</div>
 
 <p>这一实测<b>推翻了两个直觉</b>：<b>（一）</b>并非“越南有良好储备”——越南大米缓冲仅 <b>2.0 个月</b>，低于泰国（4.2）与印度（3.7），是六者中最薄；<b>（二）</b>并非“俄罗斯无缓冲”——俄罗斯小麦缓冲 4.2 个月，不低于乌克兰（4.5）。真正突出的是印度：出口可支撑 <b>20.7 个月</b>，意味着它拥有巨大的可释放缓冲，叠加其最大出口国地位，使它远不如“出口集中度”所暗示的那样脆弱。</p>
 

@@ -57,7 +57,7 @@
 <tr><td class="l">世界 FDI／GDP（金融耦合）</td><td>{{D:world_fdi_gdp_1980}}</td><td>{{D:world_fdi_gdp_2000}}</td><td>{{D:world_fdi_gdp_2015}}</td><td>{{D:world_fdi_gdp_2024}}</td><td class="l"><b>先升后降</b></td></tr>
 <tr><td class="l">美国贸易／GDP</td><td>{{D:usa_trade_gdp_1980}}</td><td>{{D:usa_trade_gdp_2000}}</td><td>{{D:usa_trade_gdp_2015}}</td><td>{{D:usa_trade_gdp_2024}}</td><td class="l">先升后回落</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>World Bank WDI（NE.TRD.GNFS.ZS；BX.KLT.DINV.CD.WD ÷ NY.GDP.MKTP.CD）。<b>质量等级：</b>A（官方可复现，见 data/*.csv）。<b>注释：</b>FDI/GDP 为年度流量比，波动较大；单年值不宜直接比较，应看五年均值。</div>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI（NE.TRD.GNFS.ZS；BX.KLT.DINV.CD.WD ÷ NY.GDP.MKTP.CD）。<b>证据等级：</b>A（官方可复现，见 data/*.csv）。<b>注释：</b>FDI/GDP 为年度流量比，波动较大；单年值不宜直接比较，应看五年均值。</div>
 <p>真实序列给出了三个重要修正。第一，<b>商品耦合确实长期上升</b>：世界贸易／GDP 从 1980 年的 {{D:world_trade_gdp_1980}}% 升至 2025 年的 {{D:world_trade_gdp_2025}}%——这支持 κ 的商品维度。第二，<b>金融耦合并非单调</b>：世界 FDI／GDP 在 2000 年前后见顶（{{D:world_fdi_gdp_2000}}%），到 2024 年降至 {{D:world_fdi_gdp_2024}}%。金融全球化在总量上已明显回落，这与“耦合只升不降”的强叙述相反。第三，<b>美国自身的贸易开放度在 2015 年后回落</b>（{{D:usa_trade_gdp_2015}}% → {{D:usa_trade_gdp_2024}}%），与“脱钩”叙事一致。</p>
 <p>因此本节修正结论：<b>κ 的“不可逆”应限定为商品维度与制度性耦合，而不能笼统地说“所有耦合都单调上升”。</b>金融耦合已经历一轮完整的升—降周期，说明 κ 的某些维度是可逆的。这削弱了第 7 章强版本的“准不可逆”，但保留了弱版本：<b>商品与信息耦合的下降成本仍然极高</b>。这一修正已同步写入表 11.4 的登记阶段（P6.1 的状态由“待检验”部分转为“已部分否证”）。</p>
 
@@ -72,7 +72,7 @@
 <tr><td class="l">日本</td><td>0.404</td><td>0.334</td><td>0.444</td><td class="l">台 62.2%／沙特 41.0%／中 58.6%</td></tr>
 <tr><td class="l">印度</td><td>0.333</td><td>0.197</td><td>0.978</td><td class="l">中 52.4%／俄 34.6%／中 98.9%</td></tr>
 </table>
-<div class="datasrc"><b>数据来源：</b>UN Comtrade（comtradeapi.un.org），HS-6 位，进口（flowCode=M），2023 年，按 partnerCode 分解后计算 HHI；脚本 <code>analysis/fetch_hhi_comtrade.py</code>，结果 <code>data/hhi_chokepoints.csv</code>。<b>质量等级：</b>A（可复现）。<b>注释：</b>稀土（280530）贸易额极小（中国 $0.02B、印度 &lt;$0.01B），其 HHI 对个别报关高度敏感，仅作参考；芯片与原油的 HHI 稳健。伙伴代码：490＝台湾（Comtrade 编码“Other Asia, nes”）、458＝马来西亚、124＝加拿大、682＝沙特、643＝俄罗斯、704＝越南。</div>
+<div class="datasrc"><b>数据来源：</b>UN Comtrade（comtradeapi.un.org），HS-6 位，进口（flowCode=M），2023 年，按 partnerCode 分解后计算 HHI；脚本 <code>analysis/fetch_hhi_comtrade.py</code>，结果 <code>data/hhi_chokepoints.csv</code>。<b>证据等级：</b>A（可复现）。<b>注释：</b>稀土（280530）贸易额极小（中国 $0.02B、印度 &lt;$0.01B），其 HHI 对个别报关高度敏感，仅作参考；芯片与原油的 HHI 稳健。伙伴代码：490＝台湾（Comtrade 编码“Other Asia, nes”）、458＝马来西亚、124＝加拿大、682＝沙特、643＝俄罗斯、704＝越南。</div>
 
 <p>表 7.1c 与本章此前的指示性叙述有一个重要出入：<b>在芯片上，中国的进口来源 HHI（0.213）反而低于日本（0.404）与印度（0.333）。</b>也就是说，“中国因芯片而 κ 最高”这一说法，在进口集中度上并不成立——中国的芯片进口相对分散。真正的极端集中出现在稀土：美国（0.975）与印度（0.978）的进口几乎全部来自中国。原油上最集中的是美国（0.341，主要来自加拿大）与日本（0.334，沙特），中国反而最分散（0.099）。因此本章的正确结论是：<b>集中度是分商品、分国家而异质的</b>，不能用单一“高 κ”标签概括，也不应把中国的耦合程度笼统地置于最高。这一修正已登记为表 11.4 的 P6.4。</p>
 
