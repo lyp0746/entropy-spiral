@@ -39,6 +39,7 @@ FRONT = [("开篇　一个关于“来不及”的故事", "front_opening.html",
          ("执行摘要（Executive Summary）", "front_executive_summary.html", "execsummary")]
 BACK = [("结语　承认与启蒙", "back_epilogue.html", "epilogue"),
         ("后记　方法论的自限性与伦理立场", "back_postscript.html", "postscript"),
+        ("附　通俗读本《只能选两样》导引", "back_popular_guide.html", "popguide"),
         ("附录 A　数学补充", "appendix_a_math.html", "apxA"),
         ("附录 B　方法论的跨领域应用", "appendix_b_domains.html", "apxB"),
         ("附录 C　数据源与再现性", "appendix_c_data.html", "apxC"),
