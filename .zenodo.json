@@ -1,6 +1,6 @@
 {
   "title": "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界 / Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and the Boundary of Controllability in Social Systems",
-  "description": "<p>本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它在三根不可逆轴（Θ 租佃份额、I 组织复杂度、κ 地缘耦合）之外，提出一个独立的时间来源：<b>时间错配 τ = T_min / T_available</b> 与 <b>可控性 C = T_policy / T_threat = 1/τ</b>。现代社会不是一个钟，而是许多转速不同的钟；错位是结构性的，而非暂时失调。全书五部分、十九章、附录 A—J；不预测崩溃时点，只做受限的局部诊断，并提供可证伪的命题登记簿与开放的数据缺口清单。</p><p>源码、数据与构建流程：<a href=\"https://github.com/lyp0746/entropy-spiral\">GitHub</a>。内容许可 CC BY 4.0；代码许可 MIT。</p><p><b>English.</b> <i>Desynchronized Time: Why We Are Always Too Late</i> diagnoses the vulnerability of modern societies through the lens of time. It abandons \"predicting collapse\" and asks a more actionable question: <b>can a system still save itself in time?</b> Beyond the three irreversible axes Θ (rent/monopoly extraction share), I (coordination time), κ (geopolitical coupling), it introduces an independent temporal source: <b>temporal mismatch τ = T_min / T_available</b> and <b>controllability C = T_policy / T_threat = 1/τ</b>. Modern society is not one clock but many clocks running at different speeds; the mismatch is structural, not temporary. Five parts, nineteen chapters, appendices A–J. It makes no point predictions of collapse, offering only bounded local diagnosis, a falsifiability register, and an open data-gap list.</p><p><b>系列。</b>本系列的通俗读本《只能选两样》与外部登记库（跨域盲测登记、最小可验证单元、合并术语表）见 <a href=\"https://github.com/lyp0746/knowledge-tradeoffs\">github.com/lyp0746/knowledge-tradeoffs</a>。</p>",
+  "description": "<p><b>中文.</b> 本著作提出“时间错配”诊断框架，用以解释现代社会为什么反复出现“知道了也来不及”的结构性失败。</p><p>核心主张：时间不是背景而是变量。以 τ = 需要的最短时间 ÷ 你拥有的时间、可控性 C = 1/τ 度量“还来不来得及”；现代社会的困难不在钟走得快，而在许多个钟转速不同且无法被同一机制协调。</p><p>结构与证据：25 章、附录 A—J、42 幅图；以 Θ（租佃/抽取份额）、I（组织复杂度）、κ（地缘耦合）三根不可逆轴加一条时间轴，给出脆弱性 V 与三个情景（τ≈0.5 / 3.5 / 30），对应“精确、发散、失效”三种诊断状态。</p><p>诚实的纪律：τ 只作事后诊断与序数比较；V 的权重与数据口径逐项标注（A/B/C）；数据质量评估表明确区分“可复算”与“跨年代可比”；可证伪登记簿与数据缺口清单随书公开。</p><p>边界：不预测崩溃时点；社会中制度时间与认知时间不可独立测量，这是框架的硬边界，也是它拒绝给出“预言”的理由。</p><p>版本：2026-10-18，321 页，25 章，42 图，附录 A—J；源码与构建流程开源，内容 CC BY 4.0，代码 MIT。</p><p><b>系列 / Series.</b> 同一作者的独立研究系列：六本学术专著 + 两本通俗读本。入口与外部登记库：<a href=\"https://github.com/lyp0746/knowledge-tradeoffs\">https://github.com/lyp0746/knowledge-tradeoffs</a>；源码与可复算脚本：<a href=\"https://github.com/lyp0746/entropy-spiral\">https://github.com/lyp0746/entropy-spiral</a>。首选预览文件：<code>entropy-spiral-print.pdf</code>（印刷版）。</p><p><b>English.</b> Abstract (English). This work presents a diagnostic framework of temporal mismatch, explaining why modern societies repeatedly fail not from ignorance but from being too late. Core thesis: time is a variable, not a background; τ = minimum time required ÷ time available, and controllability C = 1/τ measure whether a system can still save itself. The difficulty is not that one clock runs fast, but that many clocks run at different speeds and cannot be coordinated by one mechanism. Structure and evidence: 25 chapters, appendices A–J, 42 figures; three irreversible axes — Θ (extraction share), I (organisational complexity), κ (geopolitical coupling) — plus an independent temporal axis, yielding a vulnerability index V and three scenarios (τ≈0.5, 3.5, 30) that correspond to precision, divergence and failure. Discipline: τ is diagnostic and ordinal only; weights and data are graded A/B/C, and a data-quality table separates reproducibility from cross-era comparability. Boundaries: no point predictions of collapse; institutional and cognitive time cannot be measured independently. Edition: 2026-10-18, 321 pages, 25 chapters, 42 figures, appendices A–J.</p>",
   "creators": [
     {
       "name": "李毅芃",
@@ -10,34 +10,62 @@
   "keywords": [
     "错位的时间",
     "Desynchronized Time",
-    "熵增螺旋",
-    "entropy spiral",
     "时间错配",
     "temporal mismatch",
     "可控性边界",
     "controllability boundary",
     "脆弱性诊断",
     "vulnerability diagnosis",
-    "局部可描述性",
-    "local describability",
-    "时间社会学",
-    "sociology of time",
-    "时间预算",
-    "time budget",
-    "优雅降级",
-    "graceful degradation",
     "多时钟社会",
     "multiple clocks",
-    "数据缺口",
-    "data gaps"
+    "优雅降级",
+    "graceful degradation",
+    "时间预算",
+    "time budget",
+    "局部可描述性",
+    "local describability",
+    "熵增螺旋",
+    "entropy spiral",
+    "可证伪性",
+    "falsifiability"
   ],
-  "notes": "科目 / Subjects — 中文：经济学、系统科学、复杂性科学、风险管理、国际政治经济、时间社会学、公共政策、气候与能源治理。English: Economics, Systems Science, Complexity Science, Risk Management, International Political Economy, Sociology of Time, Public Policy, Climate and Energy Governance.",
+  "subjects": [
+    {
+      "term": "Economics",
+      "scheme": "custom"
+    },
+    {
+      "term": "Systems Science",
+      "scheme": "custom"
+    },
+    {
+      "term": "Complexity Science",
+      "scheme": "custom"
+    },
+    {
+      "term": "Risk Management",
+      "scheme": "custom"
+    },
+    {
+      "term": "International Political Economy",
+      "scheme": "custom"
+    },
+    {
+      "term": "Sociology of Time",
+      "scheme": "custom"
+    },
+    {
+      "term": "Public Policy",
+      "scheme": "custom"
+    }
+  ],
+  "notes": "科目（中文）：经济学 Economics、系统科学 Systems Science、复杂性科学 Complexity Science、风险管理 Risk Management、国际政治经济 International Political Economy、时间社会学 Sociology of Time。语言：中文（含英文摘要）。结构：25 章，约 321 页。首选预览文件：entropy-spiral-print.pdf（印刷版）。引用格式见 CITATION.cff。",
   "license": "CC-BY-4.0",
   "upload_type": "publication",
   "publication_type": "book",
   "language": "zho",
   "access_right": "open",
-  "publication_date": "2026-10-16",
+  "publication_date": "2026-10-18",
   "related_identifiers": [
     {
       "identifier": "https://github.com/lyp0746/entropy-spiral",
@@ -45,19 +73,49 @@
       "scheme": "url"
     },
     {
-      "identifier": "10.5281/zenodo.23217100",
-      "relation": "isVersionOf",
+      "identifier": "https://github.com/lyp0746/knowledge-tradeoffs",
+      "relation": "isPartOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.23323277",
+      "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "10.5281/zenodo.23276888",
-      "relation": "isNewVersionOf",
+      "identifier": "https://doi.org/10.5281/zenodo.23412033",
+      "relation": "references",
       "scheme": "doi"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.23388629",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.23416220",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/lyp0746/emergence-critical",
+      "relation": "references",
+      "scheme": "url"
     },
     {
       "identifier": "https://github.com/lyp0746/knowledge-tradeoffs",
-      "relation": "isSupplementedBy",
+      "relation": "isDocumentedBy",
       "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/lyp0746/hotspot-bills",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23217100",
+      "relation": "isVersionOf",
+      "scheme": "doi"
     }
   ]
 }

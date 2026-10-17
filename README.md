@@ -5,7 +5,7 @@
 [![内容许可: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![代码许可: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
 [![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/latest)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23286403.svg)](https://doi.org/10.5281/zenodo.23286403)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23217100.svg)](https://doi.org/10.5281/zenodo.23217100)
 
 一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
 同时输出**印刷版 PDF、电子阅读版 PDF、EPUB 3 与 Markdown**。
@@ -236,11 +236,11 @@ v5 风险分解与缓冲、v6 错位的时间）的定位与变化，见 `versio
 若你在研究或写作中使用本书，请引用：
 
 > 李毅芃. 《错位的时间：为什么我们总是来不及》. 2026-10-14. CC BY 4.0.
-> DOI: [10.5281/zenodo.23286403](https://doi.org/10.5281/zenodo.23286403)
+> DOI: [10.5281/zenodo.23217100](https://doi.org/10.5281/zenodo.23217100)
 
 机器可读引用见 [`CITATION.cff`](CITATION.cff)。
 
-- **当前归档 DOI（最新）**：<https://doi.org/10.5281/zenodo.23286403>
+- **当前归档 DOI（最新）**：<https://doi.org/10.5281/zenodo.23217100>
 - **概念 DOI（无版本，始终指向最新）**：<https://doi.org/10.5281/zenodo.23217100>
 - **上一版归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23276888>
 - **更早的归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23264927>
@@ -288,7 +288,7 @@ cd assets/templates && xelatex book-template.tex && xelatex book-template.tex
 
 ## 归档 DOI（最新）
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23286403.svg)](https://doi.org/10.5281/zenodo.23286403)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23217100.svg)](https://doi.org/10.5281/zenodo.23217100)
 
 本书的**最新版本**以该 DOI 为准（Zenodo 自动指向最新版本）；引用格式见 `CITATION.cff`。
 本系列的通俗读本《只能选两样》与外部登记库见 [lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs)。

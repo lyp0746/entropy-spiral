@@ -143,7 +143,7 @@ cit_cn = defaultdict(set)
 for c in CHAPTERS:
     if c not in texts:
         continue
-    for m in re.finditer(r"([A-Z][A-Za-z\-]+)(?:\s*(?:&|and|等|，|,)\s*[A-Za-z\-]+)?\s*\((\d{4})\)", texts[c]):
+    for m in re.finditer(r"(?<![A-Za-z\-]\s)([A-Z][A-Za-z\-]+)(?:\s*(?:&|and|等|，|,)\s*[A-Za-z\-]+)?\s*\((\d{4})\)", texts[c]):
         cit_en[m.group(1)].add(m.group(2))
     for m in re.finditer(r"（([A-Z][A-Za-z\-]+)[，,]\s*(\d{4})）", texts[c]):
         cit_en[m.group(1)].add(m.group(2))
@@ -158,7 +158,7 @@ for c in CHAPTERS:
         # 逐条 <p> 解析，避免把“书名/副标题”误当作者
         for para in re.findall(r'<p>(.*?)</p>', m.group(1), re.S):
             t = re.sub(r"<[^>]+>", "", para)
-            r = re.match(r"\s*([A-Z][A-Za-z\-]+).*?\((\d{4})\)", t)
+            r = re.match(r"\s*(?<![A-Za-z\-]\s)([A-Z][A-Za-z\-]+).*?\((\d{4})\)", t)
             if r:
                 refs_defined[r.group(1)].add(r.group(2))
 R["A6_cited"] = {k: sorted(v) for k, v in sorted(cit_en.items())}
