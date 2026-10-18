@@ -31,7 +31,8 @@ CSS_DIR = os.path.join(HERE, "assets", "css")
 OUTPUT = os.path.join(HERE, "output")
 DATA_DIR = os.path.join(HERE, "data")
 
-FRONT = [("开篇　一个关于“来不及”的故事", "front_opening.html", "opening"),
+FRONT = [("总纲　现实中不存在无限", "front_finitude.html", "finitude"),
+         ("开篇　一个关于“来不及”的故事", "front_opening.html", "opening"),
          ("前言　为什么放弃周期论，为什么以时间为线索", "front_preface.html", "preface"),
          ("十分钟读懂本书", "front_quickstart.html", "quickstart"),
          ("理论地图　一份给读者的路线图", "front_roadmap.html", "roadmap"),
