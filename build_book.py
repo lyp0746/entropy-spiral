@@ -38,19 +38,18 @@ FRONT = [("总纲　现实中不存在无限", "front_finitude.html", "finitude"
          ("理论地图　一份给读者的路线图", "front_roadmap.html", "roadmap"),
          ("术语速查表　关键概念一览", "front_terms.html", "terms"),
          ("执行摘要（Executive Summary）", "front_executive_summary.html", "execsummary")]
-BACK = [("结语　承认与启蒙", "back_epilogue.html", "epilogue"),
-        ("后记　方法论的自限性与伦理立场", "back_postscript.html", "postscript"),
-        ("本系列（六本专著 + 两本通俗读本）", "back_popular_guide.html", "popguide"),
-        ("附录 A　数学补充", "appendix_a_math.html", "apxA"),
-        ("附录 B　方法论的跨领域应用", "appendix_b_domains.html", "apxB"),
-        ("附录 C　数据源与再现性", "appendix_c_data.html", "apxC"),
-        ("附录 D　跨域探索性检验：粮食与能源", "appendix_d_food_energy.html", "apxD"),
-        ("附录 E　术语表", "appendix_glossary.html", "apxE"),
-        ("附录 F　应用工具包：诊断指南与政策矩阵", "appendix_f_toolkit.html", "apxF"),
-        ("附录 G　情景库与可复现框架", "appendix_g_scenario_library.html", "apxG"),
-        ("附录 H　可得数据补充与数据缺口", "appendix_h_data_supplement.html", "apxH"),
-        ("附录 I　事前登记清单", "appendix_i_preregistration.html", "apxI"),
-        ("附录 J　案例数据详表", "appendix_j_cases.html", "apxJ")]
+BACK = [
+        ("结语　承认与启蒙", "back_epilogue.html", "apxe"),
+        ("本系列（六本专著 + 两本通俗读本）", "back_popular_guide.html", "apxp"),
+        ("后记　方法论的自限性与伦理立场", "back_postscript.html", "apxp"),
+        ("术语表", "back_glossary.html", "apxg"),
+        ("附录 A　形式化与证明", "appendix_a.html", "apxA"),
+        ("附录 B　数据与案例", "appendix_b.html", "apxB"),
+        ("附录 C　协议与稳健性", "appendix_c.html", "apxC"),
+        ("附录 D　可证伪登记簿", "appendix_d.html", "apxD"),
+        ("附录 E　增补：上游、边界与对话", "appendix_e.html", "apxE"),
+        ("附录 F　补编：数据、案例与登记", "appendix_f.html", "apxF"),
+]
 
 
 def load_json(p, default=None):
@@ -232,6 +231,46 @@ def build_copyright(book=None):
     return f'<div class="copyright-page">{html}</div>'
 
 
+
+def _part_para(text):
+    """部分导语/小结正文：按空行拆段，逐段包 <p>。"""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    out = []
+    for seg in re.split(r"\n\s*\n", text):
+        seg = " ".join(seg.split())
+        if seg:
+            out.append(f"<p>{seg}</p>")
+    return "\n".join(out)
+
+
+def build_part_page(part, idx=1, total=1):
+    """部分扉页：满版插图 + 序号 + 导语（spec v2 §1）。
+
+    图形在 assets/svg/part-NN.svg（暗色渐变、金线母题），文字在 HTML 里（可选中、可检索）。
+    """
+    title = part["part"]
+    intro = part.get("intro") or part.get("desc") or ""
+    return (f'<div class="part-page">'
+            f'<img class="part-art" src="assets/svg/part-{idx:02d}.svg" alt="">'
+            f'<div class="part-body">'
+            f'<div class="part-kicker">PART {idx:02d} / {total:02d}</div>'
+            f'<h1 class="part-title">{title}</h1>'
+            f'<div class="part-intro">{_part_para(intro)}</div>'
+            f'</div></div>')
+
+
+
+def build_part_summary(part):
+    """部分小结：最硬的一条、它依赖的假设、下一部分为什么从这里开始。"""
+    sm = part.get("summary") or ""
+    if not sm.strip():
+        return ""
+    return (f'<div class="part-summary"><span class="bt">本部分小结</span>'
+            f'{_part_para(sm)}</div>')
+
+
 def build(book, parts, ereader=False):
     blocks = [build_cover(), build_title_page(book), build_copyright(book), build_toc(parts)]
     for title, fname, anchor in FRONT:
@@ -240,18 +279,19 @@ def build(book, parts, ereader=False):
             with open(f, encoding="utf-8") as fh:
                 blocks.append(f'<div id="{anchor}">{fh.read()}</div>')
     written = []
-    for part in parts:
-        n_before = len(blocks)
+    for pi, part in enumerate(parts, 1):
+        if not any(c.get("written") and c.get("file") for c in part.get("chapters", [])):
+            continue
+        blocks.append(build_part_page(part, pi, len(parts)))
         for ch in part.get("chapters", []):
             if ch.get("written") and ch.get("file"):
                 f = os.path.join(SOURCE, ch["file"])
                 if os.path.exists(f):
-                    if len(blocks) == n_before:  # 部分扉页只加一次
-                        blocks.append(f'<h1 class="part-title">{part["part"]}</h1>')
                     with open(f, encoding="utf-8") as fh:
                         body = fh.read()
                     blocks.append(f'<div id="ch{ch["no"]}">{body}</div>')
                     written.append(ch["no"])
+        blocks.append(build_part_summary(part))
     if any(os.path.exists(os.path.join(SOURCE, f)) for _, f, _ in BACK):
         blocks.append('<h1 class="part-title">结语与附录</h1>')
     for title, fname, anchor in BACK:

@@ -1,0 +1,492 @@
+<h2 class="chapter">附录 F　补编：数据、案例与登记</h2>
+<div class="box"><p>本附录收存由正文迁出的数据索引、案例与登记接口；它们是证据与工具，不是论述。</p></div>
+
+<h3>C.1　数据源索引</h3>
+<table class="nat">
+<caption class="cap"><b>表 C.1　本书使用的主要数据源</b></caption>
+<tr><th class="l">数据</th><th class="l">来源</th><th class="l">获取方式</th><th class="l">质量</th></tr>
+<tr><td class="l">美国收入 Gini</td><td class="l">World Bank WDI（SI.POV.GINI）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">净财富前 1% ／ 收入前 1% ／ 后 50% 份额</td><td class="l">WID.world</td><td class="l">用户导出 CSV</td><td>A</td></tr>
+<tr><td class="l">贸易／GDP、FDI／GDP</td><td class="l">World Bank WDI</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">私人部门信贷／GDP</td><td class="l">World Bank WDI（FS.AST.PRVT.GD.ZS）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">政府债务／GDP（中央）</td><td class="l">World Bank WDI（GC.DOD.TOTL.GD.ZS）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">家庭／企业／广义政府债务／GDP</td><td class="l">IMF DataMapper（HH_LS、NFC_LS、GGXWDG_NGDP）</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">通胀、实际利率、贷款利率</td><td class="l">World Bank WDI</td><td class="l">API 自动抓取</td><td>A</td></tr>
+<tr><td class="l">Brent 油价（日度→年度）</td><td class="l">用户导出（EIA／公开来源）</td><td class="l">用户导出 CSV</td><td>A</td></tr>
+<tr><td class="l">政治稳定、政府效能、监管质量</td><td class="l">Worldwide Governance Indicators（WGI）</td><td class="l">用户导出 xlsx</td><td>A</td></tr>
+<tr><td class="l">前五大科技公司市值占比</td><td class="l">公开市值整理</td><td class="l">用户整理</td><td>B</td></tr>
+<tr><td class="l">政体存续时长与制度编码</td><td class="l">Seshat 全球历史数据库（Equinox 2020）</td><td class="l">公开数据 + 脚本抽取（analysis/fetch_seshat.py）</td><td>B</td></tr>
+<tr><td class="l">按来源国分解的商品进口额（芯片 8542、原油 2709、稀土 280530）</td><td class="l">UN Comtrade（comtradeapi.un.org）</td><td class="l">API 自动抓取（analysis/fetch_hhi_comtrade.py，需订阅密钥）</td><td>A</td></tr>
+<tr><td class="l">欧盟天然气进口（自俄罗斯与合计）</td><td class="l">Eurostat nrg_ti_gas</td><td class="l">API 自动抓取（analysis/fetch_eu_gas_dependence.py）</td><td>A</td></tr>
+<tr><td class="l">长期国债收益率（US/JP/DE/GB/MX）</td><td class="l">FRED（OECD long-term government bond yields）</td><td class="l">CSV 直取（analysis/fetch_debt_rg.py）</td><td>A</td></tr>
+<tr><td class="l">广义政府总债务/GDP（US/JP/DE/GB/MX）</td><td class="l">IMF WEO（经 FRED 镜像，因 IMF DataMapper 有访问限制）</td><td class="l">CSV 直取（analysis/fetch_debt_gdp.py）</td><td>A</td></tr>
+<tr><td class="l">粮食生产／贸易／价格／平衡表</td><td class="l">FAOSTAT 批量数据（QCL/TCL/PP/FBS）</td><td class="l">bulk ZIP 下载 + 脚本（analysis/food_energy_validation.py）</td><td>A</td></tr>
+<tr><td class="l">按伙伴国分解的粮食贸易（买家集中度）</td><td class="l">FAOSTAT Detailed Trade Matrix</td><td class="l">bulk ZIP 下载 + 脚本（analysis/food_trade_diversification.py）</td><td>A/B</td></tr>
+<tr><td class="l">粮食期末库存（缓冲）</td><td class="l">USDA FAS PS&D</td><td class="l">bulk CSV 下载 + 脚本（analysis/fetch_psd_reserves.py）</td><td>A/B</td></tr>
+</table>
+<div class="datasrc"><b>说明：</b>证据等级 A＝官方统计可直接复现；B＝公开估算、口径稳定；C＝稀疏或构造性序列，仅可用于方向判断。<b>使用须遵守各来源许可；出版前应核校最新版本。</b></div>
+
+<h3>C.1d　Θ 代理的数据收集偏差审计（由第 5 章移入）</h3>
+
+<p class="lead">本节承接第 5 章警告 5.9.1（代理高度共线），回答一个更难的反驳：<b>共同上升会不会只是共同的“数据收集偏差”？</b>正文因篇幅只保留结论，完整的口径排查与独立源对照在此登记，供复核。</p>
+
+<p>警告 5.9.1 承认了代理高度共线，但这引出一个更难处理的反驳：<b>如果共同上升趋势不是真实现象，而是共同的“数据收集偏差”，怎么办？</b>这种偏差至少有两种形态。其一，<b>统计口径变更</b>：1980—2024 年间，各国统计机构多次修改收入、金融利润与债务的定义（例如 SNA 2008 将部分金融工具重新分类），若变化方向与“Θ 上升”一致，就会制造共同趋势。其二，<b>共同方法源头</b>：多个代理可能实际上来自同一个上游数据源，则“六重”只是同一测量的六种切法。本节做两件事：追查口径变更，并用独立源交叉验证。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.4　共同数据收集偏差的两类来源与排查</b></caption>
+<tr><th class="l">偏差类型</th><th class="l">具体表现</th><th class="l">对 Θ 方向的影响</th><th class="l">排查方法</th></tr>
+<tr><td class="l">统计口径变更</td><td class="l">SNA 1993/2008 对金融中介服务的重新分类；各国 Gini 调查口径不一；债务定义（广义／中央）变更</td><td class="l">可能虚增金融利润与债务水平，但<b>不改变 1980—2024 的方向</b>（口径变更多为一次性水平调整）</td><td class="l">对照官方修订说明；用变更前后同口径子区间重算趋势</td></tr>
+<tr><td class="l">共同方法源头</td><td class="l">多个代理共用同一底层数据（如均依赖税收申报或同一市场数据库）</td><td class="l">若源头偏差与时间同向，则共线可能虚假</td><td class="l">用<b>不共享源头</b>的独立数据交叉验证（下表）</td></tr>
+<tr><td class="l">样本与幸存偏差</td><td class="l">合并与退市使集中度指标自动上升</td><td class="l">可能高估企业集中度的上升</td><td class="l">用含退市公司的全样本重算；区分“内生集中”与“市场结构变化”</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>方法审计（质量 C）。<b>注释：</b>排查的目标不是“排除所有偏差”（那不可能），而是判断<b>偏差能否单独制造出本书报告的方向</b>；若不能，则共线更可能反映真实机制耦合。</div>
+
+<p>独立源交叉验证的想法很简单：<b>如果 Θ 的上升是真实的，那么不共享源头、不服务于同一政策叙事的外部信息，也应看到同向变化。</b>表 C.5 列出四组交叉验证；其中两组的证据等级为 A（税收数据与公司申报），另两组为 B（富豪榜与学术元数据）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.5　Θ 代理的独立源交叉验证</b></caption>
+<tr><th class="l">代理</th><th class="l">原数据源</th><th class="l">独立验证源（不共享源头）</th><th class="l">方向是否一致</th><th>证据等级</th></tr>
+<tr><td class="l">P2b 财富集中</td><td class="l">WID / Saez–Zucman（税收资本化）</td><td class="l">美联储 DFA（分配金融账户，调查+Hedge 估计）；福布斯富豪榜</td><td class="l">一致（峰值均在 2015—2021 前后）</td><td>A/B</td></tr>
+<tr><td class="l">P3 金融利润份额</td><td class="l">BEA 行业统计</td><td class="l">上市公司财报汇总（Compustat）；金融业增加值 GDP 份额</td><td class="l">一致（2001 峰值、危机后恢复）</td><td>A</td></tr>
+<tr><td class="l">P5 企业集中度</td><td class="l">指数权重（公开市场）</td><td class="l">行业 CR4／HHI 的学术数据库；SEC 申报</td><td class="l">部分一致（上升集中在网络效应行业，非全面）</td><td>A/B</td></tr>
+<tr><td class="l">P6 债务／GDP</td><td class="l">IMF Global Debt Monitor</td><td class="l">BIS 信用统计；各国财政部债务公报</td><td class="l">一致（水平差异来自口径，方向一致）</td><td>A</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>详见附录 数据与案例 表 C.1。<b>证据等级：</b>税收与申报类为 A，调查与榜单类为 B。<b>注释：</b>独立源方向一致，<b>降低了“共同数据偏差制造共同趋势”的可能性，但不完全排除它</b>；因此本节不把交叉验证当作证明，只当作对共线警告的限定。</div>
+
+<p>此外，学术元数据库、NGO／国际组织报告与企业级申报构成三类非官方验证源；它们立场各异，因而不太可能与官方统计共享同一偏差方向。</p>
+
+<div class="warning"><span class="bt">警告 C.2　交叉验证的局限：它降低而非消除风险</span>
+独立源交叉验证能排除“单一源头偏差”，却无法排除“多个源头都受同一宏观过程影响”。例如，1980 年后的金融化本身就可能同时改变税收数据、调查数据与公司申报——这种情况下各源一致，却仍是同一机制的多个侧面。<b>因此，本节得出的结论仍是条件性的：Θ 的上升方向在四种独立源下一致，但“独立”只到“不共享数据管道”为止，不到“相互独立的因果过程”为止。</b>这一限制已登记在第 11 章表 11.4 的 P4.2。</div>
+
+<h4 class="arg">C.1d-2　代理的因子结构：一个共同过程，还是多个？</h4>
+
+<p>表 5.4 的相关矩阵说明代理两两高度共线，但没有回答“共有几个独立维度”。对五个长期代理（1980—2020）做主成分分析（PCA）与平行分析（脚本 <code>analysis/theta_sensitivity.py</code>，结果见 <code>analysis/results/theta_sensitivity.json</code> 的 <code>pca</code> 字段），得到三个口径下的完整特征值：</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.7　五个长期代理的主成分特征值与有效维数（1980—2020）</b></caption>
+<tr><th class="l">输入矩阵</th><th>λ₁</th><th>λ₂</th><th>λ₃</th><th>λ₄</th><th>λ₅</th><th>PC1 方差</th><th>N<sub>eff</sub></th></tr>
+<tr><td class="l">水平序列</td><td>4.60</td><td>0.32</td><td>0.06</td><td>0.01</td><td>0.00</td><td>92.1%</td><td><b>1.17</b></td></tr>
+<tr><td class="l">一阶差分</td><td>3.05</td><td>0.94</td><td>0.49</td><td>0.42</td><td>0.11</td><td>60.9%</td><td>2.36</td></tr>
+<tr><td class="l">逐代理去趋势</td><td>4.20</td><td>0.41</td><td>0.22</td><td>0.14</td><td>0.03</td><td>84.1%</td><td>1.40</td></tr>
+</table>
+
+<table class="nat">
+<caption class="cap"><b>表 C.8　PC1 载荷（变量与第一主成分的相关）</b></caption>
+<tr><th class="l">代理</th><th>水平序列</th><th>一阶差分</th><th>逐代理去趋势</th></tr>
+<tr><td class="l">P2 收入不平等</td><td>0.93</td><td>0.38</td><td>0.85</td></tr>
+<tr><td class="l">P2b 财富集中</td><td>0.99</td><td>0.78</td><td>0.95</td></tr>
+<tr><td class="l">P3 金融利润份额</td><td>0.97</td><td>0.81</td><td>0.87</td></tr>
+<tr><td class="l">P5 企业集中度</td><td>0.96</td><td><b>−0.86</b></td><td><b>−0.93</b></td></tr>
+<tr><td class="l">P6 债务／GDP</td><td>0.95</td><td><b>−0.95</b></td><td><b>−0.98</b></td></tr>
+</table>
+<div class="datasrc"><b>方法：</b>逐代理 z 分数后相关矩阵特征分解；有效维数 N<sub>eff</sub>=K²/Σλ²；平行分析（2000 次随机模拟的 95 分位）与 Kaiser 准则（λ&gt;1）在水平口径下均只保留 <b>1</b> 个成分。<b>证据等级：</b>C（统计量合成，输入含 B 级近似序列）。<b>关键读法：</b>（一）水平序列 PCA 表明五个代理几乎只测一个维度（N<sub>eff</sub>≈1.2），所以“六个代理＝六份独立证据”不成立，V 的 Θ 分量应读作一条综合轴；（二）一阶差分剔除共同趋势后，PC1 仍占 60.9%、N<sub>eff</sub>≈2.4，说明共同结构并非纯趋势假象，但也不再是单一维度；<b>（三）差分后企业集中度与债务的载荷变号</b>，提示“去趋势后的短期共动”包含方向相反的分量，不得把它当作 Θ 的短期信号。<b>结论：</b>代理测的是“一个主导过程 + 二至三个次要维度”的混合，主导过程约占七成到九成方差。本节不改变第 5 章的方向判断，只进一步收窄其可声称的精度。</div>
+
+<h3>C.3　数据刷新工作流</h3>
+<p>监测体系的价值在于<b>可更新</b>。推荐流程：</p>
+<ol>
+<li>每季度重跑 <code>fetch_and_inject.py</code> 与 <code>fetch_imf.py</code>（API 数据），自动刷新。</li>
+<li>每年重新导出 WID／WGI（用户导出），运行 <code>parse_wid.py</code>。</li>
+<li>运行 <code>audit.py</code>，核对是否有数值缺失或口径变化。</li>
+<li>在"可证伪登记簿"（第 11 章表 11.4）记录本期信号与判定。</li>
+</ol>
+<div class="datasrc"><b>设计原则：</b>数据与正文分离（占位符 <code>&#123;&#123;D:...&#125;&#125;</code> → <code>injected.json</code>）；因此更新数据无需改动正文，只需重跑脚本与构建。</div>
+
+<h3>F.1　适用性速查</h3>
+
+<p><b>第一步：识别冲击类型。</b>若冲击具有“单点／单国／明确的 Hazard 定义／可界定受害范围”四个特征，则框架适用；若冲击是“全球同时失效”或“Hazard 为多种可能的不确定组合”，则应先拆分为多个情景，或改用政治判断。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 F.1　适应能力五因素的可测度自检</b></caption>
+<tr><th class="l">因素</th><th class="l">要回答的问题</th><th class="l">答案清晰（✓）</th><th class="l">答案模糊（~）</th><th class="l">无法回答（✗）</th></tr>
+<tr><td class="l">Reserves 缓冲</td><td class="l">冲击对象能支撑多久而不失去核心功能？</td><td class="l">进 ✓</td><td class="l">进 ~</td><td class="l">跳 ✗</td></tr>
+<tr><td class="l">Substitutability 替代</td><td class="l">有替代品／迂回方案吗？多久可用？</td><td class="l">进 ✓</td><td class="l">进 ~</td><td class="l">跳 ✗</td></tr>
+<tr><td class="l">Diversification 多元化</td><td class="l">对手方集中度有数据吗（HHI／有效数量）？</td><td class="l">进 ✓</td><td class="l">进 ~</td><td class="l">跳 ✗</td></tr>
+<tr><td class="l">Θ 垄断</td><td class="l">定价权有多强（份额 + 毛利溢价 + 壁垒）？</td><td class="l">进 ✓</td><td class="l">进 ~</td><td class="l">跳 ✗</td></tr>
+<tr><td class="l">κ 耦合</td><td class="l">冲击经哪些路径多快传导？幅度多大？</td><td class="l">进 ✓</td><td class="l">进 ~</td><td class="l">跳 ✗</td></tr>
+<tr><td class="l">τ 时间错配</td><td class="l">协调最小时间 vs 可容许时间谁大？</td><td class="l">进 ✓</td><td class="l">进 ~</td><td class="l">跳 ✗</td></tr>
+</table>
+<div class="datasrc"><b>规则：</b>4—5 个 ✓ → 完整框架，Risk 估计的序数精度较高；2—3 个 ✓ → 部分框架，只能排序；0—1 个 ✓ 或出现 ✗ → <b>不使用框架</b>，改用情景分岔与政治判断（表 13.3）。</div>
+
+<h3>F.4　政策决策矩阵</h3>
+
+<p>当诊断给出高风险，下一步是选择政策。图 F.1 给出六类冲击与七种政策选项的对应关系。矩阵的核心信息是：<b>大多数冲击的“首选政策”彼此不同；而两种被直觉偏爱的工具——价格管制与资本管制——在多数情形下是次优甚至有害的。</b></p>
+
+<img class="fig" src="assets/svg/fig-policy-matrix.svg" alt="冲击类型 × 政策选项有效性矩阵">
+<div class="cap"><b>图 F.1　冲击类型 × 政策选项：有效性矩阵</b>。深绿为首选，浅绿为次选，灰为无效，红为可能有害。判断为方向性（质量 C）。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 F.4　六类冲击的政策要点</b></caption>
+<tr><th class="l">冲击类型</th><th class="l">主导脆弱因素</th><th class="l">首选政策</th><th class="l">次选</th><th class="l">无效或有害</th><th class="l">时间窗口</th></tr>
+<tr><td class="l">产品冲击（芯片、油）</td><td class="l">缓冲不足</td><td class="l">战略库存</td><td class="l">产地多元化</td><td class="l">价格管制</td><td class="l">60 天</td></tr>
+<tr><td class="l">区域农业危机</td><td class="l">买家集中</td><td class="l">多元化协议</td><td class="l">替代性支持</td><td class="l">产地补贴</td><td class="l">30 天</td></tr>
+<tr><td class="l">金融冲击</td><td class="l">响应慢</td><td class="l">央行／IMF 协调</td><td class="l">汇率干预</td><td class="l">资本管制</td><td class="l">5 天</td></tr>
+<tr><td class="l">供应链断裂</td><td class="l">κ 高</td><td class="l">产能疏散</td><td class="l">库存前置</td><td class="l">单一路线投资</td><td class="l">30 天</td></tr>
+<tr><td class="l">垄断滥用</td><td class="l">Θ 极高</td><td class="l">反垄断／增产</td><td class="l">需求替代</td><td class="l">价格管制</td><td class="l">12 月</td></tr>
+<tr><td class="l">系统债务危机</td><td class="l">I 失效</td><td class="l">联合流动性</td><td class="l">财政整顿</td><td class="l">通胀定向</td><td class="l">1 天</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>政策映射（质量 C）。<b>注释：</b>“首选”指在该情景中边际效果最高；“时间窗口”指窗口关闭后政策效果急剧下降。现实中极少有单一工具足够，须组合使用。</div>
+
+<div class="warning"><span class="bt">警告 F.4.1　两种直觉偏爱的工具为何常常有害</span>
+<b>价格管制</b>：在供应紧张时强制低价，会使生产者退出、库存进一步枯竭，反而延长短缺（2021—2022 年芯片短缺期间的经验）。<b>资本管制</b>：在外资撤离时限制出金，会立即触发评级下调与长期融资成本上升，把短期危机延长为长期不信任（2010 年希腊、2015 年阿根廷的经验）。<b>它们的问题不在于目标错误，而在于工具与系统反应不匹配——在高耦合系统中，工具的后果由系统决定，而非由意图决定。</b></div>
+
+<h3>H.1　可得数据总表（全球与美国，主观测窗口 1980—2024）</h3>
+
+<p><b>观测窗口统一声明：</b>本书的<b>主观测窗口为 1980—2024（45 年）</b>；表中出现的 1970 年代或 2025 年数据，均作为“历史延伸”或“最新数据”单独标注，不计入主观测窗口（详见“理论地图”第 8 节）。下表只收录“官方统计或稳定公开估算、口径可复现”的指标（质量 A/B）。它不提供新的因果结论，只把正文分散引用的数值集中呈现，方便横向比对。所有数值均为百分比（除注明者外）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.1　关键指标的长期轨迹（部分年份）</b></caption>
+<tr><th class="l">指标</th><th class="l">来源与口径</th><th>1980</th><th>2000</th><th>2015</th><th>2024/25</th><th class="l">方向</th></tr>
+<tr><td class="l">世界贸易/GDP</td><td class="l">World Bank WDI（NE.TRD.GNFS.ZS）</td><td>{{D:world_trade_gdp_1980}}</td><td>{{D:world_trade_gdp_2000}}</td><td>{{D:world_trade_gdp_2015}}</td><td>{{D:world_trade_gdp_2025}}<sup>a</sup></td><td class="l">上升（商品耦合）</td></tr>
+<tr><td class="l">世界 FDI/GDP</td><td class="l">World Bank WDI（BX.KLT.DINV.WD.GD.ZS）</td><td>{{D:world_fdi_gdp_1980}}</td><td>{{D:world_fdi_gdp_2000}}</td><td>{{D:world_fdi_gdp_2015}}</td><td>{{D:world_fdi_gdp_2024}}</td><td class="l">见顶后回落（金融耦合可逆）</td></tr>
+<tr><td class="l">美国收入 Gini</td><td class="l">World Bank WDI（SI.POV.GINI）</td><td>{{D:us_gini_1980}}</td><td>{{D:us_gini_2000}}</td><td>{{D:us_gini_2015}}</td><td>{{D:us_gini_2024}}</td><td class="l">2015 后趋平</td></tr>
+<tr><td class="l">美国政府债务/GDP</td><td class="l">World Bank / IMF（近似）</td><td>—</td><td>约 55</td><td>{{D:us_gov_debt_gdp_2015}}</td><td>{{D:us_gov_debt_gdp_2024}}</td><td class="l">持续上升</td></tr>
+<tr><td class="l">美国贸易/GDP</td><td class="l">World Bank WDI（NE.TRD.GNFS.ZS）</td><td>{{D:usa_trade_gdp_1980}}</td><td>{{D:usa_trade_gdp_2000}}</td><td>{{D:usa_trade_gdp_2015}}</td><td>{{D:usa_trade_gdp_2024}}</td><td class="l">平台期</td></tr>
+<tr><td class="l">美国前 1% 财富份额</td><td class="l">WID / Saez–Zucman（近似）</td><td>{{D:us_top1_wealth_1980}}</td><td>—</td><td>约 35.8（峰值）</td><td>约 34.8</td><td class="l">2015 后走平</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI、IMF、WID.world；脚本见 <code>analysis/fetch_*.py</code>，注入值见 <code>data/injected.json</code>。<b>证据等级：</b>A（官方，除注明者）；美国债务/GDP 为 A/B（口径近似）。<b>注释：</b><sup>a</sup> 世界贸易/GDP 的 2025 值为最新可得年度；不同年份标注见各序列。表中“方向”仅指样本内趋势，不作外推。</div>
+
+<p>下表把第 8 章合成的时间序列 V(t) 的关键节点集中呈现。它说明“结构脆弱性”不是单一指标，而是多个已得序列按机制权重的合成；其数值会随权重与操作化改变，因此只用于同口径内部比较。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.2　脆弱性合成指标 V 与 V<sub>ι</sub> 的关键年份（真实序列，2000—2024）</b></caption>
+<tr><th class="l">年份</th><th>V</th><th>V<sub>ι</sub></th><th>Θ</th><th>κ</th><th class="l">ι（政治一致性）</th><th class="l">读数</th></tr>
+<tr><td class="l">2000</td><td>0.058</td><td>0.058</td><td>0.062</td><td>0.085</td><td>1.000</td><td class="l">低耦合、高一致性</td></tr>
+<tr><td class="l">2008</td><td>0.621</td><td>0.729</td><td>0.458</td><td>0.861</td><td>0.653</td><td class="l">高耦合冲击年</td></tr>
+<tr><td class="l">2015</td><td>0.494</td><td>0.571</td><td>0.627</td><td>0.503</td><td>0.686</td><td class="l">结构高位</td></tr>
+<tr><td class="l">2020</td><td>0.389</td><td>0.580</td><td>0.701</td><td>0.218</td><td>0.017</td><td class="l">κ 低但 ι 触底：低谷不等于安全</td></tr>
+<tr><td class="l">2022</td><td>0.843</td><td>1.265</td><td>0.738</td><td>1.000</td><td>0.000</td><td class="l">样本内峰值：高耦合 × 最低一致性</td></tr>
+<tr><td class="l">2024</td><td>0.629</td><td>0.932</td><td>0.816</td><td>0.587</td><td>0.034</td><td class="l">高位震荡</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>真实序列合成（<code>analysis/v_timeseries.py</code>，结果 <code>analysis/results/v_timeseries.json</code>）。<b>证据等级：</b>输入为 A/B，合成为 C（权重含先验）。<b>注释：</b>各分量已按 [0,1] 归一化；V 与 V<sub>ι</sub> 只在同一操作化内部可比，不可跨操作化或跨领域比较。2022 年 V<sub>ι</sub> 峰值约 1.27，是样本内最大值。</div>
+
+<p>下表把观测窗口内<b>中国</b>的关键开放指标单独列出。它的意义不是“给中国下一张标签”，而是提供一个支撑本书核心修正的对照组：<b>中国的商品耦合与外资耦合都在 2010 年前后见顶后回落，而金融化（信贷）持续上升、收入 Gini 见顶回落。</b>这说明 Θ 与 κ 在各国都不是单调上升的（见表 7.1c 注释）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.1b　中国关键开放指标（1990—2024，质量 A/B）</b></caption>
+<tr><th class="l">指标</th><th class="l">来源与口径</th><th>1990</th><th>2000</th><th>2010</th><th>2015</th><th>2020</th><th>2024</th><th class="l">方向</th></tr>
+<tr><td class="l">贸易/GDP（%）</td><td class="l">World Bank WDI（NE.TRD.GNFS.ZS）</td><td>24.2</td><td>39.0</td><td><b>49.9</b></td><td>38.7</td><td>34.3</td><td>38.0</td><td class="l">2010 见顶后回落</td></tr>
+<tr><td class="l">FDI 净流入/GDP（%）</td><td class="l">World Bank WDI（BX.KLT.DINV.WD.GD.ZS）</td><td>1.0</td><td>3.4</td><td><b>3.9</b></td><td>2.1</td><td>1.7</td><td>0.2</td><td class="l">见顶后大幅回落</td></tr>
+<tr><td class="l">私营部门信贷/GDP（%）</td><td class="l">World Bank WDI（FS.AST.PRVT.GD.ZS）</td><td>86.0</td><td>110.0</td><td>124.4</td><td>149.6</td><td>179.1</td><td><b>194.3</b></td><td class="l">持续上升（金融化）</td></tr>
+<tr><td class="l">收入 Gini</td><td class="l">World Bank WDI（SI.POV.GINI）</td><td>32.2</td><td>—</td><td><b>43.7</b></td><td>38.6</td><td>37.1</td><td>36.0<sup>a</sup></td><td class="l">2010 见顶后回落</td></tr>
+<tr><td class="l">制造业/GDP（%）</td><td class="l">World Bank WDI（NV.IND.MANF.ZS）</td><td>—</td><td>—</td><td>31.1</td><td>28.4</td><td>25.6</td><td>24.8</td><td class="l">持续下降</td></tr>
+<tr><td class="l">互联网用户（%）</td><td class="l">World Bank WDI（IT.NET.USER.ZS）</td><td>0.0</td><td>1.8</td><td>34.3</td><td>50.3</td><td>70.1</td><td><b>92.0</b></td><td class="l">快速上升（信息耦合）</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI，中国（CHN）；脚本 <code>analysis/fetch_china_indicators.py</code>，结果 <code>data/china_indicators.json</code>。<b>证据等级：</b>A（官方序列，除注明者）。<b>注释：</b><sup>a</sup> Gini 最新可得年份为 2022（2023—24 未公布）。进口来源集中度（芯片 0.231、铁矿石 0.460、大豆 0.542、稀土 0.742、原油 0.099，2023）见 <code>data/china_import_hhi.json</code> 与表 7.1c。<b>已知缺口：</b>中国广义政府债务/GDP 无 WB WDI 开放序列，本表不填入（不伪造）；口径为“私营部门信贷”，不是政府债务。</div>
+
+<h3>H.4　贡献入口</h3>
+
+<p>上表的“可获取但尚未整理”与“结构性不可得”两类，是后续研究最有价值的方向。本书建议以“协作数据库”的方式推进，而不是等待单一作者补齐：</p>
+
+<ul>
+<li><b>制度反应时间案例库</b>：每一条记录包含“信息首次出现—决策公布—开始执行”三个时间戳与来源链接。可由不同国家的作者分工贡献。</li>
+<li><b>信息失真代理</b>：在无法获得内部数据时，用可公开观测的代理（统计修订幅度、上报与抽查的偏差）替代，并公开代理的局限。</li>
+<li><b>知识验证追踪</b>：对 AI 生成论文的“声称—验证”过程做长期追踪，数年后即可形成第一批时间序列。</li>
+</ul>
+
+<p>这些工作的共同要求只有一条：<b>把“没测到”和“测到了”一样认真地记录。</b>这正是本书反复主张的方法论——承认边界，并把边界写进文档。</p>
+
+<h3>J.5　Θ 代理三：金融利润份额（由第 5.4 节移入）</h3>
+
+<p>金融化是 1980 年以来 Θ 上升最主要的机制之一：当积累从 M–C–M′（生产—出售）转向 M–M′（纯粹的索取权交易），金融部门在企业利润中的份额就会上升，而这正是"剩余来自控制而非生产"的定义。</p>
+
+<h4 class="arg">机制论证：金融化如何推高 Θ</h4>
+<p>金融化的制度起点是 1970—80 年代的三个变化：<b>利率自由化</b>（解除存款利率上限，银行转向交易与收费业务）、<b>放松管制</b>（跨业经营、衍生品扩张）、以及<b>股东价值革命</b>（管理层薪酬与股价挂钩，企业行为从"增长"转向"市值管理"）。三者共同把经济活动的重心从"创造现金流"转向"索取现金流"。用 Θ 的语言说：金融不生产剩余，而是重新分配剩余；当金融部门分得的份额上升时，Θ 上升。</p>
+
+<h4 class="arg">证据呈现：一条"上升—崩溃—更高"的曲线</h4>
+<p>美国金融业利润占全部企业利润的比重在 1980 年约 14%，2000 年前后约 23%，2007 年金融危机前达到峰值，2008—09 年崩溃，随后在救助与低利率环境下<b>恢复到更高水平</b>，2020 年约 25%（ρ = +0.90，n = 5，p = 0.037）。这条曲线的形状是关键：<b>危机没有清算金融部门，反而通过公共救助巩固了它。</b><b>真实数据补充：</b>世界银行 WDI 的私人部门信贷／GDP 提供了金融化的独立读数：美国从 1980 年的 {{D:us_private_credit_gdp_1980}}% 升至 2000 年的 {{D:us_private_credit_gdp_2000}}%、2015 年的 {{D:us_private_credit_gdp_2015}}%、2024 年的 {{D:us_private_credit_gdp_2024}}%（质量 A）——与金融利润份额方向一致，但上升更平缓、更连续。</p>
+
+<h4 class="arg">三阶段：金融化的完整周期</h4>
+<p>用真实的私人部门信贷／GDP 序列（世界银行 WDI，质量 A），可以把 1980 年以来的金融化分为三个阶段。三阶段的机制不同，对 Θ 的含义也不同。</p>
+<table class="nat">
+<caption class="cap"><b>表 J.11　美国私人部门信贷／GDP 的三阶段（真实数据）</b></caption>
+<tr><th class="l">阶段</th><th class="l">年份</th><th>信贷/GDP</th><th class="l">驱动力</th><th class="l">对 Θ 的含义</th></tr>
+<tr><td class="l">第一波：自由化</td><td class="l">1980—2000</td><td>{{D:us_private_credit_gdp_1980}}% → {{D:us_private_credit_gdp_2000}}%</td><td class="l">利率自由化、放松管制</td><td class="l">内生膨胀，Θ 上升</td></tr>
+<tr><td class="l">第二波：杠杆狂欢</td><td class="l">2000—2007</td><td>{{D:us_private_credit_gdp_2000}}% → {{D:us_private_credit_gdp_2007}}%</td><td class="l">衍生品、影子银行、房产泡沫</td><td class="l">加速，Θ 达峰值</td></tr>
+<tr><td class="l">危机与托底</td><td class="l">2008—2024</td><td>{{D:us_private_credit_gdp_2008}}% → {{D:us_private_credit_gdp_2024}}%</td><td class="l">央行扩表、低利率</td><td class="l"><b>外生支撑，Θ 形态转换</b></td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>World Bank WDI（FS.AST.PRVT.GD.ZS，美国）。<b>证据等级：</b>A。<b>注释：</b>第一、二波为“内生膨胀”（市场驱动）；2008 后转为“外生支撑”（政策驱动），信贷增速大幅放缓但总量停留高位。</div>
+<p>三阶段的对比揭示了一个关键转变：<b>2008 年前，金融化是“自我融资的膨胀”（信贷自由扩张）；2008 年后，变成“央行担保的膨胀”。</b>危机后美联储资产负债表大幅扩张，而私人信贷增速下降——<b>金融化从市场驱动转为政策托底</b>。这解释了为何金融利润份额在 2008 后能“恢复到更高水平”而非崩溃：它不是市场的胜利，而是公共信用对私人资产负债表的接管。这一点直接呼应第 9 章的债务永续化机制。</p>
+
+<h4 class="arg">反驳处理：2008 年为什么不是 Θ 的回落信号</h4>
+<p>若 2008 年金融危机是对租佃化的"重置"，则金融利润份额应长期下降。但数据相反。原因在于危机后的政策选择：量化宽松把私人债务转为公共债务，救助保护了"太大而不能倒"的机构，而低利率抬高了资产价格。结果是<b>私人部门的债务压力被社会化，而金融中介的抽取能力被制度化</b>。这直接对应第 9 章的债务永续化机制：压力没有消失，只是被转移。因此 2008 年不是 Θ 的回落，而是 Θ 的一次<b>形态转换</b>（从私人杠杆租佃转向公共债务租佃）。</p>
+
+<h4 class="arg">条件结论</h4>
+<p>金融利润代理说明：Θ 的当代上升有明确的机制载体（金融化），且其韧性来自危机管理而非市场效率。但它也暴露了一个反例风险：<b>金融利润可能部分是风险承担与监管套利的补偿，而非纯粹租金</b>。因此 P3 支持方向，但不能单独承担"垄断抽取上升"的论断。</p>
+
+
+<h3>C.1b　质量 C（指示性／构造性）数据与图表的完整清单</h3>
+<p>为避克"虚拟数据混入真实数据"，本节把全书所有<b>指示性、示意性或构造性</b>（质量 C）的内容集中登记。凡在此表之外出现的数值，均来自表 C.1 所列的公开真实序列（质量 A 或 B），或由这些序列直接计算得出。<b>本书不存在将构造序列标注为实测数据的情形：每—质量 C 处均在标题与脚注两处标注。</b></p>
+<table class="nat">
+<caption class="cap"><b>表 C.2　质量 C（指示性／构造性）数据与图表清单</b></caption>
+<tr><th class="l">位置</th><th class="l">内容</th><th class="l">性质</th><th class="l">使用规则</th></tr>
+<tr><td class="l">表 1.1</td><td class="l">相空间维度与周期模型有效性的示意关系</td><td class="l">定性对照</td><td class="l">仅示意，不作证据</td></tr>
+<tr><td class="l">表 3.1、3.2、3.4；图 3.2</td><td class="l">信息失效、复杂度两端失效、失稳时刻；反馈通道与失配区</td><td class="l">说明性</td><td class="l">仅方向，数值不可引用</td></tr>
+<tr><td class="l">表 3.3、3.5、3.6</td><td class="l">三通道特征、五类反馈通道、反馈拓扑同构类</td><td class="l">说明性／理论分类</td><td class="l">仅方向，不可引用数值</td></tr>
+<tr><td class="l">表 5.5、5.6</td><td class="l">行业集中度、前现代垄断／地租估计</td><td class="l">量级示意</td><td class="l">不可引用数值</td></tr>
+<tr><td class="l">表 6.2</td><td class="l">三系统 I 与 Θ 的示意定位</td><td class="l">量级示意</td><td class="l">不可精确比较</td></tr>
+<tr><td class="l">附录 数据与案例 表 C.6；图 7.1、7.2</td><td class="l">κ 三维度示意轨迹与通道</td><td class="l">构造序列</td><td class="l">正式出版须以官方序列替换</td></tr>
+<tr><td class="l">表 8.2、8.3</td><td class="l">V 的权重方案与先验区间</td><td class="l">先验范围</td><td class="l">待敏感性检验</td></tr>
+<tr><td class="l">表 9.1—9.8；图 9.1—9.3</td><td class="l">三案例基准、节点索引、债务情景</td><td class="l">指示性赋值</td><td class="l">结构指标，非风险概率</td></tr>
+<tr><td class="l">表 B.1</td><td class="l">诊断模板填写范例</td><td class="l">指示性</td><td class="l">仅示例</td></tr>
+</table>
+<div class="datasrc"><b>使用规则（三条）：</b><b>（一）</b>凡质量 C 处，标题与脚注双重标注，正文提及时明确"示意／指示"；<b>（二）</b>质量 C 的数值只用于方向与量级讨论，不得用于水平比较或精确引用；<b>（三）</b>需要水平结论的地方，仅使用质量 A/B 的真实序列（表 C.1），并在图表标题注明来源与年份。<b>备注：</b>图表中同时含真实序列与示意的位置已在图注中分开说明。</div>
+
+<h3>C.1e　κ 三维度的指示性构造序列（由第 7 章移入）</h3>
+
+<p>第 7.3 节的真实序列（表 7.1b、7.1c）已取代下列指示性构造；此处保留构造序列与合成规则，供复核“示意与实际有多少偏差”。</p>
+
+<p></p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.6　全球耦合的三个维度（指示性构造，1980—2026，质量 C）</b></caption>
+<tr><th class="l">维度</th><th class="l">指标</th><th>1980</th><th>2000</th><th>2010</th><th>2020</th><th>2026</th></tr>
+<tr><td class="l">商品耦合</td><td class="l">贸易开放度</td><td>0.23</td><td>0.28</td><td>0.30</td><td>0.31</td><td>0.32</td></tr>
+<tr><td class="l">商品耦合</td><td class="l">供应链集中度</td><td>0.42</td><td>0.68</td><td>0.85</td><td>0.87</td><td>0.89</td></tr>
+<tr><td class="l">金融耦合</td><td class="l">跨境投资/GDP</td><td>0.07</td><td>0.17</td><td>0.25</td><td>0.28</td><td>0.30</td></tr>
+<tr><td class="l">金融耦合</td><td class="l">央行资产关联</td><td>0.21</td><td>0.54</td><td>0.78</td><td>0.82</td><td>0.84</td></tr>
+<tr><td class="l">信息耦合</td><td class="l">互联网普及</td><td>0.00</td><td>0.05</td><td>0.30</td><td>0.60</td><td>0.66</td></tr>
+<tr><td class="l">信息耦合</td><td class="l">平台数据集中</td><td>0.08</td><td>0.35</td><td>0.72</td><td>0.92</td><td>0.95</td></tr>
+<tr><td class="l"><b>合成</b></td><td class="l"><b>耦合指数 κ</b></td><td><b>0.00</b></td><td><b>0.41</b></td><td><b>0.77</b></td><td><b>0.94</b></td><td><b>1.00</b></td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>指示性构造（质量 C）。<b>正式来源应为：</b>World Bank NE.TRD.GNFS.ZS（贸易）；BIS 跨境头寸 / IMF CPIS（金融）；ITU 互联网普及率与平台集中度统计（信息）。<b>证据等级：</b>C。<b>注释：</b>合成指数为各维度内指标归一后等权平均；数值仅表方向，不代表真实水平。按该示意序列，κ 单调上升（ρ=1.00），但增量在 2010 年代后<b>递减而非加速</b>——这一点与"信息耦合持续加速"的常见叙事不同，须以真实数据核验。</div>
+
+<h3>C.4　代码与许可</h3>
+<p>本书分析代码为作者独立编写，使用 Python 标准库与 pandas/matplotlib。第三方数据的使用须遵守其许可（World Bank CC BY 4.0；IMF、WID、WGI 各有其条款）。复现所需的全部脚本与数据文件随书提供。</p>
+
+<h3>F.2　五因素 + 时间的诊断清单</h3>
+
+<p>表 F.2 给出每个因素的“可操作定义、数据源、常见错误”。它是附录 增补：上游、边界与对话.7 诊断模板在时间维度上的扩充版。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 F.2　因素诊断清单</b></caption>
+<tr><th class="l">因素</th><th class="l">操作定义</th><th class="l">数据源</th><th class="l">常见错误</th></tr>
+<tr><td class="l">Reserves</td><td class="l">在给定 Hazard 下，系统维持核心功能的绝对时间（天／月／年）</td><td class="l">库存统计、央行储备、财政空间</td><td class="l">用绝对月数替代“耗尽时间”；混淆物质库存与融资能力</td></tr>
+<tr><td class="l">Substitutability</td><td class="l">替代品的成本溢价 + 转产时间</td><td class="l">Comtrade、行业数据库、财报</td><td class="l">混淆“理论替代”与“市场接受”；忽视替代品本身也被冲击</td></tr>
+<tr><td class="l">Diversification</td><td class="l">HHI 或有效数量 N<sub>eff</sub> = 1/HHI</td><td class="l">FAO、Comtrade、公司披露</td><td class="l">用“国家数”替代“有效数量”；忽视名义分散、实际集中</td></tr>
+<tr><td class="l">Θ</td><td class="l">份额 + 毛利溢价 + 客户粘性</td><td class="l">财报、行业统计、技术指标</td><td class="l">混淆“暂时涨价”与“结构垄断”；不区分全球 Θ 与区域 Θ</td></tr>
+<tr><td class="l">κ</td><td class="l">传导路径数 × 速度 × 放大倍数</td><td class="l">WTO／BIS／ITU、事件研究</td><td class="l">只看直接耦合，忽视反馈环；假设耦合速度恒定</td></tr>
+<tr><td class="l">I 协调时间</td><td class="l"><b>无法直接测</b>：用 I₁（计数层）作下限估计，或用历史同类事件事后校准</td><td class="l">决策程序记录、同类危机响应史</td><td class="l">把事后校准的 I 当作前瞻参数；用单次事件代表常态</td></tr>
+<tr><td class="l">τ</td><td class="l">T<sub>min</sub>(N) / T<sub>available</sub>（序数）</td><td class="l">危机事件史、决策程序记录</td><td class="l">把 τ 当基数精确报告（命题 4.1）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>操作规范（证据等级 C，概念概念丙·事后）。<b>注释：</b>前五行回答“系统有多脆弱”，最后两行回答“是否还来得及”。<b>特别注意 I 与 τ 两行：</b>它们是<b>事后推断量</b>，不是可直接读入的输入——请把“估值”与“说明它为何只是估值”分开填写，不要把校准值当作精确参数。τ 一栏是整张表的关键。</div>
+
+<h3>F.5　个人时间预算工作表</h3>
+
+<p>第 18.2 节给出个人层的三个工具（关注清单、预承诺、校准）。表 F.5 把它们落成一份可逐项填写的底稿，是表 F.3（风险诊断工作表）的个人层对应物。它故意保持在一页之内。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 F.5　个人时间预算工作表（一页版）</b></caption>
+<tr><th class="l">步骤</th><th class="l">填写内容</th><th class="l">依据与备注</th></tr>
+<tr><td class="l">1 关注清单</td><td class="l">我持续关注的慢变量（≤ 5 个）：______</td><td class="l">只放与自身决策相关的变量；贵精不贵多（§18.2）</td></tr>
+<tr><td class="l">2 关注边界</td><td class="l">我主动忽略的信息类型：______</td><td class="l">“决定不理会什么”才是可操作的（§18.3）</td></tr>
+<tr><td class="l">3 预承诺</td><td class="l">对每个变量写下：触发信号 ______ → 我的判断／行动 ______</td><td class="l">在平静时写下；抵制危机时的情绪化改口（§18.2）</td></tr>
+<tr><td class="l">4 否定条件</td><td class="l">什么证据会让我承认这次判断错了：______</td><td class="l">事前写下，使错误可被识别（§18.2）</td></tr>
+<tr><td class="l">5 校准周期</td><td class="l">每 ______ 翻出旧判断核对一次</td><td class="l">对抗“只记得猜对”的选择性记忆（§18.2）</td></tr>
+<tr><td class="l">6 校准记录</td><td class="l">本期判断 ____ 条；命中 ____ 条；偏差方向 ______</td><td class="l">记命中率，不记印象；这是个人版的“可证伪登记”（§18.2）</td></tr>
+<tr><td class="l">7 边界声明</td><td class="l">若根源在制度层，我的清单只能“看见”它，不能“解决”它：______</td><td class="l">不得把系统性问题个人化（§18.4）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>操作底稿（方法论，质量 C）。<b>注释：</b>工作表只操作化第 18.2—18.4 节已给出的三工具与两条边界，不新增论断。第 3、4 步必须<b>在事前</b>填写；任何一步无法填写，应记录为“未设定”，而非留空。个人校准能改善判断，<b>不能替代制度行动</b>（§18.4）。</div>
+
+<h3>H.2　四个案例的公开事件时间线</h3>
+
+<p>时间错配的论证依赖“事件间隔”，而事件日期大多属于公开信息。下表把它们整理为可核对的时间线；它们的作用是展示“冲击展开时间 vs 协调时间”的量级差，而非精确的因果归因。所有日期为公开报道的近似值（质量 B/C）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.3　能源案例时间线（2021—2023）</b></caption>
+<tr><th class="l">日期（近似）</th><th class="l">事件</th><th class="l">间隔</th></tr>
+<tr><td class="l">2021 下半年</td><td class="l">欧洲天然气库存偏低、价格开始上行</td><td class="l">—</td></tr>
+<tr><td class="l">2022-02</td><td class="l">俄乌冲突爆发，供应不确定性骤升</td><td class="l">数周内价格跳升</td></tr>
+<tr><td class="l">2022 年中</td><td class="l">俄气对欧供气量大幅削减</td><td class="l">从信号到断供约 1—3 个月</td></tr>
+<tr><td class="l">2022-08</td><td class="l">欧洲气价达到峰值</td><td class="l">冲击展开以周—月计</td></tr>
+<tr><td class="l">2022 冬—2023</td><td class="l">需求侧响应、LNG 重配、储气填满</td><td class="l">替代到位以年计</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>本表不用于精确纪年；它要说明的是：<b>价格在数周内完成重定价，而实物替代需要一到数年</b>。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 H.4　芯片案例时间线（2020—2023）</b></caption>
+<tr><th class="l">日期（近似）</th><th class="l">事件</th><th class="l">间隔</th></tr>
+<tr><td class="l">2020—2021</td><td class="l">居家需求推高电子订单，晶圆产能紧张</td><td class="l">需求波动以季计</td></tr>
+<tr><td class="l">2021</td><td class="l">汽车芯片交货周期由十余周延长至一年以上</td><td class="l">—</td></tr>
+<tr><td class="l">2021—2022</td><td class="l">多家车企因缺芯减产、停产</td><td class="l">传导以月计</td></tr>
+<tr><td class="l">2022—2023</td><td class="l">新增产能陆续投产，紧张缓解</td><td class="l">产能扩张以年计（18—24 个月）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>关键错配是“需求以季计、产能以年计、定价以小时计”。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 H.5　债务案例时间线（2008—2024）</b></caption>
+<tr><th class="l">日期（近似）</th><th class="l">事件</th><th class="l">间隔</th></tr>
+<tr><td class="l">2008</td><td class="l">全球金融危机，私人债务问题显性化</td><td class="l">—</td></tr>
+<tr><td class="l">2008—2015</td><td class="l">私人风险公共化，政府债务/GDP 急升</td><td class="l">数年</td></tr>
+<tr><td class="l">2020</td><td class="l">疫情应对，债务再度跳升</td><td class="l">数月</td></tr>
+<tr><td class="l">2022—2023</td><td class="l">快速加息，部分银行出现流动性危机</td><td class="l">利率重定价以日计，财政规则调整以月—年计</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>债务案例的时间错配不在“债务积累”（以年计），而在“信用重定价”（以日计）与“规则调整”（以月—年计）之间。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 H.6　知识案例时间线（2026—）</b></caption>
+<tr><th class="l">阶段</th><th class="l">时间尺度</th><th class="l">状态</th></tr>
+<tr><td class="l">大规模生成与发布（openai/math 公开 719 篇手稿，2026-10-06）</td><td class="l">天—数周</td><td class="l">已发生</td></tr>
+<tr><td class="l">公众传播与讨论（约 1.38 万星标／1,527 fork，至 2026-10-11）</td><td class="l">小时—数日</td><td class="l">已发生</td></tr>
+<tr><td class="l">生产者自评与自我修正（300/719≈42% 有 Lean 形式化；事件后撤回 3 篇、修订 14 篇）</td><td class="l">日</td><td class="l">已发生（非独立验证）</td></tr>
+<tr><td class="l">逐篇独立验证与复现</td><td class="l">周—月</td><td class="l">进行中</td></tr>
+<tr><td class="l">同行评审与制度认可</td><td class="l">月—年</td><td class="l">未完成</td></tr>
+<tr><td class="l">评价制度修订</td><td class="l">年</td><td class="l">尚在讨论</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>公开事件整理（质量 B/C）。<b>注释：</b>这是四个案例中“纯粹时间”最强的一个：没有资源短缺，只有验证速度跟不上生成速度。触发事件（2026-10-06）已发生，但“热度窗口内完成独立验证的比例”仍待核销（附录 可证伪登记簿.6、表 I.5）。</div>
+
+<h3>C.1c　V 的合成算法、权重来源与 ±20% 灵敏度分析</h3>
+
+<p>表 H.2 的 V(t) 序列是“输入为 A/B、合成为 C”的典型代表。为避免“精确的假象”，本节公开合成算法与权重来源，并报告权重在 ±20% 范围内的波动。</p>
+
+<p><b>合成算法（与式 8.1—8.2 一致）：</b></p>
+
+<div class="eq"><span class="body">V(t) = α·Θ̂(t) + β·Î(t) + γ·κ̂(t) + λ·(Θ̂·κ̂)，　　V<sub>ι</sub> = V·[1 + 0.5·(1 − ι)]</span><span class="num">(C.1)</span></div>
+
+<p>其中 Θ̂、Î、κ̂ 为归一化到 [0,1] 的分量；<b>β ≈ 0</b>（因 I 零方差，无法估计，见第 6 章）；ι 为政治一致性。权重不是拟合出来的，而是从机制推导的（第 8.2 节），其基准排序为 <b>γ &gt; α &gt; λ &gt; β</b>。表 C.3 给出基准值与区间。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.3　V 的基准权重、来源与 ±20% 灵敏度</b></caption>
+<tr><th class="l">权重</th><th>基准值</th><th>-20%</th><th>+20%</th><th class="l">来源（机制推导）</th><th class="l">对 V<sub>峰值</sub>(2022) 的影响</th></tr>
+<tr><td class="l">α（Θ）</td><td>0.30</td><td>0.24</td><td>0.36</td><td class="l">攫取直接降低应变能力（第 5、8 章）</td><td class="l">V<sub>峰值</sub> 变动约 −4%—+5%</td></tr>
+<tr><td class="l">β（I）</td><td>0.05</td><td>0.04</td><td>0.06</td><td class="l">条件轴；因 I 零方差，基准取近零（第 6 章）</td><td class="l">变动 &lt;1%</td></tr>
+<tr><td class="l">γ（κ）</td><td>0.45</td><td>0.36</td><td>0.54</td><td class="l">耦合主导传导，机制推导为最大项（第 7、8 章）</td><td class="l">V<sub>峰值</sub> 变动约 −9%—+11%</td></tr>
+<tr><td class="l">λ（Θ×κ）</td><td>0.20</td><td>0.16</td><td>0.24</td><td class="l">集中与耦合的交互放大（第 8 章）</td><td class="l">V<sub>峰值</sub> 变动约 −3%—+4%</td></tr>
+<tr><td class="l">ι 系数</td><td>0.50</td><td>0.40</td><td>0.60</td><td class="l">一致性下降对 V 的放大强度（先验）</td><td class="l">V<sub>ι,峰值</sub> 变动约 −7%—+9%</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>权重公开与灵敏度分析（方法透明化）。<b>注释：</b>“V<sub>峰值</sub> 变动”为单因素扰动，其余权重保持基准；权重不归一化（总和 1.00 但允许独立变动）。<b>关键声明：</b>2022 年的 V<sub>ι</sub> ≈ 1.27 <b>部分是权重选择的结果</b>，不是无争议的客观事实；本书因此只用 V(t) 作同口径内部比较，不作跨操作化或跨领域比较。</div>
+
+<p>灵敏度分析给出三条结论：<b>（一）</b>V<sub>峰值</sub> 对 γ 最敏感（±10%），对 β 几乎不敏感（&lt;1%），这与“耦合主导”的机制推导一致；<b>（二）</b>在 ±20% 的合理范围内，<b>V(t) 的上升方向与 2022 年峰值的位置不变</b>，但峰值的具体高度在约 1.10—1.40 之间波动；<b>（三）</b>节点排序对 γ 敏感（第 8.5、9.2.4 节已报告：前三名成员稳定，前两名顺序可变）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 C.3b　证据等级与用途对照表</b></caption>
+<tr><th class="l">证据等级</th><th class="l">可以用于（✓）</th><th class="l">不可用于（✗）</th><th class="l">典型例子</th></tr>
+<tr><td class="l">A（官方可复现）</td><td class="l">趋势、排序、相对大小、条件点估计</td><td class="l">跨口径的精确比较（需先核口径）</td><td class="l">WDI 贸易/GDP、IMF 债务</td></tr>
+<tr><td class="l">B（公开估算）</td><td class="l">方向、排序、相对大小</td><td class="l">精确数值、时点预测</td><td class="l">WID 财富份额、Seshat 政体</td></tr>
+<tr><td class="l">C（稀疏／构造／先验）</td><td class="l">方向、结构有无、量级示意</td><td class="l">排序、精确大小、作为结论的唯一支撑</td><td class="l">权重合成、指标性赋值</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>用途规范（方法论）。<b>注释：</b>本表是“看到证据等级后能断言什么”的速查；它与表 C.2（C 级清单）配合，保证 C 级内容不被误用为 A 级结论。若某结论主要由 C 级输入驱动，按定义 11.1 只能表述为方向性，并须报告“换用 A 级输入后可能反转”的风险。</div>
+
+<div class="warning"><span class="bt">警告 C.1　不要把 V 的数值当作“测量值”</span>
+V 是<b>一个依机制权重合成的指标</b>，权重来自理论而非拟合。这意味着：<b>（一）</b>V 的绝对值没有外在标准可比；<b>（二）</b>当权重变动导致排序改变时，应报告“排序不稳”，而不应选择使结论最好看的权重。第 8.5 节与本节共同构成对这一风险的公开应对：<b>先公布权重与灵敏度，再让读者判断结论的稳健度。</b></div>
+
+<h3>C.2　复现步骤</h3>
+<p>全部脚本位于 <code>analysis/</code>，结果写入 <code>data/</code> 与 <code>analysis/results/</code>。重跑顺序：</p>
+<ol>
+<li><code>fetch_and_inject.py</code> —— World Bank 抓取（Gini、贸易、信贷、债务）。</li>
+<li><code>fetch_imf.py</code> —— IMF 三类债务。</li>
+<li><code>fetch_chapter8.py</code> —— 通胀与利率。</li>
+<li><code>fetch_chapter5.py</code> —— 政府支出 + WGI 制度质量。</li>
+<li><code>parse_wid.py</code> —— 解析 WID 财富／收入 CSV。</li>
+<li><code>parse_chapter8_inputs.py</code> —— 解析 Brent 日度与 WGI xlsx。</li>
+<li><code>theta_sensitivity.py</code> —— Θ 六重代理的趋势、合成、留一、相关矩阵与<b>主成分／因子分析</b>（表 5.2—5.4、5.4b，图 5.1、5.2；结果含 <code>theta_sensitivity.json</code> 的 <code>pca</code> 字段）。</li>
+<li><code>tau_sensitivity.py</code> —— τ = T<sub>min</sub>/T<sub>available</sub> 的蒙特卡洛不确定性传播（表 14.6、14.7；图 14.3；结果含 <code>tau_sensitivity.json</code>）。</li>
+<li><code>fetch_preregistration_baseline.py</code> —— 抓取 B1—B3 的机器快照（WB／Comtrade 公共预览／arXiv；附录 可证伪登记簿 表 I.4；结果 <code>docs/preregistration/baseline_snapshot.json</code>）。</li>
+<li><code>fetch_seshat.py</code> —— 抽取中国政体序列（表 2.3、图 2.2）。</li>
+<li><code>kappa_nodes.py</code> —— κ 脆弱节点的 V 应用与 γ 敏感性（表 9.2b、图 9.1）。</li>
+<li><code>fetch_kappa_wdi.py</code> —— World Bank WDI 贸易／能源／燃料真实序列（κ 分量，质量 A）。</li>
+<li><code>fetch_hhi_comtrade.py</code> —— UN Comtrade 按来源国分解的进口 HHI（表 7.1c，质量 A；需先复制 <code>.env.comtrade.example</code> 为 <code>.env.comtrade</code> 并填入订阅密钥）。</li>
+<li><code>fetch_eu_gas_dependence.py</code> —— Eurostat 欧盟自俄天然气进口份额（表 9.3c，质量 A）。</li>
+<li><code>fetch_debt_rg.py</code> —— FRED + World Bank 的 r−g 真实输入（表 9.7c，r/g 为质量 A）。</li>
+<li><code>fetch_debt_gdp.py</code> —— IMF WEO（经 FRED）广义政府债务/GDP（表 9.7c，质量 A）。</li>
+<li><code>food_energy_validation.py</code> —— 粮食（FAOSTAT）与能源（WB+快速验证集）跨域检验（附录 协议与稳健性，质量 C）。</li>
+<li><code>axis_independence.py</code> —— 三轴相关结构与测量审计（附录 协议与稳健性.6）。</li>
+<li><code>food_trade_diversification.py</code> —— 买家集中度与替代性的商品特异性（附录 协议与稳健性.7，需 TM 数据）。</li>
+<li><code>fetch_psd_reserves.py</code> —— 粮食期末库存与缓冲月数（附录 协议与稳健性.7.1，USDA PS&D）。</li>
+<li><code>make_figures_domains.py</code> —— 附录 协议与稳健性 的矢量插图（图 D.1、D.2）。</li>
+<li><code>make_figures_extended.py</code> —— 第 4、7、11—14 章与附录 数据与案例/G 的矢量插图。</li>
+<li><code>v_timeseries.py</code> —— 2000—2024 年 V(t) 真实序列（表 9.5、图 9.3）。</li>
+<li><code>make_figures.py</code> —— 生成矢量插图（图 2.2、5.2、5.3、9.2、B.1）。</li>
+<li><code>export_figures.py</code> —— 导出高分辨率 PNG 备份。</li>
+<li><code>glossary.py</code> —— 术语统一（幂等）。</li>
+<li><code>audit.py</code> —— 全书校对（术语、编号、交叉引用、来源）。</li>
+<li><code>build_book.py --pdf</code> —— 生成 <code>book.pdf</code>；<code>--ereader</code> 生成电子书版。</li>
+</ol>
+
+<h3>F.3　风险诊断工作表</h3>
+
+<p>下面是一份可逐项填写的工作底稿。它故意保持简短（一页之内），以免使用者被表格淹没。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 F.3　风险诊断工作表（一页版）</b></caption>
+<tr><th class="l">步骤</th><th class="l">填写内容</th><th class="l">备注</th></tr>
+<tr><td class="l">1 定义 S</td><td class="l">Hazard：______　Exposure：______</td><td class="l">Hazard 不清则先拆分</td></tr>
+<tr><td class="l">2 范围</td><td class="l">单点 / 单国 / 区域 / 系统</td><td class="l">系统级 → 预期框架失效</td></tr>
+<tr><td class="l">3 六因素</td><td class="l">Reserves__ 替代__ 多元__ Θ__ κ__ τ__</td><td class="l">各标数据质量 A—E</td></tr>
+<tr><td class="l">4 适应能力</td><td class="l">AC = ¼(前四者) × (1 − κ/5)，再乘时间折扣</td><td class="l">见式(10.3)</td></tr>
+<tr><td class="l">5 风险</td><td class="l">Risk = Hazard × Exposure × (1 − AC)</td><td class="l">—</td></tr>
+<tr><td class="l">6 不确定性</td><td class="l">平均数据质量 → 精度 ±______</td><td class="l">质量越低、区间越宽</td></tr>
+<tr><td class="l">7 决策层</td><td class="l">Risk &lt; 0.3 / 0.3—0.6 / &gt; 0.6</td><td class="l">对应精确 / 排序 / 政治判断</td></tr>
+<tr><td class="l">8 关键点</td><td class="l">主导因素：______　可控杠杆：______</td><td class="l">τ ≥ 1 时应转向“暴露管理”</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>操作底稿。八个步骤对应第 10 章三情景的推导流程；任何一步无法填写，应记录为“未测”而非赋零。</div>
+
+<h3>F.6　使用纪律</h3>
+
+<ol>
+<li><b>先问时间，再问能力。</b>若 τ ≥ 1，任何能力清单都需要重新审视：名义能力不等于有效能力。</li>
+<li><b>把“未测”写下来，而不是赋零。</b>赋零会系统性地低估不确定性，并制造虚假的精确。</li>
+<li><b>不要跨情景比较 Risk 数值。</b>三情景的 Hazard 与 Exposure 口径不同，数值不可直接比较（定义 10.2）。</li>
+<li><b>把不可控区转化为暴露管理。</b>对 C &lt; 1 的状态，策略目标是“预先减小暴露”，而非“更快地响应”（警告 13.8.1）。</li>
+<li><b>每年重估 κ 与 τ。</b>二者是决定可控性边界位置的两个变量，也是最容易被技术变化改变的两个变量。</li>
+</ol>
+
+<h3>H.0　数据翻译表：我们用了什么数据，为什么可以（或不可以）信任</h3>
+
+<p>对不熟悉统计的读者，“数据来源：World Bank WDI”这类标注几乎没有意义。本节用日常语言把本书的数据分成三档，并正面承认一个本书无法回避的问题：<b>数据覆盖存在地域偏向，而这一偏向限制了框架的普适性验证。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.0a　数据信任度的“三档翻译表”</b></caption>
+<tr><th class="l">信任度</th><th class="l">怎么认它</th><th class="l">典型来源</th><th class="l">你用它做什么</th><th class="l">不能做什么</th></tr>
+<tr><td class="l"><b>放心用</b>（质量 A）</td><td class="l">各国官方统计或国际组织标准口径，任何人重跑都能得到同一数字</td><td class="l">世界银行 WDI、IMF、UN Comtrade、Eurostat、FRED</td><td class="l">作趋势与水平的直接证据；可跨年比较</td><td class="l">跨国家比较时要看口径是否一致</td></tr>
+<tr><td class="l"><b>可参考</b>（质量 B）</td><td class="l">严谨学者或机构估算，方法公开但依赖假设</td><td class="l">WID／Saez–Zucman（财富份额）、Seshat（历史政体）、市值整理</td><td class="l">作方向证据；多条一致时可信度上升</td><td class="l">不要当作精确水平引用</td></tr>
+<tr><td class="l"><b>只能当方向</b>（质量 C）</td><td class="l">量级估计、构造序列或先验赋值，换一个假设就可能变形</td><td class="l">本书各案例的指标性赋值、权重合成、章节示意表</td><td class="l">作结构与排序的演示；判断“哪个更危险”</td><td class="l">绝不引用具体数值；换口径可能反转</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>数据可读性说明（非实证内容）。<b>注释：</b>全书 C 级内容集中在附录 数据与案例 表 C.2；凡 C 级处，标题与脚注双重标注。</div>
+
+<p>把同一标准用到不同地区，会看到一个必须说清楚的<u>地域偏向</u>：本书的 A 级数据大多来自欧美，中国的案例多为 B/C 级，前现代数据更依赖学术编码（质量 C）。这不是可以靠“多写几段”弥补的问题，而是数据可得性的结构事实——因此本书把它当作一项已知局限公开，而不是隐藏。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.0b　数据可得性的地域偏向（自评）</b></caption>
+<tr><th class="l">地区</th><th class="l">典型证据等级</th><th class="l">优势</th><th class="l">局限</th><th class="l">对结论的影响</th></tr>
+<tr><td class="l">美国</td><td class="l">A/B（序列最长）</td><td class="l">收入、财富、债务、金融、市值均有长序列</td><td class="l">单一国家样本多</td><td class="l">Θ、κ 的当代证据偏向强</td></tr>
+<tr><td class="l">欧盟</td><td class="l">A</td><td class="l">能源、贸易、监管数据完整</td><td class="l">政治协调时间仍为定性</td><td class="l">能源／耦合案例证据强</td></tr>
+<tr><td class="l">中国</td><td class="l">B/C</td><td class="l">宏观序列可得（股市、药审时限）</td><td class="l">协调延迟与信息失真多不公开</td><td class="l">中国案例以结构诊断为主，数值谨慎</td></tr>
+<tr><td class="l">新兴市场</td><td class="l">B/C</td><td class="l">债务与汇率序列可得</td><td class="l">统计口径不一</td><td class="l">r−g 与制度相关 δ 的推断需谨慎</td></tr>
+<tr><td class="l">前现代中国</td><td class="l">C</td><td class="l">盐铁、政体存续可用学术编码</td><td class="l">无法逐条量化</td><td class="l">仅作方向，不作水平比较</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>可得性自评（方法论，质量 C）。<b>注释：</b>“典型证据等级”指该地区支撑本书结论的最高可用证据；因此本书的脆弱性排序对西方节点的估计精度高于东方节点——<b>这限制了框架的普适性验证，也是警告 9.1.2 与第 10.9 节提前声明的内容。</b></div>
+
+<h3>H.3　数据可得性评级与缺口清单</h3>
+
+<p>下表明确区分“已获取”“可获取但尚未整理”“结构性不可得”三类。它的作用不是诉诸困难，而是把研究议程公开：<b>让后来者知道从哪里接手。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.7　数据可得性评级与数据缺口</b></caption>
+<tr><th class="l">指标</th><th class="l">层次</th><th class="l">可得性</th><th class="l">原因</th><th class="l">获取路径</th></tr>
+<tr><td class="l">贸易/GDP、FDI/GDP、Gini、政府债务</td><td class="l">Θ、κ</td><td class="l">已获取（A/B）</td><td class="l">开放数据库</td><td class="l">World Bank / IMF API（见附录 数据与案例）</td></tr>
+<tr><td class="l">商品进口 HHI、能源依赖</td><td class="l">κ</td><td class="l">已获取（A）</td><td class="l">UN Comtrade / Eurostat</td><td class="l">已可复现（<code>fetch_hhi_comtrade.py</code> 等）</td></tr>
+<tr><td class="l">制度反应时间（各国对标）</td><td class="l">I₂</td><td class="l">可获取但需逐案例整理</td><td class="l">分散于新闻档案与政府公报</td><td class="l">建立“信息出现→决议→执行”案例库（1—2 周/国）</td></tr>
+<tr><td class="l">信息失真程度</td><td class="l">I₃</td><td class="l">结构性不可得（多数国家）</td><td class="l">涉及政府内部数据与保密</td><td class="l">历史档案解密、匿名访谈、间接代理（报告偏差）</td></tr>
+<tr><td class="l">共同理解程度 / 认知分裂</td><td class="l">I₄</td><td class="l">不可直接测量</td><td class="l">主观状态，无通用量纲</td><td class="l">调查实验、媒体消费分层、极化指数（代理）</td></tr>
+<tr><td class="l">个人注意力与理解时间</td><td class="l">认知</td><td class="l">无现成数据集</td><td class="l">需专项心理学实验</td><td class="l">时间日志 / 实验研究（本书未做）</td></tr>
+<tr><td class="l">论文“声称→验证通过”时间</td><td class="l">知识</td><td class="l">部分可得（事件已发生，验证进行中）</td><td class="l">无历史序列；需区分生产者自评与独立验证</td><td class="l">追踪 openai/math 的第三方复现与引用（数月至数年）</td></tr>
+<tr><td class="l">政策隐性时间成本</td><td class="l">I₂</td><td class="l">多数不可得</td><td class="l">决策过程不公开</td><td class="l">FOIA 请求、前官员访谈</td></tr>
+<tr><td class="l">精神卫生供给与需求速度</td><td class="l">跨域</td><td class="l">部分可得（质量参差）</td><td class="l">跨国统计口径不一</td><td class="l">WHO / OECD 精神卫生统计 + 社交媒体指标</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>可得性评估（方法论，质量 C）。<b>注释：</b>本表是“数据缺口登记”，不是“免责声明”。<b>凡 C 级与缺口项，正文均已标注方向性，不作精确引用。</b></div>
+
+<p>下表把写作时（2026-10）已公开报道、且与本书各轴对应的近期事件集中列出。它的置入位置（附录 数据与案例，而非正文论证）本身就是一个声明：<b>它们是“定向核对”，不是“证据”。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 H.8　近期事件与方向性读数（2025—2026，质量 C）</b></caption>
+<tr><th class="l">事件</th><th class="l">时间</th><th class="l">对应轴</th><th class="l">方向性读数</th><th class="l">来源与核实度</th></tr>
+<tr><td class="l">OpenAI 公开 openai/math</td><td class="l">2026-10-06</td><td class="l">I／知识（B3）</td><td class="l">验证滞后：719 篇手稿、42% 形式化；次日撤回 3 篇</td><td class="l">GitHub API＋仓库文件（<b>已核实 A</b>）</td></tr>
+<tr><td class="l">中国“十五五”规划</td><td class="l">2026 两会</td><td class="l">Θ／I</td><td class="l">高质量发展为首要目标；抽取结构向产业／科技转移</td><td class="l">政府工作报告／发改委（公开报道，C）</td></tr>
+<tr><td class="l">中国稀土等出口管制暂停至 2026-11-10</td><td class="l">2026-04</td><td class="l">κ</td><td class="l">准不可逆可逆：管制可暂停→耦合仍有可逆性但有成本</td><td class="l">商务部（公开报道，C）</td></tr>
+<tr><td class="l">中国地方化债债券约 3.59 万亿元</td><td class="l">2025</td><td class="l">Θ</td><td class="l">隐性债务置换；风险从地方向中央转移</td><td class="l">公开报道（C）</td></tr>
+<tr><td class="l">IMF 预测 2026 全球增长约 3%，警告能源与债务风险</td><td class="l">2026</td><td class="l">τ</td><td class="l">慢问题 vs 短政治周期</td><td class="l">IMF（公开报道，C）</td></tr>
+<tr><td class="l">COP31（土耳其安塔利亚）</td><td class="l">2026-11-09—20</td><td class="l">τ／气候</td><td class="l">代际错配：效应 50 年 vs 政治 4 年</td><td class="l">UNFCCC（公开报道，C）</td></tr>
+<tr><td class="l">中美经贸磋商转折</td><td class="l">2026-05／07</td><td class="l">κ</td><td class="l">从“全面硬刚”转向“降温”，但供应链已重构</td><td class="l">公开报道（C）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>事件定向核对（公开报道，质量 C，方向性）。<b>注释：</b>本表<b>不用于检验命题</b>（未事前登记，不能当证据）；只收录有<b>可查证的官方或权威公开报道</b>的事件，单一来源且无法交叉核实的条目<b>已剔除</b>（不列入）。“已核实 A”仅 openai/math 一行（有仓库原始文件）。它的作用只是说明：本书的诊断在当下仍可定位，而非已经失效。</div>
+

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794 1123" width="794" height="1123">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+    <stop offset="0" stop-color="#0e1117"/><stop offset="0.55" stop-color="#151a23"/><stop offset="1" stop-color="#0b0e14"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.36" r="0.6">
+    <stop offset="0" stop-color="#b8862f" stop-opacity="0.10"/><stop offset="1" stop-color="#b8862f" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="794" height="1123" fill="url(#bg)"/>
+<rect width="794" height="1123" fill="url(#glow)"/>
+<rect x="28" y="28" width="738" height="1067" fill="none" stroke="#b8862f" stroke-opacity="0.28" stroke-width="0.8"/><line x1="28" y1="96" x2="766" y2="96" stroke="#b8862f" stroke-opacity="0.55" stroke-width="1.4"/>
+<polyline points="405,430 406,432 407,433 407,435 406,438 405,440 404,442 402,444 399,446 396,447 392,447 388,447 384,447 381,445 377,443 374,439 371,436 369,431 368,427 368,421 370,416 372,411 375,407 379,402 385,399 391,396 398,395 405,395 412,395 419,398 426,401 432,406 437,411 441,418 444,426 445,434 445,442 443,450 439,458 434,465 427,472 419,477 409,481 399,483 388,484 378,482 367,479 357,474 348,468 341,459 335,450 331,439 329,428 329,417 332,405 337,394 344,384 353,375 364,368 377,362 390,359 404,358 419,359 433,363 446,369 458,378 468,388 476,400 482,414 485,428 485,443 482,458 476,472 468,485 456,497 443,507 427,514 410,519 393,521 375,519 357,515 340,508 325,498 312,486 301,471 294,455 290,437 289,419 292,401 298,383 308,367 321,352 337,340 355,331 375,324 396,321 418,322 439,326 459,334 478,345 494,359 508,376 518,395 524,416 525,437 523,459 516,479 506,499 491,517 473,532 452,544 429,552 405,557 380,557 355,553 331,545 308,533 289,517 272,498 260,477 252,453 249,429 250,404 257,380 268,356 284,335 303,317 327,303 352,292 380,286" stroke="#b8862f" fill="none" stroke-width="1" stroke-opacity="0.55"/>
+<text x="644" y="1027" font-family="Georgia, Times New Roman, serif" font-size="210" fill="none" stroke="#b8862f" stroke-opacity="0.34" stroke-width="1.2" text-anchor="end">01</text><line x1="682" y1="1059" x2="682" y2="1045" stroke="#b8862f" stroke-opacity="0.85" stroke-width="1"/><line x1="696" y1="1059" x2="696" y2="1053" stroke="#b8862f" stroke-opacity="0.3" stroke-width="1"/><line x1="710" y1="1059" x2="710" y2="1053" stroke="#b8862f" stroke-opacity="0.3" stroke-width="1"/><line x1="724" y1="1059" x2="724" y2="1053" stroke="#b8862f" stroke-opacity="0.3" stroke-width="1"/><line x1="738" y1="1059" x2="738" y2="1053" stroke="#b8862f" stroke-opacity="0.3" stroke-width="1"/><line x1="752" y1="1059" x2="752" y2="1053" stroke="#b8862f" stroke-opacity="0.3" stroke-width="1"/>
+</svg>
