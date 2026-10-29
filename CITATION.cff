@@ -11,11 +11,13 @@ authors:
     alias: "Li Yipeng"
     email: "1610369302@qq.com"
     affiliation: "独立研究者 / Independent Researcher"
-date-released: "2026-10-18"
+date-released: 2026-10-30
+version: "2026-10-30"
 license: CC-BY-4.0
-doi: "10.5281/zenodo.23217100"
+doi: 10.5281/zenodo.23447129
+concept-doi: 10.5281/zenodo.23217100
 repository-code: "https://github.com/lyp0746/entropy-spiral"
-url: "https://doi.org/10.5281/zenodo.23217100"
+url: "https://doi.org/10.5281/zenodo.23447129"
 keywords:
   - "错位的时间"
   - "时间错配"
