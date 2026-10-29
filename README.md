@@ -1,294 +1,66 @@
-# 《错位的时间：为什么我们总是来不及》
+# 错位的时间 · 
 
-> 从周期论破产到时间—制度错配的可描述性框架　·　李毅芃
+> 为什么我们总是来不及：社会系统的时间错配与可控性边界
+>
+> **DOI**：10.5281/zenodo.23447129　·　概念 DOI：10.5281/zenodo.23217100　·　354 页 / 6 部分 / 25 章
 
-[![内容许可: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-[![代码许可: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
-[![Release](https://img.shields.io/badge/release-PDF%20%7C%20EPUB-brightgreen.svg)](../../releases/latest)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23217100.svg)](https://doi.org/10.5281/zenodo.23217100)
-
-一部学术专著的写作与构建工程：**单栏、中文主体、出版级排版**，
-同时输出**印刷版 PDF、电子阅读版 PDF、EPUB 3 与 Markdown**。
-目录（部分 → 章 → 节 → 子节）在 HTML、PDF 与 EPUB 中**均可逐级跳转**。
-
-**核心主张。** 脆弱性除了结构来源，还有一个独立的时间来源：
-时间错配 `τ = T_min / T_available`，可控性 `C = T_policy / T_threat = 1/τ`。
-现代社会不是一个钟，而是许多转速不同的钟；错位是结构性的，而非暂时失调。
-全书不预测崩溃时点，只做受限的局部诊断。
-
-- 🚀 **快速开始**　[快速开始](#快速开始)（一条命令构建 PDF/EPUB）
-- 📥 **下载**　[`Releases`](../../releases/latest)（印刷版 PDF · 电子阅读版 PDF · EPUB 3 · 封面），或本地 `bash scripts/release.sh` → `release/`
-- 🤝 **参与**　[CONTRIBUTING.md](CONTRIBUTING.md) · 数据缺口见 [`docs/DATA-GAPS.md`](docs/DATA-GAPS.md)
-- 📣 **发布公告**　[`docs/ANNOUNCEMENT.md`](docs/ANNOUNCEMENT.md)（中英双语）
-- 📚 **引用**　见 [引用](#引用) 与 [`CITATION.cff`](CITATION.cff)
+本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它从一次否证开始：周期论的三个前提——单一代理、线性递推、独立维度——在数据上均不成立，社会系统更像在高维相空间中沿几条不可逆轴螺旋上升。前三根不可逆轴——Θ（租佃／垄断抽取份额）、I（组织复杂度）、κ（地缘耦合）——构成脆弱性的结构来源，并由脆弱性指标 V 加以合成。但本书最独特的推进是发现了一个被隐含使用、却从未写出的假设：系统“有时间”动员它的适应能力。把这一假设显式化，得到时间错配 τ = T_min/T_available 与可控性 C = T_policy/T_threat = 1/τ。现代社会不是一个钟，而是许多个转速不同的钟——金融以秒计、政治以周计、社会信心以年计、生态以十年计；它们无法被同一机制协调，错位因此是结构性的、而非暂时失调。三个应用情景（台湾芯片中断、东南亚美元融资断裂、全球债务同步崩溃）显示：τ 依次约为 0.5、3.5、30，恰对应框架的精确、发散与失效；置信区间由 ±0.10 扩大到 ±0.60，说明框架的边界不由变量的多少决定，而由时间决定。（须强调：τ 仅作事后诊断与序数比较，不作事前预测；第 11.7.1 节给出三个事前登记的盲测。）由此重新理解 I：它不是组织复杂度的存量，而是政治制度达成协调所需的最小时间；其四个子层中，计数层（I₁）可测、信息层（I₃）可用代理测，唯有时间层（I₂）与认知层（I₄）不可独立测量——限制框架精确诊断学习滞后的，正是后两者。这一不可测性也是制度时间与市场时间之矛盾的人格化。全书前置一份非技术的“理论地图”，用一张表列出哪些结论强、哪些只是相容性外推。本书进一步把“错位的时间”扩散为对现代性的诊断：医疗、气候、心理、教育、能源与知识系统共享同一“适应尺度远长于变化尺度”的结构。结语主张：不追求完美控制，而在承认边界的前提下更聪明地分配有限的可控性——对 C<1 的状态，理性策略是预先减小暴露，并为不可避免的失效预设“优雅降级”顺序。全书的方法论立场是：承认全局不可预测，做受限的局部诊断；承认认知的时间错配，仍然持续观察与诘问。卷首《总纲　现实中不存在无限》把时间写成一种容量：多时钟不是比喻，而是有限承载者各有响应上限的社会显影；τ 是这份时间预算的比值。
 
 ---
 
-## 目录结构
+## 结构
 
-```
-entropy-spiral/
-├── README.md                  # 本文件
-├── build_book.py              # 组装 HTML + 打印 PDF（含分级书签）
-├── build_epub.py              # 生成 EPUB 3（nav + NCX 分级目录）
-├── build_markdown.py          # 导出 Markdown（合并全书 + 分文件，含 assets）
-├── requirements.txt
-│
-├── source/                    # 书稿源文件（唯一正文来源）
-│   ├── book.json              # 书名 / 副标题 / 作者 / 内容提要
-│   ├── parts.json             # 五部分与章节目录
-│   ├── front_copyright.html   # 版权与数据来源页
-│   ├── front_executive_summary.html  # 执行摘要（中英）
-│   ├── front_preface.html     # 前言
-│   ├── front_quickstart.html  # 十分钟读懂本书（无公式，含三个日常故事与图 0.1—0.3）
-│   ├── front_roadmap.html     # 理论地图（路线图：三类概念/变量/强弱声明/阅读路径）
-│   ├── front_terms.html       # 术语速查表（关键概念一览）
-│   ├── ch01.html … ch19.html  # 十九章正文
-│   └── back_epilogue.html, appendix_a…j.html
-│
-├── data/                      # 原始数据与注入值（见 docs/DATA-SOURCES.md）
-│   ├── injected.json          # 正文 {{D:key}} 占位符的取值
-│   ├── Equinox_on_GitHub_June9_2022.xlsx   # Seshat
-│   └── *.csv / *.json
-│
-├── analysis/                  # 可复现分析脚本
-│   ├── fetch_*.py             # 数据抓取
-│   ├── parse_*.py             # 数据解析
-│   ├── *_analysis.py          # 敏感性 / 复杂度 / κ / V 分析
-│   ├── fetch_seshat.py        # 【方案 C】中国政体序列抽取
-│   ├── make_figures.py        # 【方案 C】矢量插图生成
-│   ├── glossary.py            # 术语统一
-│   ├── audit.py               # 全书校对（术语/编号/交叉引用/文献）
-│   └── results/               # JSON 结果 + audit.json
-│
-├── assets/
-│   ├── css/                   # paper.css（正式书稿版式）/ book.css / ereader.css
-│   ├── svg/                   # 封面与矢量插图
-│   ├── charts/                # 400 dpi PNG 图
-│   └── templates/             # 可选 XeLaTeX 模板
-│
-├── output/                    # 构建产物（见下）
-├── release/                   # 发布包（仅读者可见内容，gitignored）
-├── versions/                  # 历史版本存档 + CHANGELOG.md
-├── docs/                      # 方法论 / 数据源 / 扩展指南 / 政策摘要 / 快速指南
-│   ├── METHODOLOGY.md
-│   ├── DATA-SOURCES.md
-│   ├── EXTENSION-GUIDE.md
-│   ├── EXECUTIVE-SUMMARY.md   # 政策版中英摘要
-│   ├── QUICK-GUIDE.md         # 5 页操作手册
-│   └── READERS.md             # 发布包读者说明
-└── scripts/                   # build / update-data / validate / release / export-figures
-```
+| 部分 | 标题 | 章数 | 起 → 止 |
+|---|---|---:|---|
+| 1 | 第一部分　理论转向与时间问题的发现 | 4 | 周期论的破产 → 时间层级的社会学：多时钟社会与制度失效 |
+| 2 | 第二部分　三个核心变量的时间重读 | 3 | Θ（租佃份额）的六重代理系统 → κ（地缘耦合）的全球化深化 |
+| 3 | 第三部分　综合诊断与三次检验 | 4 | 脆弱性指标体系（V 框架） → 局部可描述性的操作定义 |
+| 4 | 第四部分　可控性的边界与行动的设计 | 4 | 政策启示与未来研究议程 → 理论的扩散与现代性的诊断 |
+| 5 | 第五部分　时间预算与三层责任 | 5 | 行动的设计：时间预算与三层责任 → 把 τ 押上去：三次事前登记，与它们目前的沉默 |
+| 6 | 第六部分　时间的政治、回顾与收束 | 5 | 时间的政治学 → 收束：在不可控中行动 |
 
----
+每章八段：主提问 → 场景开篇 → 导论 → 机制 → 表/图 → 反例 → 本章小结 → 一句话带走。
+每个部分有满栏插图扉页（`assets/svg/part-NN.svg`）、一段部分导语与一段部分小结。
 
-## 快速开始
+## 证据与自检
 
-```bash
-# 1) 环境（本机使用指定虚拟环境，见 .env.build / .env.build.example）
-pip install -r requirements.txt
+- 结论标注 **A/B/C** 证据等级与甲/乙/丙概念等级；结论强度不超过证据强度。
+- 可证伪登记簿：`docs/preregistration/checkups.csv`（append-only）。
+- 结构校阅：系列 lint 24 条规则，本书 **error 0 / warn 0**（见 `_series/lint/REPORT.md`）。
 
-# 2) 一键构建（校对 → 印刷版 → 电子阅读版 → EPUB）
-bash scripts/build.sh
+## 文件
 
-# 3) 组装发布包（只含读者可见内容，排除 xlsx/CSV/脚本/依赖）
-bash scripts/release.sh
-
-# 4) 导出 SVG 高分辨率 PNG 备份（约 300 dpi）
-bash scripts/export-figures.sh
-
-# 5) 数据刷新（需联网，可选）
-bash scripts/update-data.sh
-
-# 6) 质量门禁
-bash scripts/validate.sh
-```
-
-单独构建：
-
-```bash
-python analysis/audit.py            # 校对，生成 校对清单.md
-python build_book.py --pdf          # output/book.html + output/book.pdf
-python build_book.py --ereader --pdf  # output/book-ereader.*
-python build_epub.py                # output/book.epub
-python build_markdown.py            # output/markdown/book.md + 分文件
-```
-
----
-
-## 构建产物
-
-| 文件 | 版式 | 用途 | 目录 |
-|---|---|---|---|
-| `output/book.pdf` | **正式书稿风格**：A4、宋体+Times、10.5pt、1.5 倍行距、35mm 边距 | 打印 / 投稿 | PDF 分级书签（4 级） |
-| `output/book.html` | 同上（自包含，图片内嵌） | 网页浏览 | 四级内部链接 |
-| `output/book-ereader.pdf` | B5、12pt、1.8 倍行距、斑马纹表格 | 平板 / 屏幕阅读 | PDF 分级书签（4 级） |
-| `output/book-ereader.html` | 同上 | 响应式阅读 | 四级内部链接 |
-| `output/book.epub` | EPUB 3，可重排 | Kindle / Apple Books / 多看 | nav + NCX 四级目录 |
-| `output/markdown/book.md` | Markdown（GFM 表格、引用块、公式行） | GitHub / Obsidian / 纯文本 | 自动生成的分文件目录 |
-| `output/markdown/*.md` | 分文件 Markdown（`assets/` 内嵌图片） | 单章引用 / 协作编辑 | 每文件一个章节 |
-
-**字体说明**：正文为中文宋体（SimSun）+ 西文 Times New Roman；
-标题为微软雅黑（Microsoft YaHei）/ Arial。**不使用思源（Source Han / Noto）系列**，
-以保持书稿观感。若系统缺少某字体，会按 CSS 回退到 `serif` / `sans-serif`。
-
----
-
-## 版式规范
-
-| 项目 | 取值 |
+| 路径 | 是什么 |
 |---|---|
-| 纸张 | A4，上 30mm / 下 32mm / 左右 35mm |
-| 正文 | 宋体 + Times，10.5pt，行距 1.5，段距 8pt，两端对齐 |
-| 标题 | 微软雅黑/Arial；章 18pt、节 12pt、子节 11pt |
-| 表格 | 三线表（顶线/表头线/底线），表头浅灰，数值右对齐 |
-| 框 | 定义（蓝）、情景（绿）、警告（橙）、案例（灰），左侧竖线 |
-| 公式 | 独立行 + 右对齐编号（章.序） |
-| 插图 | 矢量 SVG 优先，位图 400 dpi PNG |
+| `source/` | **唯一正文来源**（HTML）；`book.json` 元数据、`parts.json` 结构 |
+| `analysis/` | 图表、统计、抓取脚本（可重跑） |
+| `assets/` | 封面、SVG 图、CSS |
+| `scripts/build.sh` | audit → 印刷 PDF → 电子版 → EPUB → Markdown |
+| `docs/` | 方法、数据来源、缺口与登记簿 |
 
----
-
-## 本书结构（五部分 · 十九章）
-
-《错位的时间》以**时间**为中心线索：脆弱性除了结构来源，还有一个独立的时间来源。
-全书不预测崩溃时点，只做“诚实的局部诊断”，并提供可证伪的命题登记簿。
-
-前置一份非技术的**《理论地图》**（路线图），用一张表把结论分为“强／中／已否证／未检验／价值判断”五档；并附**《术语速查表》**。为降低第 1—3 章的难度，另设**《十分钟读懂本书》**（含三个日常故事），并在第 1—3 章加入非技术版 **§1.0**、故事版 **§2.2.1** 与“关键产出”自检框；一般读者可走“快速精选路径”（不跳过论证，只读最平易的两节）。
-
-| 部分 | 章 | 内容 |
-|---|---|---|
-| 一 理论转向与时间问题的发现 | 1—4 | 周期论破产；从周期到螺旋；螺旋的时间结构与熵增机制；**时间层级的社会学（理论中枢）** |
-| 二 三个核心变量的时间重读 | 5—7 | Θ 与租佃攫取的**加速度**；I 与制度反应时间的**延长**；κ 与传导的**加速** |
-| 三 综合诊断框架 | 8—9 | 脆弱性指标 V；从芯片到知识的**四个案例**；时间维度指标 |
-| 四 应用与边界 | 10—11 | 三情景实装检验；发现的逻辑；局部可描述性 |
-| 五 在不可控中行动：政策、可控性与现代性诊断 | 12—19 | 政策议程；可控性边界；**优雅降级**；重新定义 I；现代性诊断；**时间预算实装（金融／医疗／气候）**；**个人层行动** |
-| 结语与后记 | — | 结语《承认与启蒙》；**后记《方法论的自限性与伦理立场》** |
-| 前置 | — | 开篇《一个关于“来不及”的故事》；前言；**十分钟读懂本书**（含三个日常故事）；**理论地图**；**术语速查表**；执行摘要 |
-
-**核心变量。**
-
-```
-时间错配　τ = T_min / T_available
-可控性　　C = T_policy / T_threat = 1 / τ
-有效适应能力　AC_有效 = AC_名义 × min(1, C)
-```
-
-**母题。** 现代社会的脆弱性，来自时间结构与制度结构的永久错配：能加速的子系统
-（金融、信息）恰是驱动冲击的一方，不能加速的子系统（政治、心理、生态）恰是
-必须作出回应的一方。对 C < 1 的状态，理性策略是**预先减小暴露**，并为不可避免的
-失效预设“优雅降级”顺序。
-
-**四条补全的逻辑链（本轮重点）。** （一）§8.12 把“脆弱性 V → 时间错配 τ”拆为三条可分别检验的传导通道；（二）定义 4.2 起统一 τ / W / C 记法；（三）§11.1.1 给出局部可描述性的认识论基础，并显式区分“可描述 ≠ 可控制”；（四）后记给出从边界到行动的三段式伦理论证。另新增 §2.6.1 与三种替代学派的对话、§12.8 五步诊断手册（医疗案例）。
-
-**一个诚实的否定性结果。** Seshat 数据显示中国帝制政体的存续时长**没有稳定周期**
-（均值 143 年、CV 0.45、趋势斜率 ≈ −0.5 年/百年、Spearman ρ = −0.14）；
-“周期加速”未被数据支持，高方差本身即周期论的反证（§2.3.1）。
-
-**一个真实数据修正。** UN Comtrade（2023）按来源国分解的进口 HHI 显示，
-中国芯片进口集中度（0.213）**低于**日本（0.404）与印度（0.333）；
-极端集中出现在稀土（美国 0.975、印度 0.978，几乎全部来自中国）（§7.3 表 7.1c、表 11.4 的 P6.4）。
-
-**一个诚实的跨域结果（附录 D）。** 把 Θ–I–κ 迁移到粮食与能源后，三轴均可操作化，
-但复合指标 V 的国家排序对操作化高度敏感。结论：框架提供的是可迁移的“诊断轴”，
-而非可直接比较的“跨域指数”。
-
----
-
-## 版本历史
-
-历史版本（v1 治乱循环框架、v2 熵增螺旋、v3 融合初稿、v4 Ω 与真实数据、
-v5 风险分解与缓冲、v6 错位的时间）的定位与变化，见 `versions/CHANGELOG.md`。
-正式书稿与发布包不包含版本号。
-
----
-
-## 校准与术语
-
-- 运行 `python analysis/audit.py` 生成 `校对清单.md`（表 A1–A6），
-  检查术语一致性、定义/公式/表/图编号、交叉引用与参考文献完整性。
-- Θ 的主用语统一为**“租佃份额”**；“垄断份额”为同义旧称（见定义 4.1 与附录 E）。
-  运行 `python analysis/glossary.py` 可重新执行统一替换并生成日志。
-
-## 文档
-
-- `docs/EXECUTIVE-SUMMARY.md`　政策版中英摘要（约 2000 词）
-- `docs/QUICK-GUIDE.md`　5 页操作手册（五步模板 + 仪表板 + 工作底稿）
-- `docs/METHODOLOGY.md`　方法论、证据等级、可证伪登记簿
-- `docs/DATA-SOURCES.md`　数据源、许可与更新工作流
-- `docs/EXTENSION-GUIDE.md`　如何扩展到其他地区/领域、增章加图
-- `docs/READERS.md`　发布包读者说明
-- `versions/CHANGELOG.md`　各历史版本的定位与变化
-
-## 数据体积与清理
-
-原始 FAOSTAT 数据约 4.4 GB，不随项目保存；需要复现粮食检验时运行
-`python analysis/fetch_faostat.py` 重新下载并解压。仓库其余内容约 80 MB。
-
-## 发布与分发
-
-`bash scripts/release.sh` 会在 `release/` 生成**只含读者可见内容**的发布包
-（PDF / EPUB / HTML / 封面 / 读者说明 / 修订说明 / 数据缺口清单 / 贡献指南），
-并**明确排除**原始数据（xlsx / csv / json）、分析脚本与依赖清单。发布包内附
-`MANIFEST.txt` 说明包含与排除项。
+产物（`output/`、`release/`）不入库，可由 `source/` 重建。
 
 ## 引用
 
-若你在研究或写作中使用本书，请引用：
+```
+错位的时间：为什么我们总是来不及：社会系统的时间错配与可控性边界。李毅芃，2026。10.5281/zenodo.23447129
+```
 
-> 李毅芃. 《错位的时间：为什么我们总是来不及》. 2026-10-14. CC BY 4.0.
-> DOI: [10.5281/zenodo.23217100](https://doi.org/10.5281/zenodo.23217100)
+## 系列（九本书）
 
-机器可读引用见 [`CITATION.cff`](CITATION.cff)。
+| 书 | 仓库 |
+|---|---|
+| 只能选两样 | [knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs) |
+| 区分的语法 | [distinction-evolution](https://github.com/lyp0746/distinction-evolution) |
+| 遗忘的边界 | [capacity-cascade](https://github.com/lyp0746/capacity-cascade) |
+| 选择的代价 | [impossibility-triangle](https://github.com/lyp0746/impossibility-triangle) |
+| 诠释的权衡 | [interpretation-tradeoff](https://github.com/lyp0746/interpretation-tradeoff) |
+| 涌现的临界 | [emergence-critical](https://github.com/lyp0746/emergence-critical) |
+| 心灵的分岔 | [mind-forks](https://github.com/lyp0746/mind-forks) |
+| 热点的账单 | [hotspot-bills](https://github.com/lyp0746/hotspot-bills) |
 
-- **当前归档 DOI（最新）**：<https://doi.org/10.5281/zenodo.23217100>
-- **概念 DOI（无版本，始终指向最新）**：<https://doi.org/10.5281/zenodo.23217100>
-- **上一版归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23276888>
-- **更早的归档 DOI（已被取代）**：<https://doi.org/10.5281/zenodo.23264927>
-- **Zenodo 当前记录**：<https://zenodo.org/records/23286403>
-
-建议：引用具体版本时用**当前归档 DOI**；泛指本作（含未来修订）时用**概念 DOI**。
-每次修订在 Zenodo 生成新的归档记录，旧记录保留但标记为已被取代。
+十四篇工作论文与全部条目的 DOI 见 [series-workspace](https://github.com/lyp0746/series-workspace)。
 
 ## 许可
 
-- **内容**（书稿、图表、文档）：**CC BY 4.0**，见 [`LICENSE`](LICENSE)
-- **代码**（`analysis/`、`scripts/`、构建脚本）：**MIT**，见 [`LICENSE-MIT`](LICENSE-MIT)
-- **第三方数据**（`data/`）：各有其原始许可，详见 [`docs/DATA-SOURCES.md`](docs/DATA-SOURCES.md)
-
-## 参与贡献
-
-欢迎补充数据、勘误、改进脚本或参与讨论：
-
-- 贡献指南：[`CONTRIBUTING.md`](CONTRIBUTING.md)
-- 数据缺口（优先方向）：[`docs/DATA-GAPS.md`](docs/DATA-GAPS.md)、[`docs/OPEN-CONTRIBUTION.md`](docs/OPEN-CONTRIBUTION.md)
-- 提交前请运行：`python analysis/audit.py`（必要时 `bash scripts/validate.sh`）
-
-> 一条原则：**把「没测到」和「测到了」一样认真地记录。**
-
-## 可选管线（LaTeX）
-
-`assets/templates/book-template.tex` 提供 ctexbook 模板（A4、思源宋体/Times、三线表、
-tcolorbox 框、按章编号公式）。需要 XeLaTeX：
-
-```bash
-cd assets/templates && xelatex book-template.tex && xelatex book-template.tex
-```
-
-> 默认管线为 HTML → PDF（Chrome headless），无需 LaTeX 即可复现全部产物。
-
----
-
-## 本系列
-
-- **通俗读本《只能选两样》**：从来不及、会忘记到说不清——五个核心，看懂复杂世界的取舍。
-  面向所有人（小朋友 / 学生 / 成年人 / 专家），含 12 幅图解与 5 分钟小实验。
-- **系列入口与外部登记库**：[github.com/lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs) —— 最小可验证单元、跨域盲测登记（append-only）、合并术语表、五核关系图。
-
----
-
-## 归档 DOI（最新）
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23217100.svg)](https://doi.org/10.5281/zenodo.23217100)
-
-本书的**最新版本**以该 DOI 为准（Zenodo 自动指向最新版本）；引用格式见 `CITATION.cff`。
-本系列的通俗读本《只能选两样》与外部登记库见 [lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs)。
+正文与图件 CC BY 4.0；脚本 MIT。
