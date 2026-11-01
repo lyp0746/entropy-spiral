@@ -1171,10 +1171,6 @@
     },
     {
       "chapter": "ch09.html",
-      "snippet": "本章所有案例数值均为指示性（质量 C），理由正在于此"
-    },
-    {
-      "chapter": "ch09.html",
       "snippet": "表 J.1 给出三个系统的指示性基准"
     },
     {
@@ -1216,6 +1212,10 @@
     {
       "chapter": "ch09.html",
       "snippet": "表 J.8　全球债务的五种条件情景（示意）"
+    },
+    {
+      "chapter": "ch09.html",
+      "snippet": "本章所有案例数值均为指示性（质量 C），理由正在于此"
     },
     {
       "chapter": "ch10.html",
@@ -2528,6 +2528,9 @@
     "16.5": [
       "ch16.html"
     ],
+    "16.6": [
+      "ch16.html"
+    ],
     "1600.2037": [
       "ch08.html"
     ],
@@ -3485,230 +3488,18 @@
       "2012"
     ]
   },
-  "A6_defined": {
-    "Abbott": [
-      "2001"
-    ],
-    "Acemoglu": [
-      "2012"
-    ],
-    "Anderson": [
-      "1972"
-    ],
-    "Arrighi": [
-      "1994"
-    ],
-    "Ashby": [
-      "1956"
-    ],
-    "Bak": [
-      "1996"
-    ],
-    "Baldwin": [
-      "2016"
-    ],
-    "Bank": [
-      "2024"
-    ],
-    "Bar-Yam": [
-      "1997"
-    ],
-    "Beck": [
-      "1992"
-    ],
-    "Brzezinski": [
-      "1997"
-    ],
-    "Cartwright": [
-      "1983"
-    ],
-    "Cohen": [
-      "2015"
-    ],
-    "Dahrendorf": [
-      "1959"
-    ],
-    "De": [
-      "2020"
-    ],
-    "Farrell": [
-      "2019"
-    ],
-    "Fukuyama": [
-      "2011"
-    ],
-    "Giddens": [
-      "1984",
-      "1990"
-    ],
-    "Goldstone": [
-      "1991",
-      "2024"
-    ],
-    "Gopinath": [
-      "2025"
-    ],
-    "Hassan": [
-      "2009"
-    ],
-    "Helbing": [
-      "2013"
-    ],
-    "Holland": [
-      "1995"
-    ],
-    "Holling": [
-      "1973"
-    ],
-    "Intergovernmental": [
-      "2023"
-    ],
-    "Kahneman": [
-      "2011"
-    ],
-    "Kaplan": [
-      "2012"
-    ],
-    "Kondratieff": [
-      "1935"
-    ],
-    "Koselleck": [
-      "2004"
-    ],
-    "Kuznets": [
-      "1930"
-    ],
-    "Landauer": [
-      "1961"
-    ],
-    "Luhmann": [
-      "1995"
-    ],
-    "Mackinder": [
-      "1904"
-    ],
-    "Mayo": [
-      "2018"
-    ],
-    "Metz": [
-      "1998"
-    ],
-    "Minsky": [
-      "1986"
-    ],
-    "Modelski": [
-      "1987"
-    ],
-    "North": [
-      "1990",
-      "2009"
-    ],
-    "Olson": [
-      "1965",
-      "1982"
-    ],
-    "Ostrom": [
-      "1990"
-    ],
-    "Parsons": [
-      "1951"
-    ],
-    "Perrow": [
-      "1984"
-    ],
-    "Pierson": [
-      "2004"
-    ],
-    "Piketty": [
-      "2014"
-    ],
-    "Popper": [
-      "1959"
-    ],
-    "Prigogine": [
-      "1967",
-      "1984"
-    ],
-    "Reinhart": [
-      "2009"
-    ],
-    "Ridley": [
-      "1993"
-    ],
-    "Rodrik": [
-      "2011"
-    ],
-    "Rosa": [
-      "2013"
-    ],
-    "Saez": [
-      "2016"
-    ],
-    "Scheffer": [
-      "2009"
-    ],
-    "Scheidel": [
-      "2017"
-    ],
-    "Schumpeter": [
-      "1939"
-    ],
-    "Sewell": [
-      "2005"
-    ],
-    "Shannon": [
-      "1948"
-    ],
-    "Shmueli": [
-      "2010"
-    ],
-    "Simon": [
-      "1962",
-      "1971"
-    ],
-    "Solomou": [
-      "1987"
-    ],
-    "Stiglitz": [
-      "2012"
-    ],
-    "Strogatz": [
-      "1994"
-    ],
-    "Tainter": [
-      "1988"
-    ],
-    "Taleb": [
-      "2007"
-    ],
-    "Tetlock": [
-      "2015"
-    ],
-    "Thaler": [
-      "2008"
-    ],
-    "Turchin": [
-      "2003",
-      "2009",
-      "2015"
-    ],
-    "Van": [
-      "1973"
-    ],
-    "Varoufakis": [
-      "2023"
-    ],
-    "Virilio": [
-      "1986"
-    ],
-    "World": [
-      "2021"
-    ],
-    "Zingales": [
-      "2012"
-    ]
-  },
-  "A6_cited_not_defined": [],
+  "A6_defined": {},
+  "A6_cited_not_defined": [
+    "Acemoglu",
+    "Ashby",
+    "Brzezinski",
+    "Cohen",
+    "Kaplan",
+    "Mackinder",
+    "Piketty",
+    "Stiglitz",
+    "Zingales"
+  ],
   "A7_images_missing": [],
   "A8_eq_malformed": [],
   "A9_debug_strings": []

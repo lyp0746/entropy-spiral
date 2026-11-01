@@ -3,7 +3,7 @@ message: "If you use this work, please cite it as below. 若使用本作，请�
 type: book
 title: "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界 / Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and the Boundary of Controllability in Social Systems"
 abstract: >-
-  本著作提出“时间错配”诊断框架，用以解释现代社会为什么反复出现“知道了也来不及”的结构性失败。 核心主张：时间不是背景而是变量。以 τ = 需要的最短时间 ÷ 你拥有的时间、可控性 C = 1/τ 度量“还来不来得及”；现代社会的困难不在钟走得快，而在许多个钟转速不同且无法被同一机制协调。 结构与证据：25 章、附录 A—J、42 幅图；以 Θ（租佃/抽取份额）、I（组织复杂度）、κ（地缘耦合）三根不可逆轴加一条时间轴，给出脆弱性 V 与三个情景（τ≈0.5 / 3.5 / 30），对应“精确、发散、失效”三种诊断状态。 诚实的纪律：τ 只作事后诊断与序数比较；V 的权重与数据口径逐项标注（A/B/C）；数据质量评估表明确区分“可复算”与“跨年代可比”；可证伪登记簿与数据缺口清单随书公开。 边界：不预测崩溃时点；社会中制度时间与认知时间不可独立测量，这是框架的硬边界，也是它拒绝给出“预言”的理由。 版本：2026-10-18，321 页，25 章，42 图，附录 A—J；源码与构建流程开源，内容 CC BY 4.0，代码 MIT。
+  本著作提出“时间错配”诊断框架，用以解释现代社会为什么反复出现“知道了也来不及”的结构性失败。 核心主张：时间不是背景而是变量。以 τ = 需要的最短时间 ÷ 你拥有的时间、可控性 C = 1/τ 度量“还来不来得及”；现代社会的困难不在钟走得快，而在许多个钟转速不同且无法被同一机制协调。 结构与证据：25 章、附录 A–F、35 幅图；以 Θ（租佃/抽取份额）、I（组织复杂度）、κ（地缘耦合）三根不可逆轴加一条时间轴，给出脆弱性 V 与三个情景（τ≈0.5 / 3.5 / 30），对应“精确、发散、失效”三种诊断状态。 诚实的纪律：τ 只作事后诊断与序数比较；V 的权重与数据口径逐项标注（A/B/C）；数据质量评估表明确区分“可复算”与“跨年代可比”；可证伪登记簿与数据缺口清单随书公开。 边界：不预测崩溃时点；社会中制度时间与认知时间不可独立测量，这是框架的硬边界，也是它拒绝给出“预言”的理由。 版本：2026-11-02，371 页，25 章，35 图，附录 A–F；源码与构建流程开源，内容 CC BY 4.0，代码 MIT。
   Abstract (English). This work presents a diagnostic framework of temporal mismatch, explaining why modern societies repeatedly fail not from ignorance but from being too late. Core thesis: time is a variable, not a background; τ = minimum time required ÷ time available, and controllability C = 1/τ measure whether a system can still save itself. The difficulty is not that one clock runs fast, but that many clocks run at different speeds and cannot be coordinated by one mechanism. Structure and evidence: 25 chapters, appendices A–J, 42 figures; three irreversible axes — Θ (extraction share), I (organisational complexity), κ (geopolitical coupling) — plus an independent temporal axis, yielding a vulnerability index V and three scenarios (τ≈0.5, 3.5, 30) that correspond to precision, divergence and failure. Discipline: τ is diagnostic and ordinal only; weights and data are graded A/B/C, and a data-quality table separates reproducibility from cross-era comparability. Boundaries: no point predictions of collapse; institutional and cognitive time cannot be measured independently. Edition: 2026-10-18, 321 pages, 25 chapters, 42 figures, appendices A–J.
 authors:
   - family-names: "李"
@@ -11,8 +11,8 @@ authors:
     alias: "Li Yipeng"
     email: "1610369302@qq.com"
     affiliation: "独立研究者 / Independent Researcher"
-date-released: 2026-10-30
-version: "2026-10-30"
+date-released: 2026-11-02
+version: "2026-11-02"
 license: CC-BY-4.0
 doi: 10.5281/zenodo.23771608
 concept-doi: 10.5281/zenodo.23217100
@@ -45,7 +45,7 @@ references:
   - type: book
     title: "遗忘的边界：有限容量下的记忆、智能与自我 / The Boundary of Forgetting: Memory, Intelligence, and the Self under Finite Capacity"
   - type: book
-    title: "区分的语法：五个领域，同一个二次型 / The Grammar of Distinction: Five Domains, One Quadratic Form"
+    title: "区分的语言：五个领域，同一个二次型 / The Grammar of Distinction: Five Domains, One Quadratic Form"
   - type: book
     title: "选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新 / The Price of Choice: The Impossibility Triangle of Completeness, Composability, and Transfer"
   - type: book

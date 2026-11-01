@@ -51,7 +51,7 @@
 | 书 | 仓库 |
 |---|---|
 | 只能选两样 | [knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs) |
-| 区分的语法 | [distinction-evolution](https://github.com/lyp0746/distinction-evolution) |
+| 区分的语言 | [distinction-evolution](https://github.com/lyp0746/distinction-evolution) |
 | 遗忘的边界 | [capacity-cascade](https://github.com/lyp0746/capacity-cascade) |
 | 选择的代价 | [impossibility-triangle](https://github.com/lyp0746/impossibility-triangle) |
 | 诠释的权衡 | [interpretation-tradeoff](https://github.com/lyp0746/interpretation-tradeoff) |
