@@ -2,7 +2,7 @@
 
 **《错位的时间：为什么我们总是来不及》**
 
-- **DOI（当前归档）**：<https://doi.org/10.5281/zenodo.23286403>
+- **DOI（当前归档）**：<https://doi.org/10.5281/zenodo.23217100>
 - **Zenodo 记录**：<https://zenodo.org/records/23286403>
 - **概念 DOI（无版本，始终指向最新）**：<https://doi.org/10.5281/zenodo.23217100>
 - **源码 / 数据 / 构建流程**：<https://github.com/lyp0746/entropy-spiral>
@@ -41,7 +41,7 @@
 
 **引用。**
 > 李毅芃. 《错位的时间：为什么我们总是来不及》. 2026-10-11. CC BY 4.0.
-> DOI: 10.5281/zenodo.23286403
+> DOI: 10.5281/zenodo.23217100
 
 **参与。** 欢迎补充数据（尤其是"制度反应时间""信息失真代理""知识验证时长"等缺口项），
 见仓库的 `docs/DATA-GAPS.md` 与 `CONTRIBUTING.md`。一条原则贯穿始终：
@@ -86,7 +86,7 @@ prophecy but a ruler and a falsifiable register.
 **Citation.**
 > Li Yipeng. *Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and
 > the Boundary of Controllability in Social Systems.* 2026-10-11. CC BY 4.0.
-> DOI: 10.5281/zenodo.23286403
+> DOI: 10.5281/zenodo.23217100
 
 **Contribute.** Data contributions are welcome — especially "institutional response time",
 "public proxies for information distortion", and "knowledge verification latency"

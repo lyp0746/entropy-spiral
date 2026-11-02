@@ -1,6 +1,6 @@
 {
-  "title": "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界 / Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and the Boundary of Controllability in Social Systems",
-  "description": "<p><b>中文.</b> 本著作提出“时间错配”诊断框架，用以解释现代社会为什么反复出现“知道了也来不及”的结构性失败。</p><p>核心主张：时间不是背景而是变量。以 τ = 需要的最短时间 ÷ 你拥有的时间、可控性 C = 1/τ 度量“还来不来得及”；现代社会的困难不在钟走得快，而在许多个钟转速不同且无法被同一机制协调。</p><p>结构与证据：25 章、附录 A—J、42 幅图；以 Θ（租佃/抽取份额）、I（组织复杂度）、κ（地缘耦合）三根不可逆轴加一条时间轴，给出脆弱性 V 与三个情景（τ≈0.5 / 3.5 / 30），对应“精确、发散、失效”三种诊断状态。</p><p>诚实的纪律：τ 只作事后诊断与序数比较；V 的权重与数据口径逐项标注（A/B/C）；数据质量评估表明确区分“可复算”与“跨年代可比”；可证伪登记簿与数据缺口清单随书公开。</p><p>边界：不预测崩溃时点；社会中制度时间与认知时间不可独立测量，这是框架的硬边界，也是它拒绝给出“预言”的理由。</p><p>版本：2026-10-18，326 页，25 章，42 图，附录 A—J；源码与构建流程开源，内容 CC BY 4.0，代码 MIT。</p><p><b>本版更新（2026-10-18 地基版）。</b>本版把全书的共同前提写到卷首：<b>现实中不存在无限</b>——无限只作为极限出现在模型里，从不出现在现实系统的实际状态里。有限性本身只说明“有上界”；它要变成“必须让出一样”，还需要三个条件同时成立：需求随规模增长、描述/组合/传递共享同一承载者、同时维持两种活动更贵（交互惩罚 ψ&gt;0）。因此“至多取二”一律是“紧预算（K/D 有界）下至多取二”的简写；若预算增长快于需求，三项可以同时满格。</p><p><b>本版新增内容。</b>第 9 章新增“有限性诊断”：四个案例共享 T_threat 与 T_policy 的时间预算；τ 的结构是 A/甲，案例数值是 C 级指示。卷首总纲把时间写成一种容量：多时钟是有限承载者各有响应上限的社会显影。</p><p><b>系列 / Series.</b> 同一作者的独立研究系列：六本学术专著 + 两本通俗读本。入口与外部登记库：<a href=\"https://github.com/lyp0746/knowledge-tradeoffs\">https://github.com/lyp0746/knowledge-tradeoffs</a>；源码与可复算脚本：<a href=\"https://github.com/lyp0746/entropy-spiral\">https://github.com/lyp0746/entropy-spiral</a>。首选预览文件：<code>entropy-spiral-print.pdf</code>（印刷版）。</p><p><b>English.</b> Abstract (English). This work presents a diagnostic framework of temporal mismatch, explaining why modern societies repeatedly fail not from ignorance but from being too late. Core thesis: time is a variable, not a background; τ = minimum time required ÷ time available, and controllability C = 1/τ measure whether a system can still save itself. The difficulty is not that one clock runs fast, but that many clocks run at different speeds and cannot be coordinated by one mechanism. Structure and evidence: 25 chapters, appendices A–J, 42 figures; three irreversible axes — Θ (extraction share), I (organisational complexity), κ (geopolitical coupling) — plus an independent temporal axis, yielding a vulnerability index V and three scenarios (τ≈0.5, 3.5, 30) that correspond to precision, divergence and failure. Discipline: τ is diagnostic and ordinal only; weights and data are graded A/B/C, and a data-quality table separates reproducibility from cross-era comparability. Boundaries: no point predictions of collapse; institutional and cognitive time cannot be measured independently. Edition: 2026-10-18, 326 pages, 25 chapters, 42 figures, appendices A–J.</p><p><b>What is new in this edition (2026-10-18, Finitude Edition).</b> The common premise is now stated at the front: <b>there is no infinity in reality</b> — infinity appears only as a limit in models, never as a property of a real system. Finitude alone only says that there is a ceiling; to yield a trade-off it also needs three conditions: demand grows with scale, description/composition/transfer share one bearer, and maintaining two activities at once is more expensive (interaction penalty ψ&gt;0). “At most two” is therefore shorthand for “at most two under a tight budget (bounded K/D)”; if the budget grows faster than demand, all three can be full.</p><p><b>New in this edition.</b> Chapter 9 adds a finitude diagnosis: the four cases share a time budget between T_threat and T_policy; the structure of τ is A/甲, the case numbers are C-level indications. The front matter frames time as a capacity: multiple clocks are the social shadow of finite bearers with different response ceilings.</p>",
+  "title": "错位的时间：为什么我们总是来不及：社会系统的时间错配与可控性边界 / 错位的时间: 为什么我们总是来不及：社会系统的时间错配与可控性边界",
+  "description": "<p><b>中文摘要。</b>本书放弃“预测崩溃”，转而诊断“系统是否来得及自救”。它从一次否证开始：周期论的三个前提——单一代理、线性递推、独立维度——在数据上均不成立，社会系统更像在高维相空间中沿几条不可逆轴螺旋上升。前三根不可逆轴——Θ（租佃／垄断抽取份额）、I（组织复杂度）、κ（地缘耦合）——构成脆弱性的结构来源，并由脆弱性指标 V 加以合成。但本书最独特的推进是发现了一个被隐含使用、却从未写出的假设：系统“有时间”动员它的适应能力。把这一假设显式化，得到时间错配 τ = T_min/T_available 与可控性 C = T_policy/T_threat = 1/τ。现代社会不是一个钟，而是许多个转速不同的钟——金融以秒计、政治以周计、社会信心以年计、生态以十年计；它们无法被同一机制协调，错位因此是结构性的、而非暂时失调。三个应用情景（台湾芯片中断、东南亚美元融资断裂、全球债务同步崩溃）显示：τ 依次约为 0.5、3.5、30，恰对应框架的精确、发散与失效；置信区间由 ±0.10 扩大到 ±0.60，说明框架的边界不由变量的多少决定，而由时间决定。（须强调：τ 仅作事后诊断与序数比较，不作事前预测；第 11.7.1 节给出三个事前登记的盲测。）由此重新理解 I：它不是组织复杂度的存量，而是政治制度达成协调所需的最小时间；其四个子层中，计数层（I₁）可测、信息层（I₃）可用代理测，唯有时间层（I₂）与认知层（I₄）不可独立测量——限制框架精确诊断学习滞后的，正是后两者。这一不可测性也是制度时间与市场时间之矛盾的人格化。全书前置一份非技术的“理论地图”，用一张表列出哪些结论强、哪些只是相容性外推。本书进一步把“错位的时间”扩散为对现代性的诊断：医疗、气候、心理、教育、能源与知识系统共享同一“适应尺度远长于变化尺度”的结构。结语主张：不追求完美控制，而在承认边界的前提下更聪明地分配有限的可控性——对 C<1 的状态，理性策略是预先减小暴露，并为不可避免的失效预设“优雅降级”顺序。全书的方法论立场是：承认全局不可预测，做受限的局部诊断；承认认知的时间错配，仍然持续观察与诘问。卷首《总纲　现实中不存在无限》把时间写成一种容量：多时钟不是比喻，而是有限承载者各有响应上限的社会显影；τ 是这份时间预算的比值。</p>\n<p><b>核心主张。</b>为什么我们总是来不及：社会系统的时间错配与可控性边界。本书不把「错位的时间」写成一本无所不包的概论，而是把一个问题做深：一个有限的东西，怎样一边保持结构，一边还能变化。</p>\n<p><b>结构与证据。</b>6 部分、25 章、379 页、附录 A–F、35 幅图；每章保留证据分级（A/B/C 与甲/乙/丙）与可证伪登记，失败与撤回写在正文，不放进脚注。</p>\n<p><b>本版修订（2026-11-02）。</b>统一书名与副题、统一版式与页码；附录收束为 A–F；旧版残留的 DOI、系列计数与错字订正；本版以概念 DOI 归档，版本 DOI 指向 2026-11-02 这一版。</p>\n<p><b>诚实纪律。</b>结论强度不超过证据强度；能算的给出数，不能算的写明「判不了」；每一条硬约束都写清谁在承担代价，以及这条限制使什么成为可能。</p>\n<p><b>边界。</b>本书给坐标与判据，不给判决；它不替代领域专家的材料，也不把类比写成定理。具体边界见各章末与附录的登记簿。</p>\n<p><b>版本信息。</b>2026-11-02，379 页，25 章，附录 A–F；内容 CC BY 4.0，代码 MIT。</p>\n<p><b>Abstract.</b> 错位的时间: 为什么我们总是来不及：社会系统的时间错配与可控性边界. The book does not attempt an all-encompassing survey; it works one problem through: how does something finite keep its structure while still being able to change? It is organised in 6 parts and 25 chapters, with appendices A–F and 35 figures; every chapter keeps its evidence grades (A/B/C) and falsifiability register, and reports failures and retractions in the body.</p>\n<p><b>Core thesis.</b> 为什么我们总是来不及：社会系统的时间错配与可控性边界. The book offers coordinates and criteria, not verdicts.</p>\n<p><b>Structure and evidence.</b> 6 parts, 25 chapters, 379 pages, appendices A–F, 35 figures. The apparatus is open: data, scripts and registers are in the repository; the prose keeps a single visible grade per claim rather than hedging every clause.</p>\n<p><b>This edition (2026-11-02).</b> Title and subtitle unified; layout and folios unified; appendices consolidated to A–F; residual DOI, series-count and typographic errors corrected; the concept DOI is stable and the version DOI points to this edition.</p>\n<p><b>Discipline.</b> Conclusion strength does not exceed evidence strength; what can be computed is computed, what cannot is marked as undecidable; every hard constraint names who pays for it and what it makes possible.</p>\n<p><b>Boundaries.</b> The book gives coordinates and criteria, not verdicts; it does not replace field expertise, and it does not dress an analogy as a theorem. See the chapter ends and the register appendices for specific limits.</p>\n<p><b>Edition.</b> 2026-11-02, 379 pages, 25 chapters, appendices A–F; content CC BY 4.0, code MIT.</p>",
   "creators": [
     {
       "name": "李毅芃",
@@ -59,13 +59,13 @@
       "scheme": "custom"
     }
   ],
-  "notes": "科目（中文）：经济学 Economics、系统科学 Systems Science、复杂性科学 Complexity Science、风险管理 Risk Management、国际政治经济 International Political Economy、时间社会学 Sociology of Time。语言：中文（含英文摘要）。结构：25 章，约 321 页。首选预览文件：entropy-spiral-print.pdf（印刷版）。引用格式见 CITATION.cff。",
+  "notes": "学术专著/读本。2026-11-02，379 页，25 章，附录 A–F。",
   "license": "CC-BY-4.0",
   "upload_type": "publication",
   "publication_type": "book",
   "language": "zho",
   "access_right": "open",
-  "publication_date": "2026-10-18",
+  "publication_date": "2026-11-02",
   "related_identifiers": [
     {
       "identifier": "https://github.com/lyp0746/entropy-spiral",
@@ -78,22 +78,22 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23323277",
+      "identifier": "https://doi.org/10.5281/zenodo.23323276",
       "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23412033",
+      "identifier": "https://doi.org/10.5281/zenodo.23345012",
       "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23388629",
+      "identifier": "https://doi.org/10.5281/zenodo.23388628",
       "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23416220",
+      "identifier": "https://doi.org/10.5281/zenodo.23416219",
       "relation": "references",
       "scheme": "doi"
     },
@@ -118,5 +118,5 @@
       "scheme": "doi"
     }
   ],
-  "version": "2026-10-19"
+  "version": "2026-11-02"
 }
