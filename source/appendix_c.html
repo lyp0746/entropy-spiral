@@ -6,10 +6,10 @@
 
 <p>检验回答三个问题：<b>（一）</b>三根轴在粮食与能源域是否都能用可复现的公开数据操作化？<b>（二）</b>在 2021—2022 年这一共同外部冲击（全球商品与能源价格飙升）中，两域的系统脆弱性是否都上升？<b>（三）</b>同一国家在两域的复合脆弱性是否相关？若相关，说明存在跨域的"一般脆弱性因子"；若不相关或不可估计，则说明 V 是域特异量。</p>
 
-<p>操作化必须逐域重新定义——这是迁移的关键，也是最大的隐患：<b>同一个符号在不同域所指的机制不同。</b>表 F.1 给出三个域的操作化对照。</p>
+<p>操作化必须逐域重新定义——这是迁移的关键，也是最大的隐患：<b>同一个符号在不同域所指的机制不同。</b>表 C.1 给出三个域的操作化对照。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 F.1　三根轴在三个域中的操作化对照</b></caption>
+<caption class="cap"><b>表 C.1　三根轴在三个域中的操作化对照</b></caption>
 <tr><th class="l">轴</th><th class="l">政治经济（第 5—8 章）</th><th class="l">粮食（本附录）</th><th class="l">能源（本附录）</th></tr>
 <tr><td class="l">Θ（集中）</td><td class="l">租佃份额（六重代理）</td><td class="l">产量集中度 HHI（4 种主粮）</td><td class="l">进口依赖 + 生产不足</td></tr>
 <tr><td class="l">I（反馈延迟）</td><td class="l">组织复杂度（权重≈0）</td><td class="l">价格波动 CV + 库存波动 CV</td><td class="l">油气产量波动</td></tr>
@@ -25,10 +25,10 @@
 <div class="warning"><span class="bt">数据更正说明</span>
 本附录的粮食结果与早期工作稿不同，原因是更正了两处名称匹配错误：FAOSTAT 中美国记为“United States of America”、越南记为“Viet Nam”，且玉米、大豆分别记为“Maize (corn)”“Soya beans”。工作稿误用“United States／Vietnam／Maize／Soya Beans”，导致美国与越南的全部指标缺失（被默认值填充）、且只统计到稻麦两种作物。更正后八国齐全。凡与早期工作稿不一致处，以本附录为准。</div>
 
-<p>表 F.16 与图 F.1、图 F.16 给出结果（2012—2024，2010—2011 因滚动窗口不足未计）。</p>
+<p>表 C.2 与图 C.1、图 C.2 给出结果（2012—2024，2010—2011 因滚动窗口不足未计）。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 F.16　粮食系统 V 的分量（2012—2024 均值，质量 C）</b></caption>
+<caption class="cap"><b>表 C.2　粮食系统 V 的分量（2012—2024 均值，质量 C）</b></caption>
 <tr><th class="l">国家</th><th>0.40·Θ</th><th>0.35·I</th><th>0.25·κ</th><th>V<sub>food</sub></th></tr>
 <tr><td class="l">越南</td><td>0.389</td><td>0.060</td><td>0.201</td><td><b>0.649</b></td></tr>
 <tr><td class="l">泰国</td><td>0.358</td><td>0.045</td><td>0.140</td><td>0.542</td></tr>
@@ -42,17 +42,17 @@
 <div class="datasrc"><b>数据来源：</b>FAOSTAT 批量数据（QCL／TCL／PP／FBS）；脚本 <code>analysis/food_energy_validation.py</code>；结果 <code>analysis/results/food_v_panel.csv</code>、<code>food_v_summary.csv</code>。<b>证据等级：</b>C（探索性操作化）。<b>注释：</b>V = 0.40Θ+0.35I+0.25κ，分量为全样本 min-max 归一后的值。排序不作为结论，理由见正文与 F.11。</div>
 
 <img class="fig" src="assets/svg/fig-food-trend.svg" alt="粮食系统 V 的年度轨迹">
-<div class="cap"><b>图 F.1　粮食系统 V 的年度轨迹（八国等权平均）</b>。2021 年达到峰值 0.405，与全球粮价高峰一致；2022—2024 回落并趋稳。这一形态支持"三轴能对共同冲击作出反应"（检验问题二），但不支持任何关于国家排名的结论。</div>
+<div class="cap"><b>图 C.1　粮食系统 V 的年度轨迹（八国等权平均）</b>。2021 年达到峰值 0.405，与全球粮价高峰一致；2022—2024 回落并趋稳。这一形态支持"三轴能对共同冲击作出反应"（检验问题二），但不支持任何关于国家排名的结论。</div>
 
 <img class="fig" src="assets/svg/fig-food-components.svg" alt="粮食系统 V 的分量构成">
-<div class="cap"><b>图 F.16　粮食系统 V 的分量构成（八国）</b>。蓝＝0.40Θ（产量集中）、绿＝0.35I（波动）、金＝0.25κ（进口依赖）。越南、泰国以 Θ 为主；中国以 I 与 κ 为主。此图直接暴露操作化的隐患：Θ 定义为作物 HHI，会把"稻米单一化"的出口国排名抬高。</div>
+<div class="cap"><b>图 C.2　粮食系统 V 的分量构成（八国）</b>。蓝＝0.40Θ（产量集中）、绿＝0.35I（波动）、金＝0.25κ（进口依赖）。越南、泰国以 Θ 为主；中国以 I 与 κ 为主。此图直接暴露操作化的隐患：Θ 定义为作物 HHI，会把"稻米单一化"的出口国排名抬高。</div>
 
 <h3>F.3　能源系统</h3>
 
 <p><b>数据。</b>世界银行能源指标（进口依赖、人均能源使用等）与一份 4 国快速验证集（俄罗斯、沙特、美国、中国；2010、2015、2020、2021、2022 的油气产量与出口，取自公开统计汇编）。<b>操作化：</b>Θ = 进口依赖（归一）与"1 − 产量安全"的均值；I = 油气产量的年度变化率；κ = 1 − 出口能力。同一组权重合成 V。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 F.3　能源系统 V（四国，2015—2022 均值，质量 C）</b></caption>
+<caption class="cap"><b>表 C.3　能源系统 V（四国，2015—2022 均值，质量 C）</b></caption>
 <tr><th class="l">国家</th><th>Θ（进口依赖+生产不足）</th><th>I（产量波动）</th><th>κ（1−出口能力）</th><th>V<sub>energy</sub></th></tr>
 <tr><td class="l">中国</td><td>高</td><td>低</td><td>高</td><td><b>0.890</b></td></tr>
 <tr><td class="l">沙特</td><td>中</td><td>中</td><td>中</td><td>0.475</td></tr>
@@ -81,7 +81,7 @@
 </ol>
 
 <table class="nat">
-<caption class="cap"><b>表 F.11　本附录的可证伪推论</b></caption>
+<caption class="cap"><b>表 C.4　本附录的可证伪推论</b></caption>
 <tr><th class="l">编号</th><th class="l">推论</th><th class="l">否证条件</th></tr>
 <tr><td class="l">PF.1</td><td class="l">外部供给冲击后两年内，粮食与能源的 V 均上升（<b>降级：仅“可测性”获支持，相关结构跨域不稳</b>）</td><td class="l">两域在该窗口内均无上升</td></tr>
 <tr><td class="l">PF.16</td><td class="l">三根轴在更多域（水、芯片、金融）中同样可操作化</td><td class="l">某域中至少一根轴无法用公开数据操作化</td></tr>
@@ -168,10 +168,10 @@
 
 <h3 id="secC-9">C.9　三情景参数表</h3>
 
-<p>表 C.9 是情景库的核心数据。每一行是一个情景，每一列是一个可显式赋值的字段。它是本书正文所有风险计算的“事实来源”。</p>
+<p>表 C.8 是情景库的核心数据。每一行是一个情景，每一列是一个可显式赋值的字段。它是本书正文所有风险计算的“事实来源”。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 C.9　三情景参数（情景库）</b></caption>
+<caption class="cap"><b>表 C.8　三情景参数（情景库）</b></caption>
 <tr><th class="l">字段</th><th class="l">S1 台湾芯片</th><th class="l">S2 东南亚债务</th><th class="l">S3 全球债务</th></tr>
 <tr><td class="l">Hazard</td><td>0.70</td><td>0.60</td><td>0.60</td></tr>
 <tr><td class="l">Exposure</td><td>0.08</td><td>0.035</td><td>1.00</td></tr>
@@ -241,7 +241,7 @@ class RiskScenario:
 </ol>
 
 <table class="nat">
-<caption class="cap"><b>表 C.10　建议增补的情景（可供补入）</b></caption>
+<caption class="cap"><b>表 C.9　建议增补的情景（可供补入）</b></caption>
 <tr><th class="l">候选情景</th><th class="l">预期主导因素</th><th class="l">预期 τ</th><th class="l">主要数据困难</th></tr>
 <tr><td class="l">AI 芯片设计禁运</td><td class="l">替代性 + κ</td><td>中</td><td class="l">算力供给链黑箱化</td></tr>
 <tr><td class="l">关键海底光缆中断</td><td class="l">κ + 缓冲</td><td>低</td><td class="l">军用／民用路由不透明</td></tr>
