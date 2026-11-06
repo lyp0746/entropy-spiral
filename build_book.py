@@ -363,11 +363,12 @@ def build_part_page(part, idx=1, total=1):
 
     图形在 assets/svg/part-NN.svg（暗色渐变、金线母题），文字在 HTML 里（可选中、可检索）。
     """
-    title = part["part"]
+    title = __import__("re").sub(r"^第[一二三四五六七八九十]+部分[　 ]*", "", part["part"])
     intro = part.get("intro") or part.get("desc") or ""
     return (f'<div class="part-page">'
             f'<img class="part-art" src="assets/svg/part-{idx:02d}.svg" alt="">'
             f'<div class="part-body">'
+            f'<div class="part-big">{idx:02d}</div>'
             f'<div class="part-kicker">PART {idx:02d} / {total:02d}</div>'
             f'<h1 class="part-title">{title}</h1>'
             f'</div></div>'
@@ -390,7 +391,7 @@ def build_chapter_opener(ch):
     if m:
         t = _re.sub(r"<[^>]+>", "", m.group(1)).strip()
         b = _re.search(r"<b>(.*?)</b>", m.group(1), _re.S)
-        quote = _re.sub(r"<[^>]+>", "", b.group(1)).strip() if b else t.split("。")[0] + "。"
+        quote = _re.sub(r"<[^>]+>", "", b.group(1)).strip().strip('“”" ').strip('“”\" ') if b else t.split("。")[0] + "。"
     if len(quote) > 90:
         quote = quote[:88] + "……"
     items = "".join(f"<li>{x}</li>" for x in ch.get("sections", [])[:12])
@@ -399,7 +400,7 @@ def build_chapter_opener(ch):
             f'<div class="co-num">{ch["no"]}</div>'
             f'<div class="co-title">{ch["title"]}</div>'
             f'<div class="co-quote">“{quote}”</div>'
-            f'<div class="co-map"><span>本章结构</span><ol>{items}</ol></div>'
+            f'<div class="co-map"><span>本章结构</span><ul>{items}</ul></div>'
             f'</div>')
 
 def build_part_summary(part):
