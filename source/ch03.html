@@ -42,7 +42,7 @@
 
 <p>为什么垄断集中会降低系统的信息处理能力？机制有三：<b>（一）同质化</b>——集中使决策信息来源趋同，异议减少；<b>（二）信息垄断</b>——关键信息被少数主体掌握，反馈环路变短；<b>（三）纠错延迟</b>——当评价权被俘获（第 5 章），错误信号的识别与纠正变慢。三者共同降低系统对意外的识别能力。</p>
 
-<div class="eq"><span class="body">C<sub>eff</sub> = C<sub>total</sub> − α · U(Θ)，　∂U/∂Θ &gt; 0</span><span class="num">(3.1)</span></div>
+<div class="eq"><span class="body"><math display="block"><msub><mi>C</mi><mi mathvariant="normal">eff</mi></msub><mo>=</mo><msub><mi>C</mi><mi mathvariant="normal">total</mi></msub><mo>−</mo><mi>α</mi><mo>·</mo><mi>U</mi><mo>(</mo><mi>Θ</mi><mo>)</mo><mtext>，　</mtext><mo>∂</mo><mi>U</mi><mo>/</mo><mo>∂</mo><mi>Θ</mi><mo>&gt;</mo><mn>0</mn></math></span><span class="num">(3.1)</span></div>
 <p>上式表示：有效信息处理能力 C<sub>eff</sub> 等于潜在能力减去一个随垄断度 Θ 上升而增大的"不确定损失"U。这是一个概念式，不是可估计的方程；它的用途是陈述"越集中越难识别意外"这一机制。</p>
 
 <table class="nat">
@@ -61,7 +61,7 @@
 <div class="define"><span class="bt">定义 3.2　最优复杂度与响应时间</span>
 设制度复杂度为 I，系统的应变延迟为 τ(I)（随 I 上升，因为规则与层级增多），盲点损失为 B(I)（随 I 下降，因为覆盖更全）。系统的脆弱性正比于 τ(I) + B(I)。最优复杂度 I* = argmin[τ(I) + B(I)]。<b>关键推论：I* 不是常数，而取决于外部冲击的频率——冲击越快，I* 越小。</b></div>
 
-<div class="eq"><span class="body">τ(I) ≈ τ₀ · I<sup>γ</sup>（γ &gt; 1）；　I* ↓ 当冲击频率 ↑</span><span class="num">(3.2)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>τ</mi><mo>(</mo><mi>I</mi><mo>)</mo><mo>≈</mo><mi>τ</mi><mi>₀</mi><mo>·</mo><msup><mi>I</mi><mi>γ</mi></msup><mtext>（</mtext><mi>γ</mi><mo>&gt;</mo><mn>1</mn><mtext>）；　</mtext><mi>I</mi><mo>*</mo><mi>↓</mi><mtext>当冲击频率</mtext><mi>↑</mi></math></span><span class="num">(3.2)</span></div>
 <p>上式表示：响应时间随复杂度<b>超线性</b>上升（每加一层，协调成本不止加一）。因此在高耦合、高冲击频率的环境里，系统的"复杂但迟缓"比"简单但敏捷"更脆弱。这解释了第 6 章的三个案例：美国、中国、欧盟都可能在"复杂度过剩"区间。<b>这也解释了为什么倒 U 在跨文明数据上难被识别：I* 随时代移动，样本把不同 I* 的系统混在一起。</b></p>
 
 <table class="nat">
@@ -85,14 +85,14 @@
 </table>
 <div class="datasrc"><b>性质：</b>说明性，质量 C。<b>注释：</b>速度为量级示意；可逆性为定性判断。三通道叠加使 κ 的总传导速度快于任一单通道。</div>
 
-<div class="eq"><span class="body">v<sub>传导</sub> ≈ max(v<sub>商品</sub>, v<sub>金融</sub>, v<sub>信息</sub>) · κ<sub>通道</sub></span><span class="num">(3.3)</span></div>
+<div class="eq"><span class="body"><math display="block"><msub><mi>v</mi><mtext>传导</mtext></msub><mo>≈</mo><mi mathvariant="normal">max</mi><mo>(</mo><msub><mi>v</mi><mtext>商品</mtext></msub><mo>,</mo><msub><mi>v</mi><mtext>金融</mtext></msub><mo>,</mo><msub><mi>v</mi><mtext>信息</mtext></msub><mo>)</mo><mo>·</mo><msub><mi>κ</mi><mtext>通道</mtext></msub></math></span><span class="num">(3.3)</span></div>
 <p>上式表示：系统的传导速度由"最快通道 × 该通道耦合度"决定，而非平均。这解释了为什么信息耦合最关键：它把其他通道的传导也"预期化"了——市场在实体断裂之前就已完成定价调整。</p>
 
 <h3 id="sec3-7">3.7　螺旋的分岔与失稳条件</h3>
 
 <p>当螺旋在某个方向上变得不稳定时，系统进入敏感区。动力系统理论给出的判据是<b>最大 Lyapunov 指数</b>：若扰动随时间指数增长，则系统对初值敏感，长期预测失效。对三根轴，可写出一个示意性的"总敏感度"：</p>
 
-<div class="eq"><span class="body">Λ ≈ λ<sub>Θ</sub> + λ<sub>I</sub> + λ<sub>κ</sub> + λ<sub>Ξ</sub>，　当 Λ &gt; Λ<sub>c</sub> 时进入失稳区</span><span class="num">(3.4)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>Λ</mi><mo>≈</mo><msub><mi>λ</mi><mi>Θ</mi></msub><mo>+</mo><msub><mi>λ</mi><mi>I</mi></msub><mo>+</mo><msub><mi>λ</mi><mi>κ</mi></msub><mo>+</mo><msub><mi>λ</mi><mi>Ξ</mi></msub><mtext>，　当</mtext><mi>Λ</mi><mo>&gt;</mo><msub><mi>Λ</mi><mi>c</mi></msub><mtext>时进入失稳区</mtext></math></span><span class="num">(3.4)</span></div>
 <p>上式表示：总敏感度 Λ 是各轴敏感度与耦合项 λ<sub>Ξ</sub> 之和；当它超过临界值 Λ<sub>c</sub>，系统进入"中等冲击即可触发大相变"的区间。<b>关键点在于耦合项 λ<sub>Ξ</sub>：即使各轴单独不敏感，耦合也能把 Λ 推过临界值。</b>这是第 7 章"κ 放大局部冲击"的形式表达。（说明：式(3.4)是概念加总，各 λ 不可从本书数据估计。）</p>
 
 <table class="nat">
@@ -130,7 +130,7 @@
 
 <p>表 3.5 给出本节的核心命题：<b>系统的纠错能力由其"可用纠错通道中最慢的一环"决定，而不是由最快的一环决定。</b>这与第 3.6 节"传导速度由最快通道决定"恰好相反，两个结论必须并置理解：<b>冲击传播走快通道，纠错走慢通道。</b>这种"传播快、纠错慢"的速度不对称，正是螺旋在受冲击时容易跃迁的深层原因。</p>
 
-<div class="eq"><span class="body">失配判据：v<sub>冲击</sub> &gt; 1 / Ω<sub>eff</sub>　⇒　冲击在纠正完成前已演变为危机</span><span class="num">(3.5)</span></div>
+<div class="eq"><span class="body"><math display="block"><mtext>失配判据：</mtext><msub><mi>v</mi><mtext>冲击</mtext></msub><mo>&gt;</mo><mn>1</mn><mo>/</mo><msub><mi>Ω</mi><mi mathvariant="normal">eff</mi></msub><mo>⇒</mo><mtext>冲击在纠正完成前已演变为危机</mtext></math></span><span class="num">(3.5)</span></div>
 <p>上式表示：当冲击速度超过有效纠错速度（Ω<sub>eff</sub> 的倒数）时，系统进入"边打边修、越修越乱"的失配区。这里 Ω<sub>eff</sub> 取表 3.5 中最慢的可用通道的 Ω。这一判据是概念式的，不能用于计算具体年份，但可以解释三类历史现象：2008 年金融通道的速度远快于监管通道，2020 年信息通道快于政策通道，AI 竞赛中技术迭代快于治理更新。它们在第 9 章分别展开。</p>
 
 <img class="fig" src="assets/svg/fig-feedback.svg" alt="反馈通道的速度—纠错不对称与失配区">

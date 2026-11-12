@@ -137,8 +137,8 @@
 
 <p>三重证据指向同一个被忽略的量。回到风险分解：</p>
 
-<div class="eq"><span class="body">Risk(S) = Hazard(S) × Exposure(S) × [1 − AdaptiveCapacity(S)]</span><span class="num">(10.1)</span></div>
-<div class="eq"><span class="body">AdaptiveCapacity = ¼(替代性 + 缓冲 + 多元化 + Θ<sub>韧性</sub>) × (1 − κ/5)</span><span class="num">(10.2)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi mathvariant="normal">Risk</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>=</mo><mi mathvariant="normal">Hazard</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>×</mo><mi mathvariant="normal">Exposure</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>×</mo><mo>[</mo><mn>1</mn><mo>−</mo><mi mathvariant="normal">AdaptiveCapacity</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>]</mo></math></span><span class="num">(10.1)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi mathvariant="normal">AdaptiveCapacity</mi><mo>=</mo><mi>¼</mi><mo>(</mo><mtext>替代性</mtext><mo>+</mo><mtext>缓冲</mtext><mo>+</mo><mtext>多元化</mtext><mo>+</mo><msub><mi>Θ</mi><mtext>韧性</mtext></msub><mo>)</mo><mo>×</mo><mo>(</mo><mn>1</mn><mo>−</mo><mi>κ</mi><mo>/</mo><mn>5</mn><mo>)</mo></math></span><span class="num">(10.2)</span></div>
 
 <p>式(10.1)—(10.2)隐含了一个从未写出的前提：<b>系统有足够的时间去动员 AdaptiveCapacity。</b>替代产能需要 60—90 天才能上线，库存需要时间被调用，多元化协议需要时间签署，就连央行干预也需要时间协调。如果冲击进展得比动员更快，那么 AdaptiveCapacity 无论名义值多高，都等于零——因为<b>它来不及被使用。</b></p>
 
@@ -147,7 +147,7 @@
 <div class="define"><span class="bt">定义 10.3　可控性窗口 W</span>
 对冲击情景 S，定义其可控性窗口为<b>可动员时间与冲击进展时间之比</b>：W(S) = T<sub>mobilize</sub>(S) / T<sub>threat</sub>(S)。当 W ≥ 1，AdaptiveCapacity 可被完整动员，诊断框架有效；W &lt; 1 时，有效适应能力被时间打折；W → 0 时，名义适应能力与风险无关。<b>等级提示：</b>T<sub>mobilize</sub> 依赖 I，而 I 为概念丙（事后推断），故 W 只能作序数与方向使用（概念丙·事后）。</div>
 
-<div class="eq"><span class="body">AC<sub>有效</sub> = AC<sub>名义</sub> × 𝟙[W ≥ 1] + AC<sub>名义</sub> · W · 𝟙[W &lt; 1]</span><span class="num">(10.3)</span></div>
+<div class="eq"><span class="body"><math display="block"><msub><mi mathvariant="normal">AC</mi><mtext>有效</mtext></msub><mo>=</mo><msub><mi mathvariant="normal">AC</mi><mtext>名义</mtext></msub><mo>×</mo><mn>𝟙</mn><mo>[</mo><mi>W</mi><mo>≥</mo><mn>1</mn><mo>]</mo><mo>+</mo><msub><mi mathvariant="normal">AC</mi><mtext>名义</mtext></msub><mo>·</mo><mi>W</mi><mo>·</mo><mn>𝟙</mn><mo>[</mo><mi>W</mi><mo>&lt;</mo><mn>1</mn><mo>]</mo></math></span><span class="num">(10.3)</span></div>
 <p>式(10.3)是对式(10.2)的最小修正：它没有增加任何新参数，只是把“时间够不够”显式写出。S1 中 W ≈ 2，修正项不启用；S3 中 W ≈ 0.05，有效适应能力趋近于零。<b>第 4、13 章将把 W 展开为可分析、可比较的时间结构，并说明它为什么在当代系统中难以大于 1。</b></p>
 
 <h3 id="sec10-8">10.8　“可控性窗口”的发现</h3>

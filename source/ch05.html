@@ -108,7 +108,7 @@
 <b>家庭债务</b>：家庭对金融机构的负债，以未来劳动收入偿付，是"不可稀释的索取权"。<br>
 三者对 Θ 的含义完全不同：主权债务扩张可能是政府加杠杆（未必是私人租佃）；家庭债务扩张则是金融部门对劳动收入的提前抽取，最接近"租佃"。</div>
 
-<div class="eq"><span class="body">Θ<sub>debt</sub> ≈ w<sub>h</sub>·(家庭债务/GDP) + w<sub>f</sub>·(企业债务/GDP)·π<sub>fin</sub> + w<sub>g</sub>·(主权债务/GDP)·(1 − 货币主权)</span><span class="num">(5.2)</span></div>
+<div class="eq"><span class="body"><math display="block"><msub><mi>Θ</mi><mi mathvariant="normal">debt</mi></msub><mo>≈</mo><msub><mi>w</mi><mi>h</mi></msub><mo>·</mo><mfrac><mrow><mtext>家庭债务</mtext></mrow><mrow><mi mathvariant="normal">GDP</mi></mrow></mfrac><mo>+</mo><msub><mi>w</mi><mi>f</mi></msub><mo>·</mo><mfrac><mrow><mtext>企业债务</mtext></mrow><mrow><mi mathvariant="normal">GDP</mi></mrow></mfrac><mo>·</mo><msub><mi>π</mi><mi mathvariant="normal">fin</mi></msub><mo>+</mo><msub><mi>w</mi><mi>g</mi></msub><mo>·</mo><mfrac><mrow><mtext>主权债务</mtext></mrow><mrow><mi mathvariant="normal">GDP</mi></mrow></mfrac><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><mtext>货币主权</mtext><mo>)</mo></math></span><span class="num">(5.2)</span></div>
 <p>上式表示：债务代理的有效 Θ 是三类债务的加权和，其中家庭债务权重最高（因为它以劳动收入偿付、不可稀释），企业债务需乘以金融部门利润占比（只有被金融中介抽取的部分才是租佃），主权债务需乘以“失去货币主权”的程度（本币债务可稀释，外币债务不可）。<b>加总的“债务/GDP”因此严重高估或低估真实租佃，取决于三类债务的构成。</b></p>
 
 <h4 class="arg">真实分解：私人风险如何公共化</h4>
@@ -160,7 +160,7 @@
 
 <p>上面六个代理各自只能提供有限证据。真正的问题是：<b>它们合在一起时，结论有多鲁棒？</b>我们做四组检验：合成、留一、相关矩阵、单代理对照。合成指数定义为各代理 z 分数的等权平均：</p>
 
-<div class="eq"><span class="body">Θ̂<sub>t</sub> = (1/K) Σ<sub>k=1..K</sub> z<sub>k,t</sub>，　z<sub>k,t</sub> =(x<sub>k,t</sub> − x̄<sub>k</sub>) / σ<sub>k</sub></span><span class="num">(5.1)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>Θ</mi><msub><mi>̂</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi>K</mi></mrow></mfrac><msub><mo>Σ</mo><mi mathvariant="normal">k</mi><mo>=</mo><mn>1</mn><mi>.</mi><mi>.</mi><mi>K</mi></msub><msub><mi>z</mi><mi mathvariant="normal">k</mi><mo>,</mo><mi>t</mi></msub><mtext>，　</mtext><msub><mi>z</mi><mi mathvariant="normal">k</mi><mo>,</mo><mi>t</mi></msub><mo>=</mo><mo>(</mo><msub><mi>x</mi><mi mathvariant="normal">k</mi><mo>,</mo><mi>t</mi></msub><mo>−</mo><mi>x</mi><msub><mi>̄</mi><mi mathvariant="normal">k</mi></msub><mo>)</mo><mo>/</mo><msub><mi>σ</mi><mi mathvariant="normal">k</mi></msub></math></span><span class="num">(5.1)</span></div>
 <p>其中 x<sub>k,t</sub> 为第 k 个代理在第 t 年的取值（重叠年份内线性插值），z 为标准分数。合成指数只用于检验<b>方向一致性</b>，其绝对水平没有意义。</p>
 
 <p>在 1980—2020 年的五个长期代理上，合成指数对年份的 Spearman 相关为 <b>ρ = 0.996（p &lt; 0.001），92.5% 的年份较上年上升</b>；在 2010—2024 年的六个代理上（含 AI），ρ = 0.971，92.9% 的年份上升。留一测试（每次剔除一个代理后重算）给出长期合成 ρ 的范围为 <b>[0.99, 1.00]</b>，短期为 [0.96, 0.99]。也就是说，<b>剔除任何一个代理都不改变合成指数的上升方向。</b>表 5.6 与图 5.1b 给出结果。</p>
@@ -303,7 +303,7 @@
 
 <p>把 Θ 的变化写成一个含加速度的简单形式：</p>
 
-<div class="eq"><span class="body">Θ(t) = θ₀ + α t + β t²，　关键问题：β 是否 &gt; 0 且在增大？</span><span class="num">(5.3)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>Θ</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mi>θ</mi><mi>₀</mi><mo>+</mo><mi>α</mi><mi>t</mi><mo>+</mo><mi>β</mi><mi>t</mi><mi>²</mi><mtext>，　关键问题：</mtext><mi>β</mi><mtext>是否</mtext><mo>&gt;</mo><mn>0</mn><mtext>且在增大？</mtext></math></span><span class="num">(5.3)</span></div>
 
 <p>如果 β ≈ 0，Θ 只是线性漂移，系统有相对宽裕的时间去适应；如果 β &gt; 0 且不断增大，则<b>攫取本身在加速，留给再分配与制度调整的时间被双重压缩</b>。定义<b>攫取加速度系数</b> γ = (d²Θ/dt²)/Θ，它衡量单位时间内租佃份额的“二次增长”。三个当代现象提示 γ 在上升：</p>
 

@@ -95,7 +95,7 @@
 
 <p>第 9 章给出了情景与监测指标，并用式(9.1)做贝叶斯更新。但更新的合法性取决于一个前提：<b>似然必须在看到信号之前登记。</b>本节把它形式化。</p>
 
-<div class="eq"><span class="body">L(s<sub>t</sub> | 情景<sub>k</sub>) 必须在观测 s<sub>t</sub> 之前写入登记簿；观测后仅执行 P<sub>t</sub>(k) ∝ P<sub>t−1</sub>(k)·L(s<sub>t</sub>|k)</span><span class="num">(11.1)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>L</mi><mo>(</mo><msub><mi>s</mi><mi>t</mi></msub><mo>|</mo><msub><mtext>情景</mtext><mi mathvariant="normal">k</mi></msub><mo>)</mo><mtext>必须在观测</mtext><msub><mi>s</mi><mi>t</mi></msub><mtext>之前写入登记簿；观测后仅执行</mtext><msub><mi>P</mi><mi>t</mi></msub><mo>(</mo><mi mathvariant="normal">k</mi><mo>)</mo><mo>∝</mo><msub><mi>P</mi><mi>t</mi><mo>−</mo><mn>1</mn></msub><mo>(</mo><mi mathvariant="normal">k</mi><mo>)</mo><mo>·</mo><mi>L</mi><mo>(</mo><msub><mi>s</mi><mi>t</mi></msub><mo>|</mo><mi mathvariant="normal">k</mi><mo>)</mo></math></span><span class="num">(11.1)</span></div>
 <p>上式表示：情景概率的更新只允许使用事先写定的似然，不允许在看到信号后修改"这个信号说明什么"。若允许事后修改似然，任何情景都能被解释，框架也就失去可否证性。</p>
 
 <table class="nat">

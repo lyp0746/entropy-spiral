@@ -36,7 +36,7 @@
 
 <p>把可控性形式化为一个时间比：</p>
 
-<div class="eq"><span class="body">C(S) = T<sub>policy</sub>(S) / T<sub>threat</sub>(S)</span><span class="num">(13.1)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>C</mi><mo>(</mo><mi>S</mi><mo>)</mo><mo>=</mo><msub><mi>T</mi><mi mathvariant="normal">policy</mi></msub><mo>(</mo><mi>S</mi><mo>)</mo><mo>/</mo><msub><mi>T</mi><mi mathvariant="normal">threat</mi></msub><mo>(</mo><mi>S</mi><mo>)</mo></math></span><span class="num">(13.1)</span></div>
 
 <p>其中 T<sub>policy</sub> 是执行有效政策所需的最短时间，T<sub>threat</sub> 是威胁从出现到越过不可逆阈值所需的时间。<b>等级提示：</b>T<sub>policy</sub> 依赖 I，而 I 为概念丙（事后推断）；T<sub>threat</sub> 依赖情景假设。故 C 只能作序数与方向判断，不能作基数报告（与命题 4.1 一致）。</p>
 
@@ -73,7 +73,7 @@
 
 <p>现代社会同时运行多个子系统，因此总可控性不是各子系统的平均，而是<b>最弱环节</b>：</p>
 
-<div class="eq"><span class="body">C<sub>total</sub> = min(C<sub>金融</sub>, C<sub>政治</sub>, C<sub>社会</sub>, C<sub>生态</sub>, …)</span><span class="num">(13.2)</span></div>
+<div class="eq"><span class="body"><math display="block"><msub><mi>C</mi><mi mathvariant="normal">total</mi></msub><mo>=</mo><mi mathvariant="normal">min</mi><mo>(</mo><msub><mi>C</mi><mtext>金融</mtext></msub><mo>,</mo><msub><mi>C</mi><mtext>政治</mtext></msub><mo>,</mo><msub><mi>C</mi><mtext>社会</mtext></msub><mo>,</mo><msub><mi>C</mi><mtext>生态</mtext></msub><mo>,</mo><mi>…</mi><mo>)</mo></math></span><span class="num">(13.2)</span></div>
 
 <p>式(13.2)的含义是反直觉的：<b>即使政治、社会、生态都还可控，只要金融这一环的 C &lt; 1，整个系统就不可控。</b>这正是 S3 的结构——不是因为政治有意愿问题，而是因为政治的 T<sub>policy</sub>（数周）远大于金融的 T<sub>threat</sub>（数小时）。</p>
 
@@ -167,7 +167,7 @@
 
 <p>把耦合与自主性显式写进可控性函数，可以得到一个更完整的形式：</p>
 
-<div class="eq"><span class="body">C(t) = [ T<sub>policy</sub>(t) · Autonomy(t) ] / [ T<sub>threat</sub>(t) · Coupling(t) ]</span><span class="num">(13.3)</span></div>
+<div class="eq"><span class="body"><math display="block"><mi>C</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mo>[</mo><msub><mi>T</mi><mi mathvariant="normal">policy</mi></msub><mo>(</mo><mi>t</mi><mo>)</mo><mo>·</mo><mi mathvariant="normal">Autonomy</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>]</mo><mo>/</mo><mo>[</mo><msub><mi>T</mi><mi mathvariant="normal">threat</mi></msub><mo>(</mo><mi>t</mi><mo>)</mo><mo>·</mo><mi mathvariant="normal">Coupling</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>]</mo></math></span><span class="num">(13.3)</span></div>
 
 <p>其中 Autonomy ∈ (0,1] 是系统自我纠正的能力，Coupling ≥ 1 是与其他失效系统的耦合强度。式(13.3)说明两件事：<b>（一）</b>自主性提高会改善可控性，但它始终被时间比所乘除，所以无法弥补 T<sub>policy</sub> 过长；<b>（二）</b>耦合会同时恶化分子以外的所有项，这就是为什么高度集成的全球系统在局部危机中反而更脆弱。</p>
 
