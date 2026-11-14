@@ -1,0 +1,374 @@
+﻿polity,NGA,T,arch_period,adm,c_bureau,s_lawcomposite
+ItLatCA,Latium,1799.0,1,1.0,0.0,0.0
+ItLatBA,Latium,799.0,1,1.5,0.0,0.0
+ItLatIA,Latium,283.0,1,2.0,0.0,0.025000000000000005
+ItRomRg,Latium,206.0,1,3.0,0.0,0.125
+ItRomER,Latium,244.0,1,3.0,0.0,0.375
+ItRomMR,Latium,130.0,1,3.5,0.0,0.375
+ItRomLR,Latium,104.0,1,3.5,0.0,0.25
+ItRomPr,Konya Plain,314.0,0,8.5,1.0,0.5
+TrRomDm,Konya Plain,110.0,0,8.5,1.0,1.0
+ItRomWe,Latium,62.0,1,8.0,1.0,1.0
+ItOstrg,Latium,61.0,1,6.0,1.0,1.0
+ItRav**,Latium,142.0,1,5.5,1.0,1.0
+ItStPet,Latium,192.0,1,6.0,1.0,0.975
+ItPapEM,Latium,293.0,1,6.0,1.0,1.0
+ItPapHM,Latium,110.0,1,5.5,1.0,1.0
+ItPapRn,Latium,148.0,1,5.0,1.0,1.0
+ItPapM1,Latium,120.0,1,4.5,1.0,1.0
+ItPapM2,Latium,152.0,1,6.0,1.0,1.0
+FrBeakr,Paris Basin,999.0,0,1.0,,
+FrAtlBA,Paris Basin,1199.0,0,1.5,,
+FrHallA,Paris Basin,99.0,0,1.5,0.1,
+FrHallB,Paris Basin,199.0,0,2.5,0.1,
+FrHallC,Paris Basin,99.0,0,3.5,0.1,
+FrHallD,Paris Basin,125.0,0,3.5,0.1,
+FrTeneA,Paris Basin,149.0,0,3.0,,0.1
+FrTeneB,Paris Basin,149.0,0,3.0,,0.1
+FrTeneC,Paris Basin,147.0,0,3.5,,0.1
+TrERom*,Konya Plain,212.0,0,8.0,1.0,1.0
+FrMervE,Paris Basin,61.0,0,4.0,0.1,0.775
+FrMervM,Paris Basin,143.0,0,4.5,0.1,1.0
+FrMervL,Paris Basin,63.0,0,4.5,0.1,0.75
+FrCarlE,Paris Basin,87.0,0,4.0,,0.275
+FrCarlL,Paris Basin,146.0,0,4.0,0.9,0.05
+FrCaptE,Paris Basin,162.0,0,4.0,0.1,0.07500000000000001
+FrCaptL,Paris Basin,177.0,0,5.0,1.0,0.75
+FrValoE,Paris Basin,121.0,0,5.0,1.0,1.0
+FrValoL,Paris Basin,138.0,0,5.5,1.0,0.975
+FrBurbE,Paris Basin,70.0,0,6.0,1.0,1.0
+FrBurbL,Paris Basin,128.0,0,6.0,1.0,1.0
+IsCommw,Iceland,331.0,0,4.0,0.0,0.25
+NorKing,Iceland,118.0,0,5.0,1.0,0.525
+GrCrNeo,Crete,3999.0,0,1.0,0.0,0.0
+GrCrPre,Crete,1099.0,0,1.5,,0.0
+GrCrOPa,Crete,199.0,0,2.5,1.0,0.0
+GrCrNPa,Crete,249.0,0,5.0,1.0,0.0
+GrCrMPa,Crete,149.0,0,5.0,1.0,0.0
+GrCrPPa,Crete,99.0,0,4.0,1.0,0.0
+GrCrFPa,Crete,199.0,0,,,0.0
+GrCrGeo,Crete,289.0,0,,,0.0
+GrCrArc,Crete,209.0,0,5.0,1.0,0.75
+GrCrCls,Crete,178.0,0,5.0,1.0,0.75
+GrCrHel,Crete,254.0,0,5.0,1.0,0.75
+TrByzM1,Konya Plain,234.0,0,8.0,1.0,1.0
+GrCrEmr,Crete,136.0,0,5.0,1.0,1.0
+TrByzM2,Konya Plain,205.0,0,8.0,1.0,1.0
+TrByzM3,Crete,130.0,0,8.0,1.0,1.0
+ItVenR3,Crete,359.0,0,5.5,1.0,0.9750000000000001
+ItVenR4,Crete,105.0,0,5.5,1.0,0.975
+TrOttm4,Konya Plain,155.0,0,9.5,1.0,1.0
+EgBadar,Upper Egypt,599.0,1,1.5,0.09999999999999999,0.10000000000000002
+EgNaqa1,Upper Egypt,249.0,1,2.0,0.10000000000000002,0.10000000000000002
+EgNaqa2,Upper Egypt,249.0,1,2.5,0.25,0.1
+EgNaqa3,Upper Egypt,199.0,1,2.5,0.9,0.1
+EgDyn1*,Upper Egypt,199.0,1,4.0,1.0,0.07500000000000001
+EgDyn2*,Upper Egypt,249.0,1,4.0,1.0,0.075
+EgOldK1,Upper Egypt,299.0,1,7.0,1.0,0.625
+EgOldK2,Upper Egypt,199.0,1,7.0,1.0,0.625
+EgRegns,Upper Egypt,133.0,1,4.0,0.9,0.5
+EgMidKg,Upper Egypt,295.0,1,6.0,1.0,0.47500000000000003
+EgThebH,Upper Egypt,153.0,1,5.5,1.0,0.39999999999999997
+EgNKThu,Upper Egypt,256.0,1,5.5,1.0,0.6333333333333333
+EgNKRam,Upper Egypt,222.0,1,5.5,1.0,0.6333333333333333
+EgThebL,Upper Egypt,309.0,1,6.0,1.0,
+SdKusht,Upper Egypt,104.0,1,5.0,1.0,0.1
+EgSaite,Upper Egypt,129.0,1,5.0,1.0,0.32500000000000007
+IrAchae,Kachi Plain,221.0,1,7.0,1.0,1.0
+EgIntOc,Upper Egypt,61.0,1,5.0,0.9,0.4
+EgPtol1,Galilee,101.0,0,6.0,1.0,0.75
+EgPtol2,Upper Egypt,185.0,1,6.0,1.0,0.75
+SyCalUm,Kachi Plain,80.0,1,5.5,1.0,0.275
+IqAbbs1,Kachi Plain,111.0,1,6.0,1.0,0.4
+EgTulIk,Upper Egypt,101.0,1,5.0,1.0,0.6333333333333334
+TnFatim,Upper Egypt,200.0,1,6.0,1.0,0.975
+EgAyyub,Yemeni Coastal Plain,53.0,0,5.0,1.0,0.975
+EgMamBh,Upper Egypt,87.0,1,7.0,1.0,0.725
+EgMamCP,Upper Egypt,63.0,1,7.0,1.0,0.725
+EgMamBu,Upper Egypt,104.0,1,7.0,1.0,0.725
+TrOttm3,Yemeni Coastal Plain,98.0,0,9.5,1.0,1.0
+MlJeJe1,Niger Inland Delta,299.0,0,1.0,,
+MlJeJe2,Niger Inland Delta,349.0,0,1.5,,
+MlJeJe3,Niger Inland Delta,499.0,0,1.5,0.0,0.1
+MlJeJe4,Niger Inland Delta,99.0,0,2.0,,
+MrWagdM,Niger Inland Delta,77.0,0,4.0,0.5,0.95
+MrWagdL,Niger Inland Delta,102.0,0,4.0,0.5,1.0
+MlMali*,Niger Inland Delta,175.0,0,4.5,0.9,0.6333333333333334
+MlSong2,Niger Inland Delta,97.0,0,4.5,1.0,1.0
+MaSaadi,Niger Inland Delta,27.0,0,5.0,1.0,0.9666666666666667
+MlSegou,Niger Inland Delta,71.0,0,2.0,0.0,0.025
+MlBaman,Niger Inland Delta,106.0,0,5.0,,0.9
+GhAshnE,Ghanaian Coast,200.0,0,4.0,0.0,0.0
+GhAshnL,Ghanaian Coast,193.0,0,6.0,1.0,0.275
+IqSoNeo,Southern Mesopotamia,3499.0,0,,,
+IqUbaid,Southern Mesopotamia,1299.0,0,2.0,,
+IqUruk*,Southern Mesopotamia,1200.0,0,,0.0,
+IqEDyn*,Southern Mesopotamia,549.0,0,,,
+IqAkkad,Susiana,137.0,1,5.0,1.0,0.75
+IqUrIII,Susiana,83.0,1,4.0,1.0,1.0
+IqIsinL,Southern Mesopotamia,108.0,0,4.0,1.0,0.775
+IqBabAm,Southern Mesopotamia,298.0,0,6.0,,1.0
+IqBabKs,Southern Mesopotamia,441.0,0,3.0,1.0,0.6333333333333333
+IqIsin2,Southern Mesopotamia,126.0,0,3.5,1.0,0.6333333333333334
+IqBazi*,Southern Mesopotamia,25.0,0,4.5,,0.30000000000000004
+IqDynE*,Southern Mesopotamia,247.0,0,4.5,0.9,0.3
+IqNAssr,Galilee,94.0,0,3.5,1.0,0.05
+IqNeoBb,Galilee,87.0,0,6.0,1.0,
+IrSeleu,Sogdiana,51.0,1,5.5,1.0,1.0
+IrPart1,Kachi Plain,116.0,1,5.5,1.0,1.0
+IrPart2,Southern Mesopotamia,178.0,0,5.5,1.0,1.0
+IrSasn1,Kachi Plain,244.0,1,6.0,1.0,0.6
+IrSasn2,Kachi Plain,109.0,1,6.0,1.0,0.62
+IrBuyid,Susiana,108.0,1,5.0,0.9,0.725
+IrSeljq,Susiana,134.0,1,5.0,1.0,0.975
+IqAbbs2,Susiana,16.0,1,5.0,,0.975
+IrIlkhn,Konya Plain,63.0,0,6.0,1.0,0.9666666666666666
+UzTimur,Sogdiana,156.0,1,6.0,1.0,1.0
+IrSafvd,Susiana,217.0,1,6.0,1.0,1.0
+IrPrCer,Susiana,599.0,1,1.0,0.09999999999999999,0.10000000000000002
+IrForma,Susiana,199.0,1,1.0,0.1,0.1
+IrArcha,Susiana,999.0,1,1.0,0.1,0.1
+IrKhzE*,Susiana,299.0,1,1.0,0.10000000000000002,0.10000000000000002
+IrKhzEM,Susiana,599.0,1,1.0,0.09999999999999999,0.10000000000000002
+IrKhzM*,Susiana,399.0,1,1.5,0.1,0.1
+IrKhzL*,Susiana,399.0,1,1.5,0.1,0.1
+IrSusa1,Susiana,499.0,1,1.5,,0.10000000000000002
+IrSusa2,Susiana,699.0,1,3.5833333333333335,0.9000000000000001,0.1
+IrSusa3,Susiana,424.0,1,4.0,0.9,0.10000000000000003
+IrAwanE,Susiana,424.0,1,4.0,1.0,0.2
+IrShima,Susiana,127.0,1,4.5,0.9,
+IrSukkE,Susiana,199.0,1,4.5,0.9,1.0
+IrSukkL,Susiana,199.0,1,4.5,0.9,0.9
+IrMElm1,Susiana,99.0,1,4.5,0.9,1.0
+IrMElm2,Susiana,199.0,1,4.5,0.9,0.9
+IrMElm3,Susiana,99.0,1,4.5,1.0,1.0
+IrElmCP,Susiana,199.0,1,,0.1,
+IrNElm1,Susiana,156.0,1,4.0,,
+IrNElm2,Susiana,96.0,1,4.0,0.9,0.9
+IrNElm3,Susiana,72.0,1,,0.9,
+IrElym2,Susiana,190.0,1,4.0,,0.9
+IrAkKoy,Susiana,33.0,1,5.0,0.9,0.9
+IrQajar,Susiana,131.0,1,4.0,1.0,0.6666666666666666
+IlCanaa,Galilee,819.0,0,,,0.5
+LbAcPho,Galilee,149.0,0,,,0.675
+IlYisrl,Galilee,308.0,0,,1.0,0.7000000000000001
+IlJudea,Galilee,41.0,0,,,
+TrNeoER,Konya Plain,2599.0,0,1.0,0.0,
+TrNeoCR,Konya Plain,399.0,0,1.0,0.0,
+TrNeoLT,Konya Plain,599.0,0,1.0,0.0,
+TrClcER,Konya Plain,999.0,0,1.5,0.1,0.1
+TrClcLT,Konya Plain,1999.0,0,2.5,,0.09999999999999999
+TrBrzER,Konya Plain,999.0,0,2.5,,
+TrBrzMD,Konya Plain,300.0,0,4.5,0.9,
+TrHatOK,Konya Plain,149.0,0,3.0,1.0,1.0
+TrBrzL2,Konya Plain,100.0,0,3.0,1.0,1.0
+TrHatNK,Konya Plain,163.0,0,4.5,1.0,0.975
+TrNHitt,Konya Plain,279.0,0,4.0,1.0,0.9
+TrTabal,Konya Plain,63.0,0,3.5,,
+TrPhryg,Konya Plain,140.0,0,4.5,,
+TrLydia,Konya Plain,123.0,0,4.5,0.9,
+TrLysim,Konya Plain,18.0,0,4.0,0.9,0.9
+TrCappL,Konya Plain,34.0,0,4.0,1.0,0.10000000000000002
+TrRum**,Konya Plain,150.0,0,4.5,1.0,1.0
+TrOttm1,Konya Plain,9.0,0,5.0,0.9,0.95
+TrOttm2,Konya Plain,95.0,0,5.0,1.0,0.975
+YeNeoL*,Yemeni Coastal Plain,2299.0,0,,,
+YeLBA**,Yemeni Coastal Plain,399.0,0,,,
+YeSabaC,Yemeni Coastal Plain,349.0,0,,,
+YeQatab,Yemeni Coastal Plain,339.0,0,,,
+YeSaRay,Yemeni Coastal Plain,259.0,0,,,
+EtAksm1,Yemeni Coastal Plain,119.0,0,4.5,1.0,0.9
+YeHmyr1,Yemeni Coastal Plain,70.0,0,4.0,1.0,0.4
+YeHmyr2,Yemeni Coastal Plain,147.0,0,4.0,1.0,0.39999999999999997
+YeZiyad,Yemeni Coastal Plain,168.0,0,3.5,1.0,0.9
+YeWarLd,Yemeni Coastal Plain,136.0,0,4.5,1.0,1.0
+YeRasul,Yemeni Coastal Plain,224.0,0,5.0,1.0,1.0
+YeTahir,Yemeni Coastal Plain,63.0,0,5.0,0.9,1.0
+YeQasmi,Yemeni Coastal Plain,168.0,0,3.0,1.0,0.3333333333333333
+TjSaraz,Sogdiana,1499.0,1,,,
+KzAndro,Sogdiana,599.0,1,,,0.10000000000000002
+UzKok01,Sogdiana,400.0,1,1.0,,
+UzKhw01,Sogdiana,248.0,1,,,
+UzKok02,Sogdiana,150.0,1,2.5,0.1,0.1
+AfGrBct,Sogdiana,118.0,1,5.5,0.9,1.0
+AfTochr,Sogdiana,158.0,1,3.5,,
+AfKushn,Middle Ganga,284.0,0,4.5,1.0,0.9500000000000001
+AfKidar,Sogdiana,84.0,1,4.0,0.9,0.9
+AfHepht,Kachi Plain,35.0,1,4.5,0.5,
+KgWTurk,Sogdiana,39.0,1,4.0,0.9,
+UzSogdi,Sogdiana,107.0,1,3.5,0.9,0.9
+UzSamnd,Sogdiana,114.0,1,6.5,1.0,0.975
+KgKarKh,Sogdiana,221.0,1,6.0,1.0,0.9500000000000001
+UzChagt,Sogdiana,98.0,1,4.5,0.9,0.3333333333333333
+UzJanid,Sogdiana,148.0,1,6.0,1.0,1.0
+MnXngnE,Orkhon Valley,1100.0,0,2.5,0.10000000000000002,0.09999999999999999
+MnXngnM,Orkhon Valley,149.0,0,3.5,0.1,0.3
+MnXngnL,Orkhon Valley,158.0,0,3.5,,0.3666666666666667
+MnXianb,Orkhon Valley,150.0,0,3.0,0.1,0.1
+MnRourn,Orkhon Valley,251.0,0,4.0,0.10000000000000002,0.025000000000000005
+MnETurk,Orkhon Valley,47.0,0,4.5,0.9,
+MnTurk2,Orkhon Valley,60.0,0,4.0,0.9,
+MnUigur,Orkhon Valley,95.0,0,4.0,0.0,0.1
+MnShiwe,Orkhon Valley,66.0,0,1.0,,
+MnKhitn,Orkhon Valley,165.0,0,4.5,1.0,0.1
+MnMongE,Orkhon Valley,79.0,0,2.0,0.0,0.25
+MnMngKh,Orkhon Valley,94.0,0,5.0,1.0,0.5
+MnMongL,Orkhon Valley,321.0,0,3.0,0.10000000000000002,1.0
+MnZungh,Orkhon Valley,50.0,0,3.5,0.9,0.30000000000000004
+CnQingL,Middle Yellow River Valley,116.0,1,7.0,1.0,0.775
+RuYakuE,Lena River Valley,242.0,0,2.0,0.0,0.0
+RuYakuL,Lena River Valley,257.0,0,2.0,0.10000000000000002,0.25
+PkAcerN,Kachi Plain,1999.0,1,1.0,0.0,0.0
+PkCeraN,Kachi Plain,1499.0,1,1.0,0.0,0.0
+PkChalc,Kachi Plain,799.0,1,1.5,0.0,0.0
+PkPreUr,Kachi Plain,699.0,1,1.5,0.0,0.025
+PkUrbn1,Kachi Plain,399.0,1,1.5,0.9,
+PkUrbn2,Kachi Plain,299.0,1,1.5,1.0,
+PkPostU,Kachi Plain,499.0,1,1.0,0.1,0.025
+PkProto,Kachi Plain,749.0,1,1.5,,0.10000000000000002
+InMaury,Deccan,94.0,1,7.0,1.0,1.0
+PkIndGr,Kachi Plain,49.0,1,4.5,0.9,0.9249999999999999
+PkSind1,Kachi Plain,330.0,1,3.0,,1.0
+AfGhurd,Kachi Plain,13.0,1,5.0,0.9,0.95
+InDelh*,Middle Ganga,319.0,0,9.0,1.0,1.0
+PkSind2,Kachi Plain,179.0,1,3.0,,1.0
+InMugl*,Deccan,33.0,0,7.0,1.0,0.975
+AfDurrn,Kachi Plain,78.0,1,5.0,0.0,0.275
+InGangN,Middle Ganga,3999.0,0,,,
+InGangC,Middle Ganga,2399.0,0,,,
+InMahaJ,Middle Ganga,275.0,0,4.0,0.10000000000000002,0.10000000000000002
+InSunga,Middle Ganga,122.0,0,,,
+InAyodE,Middle Ganga,98.0,0,,,
+InGupta,Middle Ganga,194.0,0,9.0,,0.9
+InMagad,Middle Ganga,56.0,0,,,
+InKanau,Middle Ganga,129.0,0,5.5,1.0,1.0
+InRasht,Deccan,216.0,0,7.0,1.0,0.9666666666666666
+InGurjr,Middle Ganga,220.0,0,,,
+InGhdvl,Middle Ganga,112.0,0,5.0,,
+InDecNL,Deccan,1499.0,0,,,
+InDecIA,Deccan,899.0,0,1.4444444444444444,,
+InDecKg,Deccan,104.0,0,3.5,0.9,
+InSataL,Deccan,303.0,0,5.0,1.0,1.0
+InVakat,Deccan,114.0,0,5.0,1.0,0.725
+InKadam,Deccan,89.0,0,6.0,0.9,
+InChaBd,Deccan,215.0,0,5.5,1.0,1.0
+InChaKl,Deccan,81.0,0,5.5,,1.0
+InHoysa,Deccan,61.0,0,3.5,1.0,0.9
+InKampi,Deccan,30.0,0,3.0,0.9,0.9
+InVijay,Deccan,309.0,0,4.5,1.0,0.9750000000000001
+GbEmpr2,Deccan,60.0,0,9.0,1.0,1.0
+InGaroE,Garo Hills,92.0,0,1.0,0.0,0.0
+InGaroL,Garo Hills,88.0,0,2.0,0.0,0.0
+KhMekBA,Cambodian Basin,699.0,1,,,
+KhMekIA,Cambodian Basin,724.0,1,,,
+KhFunaE,Cambodian Basin,314.0,1,3.0,,0.9333333333333333
+KhFunaL,Cambodian Basin,99.0,1,3.5,1.0,1.0
+KhChenl,Cambodian Basin,161.0,1,4.0,1.0,0.9666666666666667
+KhAngkE,Cambodian Basin,277.0,1,5.0,1.0,1.0
+KhAngkC,Cambodian Basin,139.0,1,5.0,1.0,1.0
+KhAngkL,Cambodian Basin,211.0,1,5.0,1.0,1.0
+KhCambd,Cambodian Basin,161.0,1,8.5,1.0,1.0
+ThAyuth,Cambodian Basin,173.0,1,6.0,1.0,1.0
+ThRattn,Cambodian Basin,91.0,1,6.0,1.0,0.95
+IdCJBun,Central Java,899.0,0,,,
+IdKalin,Central Java,231.0,0,3.5,,
+IdMedng,Central Java,287.0,0,3.6666666666666665,1.0,0.9
+IdKedir,Central Java,173.0,0,4.5,1.0,0.95
+IdMajap,Central Java,227.0,0,4.5,1.0,0.9750000000000001
+IdMatrm,Central Java,135.0,0,3.5,1.0,0.95
+IdBrokE,Kapuasi Basin,191.0,0,1.0,0.0,0.0
+IdBrokL,Kapuasi Basin,145.0,0,3.5,0.0,0.0
+CnPeili,Middle Yellow River Valley,1999.0,1,,,
+CnYngsh,Middle Yellow River Valley,1999.0,1,1.5,,
+CnLngsh,Middle Yellow River Valley,1100.0,1,3.5,,0.09999999999999999
+CnErlit,Middle Yellow River Valley,199.0,1,3.0,0.1,0.10000000000000002
+CnErlig,Middle Yellow River Valley,399.0,1,3.5,,0.07500000000000001
+CnShang,Middle Yellow River Valley,204.0,1,4.5,0.9,0.05
+CnWZhou,Middle Yellow River Valley,250.0,1,4.5,1.0,0.9500000000000001
+CnJinSA,Middle Yellow River Valley,305.0,1,4.0,1.0,0.9333333333333333
+CnWeiWS,Middle Yellow River Valley,265.0,1,5.0,1.0,0.9333333333333332
+CnWHan*,Middle Yellow River Valley,211.0,1,7.5,1.0,0.9250000000000002
+CnEHan*,Middle Yellow River Valley,194.0,1,7.0,1.0,0.925
+CnErJin,Middle Yellow River Valley,52.0,1,9.0,1.0,0.9
+CnNWei*,Middle Yellow River Valley,171.0,1,6.0,1.0,0.9333333333333332
+CnSui**,Middle Yellow River Valley,36.0,1,5.0,1.0,0.75
+CnTangE,Middle Yellow River Valley,144.0,1,7.0,1.0,0.975
+CnTangL,Middle Yellow River Valley,144.0,1,7.0,1.0,0.975
+CnNSong,Middle Yellow River Valley,166.0,1,7.5,1.0,0.975
+CnLrJin,Middle Yellow River Valley,107.0,1,5.0,1.0,1.0
+CnYuan*,Middle Yellow River Valley,96.0,1,8.0,1.0,1.0
+CnMing*,Middle Yellow River Valley,275.0,1,5.0,1.0,0.75
+CnQingE,Middle Yellow River Valley,151.0,1,7.0,1.0,0.7000000000000001
+JpJomo1,Kansai,4399.0,0,,0.0,0.0
+JpJomo2,Kansai,3899.0,0,,0.0,0.0
+JpJomo3,Kansai,1799.0,0,,0.0,0.0
+JpJomo4,Kansai,999.0,0,,0.0,0.0
+JpJomo5,Kansai,1299.0,0,,0.0,0.0
+JpJomo6,Kansai,899.0,0,,0.0,0.0
+JpYayoi,Kansai,549.0,0,1.5,0.0,0.0
+JpKofun,Kansai,287.0,0,4.0,,0.0
+JpAsuka,Kansai,171.0,0,5.5,1.0,0.6666666666666666
+JpNara*,Kansai,83.0,0,5.0,1.0,0.6666666666666666
+JpHeian,Kansai,390.0,0,5.0,1.0,0.6666666666666666
+JpKamak,Kansai,148.0,0,6.5,1.0,0.75
+JpAshik,Kansai,130.0,0,6.5,1.0,0.5
+JpSengk,Kansai,100.0,0,4.5,1.0,0.5
+JpAzMom,Kansai,34.0,0,5.0,1.0,0.5
+JpTokgw,Kansai,265.0,0,7.0,1.0,0.75
+CnHQngL,Southern China Hills,194.0,0,3.0,0.1,0.0
+CnHChin,Southern China Hills,45.0,0,2.0,0.0,0.0
+Hawaii1,Big Island Hawaii,199.0,1,,0.1,0.1
+Hawaii2,Big Island Hawaii,449.0,1,,0.1,0.07500000000000002
+Hawaii3,Big Island Hawaii,127.0,1,4.0,0.0,0.05
+USKameh,Big Island Hawaii,41.0,1,5.0,0.5,0.07500000000000001
+PgOrokE,Oro PNG,149.0,0,3.0,0.0,0.0
+PgOrokL,Oro PNG,58.0,0,2.0,1.0,0.5
+FmTrukE,Chuuk Islands,110.0,0,2.0,0.0,0.0
+FmTrukL,Chuuk Islands,62.0,0,4.0,0.9,0.5
+MxTieLa,Valley of Oaxaca,249.0,1,1.0,0.10000000000000002,0.10000000000000002
+MxSanGu,Valley of Oaxaca,449.0,1,1.5,0.1,0.07500000000000001
+MxRosar,Valley of Oaxaca,199.0,1,1.5,0.0,0.07500000000000001
+MxAlb1E,Valley of Oaxaca,199.0,1,,0.0,0.0
+MxAlb1L,Valley of Oaxaca,199.0,1,,,0.0
+MxAlb2*,Valley of Oaxaca,299.0,1,,,0.0
+MxAlb3A,Valley of Oaxaca,299.0,1,3.0,,0.0
+MxAlb3B,Valley of Oaxaca,399.0,1,,,0.0
+MxAlb5*,Valley of Oaxaca,620.0,1,2.5,0.09999999999999999,0.1
+EsHabsb,Cuzco,168.0,1,6.0,1.0,1.0
+MxArch*,Basin of Mexico,3999.0,0,,,0.03333333333333333
+MxInitl,Basin of Mexico,799.0,0,,,0.03333333333333333
+MxFormE,Basin of Mexico,399.0,0,1.5,0.1,0.07500000000000001
+MxFormM,Basin of Mexico,399.0,0,1.5,0.1,0.07500000000000001
+MxFormL,Basin of Mexico,299.0,0,,,0.03333333333333334
+MxFormT,Basin of Mexico,199.0,0,,,0.03333333333333333
+MxClass,Basin of Mexico,549.0,0,,,
+MxEpicl,Basin of Mexico,249.0,0,4.0,0.9,0.0
+MxToltc,Basin of Mexico,299.0,0,4.0,0.9,0.0
+MxPostM,Basin of Mexico,226.0,0,,0.9,0.0
+MxAztec,Basin of Mexico,92.0,0,6.0,1.0,0.5
+USMisEW,Cahokia,449.0,0,1.0,0.0,0.0
+USMisMW,Cahokia,449.0,0,1.5,0.0,0.0
+USMisRo,Cahokia,149.0,0,1.5,0.0,0.0
+USMisMu,Cahokia,149.0,0,1.5,0.0,0.0
+USMisPa,Cahokia,149.0,0,1.5,0.0,0.0
+USMisSp,Cahokia,149.0,0,2.0,0.0,0.0
+USMisME,Cahokia,149.0,0,2.0,0.1,0.0
+USCahoE,Cahokia,149.0,0,3.5,0.1,0.0
+USCahoL,Cahokia,74.0,0,3.5,0.1,0.0
+USMisSd,Cahokia,124.0,0,3.0,0.1,0.0
+USOneot,Cahokia,239.0,0,1.0,,0.0
+USIllin,Cahokia,77.0,0,2.0,,0.025
+UsIroqP,Finger Lakes,265.0,0,,,
+UsIroqE,Finger Lakes,147.0,0,3.0,0.0,0.125
+UsIroqL,Finger Lakes,134.0,0,3.0,0.0,0.125
+PeCuzLF,Cuzco,198.0,1,,,0.1
+PeCuzE1,Cuzco,299.0,1,,0.10000000000000002,0.10000000000000002
+PeCuzE2,Cuzco,149.0,1,,,0.1
+PeWari*,Cuzco,349.0,1,3.5,,0.10000000000000002
+PeCuzL1,Cuzco,249.0,1,,0.10000000000000002,0.10000000000000002
+PeCuzL2,Cuzco,149.0,1,4.0,0.9,0.9
+PeInca*,Cuzco,131.0,1,5.0,0.9,0.325
+CoNahua,North Colombia,799.0,0,1.5,0.0,
+CoTairo,North Colombia,474.0,0,1.8,0.1,0.0
+EcJivaE,Lowland Andes,296.0,0,1.5,0.0,0.0
+EcJivaL,Lowland Andes,100.0,0,1.5,0.0,0.0

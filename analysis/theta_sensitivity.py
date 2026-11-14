@@ -34,16 +34,12 @@ os.makedirs(FIGS, exist_ok=True)
 OI = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
       "vermillion": "#D55E00", "purple": "#CC79A7", "sky": "#56B4E9",
       "grey": "#595959", "black": "#000000"}
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial", "DejaVu Sans"],
-    "axes.unicode_minus": False, "font.size": 6.8, "axes.labelsize": 6.8,
-    "axes.titlesize": 7.2, "xtick.labelsize": 6.2, "ytick.labelsize": 6.2,
-    "legend.fontsize": 5.6, "axes.linewidth": 0.6,
-    "axes.spines.top": False, "axes.spines.right": False,
-    "figure.dpi": 400, "savefig.dpi": 400, "savefig.bbox": "tight",
-    "savefig.pad_inches": 0.03, "legend.frameon": False,
-})
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+from figstyle import setup, savefig as figsave, PALETTE, CYCLE, seqmap  # noqa: E402
+plt = setup(fontsize=7.5, figsize=(6.4, 3.6))
+CM_BLUE, CM_ORANGE = seqmap("blue"), seqmap("orange")
+CM_RED, CM_GREEN, CM_PURPLE = seqmap("vermillion"), seqmap("green"), seqmap("purple")
 
 
 def panel(ax, letter):
@@ -317,7 +313,7 @@ for name in modern_names:
     z = (vals - vals.min()) / (vals.max() - vals.min() + 1e-12)
     ax.plot(yrs, z, "o-", ms=2.4, lw=1.0, label=name[:6])
 ax.set_xlabel("年份"); ax.set_ylabel("归一化水平")
-ax.set_title("六重代理（归一化）"); ax.legend(fontsize=4.6, loc="upper left")
+ax.legend(fontsize=4.8, loc="upper center", bbox_to_anchor=(0.5, -0.30), ncol=3)
 panel(ax, "a")
 
 # (b) 合成 + 留一
@@ -330,20 +326,20 @@ ax.plot(R["composite_short_2010_2024"]["grid"],
         R["composite_short_2010_2024"]["composite"], color=OI["vermillion"], lw=1.8,
         label="全六代理")
 ax.set_xlabel("年份"); ax.set_ylabel("合成 z 分数")
-ax.set_title("留一：剔除任一代理"); ax.legend(fontsize=5.2)
+ax.legend(fontsize=5.2)
 panel(ax, "b")
 
 # (c) 相关矩阵
 ax = fig.add_subplot(gs[0, 2])
-im = ax.imshow(C, cmap="RdBu_r", vmin=-1, vmax=1)
+im = ax.imshow(np.clip(C, 0, 1), cmap=CM_BLUE, vmin=0, vmax=1)
 ax.set_xticks(range(len(mat_names)))
 ax.set_yticks(range(len(mat_names)))
 ax.set_xticklabels([n[:4] for n in mat_names], rotation=40, ha="right", fontsize=4.8)
 ax.set_yticklabels([n[:4] for n in mat_names], fontsize=4.8)
 for i in range(len(mat_names)):
     for j in range(len(mat_names)):
-        ax.text(j, i, f"{C[i, j]:.2f}", ha="center", va="center", fontsize=4.2)
-ax.set_title("代理相关矩阵（1980–2020）")
+        ax.text(j, i, f"{C[i, j]:.2f}", ha="center", va="center", fontsize=4.4,
+                color="white" if C[i, j] > 0.72 else "#000000")
 panel(ax, "c")
 
 # (d) 单代理 vs 留一 rho
@@ -356,7 +352,8 @@ ax.barh(y - 0.2, s_rho, height=0.4, color=OI["blue"], label="仅用该代理")
 ax.barh(y + 0.2, l_rho, height=0.4, color=OI["orange"], label="剔除该代理后的合成")
 ax.set_yticks(y); ax.set_yticklabels([n[:6] for n in names], fontsize=5.0)
 ax.axvline(0, color=OI["grey"], lw=0.6)
-ax.set_xlabel("Spearman ρ（对年份）"); ax.set_title("敏感性矩阵"); ax.legend(fontsize=5.0)
+ax.set_xlabel("Spearman ρ（对年份）")
+ax.legend(fontsize=5.0, loc="upper center", bbox_to_anchor=(0.5, -0.34), ncol=2)
 panel(ax, "d")
 
 # (e) 美国 Gini 与 top1% 财富
@@ -369,7 +366,7 @@ ax.plot(yt, vt, "s-", color=OI["vermillion"], lw=1.3, ms=3, label="美国前1%�
 ax.axvline(2015, color=OI["grey"], ls=":", lw=0.9)
 ax.text(2015, ax.get_ylim()[0] + 2, "2015", fontsize=5.2, color=OI["grey"])
 ax.set_xlabel("年份"); ax.set_ylabel("%")
-ax.set_title("2015 年转折?"); ax.legend(fontsize=5.0)
+ax.legend(fontsize=5.0)
 panel(ax, "e")
 
 # (f) 趋势斜率
@@ -380,7 +377,6 @@ ax.set_yticks(np.arange(len(modern_names)))
 ax.set_yticklabels([n[:6] for n in modern_names], fontsize=5.0)
 ax.axvline(0, color=OI["grey"], lw=0.6)
 ax.set_xlabel("Theil–Sen 斜率／百年")
-ax.set_title("趋势幅度差异大")
 panel(ax, "f")
 
 fig.savefig(os.path.join(FIGS, "theta_matrix.png"))
@@ -396,7 +392,7 @@ ax.plot(ks, ev_dt, "^:", color=OI["green"], ms=3.2, lw=1.1, label="逐代理去�
 ax.plot(ks, pa95, "x-", color=OI["grey"], ms=3.2, lw=1.0, label="平行分析 95%")
 ax.axhline(1.0, color=OI["grey"], ls="--", lw=0.7)
 ax.set_xlabel("成分序号"); ax.set_ylabel("特征值")
-ax.set_title("碎石图与平行分析"); ax.legend(fontsize=4.8)
+ax.legend(fontsize=4.8)
 panel(ax, "a")
 
 ax = axes[1]
@@ -407,7 +403,7 @@ ax.set_xticks(x)
 ax.set_xticklabels([n[:4] for n in mat_names], rotation=30, ha="right", fontsize=5.0)
 ax.axhline(0, color=OI["grey"], lw=0.6)
 ax.set_ylabel("载荷（与成分相关）")
-ax.set_title("PC1 载荷：水平 vs 差分"); ax.legend(fontsize=5.0)
+ax.legend(fontsize=5.0)
 panel(ax, "b")
 fig2.savefig(os.path.join(FIGS, "theta_pca.png"))
 plt.close(fig2)

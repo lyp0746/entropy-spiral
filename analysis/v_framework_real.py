@@ -25,16 +25,12 @@ DATA = os.path.join(BOOK, "data")
 OUT = os.path.join(BOOK, "analysis", "results")
 FIGS = os.path.join(BOOK, "assets", "charts")
 
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial", "DejaVu Sans"],
-    "axes.unicode_minus": False, "font.size": 6.8, "axes.labelsize": 6.8,
-    "axes.titlesize": 7.2, "xtick.labelsize": 6.2, "ytick.labelsize": 6.2,
-    "legend.fontsize": 5.4, "axes.linewidth": 0.6,
-    "axes.spines.top": False, "axes.spines.right": False,
-    "figure.dpi": 400, "savefig.dpi": 400, "savefig.bbox": "tight",
-    "savefig.pad_inches": 0.03, "legend.frameon": False,
-})
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+from figstyle import setup, savefig as figsave, PALETTE, CYCLE, seqmap  # noqa: E402
+plt = setup(fontsize=7.5, figsize=(6.4, 3.6))
+CM_BLUE, CM_ORANGE = seqmap("blue"), seqmap("orange")
+CM_RED, CM_GREEN, CM_PURPLE = seqmap("vermillion"), seqmap("green"), seqmap("purple")
 OI = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
       "vermillion": "#D55E00", "purple": "#CC79A7", "grey": "#595959"}
 
@@ -123,7 +119,7 @@ ax.bar(x - 0.2, [V[names.index(n)] for n in nm], width=0.4, color=OI["blue"], la
 ax.bar(x + 0.2, [V_iota[names.index(n)] for n in nm], width=0.4,
        color=OI["vermillion"], label="V（含 ι）")
 ax.set_xticks(x); ax.set_xticklabels(nm, rotation=30, ha="right", fontsize=5.4)
-ax.set_ylabel("脆弱性 V（真实数据）"); ax.set_title("七系统 V 排序"); ax.legend(fontsize=5.0)
+ax.set_ylabel("脆弱性 V（真实数据）"); ax.legend(fontsize=5.0)
 panel(ax, "a")
 
 ax = axes[1]
@@ -131,13 +127,13 @@ ax.scatter(Theta, Kappa, s=16, color=OI["purple"], lw=0)
 for n, t, k in zip(names, Theta, Kappa):
     ax.text(t + 0.01, k, n, fontsize=5.0)
 ax.set_xlabel("Θ（真实合成）"); ax.set_ylabel("κ（贸易/GDP，真实）")
-ax.set_title("Θ–κ 相图（2020 年代）"); panel(ax, "b")
+panel(ax, "b")
 
 ax = axes[2]
 ax.barh(np.arange(len(nm)), [V_iota[names.index(n)] for n in nm], color=OI["green"])
 ax.set_yticks(np.arange(len(nm))); ax.set_yticklabels(nm, fontsize=5.6)
 ax.invert_yaxis(); ax.set_xlabel("V（含 ι 调节）")
-ax.set_title("真实数据下的脆弱性排序"); panel(ax, "c")
+panel(ax, "c")
 fig.savefig(os.path.join(FIGS, "v_real.png"))
 plt.close(fig)
 

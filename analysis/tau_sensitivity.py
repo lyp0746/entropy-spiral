@@ -150,13 +150,12 @@ with open(os.path.join(OUT, "tau_sensitivity.json"), "w", encoding="utf-8") as f
     json.dump(out, f, ensure_ascii=False, indent=2)
 
 # ---------------------------------------------------------------- 画图
-plt.rcParams.update({"font.family": "sans-serif",
-                     "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial",
-                                         "DejaVu Sans"],
-                     "axes.unicode_minus": False, "font.size": 7,
-                     "axes.labelsize": 7, "axes.titlesize": 7.4,
-                     "legend.fontsize": 5.4, "axes.linewidth": 0.6,
-                     "axes.spines.top": False, "axes.spines.right": False})
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+from figstyle import setup, savefig as figsave, PALETTE, CYCLE, seqmap  # noqa: E402
+plt = setup(fontsize=7.5, figsize=(6.4, 3.6))
+CM_BLUE, CM_ORANGE = seqmap("blue"), seqmap("orange")
+CM_RED, CM_GREEN, CM_PURPLE = seqmap("vermillion"), seqmap("green"), seqmap("purple")
 fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.5), layout="constrained")
 colors = ["#0072B2", "#E69F00", "#D55E00"]
 short_regime = ["I2 calibrated", "I2 post-hoc", "I2 missing"]
@@ -170,7 +169,7 @@ for ax, (sc, cfg) in zip(axes, SCENARIOS.items()):
         ax.plot(edges[:-1], h / h.max(), color=c, lw=1.0, label=sr)
     ax.axvline(1.0, color="k", ls="--", lw=0.8)
     ax.set_xscale("log")
-    ax.set_title(f"{sc}（基线 τ={cfg['baseline_tau']}）")
+
     ax.set_xlabel("τ（对数刻度）")
     ax.set_ylabel("归一化频数")
 axes[0].legend(loc="upper right")

@@ -25,16 +25,12 @@ os.makedirs(OUT, exist_ok=True)
 
 OI = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
       "vermillion": "#D55E00", "purple": "#CC79A7", "grey": "#595959", "black": "#000000"}
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial", "DejaVu Sans"],
-    "axes.unicode_minus": False, "font.size": 6.8, "axes.labelsize": 6.8,
-    "axes.titlesize": 7.2, "xtick.labelsize": 6.2, "ytick.labelsize": 6.2,
-    "legend.fontsize": 5.4, "axes.linewidth": 0.6,
-    "axes.spines.top": False, "axes.spines.right": False,
-    "figure.dpi": 400, "savefig.dpi": 400, "savefig.bbox": "tight",
-    "savefig.pad_inches": 0.03, "legend.frameon": False,
-})
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+from figstyle import setup, savefig as figsave, PALETTE, CYCLE, seqmap  # noqa: E402
+plt = setup(fontsize=7.5, figsize=(6.4, 3.6))
+CM_BLUE, CM_ORANGE = seqmap("blue"), seqmap("orange")
+CM_RED, CM_GREEN, CM_PURPLE = seqmap("vermillion"), seqmap("green"), seqmap("purple")
 
 
 def panel(ax, letter):
@@ -121,7 +117,7 @@ ax.bar(x - 0.2, [base[k] for k in names], width=0.4, color=OI["blue"], label="V 
 ax.bar(x + 0.2, [vI[k] for k in names], width=0.4, color=OI["vermillion"],
        label="V（含 ι 调节）")
 ax.set_xticks(x); ax.set_xticklabels(names, rotation=30, ha="right", fontsize=5.4)
-ax.set_ylabel("脆弱性 V"); ax.set_title("三大系统及对照"); ax.legend(fontsize=5.0)
+ax.set_ylabel("脆弱性 V");ax.legend(fontsize=5.0)
 panel(ax, "a")
 
 # (b) Dirichlet top1 概率
@@ -129,8 +125,7 @@ ax = fig.add_subplot(gs[0, 1])
 p = [R["dirichlet_top1_prob"][k] for k in names]
 ax.barh(np.arange(len(names)), p, color=OI["green"])
 ax.set_yticks(np.arange(len(names))); ax.set_yticklabels(names, fontsize=5.4)
-ax.set_xlabel("排名第一概率"); ax.set_title("权重扰动的排序稳定性")
-panel(ax, "b")
+ax.set_xlabel("排名第一概率");panel(ax, "b")
 
 # (c) β 检验
 ax = fig.add_subplot(gs[0, 2])
@@ -139,7 +134,7 @@ for b, col in zip(["beta=0.00", "beta=0.10", "beta=0.20"],
     ax.plot(np.arange(len(names)), [beta_test[b]["V"][k] for k in names],
             "o-", ms=2.4, lw=1.0, color=col, label=b)
 ax.set_xticks(np.arange(len(names))); ax.set_xticklabels(names, rotation=30, ha="right", fontsize=5.0)
-ax.set_ylabel("V"); ax.set_title("β（I 权重）几乎不动排序"); ax.legend(fontsize=4.8)
+ax.set_ylabel("V");ax.legend(fontsize=4.8)
 panel(ax, "c")
 
 # (d) γ 范围排序稳定性
@@ -151,7 +146,7 @@ for g, col in zip(["gamma=0.35", "gamma=0.45", "gamma=0.55"],
             color=col, label=g)
 ax.set_xticks(range(len(order))); ax.set_xticklabels(gamma_test["gamma=0.45"],
         rotation=30, ha="right", fontsize=5.0)
-ax.set_ylabel("V"); ax.set_title("γ 在 0.35—0.55 内"); ax.legend(fontsize=4.8)
+ax.set_ylabel("V");ax.legend(fontsize=4.8)
 panel(ax, "d")
 
 # (e) V 的时间动态示意
@@ -165,7 +160,7 @@ ax.plot(t, 0.5 + theta + kappa, color=OI["blue"], lw=1.0, ls="--", label="结构
 ax.plot(t, 0.5 + theta + kappa - 0.1 * np.exp(-((t - 8) ** 2) / 8),
         color=OI["green"], lw=1.0, ls=":", label="含恢复")
 ax.set_xlabel("时间（年）"); ax.set_ylabel("V")
-ax.set_title("短期冲击 + 长期结构"); ax.legend(fontsize=4.8)
+ax.legend(fontsize=4.8)
 panel(ax, "e")
 
 # (f) V vs FSI 示意
@@ -178,7 +173,6 @@ ax.scatter(list(fsi.values()), [vmap[k] for k in fsi], s=12, color=OI["purple"],
 for k in fsi:
     ax.text(fsi[k] + 1, vmap[k], k, fontsize=4.8)
 ax.set_xlabel("FSI（0—120）"); ax.set_ylabel("V（示意）")
-ax.set_title("V 与 FSI 部分重合")
 panel(ax, "f")
 
 fig.savefig(os.path.join(FIGS, "v_framework.png"))

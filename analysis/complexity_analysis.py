@@ -28,16 +28,12 @@ os.makedirs(OUT, exist_ok=True)
 
 OI = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
       "vermillion": "#D55E00", "grey": "#595959", "black": "#000000"}
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial", "DejaVu Sans"],
-    "axes.unicode_minus": False, "font.size": 6.8, "axes.labelsize": 6.8,
-    "axes.titlesize": 7.2, "xtick.labelsize": 6.2, "ytick.labelsize": 6.2,
-    "legend.fontsize": 5.6, "axes.linewidth": 0.6,
-    "axes.spines.top": False, "axes.spines.right": False,
-    "figure.dpi": 400, "savefig.dpi": 400, "savefig.bbox": "tight",
-    "savefig.pad_inches": 0.03, "legend.frameon": False,
-})
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+from figstyle import setup, savefig as figsave, PALETTE, CYCLE, seqmap  # noqa: E402
+plt = setup(fontsize=7.5, figsize=(6.4, 3.6))
+CM_BLUE, CM_ORANGE = seqmap("blue"), seqmap("orange")
+CM_RED, CM_GREEN, CM_PURPLE = seqmap("vermillion"), seqmap("green"), seqmap("purple")
 
 
 def panel(ax, letter):
@@ -84,7 +80,6 @@ def quad_model(var, ax, letter, title, xlab):
         ax.text(turn, ax.get_ylim()[0] + 0.05, f"拐点≈{turn:.1f}", fontsize=5.0,
                 color=OI["grey"])
     ax.set_xlabel(xlab); ax.set_ylabel("log 存续时长")
-    ax.set_title(title)
     panel(ax, letter)
     return out
 

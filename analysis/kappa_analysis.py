@@ -25,16 +25,12 @@ os.makedirs(FIGS, exist_ok=True)
 
 OI = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
       "vermillion": "#D55E00", "purple": "#CC79A7", "grey": "#595959", "black": "#000000"}
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Microsoft YaHei", "SimHei", "Arial", "DejaVu Sans"],
-    "axes.unicode_minus": False, "font.size": 6.8, "axes.labelsize": 6.8,
-    "axes.titlesize": 7.2, "xtick.labelsize": 6.2, "ytick.labelsize": 6.2,
-    "legend.fontsize": 5.4, "axes.linewidth": 0.6,
-    "axes.spines.top": False, "axes.spines.right": False,
-    "figure.dpi": 400, "savefig.dpi": 400, "savefig.bbox": "tight",
-    "savefig.pad_inches": 0.03, "legend.frameon": False,
-})
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+from figstyle import setup, savefig as figsave, PALETTE, CYCLE, seqmap  # noqa: E402
+plt = setup(fontsize=7.5, figsize=(6.4, 3.6))
+CM_BLUE, CM_ORANGE = seqmap("blue"), seqmap("orange")
+CM_RED, CM_GREEN, CM_PURPLE = seqmap("vermillion"), seqmap("green"), seqmap("purple")
 
 
 def panel(ax, letter):
@@ -85,14 +81,13 @@ for (dname, s), col in zip(dim_scores.items(),
                            [OI["blue"], OI["green"], OI["purple"]]):
     ax.plot(YEARS, s, "o-", ms=2.6, lw=1.1, color=col, label=dname)
 ax.set_xlabel("年份"); ax.set_ylabel("耦合度（归一）")
-ax.set_title("三个维度的耦合"); ax.legend(loc="upper left")
+ax.legend(loc="upper left")
 panel(ax, "a")
 
 ax = axes[1]
 ax.plot(YEARS, kappa, "o-", color=OI["vermillion"], lw=1.6, ms=3.2)
 ax.fill_between(YEARS, 0, kappa, color=OI["vermillion"], alpha=0.10, lw=0)
 ax.set_ylim(0, 1); ax.set_xlabel("年份"); ax.set_ylabel("合成耦合指数 κ")
-ax.set_title(f"κ 单调上升（ρ={R['kappa_rho']:.2f}）")
 panel(ax, "b")
 
 # Θ-I-κ 象限示意
@@ -105,7 +100,6 @@ for name, (x, y) in pts.items():
     ax.plot(x, y, "o", color=OI["vermillion"], ms=4)
     ax.text(x + 0.02, y, name, fontsize=5.6)
 ax.set_xlabel("Θ（垄断份额）"); ax.set_ylabel("I / κ（复杂度与耦合）")
-ax.set_title("当代系统集中于右上")
 panel(ax, "c")
 
 fig.savefig(os.path.join(FIGS, "kappa.png"))

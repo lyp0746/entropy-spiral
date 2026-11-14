@@ -131,26 +131,26 @@ def main():
         import matplotlib
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
-        plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
-        plt.rcParams["axes.unicode_minus"] = False
+        import sys as _sys, os as _os
+        _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "_series", "tools"))
+        from figstyle import setup, savefig as figsave  # noqa: E402
+        plt = setup(fontsize=8.0)
         labels = ["Θ", "I", "κ", "ι"]
         keys = ["Theta", "I", "kappa", "iota"]
         fig, ax = plt.subplots(figsize=(7.2, 4.0))
         xpos = np.arange(len(REGIMES))
         bottom = np.zeros(len(REGIMES))
-        colors = ["#3a6ea5", "#c94f4f", "#009E73", "#b8862f"]
+        colors = ["#0072B2", "#D55E00", "#009E73", "#E69F00"]
         for k, lab, c in zip(keys, labels, colors):
             vals = np.array([res["regimes"][r]["mean_share"][k] for r in REGIMES])
             ax.bar(xpos, vals, bottom=bottom, label=lab, color=c)
             bottom += vals
         ax.set_xticks(xpos)
-        ax.set_xticklabels(["S1\nI₂ 可事后校准", "S2\nI₂ 样本少", "S3\n仅 I₁ 可测"], fontsize=9)
+        ax.set_xticklabels(["S1\nI2 可事后校准", "S2\nI2 样本少", "S3\n仅 I1 可测"], fontsize=9)
         ax.set_ylabel("Var(V) 一阶贡献占比")
-        ax.set_title("V 的不确定性主要来自哪根轴？——随 I 可测性变化", fontsize=11)
         ax.legend(ncol=4, fontsize=9, loc="upper center", bbox_to_anchor=(0.5, -0.12))
         os.makedirs(FIGS, exist_ok=True)
-        fig.tight_layout()
-        fig.savefig(os.path.join(FIGS, "v_uncertainty_decomposition.png"), dpi=160)
+        figsave(os.path.join(FIGS, "v_uncertainty_decomposition.png"))
         print("[fig] assets/charts/v_uncertainty_decomposition.png")
     except Exception as e:
         print("[fig skipped]", repr(e)[:80])

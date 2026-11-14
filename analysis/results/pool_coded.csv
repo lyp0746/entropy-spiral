@@ -1,0 +1,185 @@
+﻿polity,NGA,T,arch_period,adm,c_bureau,s_lawcomposite,s_main
+TrRomDm,Konya Plain,110.0,0,8.5,1.0,1.0,1.0
+FrBeakr,Paris Basin,999.0,0,1.0,,,
+FrAtlBA,Paris Basin,1199.0,0,1.5,,,
+FrHallA,Paris Basin,99.0,0,1.5,0.1,,
+FrHallB,Paris Basin,199.0,0,2.5,0.1,,
+FrHallC,Paris Basin,99.0,0,3.5,0.1,,
+FrHallD,Paris Basin,125.0,0,3.5,0.1,,
+FrTeneA,Paris Basin,149.0,0,3.0,,0.1,0.1
+FrTeneB,Paris Basin,149.0,0,3.0,,0.1,0.1
+FrTeneC,Paris Basin,147.0,0,3.5,,0.1,0.1
+TrERom*,Konya Plain,212.0,0,8.0,1.0,1.0,1.0
+FrMervE,Paris Basin,61.0,0,4.0,0.1,0.775,1.0
+FrMervM,Paris Basin,143.0,0,4.5,0.1,1.0,1.0
+FrMervL,Paris Basin,63.0,0,4.5,0.1,0.75,1.0
+FrCarlE,Paris Basin,87.0,0,4.0,,0.275,0.0
+FrCarlL,Paris Basin,146.0,0,4.0,0.9,0.05,0.0
+FrCaptE,Paris Basin,162.0,0,4.0,0.1,0.07500000000000001,0.0
+FrCaptL,Paris Basin,177.0,0,5.0,1.0,0.75,0.0
+FrValoE,Paris Basin,121.0,0,5.0,1.0,1.0,1.0
+FrValoL,Paris Basin,138.0,0,5.5,1.0,0.975,1.0
+FrBurbE,Paris Basin,70.0,0,6.0,1.0,1.0,1.0
+FrBurbL,Paris Basin,128.0,0,6.0,1.0,1.0,1.0
+IsCommw,Iceland,331.0,0,4.0,0.0,0.25,1.0
+NorKing,Iceland,118.0,0,5.0,1.0,0.525,1.0
+GrCrNeo,Crete,3999.0,0,1.0,0.0,0.0,0.0
+GrCrPre,Crete,1099.0,0,1.5,,0.0,0.0
+GrCrOPa,Crete,199.0,0,2.5,1.0,0.0,0.0
+GrCrNPa,Crete,249.0,0,5.0,1.0,0.0,0.0
+GrCrMPa,Crete,149.0,0,5.0,1.0,0.0,0.0
+GrCrPPa,Crete,99.0,0,4.0,1.0,0.0,0.0
+GrCrFPa,Crete,199.0,0,,,0.0,0.0
+GrCrGeo,Crete,289.0,0,,,0.0,
+GrCrArc,Crete,209.0,0,5.0,1.0,0.75,1.0
+GrCrCls,Crete,178.0,0,5.0,1.0,0.75,1.0
+GrCrHel,Crete,254.0,0,5.0,1.0,0.75,1.0
+TrByzM1,Konya Plain,234.0,0,8.0,1.0,1.0,1.0
+GrCrEmr,Crete,136.0,0,5.0,1.0,1.0,1.0
+TrByzM2,Konya Plain,205.0,0,8.0,1.0,1.0,1.0
+TrByzM3,Crete,130.0,0,8.0,1.0,1.0,1.0
+ItVenR3,Crete,359.0,0,5.5,1.0,0.975,1.0
+ItVenR4,Crete,105.0,0,5.5,1.0,0.975,1.0
+TrOttm4,Konya Plain,155.0,0,9.5,1.0,1.0,1.0
+MlJeJe1,Niger Inland Delta,299.0,0,1.0,,,
+MlJeJe2,Niger Inland Delta,349.0,0,1.5,,,
+MlJeJe3,Niger Inland Delta,499.0,0,1.5,0.0,0.1,
+MlJeJe4,Niger Inland Delta,99.0,0,2.0,,,
+MrWagdM,Niger Inland Delta,77.0,0,4.0,0.5,0.95,0.9
+MrWagdL,Niger Inland Delta,102.0,0,4.0,0.5,1.0,1.0
+MlMali*,Niger Inland Delta,175.0,0,4.5,0.9,0.6333333333333333,0.1
+MlSong2,Niger Inland Delta,97.0,0,4.5,1.0,1.0,1.0
+MaSaadi,Niger Inland Delta,27.0,0,5.0,1.0,0.9666666666666667,1.0
+MlSegou,Niger Inland Delta,71.0,0,2.0,0.0,0.025,0.1
+MlBaman,Niger Inland Delta,106.0,0,5.0,,0.9,0.9
+GhAshnE,Ghanaian Coast,200.0,0,4.0,0.0,0.0,0.0
+GhAshnL,Ghanaian Coast,193.0,0,6.0,1.0,0.275,0.1
+IqUbaid,Southern Mesopotamia,1299.0,0,2.0,,,
+IqUruk*,Southern Mesopotamia,1200.0,0,,0.0,,
+IqIsinL,Southern Mesopotamia,108.0,0,4.0,1.0,0.775,1.0
+IqBabAm,Southern Mesopotamia,298.0,0,6.0,,1.0,1.0
+IqBabKs,Southern Mesopotamia,441.0,0,3.0,1.0,0.6333333333333334,0.9
+IqIsin2,Southern Mesopotamia,126.0,0,3.5,1.0,0.6333333333333334,0.9
+IqBazi*,Southern Mesopotamia,25.0,0,4.5,,0.30000000000000004,0.9
+IqDynE*,Southern Mesopotamia,247.0,0,4.5,0.9,0.30000000000000004,0.9
+IrPart2,Southern Mesopotamia,178.0,0,5.5,1.0,1.0,
+IlCanaa,Galilee,819.0,0,,,0.5,1.0
+LbAcPho,Galilee,149.0,0,,,0.675,0.9
+IlYisrl,Galilee,308.0,0,,1.0,0.7,0.5
+TrNeoER,Konya Plain,2599.0,0,1.0,0.0,,
+TrNeoCR,Konya Plain,399.0,0,1.0,0.0,,
+TrNeoLT,Konya Plain,599.0,0,1.0,0.0,,
+TrClcER,Konya Plain,999.0,0,1.5,0.1,0.1,0.1
+TrClcLT,Konya Plain,1999.0,0,2.5,,0.1,0.1
+TrBrzER,Konya Plain,999.0,0,2.5,,,
+TrBrzMD,Konya Plain,300.0,0,4.5,0.9,,
+TrHatOK,Konya Plain,149.0,0,3.0,1.0,1.0,1.0
+TrBrzL2,Konya Plain,100.0,0,3.0,1.0,1.0,1.0
+TrHatNK,Konya Plain,163.0,0,4.5,1.0,0.975,1.0
+TrNHitt,Konya Plain,279.0,0,4.0,1.0,0.9,0.9
+TrTabal,Konya Plain,63.0,0,3.5,,,
+TrPhryg,Konya Plain,140.0,0,4.5,,,
+TrLydia,Konya Plain,123.0,0,4.5,0.9,,
+TrLysim,Konya Plain,18.0,0,4.0,0.9,0.9,0.9
+TrCappL,Konya Plain,34.0,0,4.0,1.0,0.10000000000000002,0.1
+TrRum**,Konya Plain,150.0,0,4.5,1.0,1.0,1.0
+TrOttm1,Konya Plain,9.0,0,5.0,0.9,0.95,1.0
+TrOttm2,Konya Plain,95.0,0,5.0,1.0,0.975,1.0
+EtAksm1,Yemeni Coastal Plain,119.0,0,4.5,1.0,0.9,0.9
+YeHmyr1,Yemeni Coastal Plain,70.0,0,4.0,1.0,0.4,0.5
+YeHmyr2,Yemeni Coastal Plain,147.0,0,4.0,1.0,0.4,0.5
+YeZiyad,Yemeni Coastal Plain,168.0,0,3.5,1.0,0.9,0.9
+YeWarLd,Yemeni Coastal Plain,136.0,0,4.5,1.0,1.0,1.0
+YeRasul,Yemeni Coastal Plain,224.0,0,5.0,1.0,1.0,1.0
+YeTahir,Yemeni Coastal Plain,63.0,0,5.0,0.9,1.0,1.0
+YeQasmi,Yemeni Coastal Plain,168.0,0,3.0,1.0,0.3333333333333333,1.0
+MnXngnE,Orkhon Valley,1100.0,0,2.5,0.1,0.10000000000000002,
+MnXngnM,Orkhon Valley,149.0,0,3.5,0.1,0.30000000000000004,0.9
+MnXngnL,Orkhon Valley,158.0,0,3.5,,0.3666666666666667,0.9
+MnXianb,Orkhon Valley,150.0,0,3.0,0.1,0.1,0.1
+MnRourn,Orkhon Valley,251.0,0,4.0,0.1,0.025,0.1
+MnETurk,Orkhon Valley,47.0,0,4.5,0.9,,
+MnTurk2,Orkhon Valley,60.0,0,4.0,0.9,,
+MnUigur,Orkhon Valley,95.0,0,4.0,0.0,0.1,
+MnShiwe,Orkhon Valley,66.0,0,1.0,,,
+MnKhitn,Orkhon Valley,165.0,0,4.5,1.0,0.1,0.1
+MnMongE,Orkhon Valley,79.0,0,2.0,0.0,0.25,1.0
+MnMngKh,Orkhon Valley,94.0,0,5.0,1.0,0.5,0.0
+MnMongL,Orkhon Valley,321.0,0,3.0,0.1,1.0,1.0
+MnZungh,Orkhon Valley,50.0,0,3.5,0.9,0.30000000000000004,0.9
+RuYakuE,Lena River Valley,242.0,0,2.0,0.0,0.0,0.0
+RuYakuL,Lena River Valley,257.0,0,2.0,0.1,0.75,1.0
+InMahaJ,Middle Ganga,275.0,0,4.0,0.1,0.1,0.1
+InGupta,Middle Ganga,194.0,0,9.0,,0.9,0.9
+InKanau,Middle Ganga,129.0,0,5.5,1.0,1.0,
+InRasht,Deccan,216.0,0,7.0,1.0,0.9666666666666667,0.9
+InGhdvl,Middle Ganga,112.0,0,5.0,,,
+InDecIA,Deccan,899.0,0,2.0,,,
+InDecKg,Deccan,104.0,0,3.5,0.9,,
+InSataL,Deccan,303.0,0,5.0,1.0,1.0,1.0
+InVakat,Deccan,114.0,0,5.0,1.0,0.725,0.9
+InKadam,Deccan,89.0,0,6.0,0.9,,
+InChaBd,Deccan,215.0,0,5.5,1.0,1.0,1.0
+InChaKl,Deccan,81.0,0,5.5,,1.0,1.0
+InHoysa,Deccan,61.0,0,3.5,1.0,0.9,0.9
+InKampi,Deccan,30.0,0,3.0,0.9,0.9,0.9
+InVijay,Deccan,309.0,0,4.5,1.0,0.975,1.0
+GbEmpr2,Deccan,60.0,0,9.0,1.0,1.0,1.0
+InGaroE,Garo Hills,92.0,0,1.0,0.0,0.0,0.0
+InGaroL,Garo Hills,88.0,0,2.0,0.0,0.0,
+IdKalin,Central Java,231.0,0,3.5,,,
+IdMedng,Central Java,287.0,0,4.0,1.0,0.9,0.9
+IdKedir,Central Java,173.0,0,4.5,1.0,0.95,1.0
+IdMajap,Central Java,227.0,0,4.5,1.0,0.975,1.0
+IdMatrm,Central Java,135.0,0,3.5,1.0,0.95,1.0
+IdBrokE,Kapuasi Basin,191.0,0,1.0,0.0,0.0,0.0
+IdBrokL,Kapuasi Basin,145.0,0,3.5,0.0,0.0,0.0
+JpJomo1,Kansai,4399.0,0,,0.0,0.0,0.0
+JpJomo2,Kansai,3899.0,0,,0.0,0.0,0.0
+JpJomo3,Kansai,1799.0,0,,0.0,0.0,0.0
+JpJomo4,Kansai,999.0,0,,0.0,0.0,0.0
+JpJomo5,Kansai,1299.0,0,,0.0,0.0,0.0
+JpJomo6,Kansai,899.0,0,,0.0,0.0,0.0
+JpYayoi,Kansai,549.0,0,1.5,0.0,0.0,0.0
+JpKofun,Kansai,287.0,0,4.0,,0.0,
+JpAsuka,Kansai,171.0,0,5.5,1.0,0.6666666666666666,1.0
+JpHeian,Kansai,390.0,0,5.0,1.0,0.6666666666666666,1.0
+JpKamak,Kansai,148.0,0,6.5,1.0,0.75,1.0
+JpAshik,Kansai,130.0,0,6.5,1.0,0.5,1.0
+JpSengk,Kansai,100.0,0,4.5,1.0,0.5,1.0
+JpAzMom,Kansai,34.0,0,5.0,1.0,0.5,1.0
+JpTokgw,Kansai,265.0,0,7.0,1.0,0.75,1.0
+CnHQngL,Southern China Hills,194.0,0,3.0,0.1,0.0,0.0
+CnHChin,Southern China Hills,45.0,0,2.0,0.0,0.0,0.0
+PgOrokE,Oro PNG,149.0,0,3.0,0.0,0.0,0.0
+PgOrokL,Oro PNG,58.0,0,2.0,1.0,0.5,1.0
+FmTrukE,Chuuk Islands,110.0,0,2.0,0.0,0.0,0.0
+FmTrukL,Chuuk Islands,62.0,0,4.0,0.9,0.5,1.0
+MxArch*,Basin of Mexico,3999.0,0,,,0.03333333333333333,0.1
+MxInitl,Basin of Mexico,799.0,0,,,0.03333333333333333,0.1
+MxFormE,Basin of Mexico,399.0,0,1.5,0.1,0.07500000000000001,0.1
+MxFormM,Basin of Mexico,399.0,0,1.5,0.1,0.07500000000000001,0.1
+MxFormL,Basin of Mexico,299.0,0,,,0.03333333333333333,0.1
+MxFormT,Basin of Mexico,199.0,0,,,0.03333333333333333,0.1
+MxEpicl,Basin of Mexico,249.0,0,4.0,0.9,0.0,
+MxToltc,Basin of Mexico,299.0,0,4.0,0.9,0.0,
+MxPostM,Basin of Mexico,226.0,0,,0.9,0.0,
+MxAztec,Basin of Mexico,92.0,0,6.0,1.0,0.5,1.0
+USMisEW,Cahokia,449.0,0,1.0,0.0,0.0,0.0
+USMisMW,Cahokia,449.0,0,1.5,0.0,0.0,0.0
+USMisRo,Cahokia,149.0,0,1.5,0.0,0.0,0.0
+USMisMu,Cahokia,149.0,0,1.5,0.0,0.0,0.0
+USMisPa,Cahokia,149.0,0,1.5,0.0,0.0,0.0
+USMisSp,Cahokia,149.0,0,2.0,0.0,0.0,0.0
+USMisME,Cahokia,149.0,0,2.0,0.1,0.0,
+USCahoE,Cahokia,149.0,0,3.5,0.1,0.0,
+USCahoL,Cahokia,74.0,0,3.5,0.1,0.0,
+USMisSd,Cahokia,124.0,0,3.0,0.1,0.0,
+USOneot,Cahokia,239.0,0,1.0,,0.0,0.0
+USIllin,Cahokia,77.0,0,2.0,,0.025,0.0
+UsIroqE,Finger Lakes,147.0,0,3.0,0.0,0.125,0.5
+UsIroqL,Finger Lakes,134.0,0,3.0,0.0,0.125,0.5
+CoNahua,North Colombia,799.0,0,1.5,0.0,,
+CoTairo,North Colombia,474.0,0,3.0,0.1,0.0,
+EcJivaE,Lowland Andes,296.0,0,1.5,0.0,0.0,0.0
+EcJivaL,Lowland Andes,100.0,0,1.5,0.0,0.0,0.0
