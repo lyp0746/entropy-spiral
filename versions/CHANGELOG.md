@@ -1,7 +1,6 @@
 # 版本日志（CHANGELOG）
 
-本文件记录本书各版本的定位、来源与主要变化。历史 PDF 存放于
-`versions/v1-治乱循环框架/`、`versions/v2-熵增螺旋/`。
+本文件记录本书各版本的定位、来源与主要变化。历史 PDF 存放于 Zenodo 归档（见下）；本目录只留下本文件。
 
 > 说明：本文件是**工程/归档文档**，保留内部版本编号用于追溯；
 > 正式书稿（正文、PDF、EPUB、发布包）不再出现版本号，只标注“初版”。
@@ -809,3 +808,20 @@ R5（“事后校准”三归一）：ch6 定义 6.2 与 ch12 警告 12.8.1 均�
 
 - ch20（预登记）：补「外部制度重置也能让读数落在预测方向」，限定三条登记判方向不判机制。
 - ch24（十个问题）：补「若某问题被面板研究回答，边界要外移」，说明边界不是永久产权。
+
+## 2026-11-25　工作区清理（断舍离）
+
+派生件与旧快照不留副本；版本靠本文件与 Zenodo 记录追溯。本次删除：
+
+- `output/book-ereader.html`
+- `output/book.html`
+- `versions/v1-治乱循环框架`
+- `versions/v2-熵增螺旋`
+- `versions/v3-融合初稿`
+- `versions/v4-Ω与真实数据`
+- `versions/v5.2-风险分解与缓冲`
+- `versions/v6-错位的时间`
+- `versions/v7-错位的时间`
+
+重建：`build_book.py --pdf` / `--ereader --pdf`、`build_markdown.py`、`build_epub.py`；
+论文用 `generate_publication_suite.py`。
