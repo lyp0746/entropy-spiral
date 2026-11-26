@@ -50,6 +50,7 @@ PY
 fi
 copy assets/svg/cover.svg     "$REL/cover.svg"
 copy assets/entropy-spiral-explorer.html  "$REL/entropy-spiral-explorer.html"
+copy assets/entropy-spiral-reader.html    "$REL/entropy-spiral-reader.html"
 
 copy docs/READERS.md          "$REL/README.md"
 copy docs/RELEASE-NOTES.md    "$REL/修订说明.md"
